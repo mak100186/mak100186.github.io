@@ -121,32 +121,6 @@ mindmap
       Software architecture at scale
 ```
 
-## Forward Deployed Engineering Lifecycle
-
-```mermaid
-flowchart TD
-    A[Discovery] --> B[Engage]
-    B --> C[Design]
-    C --> D[Build]
-    D --> E[Deploy]
-    E --> F[Monitor]
-    F --> G[Feedback]
-    G --> H[Support]
-    G --> I[Maintain]
-    E --> B
-```
-
-## Career Journey
-
-Industries include:
-
-- Banking
-- FinTech
-- Sports Betting
-- Transportation
-- Enterprise Software
-- Gaming
-
 
 ## Beyond Code
 

@@ -17,7 +17,7 @@ const CONTENT = {
   },
   domains: [
     { name: "Distributed systems", note: "consensus, partitioning, failure modes" },
-    { name: "Event-driven platforms", note: "streams, sagas, exactly-once-ish" },
+    { name: "Event-driven platforms", note: "streams, sagas, idempotency" },
     { name: "AI & agentic systems", note: "tools, evals, guardrails" },
     { name: "Developer tooling", note: "CLIs, pipelines, paved roads" },
     { name: "Cloud & observability", note: "tracing, SLOs, cost" },
@@ -52,7 +52,7 @@ const CONTENT = {
   openSource: [
     { name: "Vertical Sliced Plugins", desc: "A plugin-based, vertical sliced architecture.", lang: "C#", stars: "0", href: "https://github.com/mak100186/maxx-plugin-veritcals" },
     { name: "Distributed Observability", desc: "The project is structured to showcase how multiple microservices can be orchestrated using Aspire.NET, and how observability features provided by Aspire dashboards can be utilized to monitor and manage the system.", lang: "C#", stars: "0", href: "https://github.com/mak100186/mircroservices.observability" },
-    { name: "VSC Printer", desc: "Multi-Lingual Cross Platform Print Support for VS Code. Completely local print support for VS Code with syntax-colouring and line numbering.", lang: "TypeScript", stars: "0", href: "https://github.com/mak100186/vsc-print" },
+    { name: "VS Code Printer", desc: "Multi-Lingual Cross Platform Print Support for VS Code. Completely local print support for VS Code with syntax-colouring and line numbering.", lang: "TypeScript", stars: "0", href: "https://github.com/mak100186/vsc-print" },
     { name: "Push-Delivered MQ", desc: "A reactive push-based dispatcher for real-time systems and event-driven architectures — in-memory queue with automatic retries, subscriber management, and configurable TTL.", lang: "C#", stars: "0", href: "https://github.com/mak100186/push-delivered-queue" },
     { name: "Actor Framework", desc: "A lightweight, host-agnostic actor framework built on .NET 9 — actors process immutable messages in parallel, with directors balancing load and isolating failures.", lang: "C#", stars: "0", href: "https://github.com/mak100186/actor-pattern" },
   ],
@@ -162,23 +162,23 @@ const SVG_NS = "http://www.w3.org/2000/svg";
 const NODE_H = 40;
 
 const DIAGRAM_NODES = [
-  { x: 40, y: 110, w: 96, label: "discovery", sub: "web" },
-  { x: 190, y: 110, w: 104, label: "engage", sub: "cdn / auth" },
-  { x: 348, y: 110, w: 112, label: "design", sub: "routing" },
-  { x: 520, y: 44, w: 116, label: "build", sub: "commands" },
-  { x: 520, y: 176, w: 116, label: "observe", sub: "queries" },
-  { x: 696, y: 110, w: 116, label: "deploy", sub: "streams" },
-  { x: 870, y: 44, w: 112, label: "support", sub: "postgres" },
-  { x: 870, y: 176, w: 112, label: "maintenance", sub: "otel" },
+  { x: 40, y: 110, w: 96, label: "discovery", sub: "domain" },
+  { x: 190, y: 110, w: 104, label: "engage", sub: "SME" },
+  { x: 348, y: 110, w: 112, label: "design", sub: "architecture" },
+  { x: 520, y: 44, w: 116, label: "build", sub: "orchestration" },
+  { x: 520, y: 176, w: 116, label: "observe", sub: "operations" },
+  { x: 696, y: 110, w: 116, label: "deploy", sub: "artifacts" },
+  { x: 870, y: 44, w: 112, label: "support", sub: "documentation" },
+  { x: 870, y: 176, w: 112, label: "maintenance", sub: "telemetry" },
 ];
 
 const DIAGRAM_EDGES = [
   { d: "M136 130 L190 130", c: 1 },
   { d: "M294 130 L348 130", c: 1 },
   { d: "M460 130 C490 130 490 64 520 64", c: 1 },
-  { d: "M460 130 C490 130 490 196 520 196", c: 1 },
+  { d: "M520 196 C490 196 490 130 460 130", c: 1 },
   { d: "M636 64 C670 64 666 130 696 130", c: 2 },
-  { d: "M636 196 C670 196 666 130 696 130", c: 2 },
+  { d: "M696 130 C666 130 670 196 636 196", c: 2 },
   { d: "M812 130 C842 130 840 64 870 64", c: 2 },
   { d: "M812 130 C842 130 840 196 870 196", c: 2 },
 ];
