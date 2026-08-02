@@ -121,6 +121,21 @@ mindmap
       Software architecture at scale
 ```
 
+## Forward Deployed Engineering Lifecycle
+
+```mermaid
+flowchart TD
+    A[Discovery] --> B[Engage]
+    B --> C[Design]
+    C --> D[Build]
+    D --> E[Deploy]
+    E --> F[Monitor]
+    F --> G[Feedback]
+    G --> H[Support]
+    G --> I[Maintain]
+    E --> B
+```
+
 ## Career Journey
 
 Industries include:
@@ -137,5 +152,9 @@ Industries include:
 
 I enjoy solving complex engineering problems, mentoring developers, designing scalable architectures, and exploring how AI can transform the software development lifecycle.
 
+## Connect
+
+- GitHub: https://github.com/mak100186
+- LinkedIn: https://www.linkedin.com/in/muhammed-ali-khan-a1a067223/
 
 > Building resilient systems, enabling teams, and pushing the boundaries of modern software engineering.
