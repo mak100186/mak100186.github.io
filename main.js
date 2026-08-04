@@ -30,7 +30,7 @@ const CONTENT = {
       title: "Jarvis - Personal AI Assistant",
       blurb: "A local-first voice assistant: wake-word detection, Whisper transcription, and a local LLM turn spoken commands into reminders and notifications — daemon, web dashboard, and Android client, no cloud in the loop.",
       tags: ["NestJS", "Whisper", "LM Studio", "React", "Android"],
-      images: [],
+      images: ["./images/dash.png", "./images/Home page.png", "./images/brain.png"],
       href: "https://github.com/mak100186/jarvis",
     },
     {
