@@ -28,24 +28,27 @@ const CONTENT = {
       kind: "project",
       year: "2026",
       title: "Jarvis - Personal AI Assistant",
-      blurb: "Add a description for this project in the CONTENT object in main.js — the repo isn't publicly readable, so this is a placeholder.",
-      tags: [],
+      blurb: "A local-first voice assistant: wake-word detection, Whisper transcription, and a local LLM turn spoken commands into reminders and notifications — daemon, web dashboard, and Android client, no cloud in the loop.",
+      tags: ["NestJS", "Whisper", "LM Studio", "React", "Android"],
+      images: [],
       href: "https://github.com/mak100186/jarvis",
     },
     {
       kind: "project",
       year: "2025",
       title: "Youtube Converter",
-      blurb: "Add a description for this project in the CONTENT object in main.js — the repo isn't publicly readable, so this is a placeholder.",
-      tags: [],
+      blurb: "Downloads a YouTube video, transcribes it with Whisper, and summarizes it with a local LLM via LM Studio — fully offline, with a browsable timestamped transcript and Markdown export.",
+      tags: ["Python", "Whisper", "LM Studio"],
+      images: ["./images/yt1.png", "./images/yt2.png", "./images/yt3.png"],
       href: "https://github.com/mak100186/youtube-converter",
     },
     {
       kind: "project",
       year: "2026",
       title: "Git Crawler",
-      blurb: "Add a description for this project in the CONTENT object in main.js — the repo isn't publicly readable, so this is a placeholder.",
-      tags: [],
+      blurb: "Scores and surfaces high-potential GitHub repositories before they trend, using activity and quality signals plus AI-generated summaries from a self-hosted LLM — an Angular dashboard over a .NET/Postgres backend.",
+      tags: [".NET", "PostgreSQL", "Angular", "Ollama"],
+      images: ["./images/dashboard.png", "./images/details-pane.png", "./images/filters.png"],
       href: "https://github.com/mak100186/git-crawler",
     },
   ],
@@ -368,6 +371,94 @@ function renderProjects(projects) {
   }
 }
 
+const WORK_CAROUSEL_INTERVAL_MS = 2800;
+const WORK_CAROUSEL_PLACEHOLDER_SLIDES = 3;
+
+function buildCarouselSlides(project) {
+  const images = project.images && project.images.length ? project.images : new Array(WORK_CAROUSEL_PLACEHOLDER_SLIDES).fill(null);
+  return images.map((src, i) => {
+    const slide = document.createElement("div");
+    slide.className = "work-carousel__slide";
+    if (src) {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = `${project.title} screenshot ${i + 1}`;
+      slide.appendChild(img);
+    }
+    return slide;
+  });
+}
+
+function initWorkCarousel(projects) {
+  const root = $("#work-carousel");
+  const frame = $("#work-carousel-frame");
+  const title = $("#work-carousel-title");
+  const dots = $("#work-carousel-dots");
+  const grid = $("#work-grid");
+  if (!root || !frame || !title || !dots || !grid) return;
+
+  let activeIndex = -1;
+  let slideIndex = 0;
+  let timer = null;
+
+  function stopAutoplay() {
+    if (timer) clearInterval(timer);
+    timer = null;
+  }
+
+  function showSlide(i) {
+    slideIndex = i;
+    frame.querySelectorAll(".work-carousel__slide").forEach((s, idx) => s.classList.toggle("is-visible", idx === i));
+    dots.querySelectorAll(".work-carousel__dot").forEach((d, idx) => d.classList.toggle("is-active", idx === i));
+  }
+
+  function startAutoplay(count) {
+    stopAutoplay();
+    if (reducedMotion || count < 2) return;
+    timer = setInterval(() => showSlide((slideIndex + 1) % count), WORK_CAROUSEL_INTERVAL_MS);
+  }
+
+  function setProject(i) {
+    if (i === activeIndex) return;
+    activeIndex = i;
+    const project = projects[i];
+
+    const slides = buildCarouselSlides(project);
+    frame.replaceChildren(...slides);
+    dots.replaceChildren(...slides.map(() => {
+      const dot = document.createElement("span");
+      dot.className = "work-carousel__dot";
+      return dot;
+    }));
+
+    title.textContent = project.title;
+    showSlide(0);
+    startAutoplay(slides.length);
+  }
+
+  function clear() {
+    activeIndex = -1;
+    stopAutoplay();
+    root.classList.remove("is-active");
+  }
+
+  grid.querySelectorAll(".work-card").forEach((card, i) => {
+    card.addEventListener("mouseenter", () => {
+      root.classList.add("is-active");
+      setProject(i);
+    });
+    card.addEventListener("focus", () => {
+      root.classList.add("is-active");
+      setProject(i);
+    });
+  });
+
+  grid.addEventListener("mouseleave", clear);
+  grid.addEventListener("focusout", (e) => {
+    if (!grid.contains(e.relatedTarget)) clear();
+  });
+}
+
 function renderOpenSource(openSource) {
   const list = $("#os-list");
   if (!list) return;
@@ -438,5 +529,6 @@ renderIntro(CONTENT.profile);
 renderFooterLinks(CONTENT.profile);
 renderDomains(CONTENT.domains);
 renderProjects(CONTENT.projects);
+initWorkCarousel(CONTENT.projects);
 renderOpenSource(CONTENT.openSource);
 renderNow(CONTENT.now);
