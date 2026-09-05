@@ -48,8 +48,8 @@ const CONTENT = {
       title: "Git Crawler",
       blurb: "Scores and surfaces high-potential GitHub repositories before they trend, using activity and quality signals plus AI-generated summaries from a self-hosted LLM — an Angular dashboard over a .NET/Postgres backend.",
       tags: [".NET", "PostgreSQL", "Angular", "Ollama"],
-      images: ["./images/dashboard.png", "./images/details-pane.png", "./images/filters.png"],
-      href: "https://github.com/mak100186/git-crawler",
+      images: ["./images/gitcr-1.png", "./images/gitcr-2.png", "./images/gitcr-3.png", "./images/gitcr-4.png"],
+      href: "https://products-xi-eight.vercel.app/gitcrawler",
     },
   ],
   openSource: [
