@@ -161,12 +161,21 @@ a { color: var(--accent); text-underline-offset: 3px; }
 }
 
 .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
   margin: 0 0 26px;
+}
+
+.brand-mark {
+  flex: none;
+  display: block;
+  color: #c67139;
 }
 
 .hero__title {

@@ -6,7 +6,7 @@ const CONTENT = {
   profile: {
     name: "Muhammed Ali Khan",
     role: "Software engineer",
-    statement: "I build systems that stay up.",
+    statement: "I build intelligent systems that stay up.",
     intro:
       "Gaming, mobile, fintech, transportation, cloud-native platforms, large-scale distributed systems, and lately AI. Different domains, same pull: figure out how the hard part actually works, then build the thing that didn't exist yet.",
     links: [
@@ -286,6 +286,8 @@ function linkEl(link, { arrow = true } = {}) {
 }
 
 function renderIntro(profile) {
+  const title = $("#hero-title");
+  if (title) title.textContent = profile.statement;
   const el = $("#intro");
   if (el) el.textContent = profile.intro;
 }
