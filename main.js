@@ -27,11 +27,11 @@ const CONTENT = {
     {
       kind: "project",
       year: "2026",
-      title: "Jarvis - Personal AI Assistant",
-      blurb: "A local-first voice assistant: wake-word detection, Whisper transcription, and a local LLM turn spoken commands into reminders and notifications — daemon, web dashboard, and Android client, no cloud in the loop.",
-      tags: ["NestJS", "Whisper", "LM Studio", "React", "Android"],
-      images: ["./images/dash.png", "./images/Home page.png", "./images/brain.png"],
-      href: "https://github.com/mak100186/jarvis",
+      title: "Asterisk - Ask Your Documents",
+      blurb: "Drop documents in. Ask in plain language. Asterisk reads across everything you have given it and writes back a synthesized answer, with citations to the exact source material it used and a stated confidence level, so you know when to check it yourself.",
+      tags: [".NET Core", "LM Studio", "Angular"],
+      images: ["./images/asterisk-1.png", "./images/asterisk-2.png", "./images/asterisk-3.png"],
+      href: "https://products-xi-eight.vercel.app/asterisk",
     },
     {
       kind: "product",
