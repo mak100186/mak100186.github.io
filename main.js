@@ -31,7 +31,7 @@ const CONTENT = {
       blurb: "A free-placement layout canvas for résumés with a real vector PDF exporter — place, move, rotate and style every element yourself, snap to guides, cut images to a circle, then export selectable text with subset-embedded fonts at 0.0469 pt worst deviation. Runs fully in the browser: no backend, no account, and no network call after load.",
       tags: ["React", "TypeScript", "Zustand", "pdf-lib", "IndexedDB"],
       images: ["./images/rd-1.png", "./images/rd-2.png", "./images/rd-3.png"],
-      href: "https://products-xi-eight.vercel.app/resumer-designer",
+      href: "https://products-xi-eight.vercel.app/resume-designer",
     },
     {
       kind: "project",
