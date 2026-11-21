@@ -1,0 +1,670 @@
+{
+ "schema": 1,
+ "generatedAt": "2026-11-22T09:37+11:00",
+ "sample": true,
+ "project": {
+  "name": "Orders portal",
+  "phase": "building",
+  "forecast": {
+   "optimistic": "2026-12-02",
+   "likely": "2026-12-05",
+   "pessimistic": "2026-12-10"
+  },
+  "components": [
+   {
+    "name": "shell",
+    "pointsDone": 96,
+    "pointsRemaining": 4,
+    "itemsRemaining": 2,
+    "state": "building"
+   },
+   {
+    "name": "orders",
+    "pointsDone": 142,
+    "pointsRemaining": 38,
+    "itemsRemaining": 9,
+    "state": "building"
+   },
+   {
+    "name": "catalog",
+    "pointsDone": 88,
+    "pointsRemaining": 21,
+    "itemsRemaining": 6,
+    "state": "building"
+   },
+   {
+    "name": "billing",
+    "pointsDone": 31,
+    "pointsRemaining": 57,
+    "itemsRemaining": 14,
+    "state": "waiting"
+   },
+   {
+    "name": "reports",
+    "pointsDone": 60,
+    "pointsRemaining": 0,
+    "itemsRemaining": 0,
+    "state": "final parity"
+   }
+  ],
+  "burnup": [
+   {
+    "date": "2026-11-03",
+    "done": 18,
+    "total": 420
+   },
+   {
+    "date": "2026-11-04",
+    "done": 39,
+    "total": 420
+   },
+   {
+    "date": "2026-11-05",
+    "done": 47,
+    "total": 420
+   },
+   {
+    "date": "2026-11-06",
+    "done": 65,
+    "total": 420
+   },
+   {
+    "date": "2026-11-07",
+    "done": 65,
+    "total": 420
+   },
+   {
+    "date": "2026-11-08",
+    "done": 65,
+    "total": 425
+   },
+   {
+    "date": "2026-11-09",
+    "done": 86,
+    "total": 425
+   },
+   {
+    "date": "2026-11-10",
+    "done": 99,
+    "total": 425
+   },
+   {
+    "date": "2026-11-11",
+    "done": 125,
+    "total": 430
+   },
+   {
+    "date": "2026-11-12",
+    "done": 133,
+    "total": 430
+   },
+   {
+    "date": "2026-11-13",
+    "done": 146,
+    "total": 430
+   },
+   {
+    "date": "2026-11-14",
+    "done": 151,
+    "total": 430
+   },
+   {
+    "date": "2026-11-15",
+    "done": 151,
+    "total": 430
+   },
+   {
+    "date": "2026-11-16",
+    "done": 177,
+    "total": 430
+   },
+   {
+    "date": "2026-11-17",
+    "done": 195,
+    "total": 435
+   },
+   {
+    "date": "2026-11-18",
+    "done": 208,
+    "total": 435
+   },
+   {
+    "date": "2026-11-19",
+    "done": 234,
+    "total": 438
+   },
+   {
+    "date": "2026-11-20",
+    "done": 260,
+    "total": 438
+   },
+   {
+    "date": "2026-11-21",
+    "done": 260,
+    "total": 438
+   },
+   {
+    "date": "2026-11-22",
+    "done": 265,
+    "total": 438
+   }
+  ],
+  "waitingOnPeople": [
+   {
+    "who": "you",
+    "what": "Retest the order history filters",
+    "ref": "ORDERS-B-041",
+    "since": "2026-11-22T04:40+11:00"
+   },
+   {
+    "who": "designer",
+    "what": "Design round 4: 6 rows (empty states, invoice header)",
+    "ref": "round 4",
+    "since": "2026-11-21T07:40+11:00"
+   },
+   {
+    "who": "you",
+    "what": "Approve a shared-library change outside delegation",
+    "ref": "CATALOG-F-019",
+    "since": "2026-11-22T09:00+11:00"
+   }
+  ],
+  "milestones": [
+   {
+    "name": "Shell and sign-in merged",
+    "date": "2026-11-07",
+    "kind": "actual"
+   },
+   {
+    "name": "Reports ready to test",
+    "date": "2026-11-24",
+    "kind": "forecast"
+   },
+   {
+    "name": "All components ready to test",
+    "date": "2026-12-05",
+    "kind": "forecast"
+   }
+  ]
+ },
+ "hub": {
+  "state": "running",
+  "limits": {
+   "fiveHour": {
+    "percentUsed": 62,
+    "resetsAt": "2026-11-22T11:30+11:00"
+   },
+   "sevenDay": {
+    "percentUsed": 41,
+    "resetsAt": "2026-11-25T13:40+11:00"
+   },
+   "parkAtPercent": 90
+  },
+  "today": {
+   "packetsMerged": 3,
+   "points": 26,
+   "tokens": 1480000,
+   "costUsd": 6.07,
+   "minutesWaiting": {
+    "hub": 11,
+    "you": 64,
+    "limit": 0
+   }
+  },
+  "week": {
+   "packetsMerged": 17,
+   "points": 131,
+   "tokens": 8210000,
+   "costUsd": 33.66,
+   "minutesWaiting": {
+    "hub": 58,
+    "you": 312,
+    "limit": 95
+   }
+  },
+  "perPoint": {
+   "tokens": 62700,
+   "minutes": 14,
+   "costUsd": 0.26
+  },
+  "daily": [
+   {
+    "date": "2026-11-09",
+    "points": 21,
+    "tokens": 1449000,
+    "costUsd": 5.94
+   },
+   {
+    "date": "2026-11-10",
+    "points": 13,
+    "tokens": 702000,
+    "costUsd": 2.88
+   },
+   {
+    "date": "2026-11-11",
+    "points": 26,
+    "tokens": 1820000,
+    "costUsd": 7.46
+   },
+   {
+    "date": "2026-11-12",
+    "points": 8,
+    "tokens": 424000,
+    "costUsd": 1.74
+   },
+   {
+    "date": "2026-11-13",
+    "points": 13,
+    "tokens": 754000,
+    "costUsd": 3.09
+   },
+   {
+    "date": "2026-11-14",
+    "points": 5,
+    "tokens": 335000,
+    "costUsd": 1.37
+   },
+   {
+    "date": "2026-11-15",
+    "points": 0,
+    "tokens": 0,
+    "costUsd": 0.0
+   },
+   {
+    "date": "2026-11-16",
+    "points": 26,
+    "tokens": 1690000,
+    "costUsd": 6.93
+   },
+   {
+    "date": "2026-11-17",
+    "points": 18,
+    "tokens": 1116000,
+    "costUsd": 4.58
+   },
+   {
+    "date": "2026-11-18",
+    "points": 13,
+    "tokens": 858000,
+    "costUsd": 3.52
+   },
+   {
+    "date": "2026-11-19",
+    "points": 26,
+    "tokens": 1820000,
+    "costUsd": 7.46
+   },
+   {
+    "date": "2026-11-20",
+    "points": 26,
+    "tokens": 1716000,
+    "costUsd": 7.04
+   },
+   {
+    "date": "2026-11-21",
+    "points": 0,
+    "tokens": 0,
+    "costUsd": 0.0
+   },
+   {
+    "date": "2026-11-22",
+    "points": 5,
+    "tokens": 305000,
+    "costUsd": 1.25
+   }
+  ],
+  "tests": {
+   "lastFull": {
+    "at": "2026-11-22T03:40+11:00",
+    "result": "green"
+   },
+   "knownReds": 2
+  }
+ },
+ "queue": [
+  {
+   "component": "orders",
+   "packets": [
+    {
+     "id": "orders-g24",
+     "kind": "orchestrated",
+     "state": "running",
+     "items": [
+      {
+       "id": "ORDERS-F-031",
+       "title": "Order detail: shipment timeline",
+       "size": 5
+      },
+      {
+       "id": "ORDERS-B-044",
+       "title": "Totals round twice on mixed currencies",
+       "size": 2
+      }
+     ]
+    },
+    {
+     "id": "orders-g25",
+     "kind": "orchestrated",
+     "state": "queued",
+     "items": [
+      {
+       "id": "ORDERS-F-033",
+       "title": "Bulk cancel from the list",
+       "size": 5
+      },
+      {
+       "id": "ORDERS-F-034",
+       "title": "Cancel reasons picker",
+       "size": 3
+      }
+     ]
+    },
+    {
+     "id": "orders-g26",
+     "kind": "orchestrated",
+     "state": "held",
+     "items": [
+      {
+       "id": "ORDERS-F-036",
+       "title": "Returns flow",
+       "size": 8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "component": "catalog",
+   "packets": [
+    {
+     "id": "catalog-g12",
+     "kind": "orchestrated",
+     "state": "running",
+     "items": [
+      {
+       "id": "CATALOG-F-019",
+       "title": "Variant matrix editor",
+       "size": 5
+      },
+      {
+       "id": "CATALOG-F-020",
+       "title": "Variant price overrides",
+       "size": 3
+      },
+      {
+       "id": "CATALOG-B-011",
+       "title": "Image order lost on save",
+       "size": 1
+      }
+     ]
+    },
+    {
+     "id": "catalog-g13",
+     "kind": "orchestrated",
+     "state": "queued",
+     "items": [
+      {
+       "id": "CATALOG-F-022",
+       "title": "Category tree drag to reorder",
+       "size": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "component": "billing",
+   "packets": [
+    {
+     "id": "billing-g4",
+     "kind": "orchestrated",
+     "state": "queued",
+     "items": [
+      {
+       "id": "BILLING-F-008",
+       "title": "Invoice list and filters",
+       "size": 5
+      },
+      {
+       "id": "BILLING-F-009",
+       "title": "Invoice header",
+       "size": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "component": "cross-component",
+   "packets": [
+    {
+     "id": "direct-3",
+     "kind": "direct",
+     "state": "running",
+     "items": [
+      {
+       "id": "SHELL-F-027",
+       "title": "Rename the money contract field in every caller",
+       "size": 2
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "workers": [
+  {
+   "id": "w-31",
+   "packetId": "orders-g24",
+   "component": "orders",
+   "kind": "orchestrated",
+   "state": "running",
+   "startedAt": "2026-11-22T08:26+11:00",
+   "phase": "Integration",
+   "items": [
+    {
+     "id": "ORDERS-F-031",
+     "title": "Order detail: shipment timeline",
+     "size": 5,
+     "phase": "Parity",
+     "status": "passed"
+    },
+    {
+     "id": "ORDERS-B-044",
+     "title": "Totals round twice on mixed currencies",
+     "size": 2,
+     "phase": "Reviewer",
+     "status": "passed"
+    }
+   ],
+   "steps": [
+    {
+     "name": "Developer F-031",
+     "start": "2026-11-22T08:26+11:00",
+     "end": "2026-11-22T08:51+11:00"
+    },
+    {
+     "name": "Developer B-044",
+     "start": "2026-11-22T08:26+11:00",
+     "end": "2026-11-22T08:39+11:00"
+    },
+    {
+     "name": "Reviewer B-044",
+     "start": "2026-11-22T08:39+11:00",
+     "end": "2026-11-22T08:45+11:00"
+    },
+    {
+     "name": "Reviewer F-031",
+     "start": "2026-11-22T08:51+11:00",
+     "end": "2026-11-22T09:00+11:00"
+    },
+    {
+     "name": "Parity F-031",
+     "start": "2026-11-22T09:00+11:00",
+     "end": "2026-11-22T09:18+11:00"
+    },
+    {
+     "name": "Integration",
+     "start": "2026-11-22T09:18+11:00",
+     "end": null
+    }
+   ],
+   "loops": 1,
+   "escalations": 0,
+   "tokens": 612000,
+   "costUsd": 2.51,
+   "commits": 0
+  },
+  {
+   "id": "w-32",
+   "packetId": "catalog-g12",
+   "component": "catalog",
+   "kind": "orchestrated",
+   "state": "waiting on you",
+   "startedAt": "2026-11-22T08:48+11:00",
+   "phase": "Developer",
+   "items": [
+    {
+     "id": "CATALOG-F-019",
+     "title": "Variant matrix editor",
+     "size": 5,
+     "phase": "Developer",
+     "status": "held for a gate"
+    },
+    {
+     "id": "CATALOG-F-020",
+     "title": "Variant price overrides",
+     "size": 3,
+     "phase": "Reviewer",
+     "status": "in progress"
+    },
+    {
+     "id": "CATALOG-B-011",
+     "title": "Image order lost on save",
+     "size": 1,
+     "phase": "Done",
+     "status": "passed"
+    }
+   ],
+   "steps": [
+    {
+     "name": "Developer B-011",
+     "start": "2026-11-22T08:48+11:00",
+     "end": "2026-11-22T08:56+11:00"
+    },
+    {
+     "name": "Reviewer B-011",
+     "start": "2026-11-22T08:56+11:00",
+     "end": "2026-11-22T09:01+11:00"
+    },
+    {
+     "name": "Developer F-020",
+     "start": "2026-11-22T08:48+11:00",
+     "end": "2026-11-22T09:20+11:00"
+    },
+    {
+     "name": "Reviewer F-020",
+     "start": "2026-11-22T09:20+11:00",
+     "end": null
+    },
+    {
+     "name": "Developer F-019",
+     "start": "2026-11-22T08:48+11:00",
+     "end": null
+    }
+   ],
+   "loops": 0,
+   "escalations": 1,
+   "tokens": 398000,
+   "costUsd": 1.63,
+   "commits": 0
+  },
+  {
+   "id": "w-33",
+   "packetId": "direct-3",
+   "component": "shell, orders, catalog, billing",
+   "kind": "direct",
+   "state": "running",
+   "startedAt": "2026-11-22T09:31+11:00",
+   "phase": "Checks",
+   "items": [
+    {
+     "id": "SHELL-F-027",
+     "title": "Rename the money contract field in every caller",
+     "size": 2,
+     "phase": "Checks",
+     "status": "in progress"
+    }
+   ],
+   "steps": [
+    {
+     "name": "Change",
+     "start": "2026-11-22T09:31+11:00",
+     "end": "2026-11-22T09:37+11:00"
+    },
+    {
+     "name": "Checks",
+     "start": "2026-11-22T09:37+11:00",
+     "end": null
+    }
+   ],
+   "loops": 0,
+   "escalations": 0,
+   "tokens": 71000,
+   "costUsd": 0.29,
+   "commits": 1
+  }
+ ],
+ "recent": [
+  {
+   "packetId": "reports-g9",
+   "component": "reports",
+   "kind": "orchestrated",
+   "mergedAt": "2026-11-22T09:05+11:00",
+   "items": 3,
+   "points": 8,
+   "minutes": 96,
+   "tokens": 540000
+  },
+  {
+   "packetId": "orders-g23",
+   "component": "orders",
+   "kind": "orchestrated",
+   "mergedAt": "2026-11-22T07:30+11:00",
+   "items": 2,
+   "points": 10,
+   "minutes": 121,
+   "tokens": 702000
+  },
+  {
+   "packetId": "ui-orders-2",
+   "component": "orders",
+   "kind": "ui-iteration",
+   "mergedAt": "2026-11-22T06:35+11:00",
+   "items": 4,
+   "points": 8,
+   "minutes": 64,
+   "tokens": 233000
+  },
+  {
+   "packetId": "shell-g11",
+   "component": "shell",
+   "kind": "orchestrated",
+   "mergedAt": "2026-11-21T13:40+11:00",
+   "items": 3,
+   "points": 8,
+   "minutes": 88,
+   "tokens": 495000
+  },
+  {
+   "packetId": "catalog-g11",
+   "component": "catalog",
+   "kind": "orchestrated",
+   "mergedAt": "2026-11-21T10:40+11:00",
+   "items": 2,
+   "points": 6,
+   "minutes": 79,
+   "tokens": 381000
+  }
+ ]
+}

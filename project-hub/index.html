@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Project Hub Status</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600&display=swap">
+<style>
+/* Layout: a control board. Sticky header with the three levels as tabs; each level is a grid of
+   panels, summary first. Plex for the engineering voice, Mono for every figure. */
+:root {
+  --bg: #f3f5f8; --panel: #ffffff; --ink: #18202c; --muted: #5b6676; --line: #dde2ea; --track: #e8ecf2;
+  --accent: #2453d6; --accent-soft: #e4ebfc;
+  --ok: #1d7a4c; --ok-soft: #e1f2e8; --warn: #9a5b00; --warn-soft: #fbefd9; --bad: #b4232c; --bad-soft: #fbe5e6;
+  --f-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f141b; --panel: #171e28; --ink: #e6ebf2; --muted: #9aa6b6; --line: #29323f; --track: #222b37;
+  --accent: #8aa8ff; --accent-soft: #1f2b4a;
+  --ok: #5cc98d; --ok-soft: #17301f; --warn: #f0b456; --warn-soft: #33270f; --bad: #ff7a80; --bad-soft: #3a1a1d;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f141b; --panel: #171e28; --ink: #e6ebf2; --muted: #9aa6b6; --line: #29323f; --track: #222b37;
+  --accent: #8aa8ff; --accent-soft: #1f2b4a;
+  --ok: #5cc98d; --ok-soft: #17301f; --warn: #f0b456; --warn-soft: #33270f; --bad: #ff7a80; --bad-soft: #3a1a1d;
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--f-body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--panel); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.num, .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); }
+.head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-block: 12px 0; }
+.head h1 { font: 600 22px/1.2 var(--f-display); letter-spacing: .01em; }
+.head .meta { color: var(--muted); font-size: 13px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-left: auto; }
+nav { display: flex; gap: 4px; padding-block: 8px 0; overflow-x: auto; }
+nav a { text-decoration: none; color: var(--muted); font-weight: 500; padding: 8px 12px 10px; border-bottom: 2px solid transparent; white-space: nowrap; }
+nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+nav a .count { font: 500 12px var(--f-mono); margin-left: 6px; color: var(--muted); }
+
+.banner { margin-top: 16px; padding: 10px 14px; border-radius: 8px; font-size: 14px; }
+.banner.sample { background: var(--accent-soft); }
+.banner.stale { background: var(--warn-soft); color: var(--ink); }
+
+main { padding-block: 20px 48px; }
+.level { display: grid; gap: 16px; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; display: grid; gap: 12px; align-content: start; }
+.panel h2 { font: 600 13px/1 var(--f-body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.lede { display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: baseline; }
+.lede .big { font: 600 34px/1.1 var(--f-display); }
+.lede .sub { color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; }
+.stat .v { font: 500 22px/1.2 var(--f-mono); font-variant-numeric: tabular-nums; }
+.stat .k { color: var(--muted); font-size: 13px; }
+
+.pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 2px 9px; border-radius: 999px; background: var(--track); color: var(--ink); white-space: nowrap; }
+.pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.pill.ok { background: var(--ok-soft); } .pill.ok::before { background: var(--ok); }
+.pill.warn { background: var(--warn-soft); } .pill.warn::before { background: var(--warn); }
+.pill.bad { background: var(--bad-soft); } .pill.bad::before { background: var(--bad); }
+.pill.acc { background: var(--accent-soft); } .pill.acc::before { background: var(--accent); }
+.chip { font: 500 11px var(--f-mono); padding: 1px 6px; border: 1px solid var(--line); border-radius: 4px; color: var(--muted); white-space: nowrap; }
+
+.bar { height: 8px; background: var(--track); border-radius: 4px; overflow: hidden; position: relative; }
+.bar > i { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+.bar.ok > i { background: var(--ok); } .bar.warn > i { background: var(--warn); } .bar.bad > i { background: var(--bad); }
+.bar .mark { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--ink); opacity: .55; }
+
+.rows { display: grid; gap: 10px; }
+.comp { display: grid; grid-template-columns: minmax(80px, 120px) 1fr auto; gap: 4px 12px; align-items: center; }
+.comp .name { font-weight: 500; }
+.comp .fig { font: 13px var(--f-mono); color: var(--muted); text-align: right; white-space: nowrap; }
+.comp .state { grid-column: 2 / 4; }
+
+ul.plain { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.wait { display: grid; grid-template-columns: auto 1fr auto; gap: 2px 10px; align-items: baseline; }
+.wait .who { font: 600 12px var(--f-body); text-transform: uppercase; letter-spacing: .06em; color: var(--warn); }
+.wait .since { font: 13px var(--f-mono); color: var(--muted); }
+.wait .ref { grid-column: 2 / 4; color: var(--muted); font: 12px var(--f-mono); }
+
+.chart { width: 100%; height: auto; display: block; }
+.chart text { fill: var(--muted); font: 11px var(--f-mono); }
+.chart .grid line { stroke: var(--line); }
+.legend { display: flex; gap: 16px; color: var(--muted); font-size: 12px; flex-wrap: wrap; }
+.legend span::before { content: ""; display: inline-block; width: 12px; height: 3px; margin-right: 6px; vertical-align: middle; background: var(--sw); }
+
+.gauge { display: grid; gap: 6px; }
+.gauge .top { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; }
+.gauge .top .mono { color: var(--muted); font-size: 13px; }
+
+.queue { display: grid; gap: 14px; }
+.queue h3 { font: 600 15px var(--f-body); }
+.packet { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 6px; }
+.packet .ph { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.packet .ph .id { font: 500 13px var(--f-mono); }
+.packet .pts { margin-left: auto; font: 13px var(--f-mono); color: var(--muted); }
+.items { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 14px; }
+.items li { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: baseline; }
+.items .iid { font: 12px var(--f-mono); color: var(--muted); }
+.items .sz { font: 12px var(--f-mono); color: var(--muted); }
+
+.worker { gap: 14px; }
+.worker .wh { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+.worker .wh h3 { font: 600 18px var(--f-display); }
+.worker .wh .el { margin-left: auto; font: 13px var(--f-mono); color: var(--muted); }
+.phases { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+.phases span { font-size: 11px; text-align: center; padding: 4px 2px; border-radius: 4px; background: var(--track); color: var(--muted); }
+.phases span.done { background: var(--ok-soft); color: var(--ink); }
+.phases span.now { background: var(--accent); color: var(--panel); font-weight: 600; }
+.wi { display: grid; grid-template-columns: auto 1fr auto; gap: 2px 10px; font-size: 14px; align-items: baseline; }
+.wi .iid { font: 12px var(--f-mono); color: var(--muted); }
+.wi .st { font-size: 12px; color: var(--muted); text-align: right; }
+.timeline { display: grid; gap: 4px; }
+.tl { display: grid; grid-template-columns: minmax(90px, 140px) 1fr; gap: 8px; align-items: center; font: 12px var(--f-mono); color: var(--muted); }
+.tl .lane { position: relative; height: 10px; background: var(--track); border-radius: 3px; }
+.tl .lane i { position: absolute; top: 0; bottom: 0; border-radius: 3px; background: var(--accent); opacity: .75; }
+.tl .lane i.open { opacity: 1; background: repeating-linear-gradient(90deg, var(--accent) 0 6px, var(--accent-soft) 6px 10px); }
+.wf { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 13px var(--f-mono); color: var(--muted); }
+.wf b { color: var(--ink); font-weight: 500; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font: 600 12px var(--f-body); color: var(--muted); text-transform: uppercase; letter-spacing: .06em; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td.n { font-family: var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; }
+th.n { text-align: right; }
+
+.empty { color: var(--muted); font-size: 14px; }
+footer { color: var(--muted); font-size: 12px; padding-block: 0 32px; }
+@media (max-width: 520px) {
+  .head .meta { margin-left: 0; }
+  .lede .big { font-size: 28px; }
+  .phases span { font-size: 10px; }
+}
+@media (prefers-reduced-motion: no-preference) { .bar > i { transition: width .4s ease; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="head">
+      <h1 id="project-name">Project Hub</h1>
+      <span id="hub-pill" class="pill">loading</span>
+      <div class="meta"><span id="updated" class="mono">checking for updates</span></div>
+    </div>
+    <nav aria-label="Levels">
+      <a href="#project" data-view="project">Project</a>
+      <a href="#hub" data-view="hub">Hub</a>
+      <a href="#workers" data-view="workers">Workers<span class="count" id="worker-count"></span></a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="banners"></div>
+  <main>
+    <section class="level" id="view-project" aria-label="Project"></section>
+    <section class="level" id="view-hub" aria-label="Hub" hidden></section>
+    <section class="level" id="view-workers" aria-label="Workers" hidden></section>
+  </main>
+  <footer>Refreshes every minute from <span class="mono">hub-state.json</span>, which the project-hub mod writes. Transcripts, prompts and file paths are never published.</footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var STATE_URL = "hub-state.json";
+  var STALE_MIN = 15;
+  var data = null;
+
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function minsSince(iso, now) { return Math.max(0, Math.round(((now || Date.now()) - new Date(iso).getTime()) / 60000)); }
+  function dur(m) { m = Math.round(m); if (m < 60) return m + " min"; var h = Math.floor(m / 60), r = m % 60; if (h < 48) return h + " h" + (r ? " " + r + " min" : ""); return Math.round(h / 24) + " days"; }
+  function ago(iso, now) { var m = minsSince(iso, now); return m < 1 ? "just now" : dur(m) + " ago"; }
+  function until(iso) { var m = Math.round((new Date(iso).getTime() - Date.now()) / 60000); return m <= 0 ? "now" : "in " + dur(m); }
+  function fmtTok(n) { if (n >= 1e6) return (n / 1e6).toFixed(n >= 1e7 ? 0 : 2) + "M"; if (n >= 1e3) return Math.round(n / 1e3) + "k"; return String(n); }
+  function usd(n) { return "$" + Number(n).toFixed(2); }
+  function day(iso) { return new Date(iso + (iso.length === 10 ? "T12:00:00" : "")).toLocaleDateString(undefined, { day: "numeric", month: "short" }); }
+  function sum(a, f) { return a.reduce(function (t, x) { return t + f(x); }, 0); }
+
+  var STATE_TONE = {
+    "running": "acc", "building": "acc", "merging": "acc", "design round": "acc",
+    "waiting on hub": "warn", "waiting on you": "warn", "waiting": "warn", "with you": "warn", "parked": "warn", "held": "warn", "final parity": "warn",
+    "ready to merge": "ok", "ready to test": "ok", "green": "ok", "idle": "", "queued": "", "stopped": "bad", "red": "bad"
+  };
+  function pill(text) { return '<span class="pill ' + (STATE_TONE[text] || "") + '">' + esc(text) + "</span>"; }
+
+  // ---------- Project ----------
+  function burnup(points) {
+    if (!points || points.length < 2) return '<p class="empty">The chart starts after two days of work.</p>';
+    var W = 640, H = 220, L = 44, R = 12, T = 12, B = 28;
+    var max = Math.max.apply(null, points.map(function (p) { return p.total; }));
+    var step = Math.pow(10, Math.floor(Math.log10(max))) / 2; while (max / step > 5) step *= 2;
+    var top = Math.ceil(max / step) * step;
+    var x = function (i) { return L + i * (W - L - R) / (points.length - 1); };
+    var y = function (v) { return T + (H - T - B) * (1 - v / top); };
+    var grid = "", lbl = "";
+    for (var v = 0; v <= top; v += step) { grid += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(v) + '" y2="' + y(v) + '"/>'; lbl += '<text x="' + (L - 8) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + v + "</text>"; }
+    var every = Math.ceil(points.length / 6), xl = "";
+    points.forEach(function (p, i) { var lastI = points.length - 1; if ((i % every === 0 && lastI - i >= every / 2) || i === lastI) xl += '<text x="' + x(i) + '" y="' + (H - 8) + '" text-anchor="' + (i === lastI ? "end" : i === 0 ? "start" : "middle") + '">' + esc(day(p.date)) + "</text>"; });
+    var line = function (f) { return points.map(function (p, i) { return (i ? "L" : "M") + x(i).toFixed(1) + " " + y(f(p)).toFixed(1); }).join(" "); };
+    var area = line(function (p) { return p.done; }) + " L" + x(points.length - 1) + " " + y(0) + " L" + x(0) + " " + y(0) + " Z";
+    var last = points[points.length - 1];
+    return '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Points done against total scope, per day">' +
+      '<g class="grid">' + grid + "</g>" + lbl + xl +
+      '<path d="' + area + '" fill="var(--accent)" fill-opacity=".12"/>' +
+      '<path d="' + line(function (p) { return p.total; }) + '" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="4 4"/>' +
+      '<path d="' + line(function (p) { return p.done; }) + '" fill="none" stroke="var(--accent)" stroke-width="2.2"/>' +
+      '<circle cx="' + x(points.length - 1) + '" cy="' + y(last.done) + '" r="4" fill="var(--accent)"/></svg>' +
+      '<div class="legend"><span style="--sw:var(--accent)">Points done</span><span style="--sw:var(--muted)">Total scope</span></div>';
+  }
+
+  function renderProject(d) {
+    var p = d.project, done = sum(p.components, function (c) { return c.pointsDone; }), left = sum(p.components, function (c) { return c.pointsRemaining; });
+    var pct = done + left ? Math.round(100 * done / (done + left)) : 0;
+    var comps = p.components.map(function (c) {
+      var t = c.pointsDone + c.pointsRemaining, w = t ? Math.round(100 * c.pointsDone / t) : 0;
+      return '<div class="comp"><span class="name">' + esc(c.name) + '</span><div class="bar' + (c.state === "ready to test" ? " ok" : "") + '"><i style="width:' + w + '%"></i></div>' +
+        '<span class="fig">' + c.pointsDone + " / " + t + " pts</span>" +
+        '<span class="state">' + pill(c.state) + ' <span class="chip">' + c.itemsRemaining + " items left</span></span></div>";
+    }).join("");
+    var waits = (p.waitingOnPeople || []).slice().sort(function (a, b) { return new Date(a.since) - new Date(b.since); }).map(function (w) {
+      return '<li class="wait"><span class="who">' + esc(w.who) + "</span><span>" + esc(w.what) + '</span><span class="since">' + esc(dur(minsSince(w.since))) + '</span><span class="ref">' + esc(w.ref) + "</span></li>";
+    }).join("") || '<li class="empty">Nothing is waiting on anyone.</li>';
+    var ms = (p.milestones || []).map(function (m) {
+      return '<li class="wait"><span class="chip">' + (m.kind === "actual" ? "done" : "forecast") + "</span><span>" + esc(m.name) + '</span><span class="since">' + esc(day(m.date)) + "</span></li>";
+    }).join("");
+    $("view-project").innerHTML =
+      '<div class="panel"><h2>On track?</h2><div class="lede"><span class="big num">' + pct + '%</span><span class="sub"><span class="num">' + done + "</span> of <span class=\"num\">" + (done + left) + "</span> points done · phase: " + esc(p.phase) + "</span></div>" +
+      '<div class="stats"><div class="stat"><div class="v">' + esc(day(p.forecast.likely)) + '</div><div class="k">Likely finish</div></div>' +
+      '<div class="stat"><div class="v">' + esc(day(p.forecast.optimistic)) + '</div><div class="k">Best case</div></div>' +
+      '<div class="stat"><div class="v">' + esc(day(p.forecast.pessimistic)) + '</div><div class="k">Worst case</div></div>' +
+      '<div class="stat"><div class="v">' + (p.waitingOnPeople || []).length + '</div><div class="k">Waiting on people</div></div></div></div>' +
+      '<div class="grid"><div class="panel"><h2>Waiting on people</h2><ul class="plain">' + waits + "</ul></div>" +
+      '<div class="panel"><h2>Components</h2><div class="rows">' + comps + "</div></div></div>" +
+      '<div class="grid"><div class="panel"><h2>Burn-up</h2>' + burnup(p.burnup) + "</div>" +
+      '<div class="panel"><h2>Milestones</h2><ul class="plain">' + ms + "</ul></div></div>";
+  }
+
+  // ---------- Hub ----------
+  function gauge(label, g, park) {
+    var tone = g.percentUsed >= park ? "bad" : g.percentUsed >= park - 15 ? "warn" : "ok";
+    return '<div class="gauge"><div class="top"><span>' + label + '</span><span class="mono">' + g.percentUsed + "% · resets " + esc(until(g.resetsAt)) + "</span></div>" +
+      '<div class="bar ' + tone + '"><i style="width:' + Math.min(100, g.percentUsed) + '%"></i><span class="mark" style="left:' + park + '%" title="Work parks here"></span></div></div>';
+  }
+  function dailyBars(rows) {
+    if (!rows || !rows.length) return '<p class="empty">No days recorded yet.</p>';
+    var W = 960, H = 200, L = 36, R = 8, T = 10, B = 26, max = Math.max.apply(null, rows.map(function (r) { return r.points; })) || 1;
+    var step = max > 20 ? 10 : 5, top = Math.ceil(max / step) * step, bw = (W - L - R) / rows.length;
+    var y = function (v) { return T + (H - T - B) * (1 - v / top); }, out = '<g class="grid">';
+    for (var v = 0; v <= top; v += step) out += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(v) + '" y2="' + y(v) + '"/>';
+    out += "</g>";
+    for (v = 0; v <= top; v += step) out += '<text x="' + (L - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + v + "</text>";
+    rows.forEach(function (r, i) {
+      var x = L + i * bw + bw * 0.18, w = bw * 0.64, last = i === rows.length - 1;
+      out += '<rect x="' + x.toFixed(1) + '" y="' + y(r.points).toFixed(1) + '" width="' + w.toFixed(1) + '" height="' + (y(0) - y(r.points)).toFixed(1) + '" rx="2" fill="var(--accent)" fill-opacity="' + (last ? 1 : 0.45) + '"><title>' + esc(day(r.date)) + ": " + r.points + " pts, " + fmtTok(r.tokens) + " tokens, " + usd(r.costUsd) + "</title></rect>";
+      if ((rows.length - 1 - i) % 2 === 0) out += '<text x="' + (x + w / 2).toFixed(1) + '" y="' + (H - 8) + '" text-anchor="middle">' + esc(day(r.date)) + "</text>";
+    });
+    return '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Points merged per day">' + out + "</svg>";
+  }
+  function renderHub(d) {
+    var h = d.hub, park = h.limits.parkAtPercent || 90;
+    var period = function (label, p) {
+      return '<div class="panel"><h2>' + label + '</h2><div class="stats">' +
+        '<div class="stat"><div class="v">' + p.packetsMerged + '</div><div class="k">Packets merged</div></div>' +
+        '<div class="stat"><div class="v">' + p.points + '</div><div class="k">Points</div></div>' +
+        '<div class="stat"><div class="v">' + fmtTok(p.tokens) + '</div><div class="k">Tokens</div></div>' +
+        '<div class="stat"><div class="v">' + usd(p.costUsd) + '</div><div class="k">Est. cost</div></div></div>' +
+        '<div class="wf">Waiting: <span>hub <b>' + dur(p.minutesWaiting.hub) + "</b></span><span>you <b>" + dur(p.minutesWaiting.you) + "</b></span><span>usage limit <b>" + dur(p.minutesWaiting.limit) + "</b></span></div></div>";
+    };
+    var q = (d.queue || []).map(function (c) {
+      return '<div class="queue-comp"><h3>' + esc(c.component) + '</h3><div class="queue">' + c.packets.map(function (pk) {
+        return '<div class="packet"><div class="ph"><span class="id">' + esc(pk.id) + "</span>" + pill(pk.state) + (pk.kind !== "orchestrated" ? ' <span class="chip">' + esc(pk.kind) + "</span>" : "") +
+          '<span class="pts">' + sum(pk.items, function (i) { return i.size || 0; }) + ' pts</span></div><ul class="items">' + pk.items.map(function (i) {
+            return '<li><span class="iid">' + esc(i.id) + "</span><span>" + esc(i.title || "") + '</span><span class="sz">' + (i.size || "?") + "</span></li>";
+          }).join("") + "</ul></div>";
+      }).join("") + "</div></div>";
+    }).join("") || '<p class="empty">The queue is empty.</p>';
+    var t = h.tests || {};
+    $("view-hub").innerHTML =
+      '<div class="grid"><div class="panel"><h2>Hub</h2><div class="lede"><span class="big">' + esc(h.state) + '</span><span class="sub">' + (h.state === "parked" && h.resumesAt ? "resumes " + esc(until(h.resumesAt)) : (d.workers || []).length + " live workers") + "</span></div>" +
+      gauge("5-hour limit", h.limits.fiveHour, park) + gauge("Weekly limit", h.limits.sevenDay, park) +
+      '<div class="wf"><span>Work parks at <b>' + park + "%</b></span></div></div>" +
+      '<div class="panel"><h2>Per point, last 7 days</h2><div class="stats"><div class="stat"><div class="v">' + fmtTok(h.perPoint.tokens) + '</div><div class="k">Tokens</div></div>' +
+      '<div class="stat"><div class="v">' + h.perPoint.minutes + ' min</div><div class="k">Wall time</div></div><div class="stat"><div class="v">' + usd(h.perPoint.costUsd) + '</div><div class="k">Est. cost</div></div></div>' +
+      '<div class="wf"><span>Last full test run <b>' + esc(t.lastFull ? ago(t.lastFull.at) : "never") + "</b></span>" + (t.lastFull ? pill(t.lastFull.result) : "") + "<span>Known reds <b>" + (t.knownReds || 0) + "</b></span></div></div></div>" +
+      '<div class="grid">' + period("Today", h.today) + period("This week", h.week) + "</div>" +
+      '<div class="panel"><h2>Points merged per day</h2>' + dailyBars(h.daily) + "</div>" +
+      '<div class="panel"><h2>Queue</h2><div class="grid">' + q + "</div></div>";
+  }
+
+  // ---------- Workers ----------
+  var PHASES = ["Developer", "Reviewer", "Parity", "Integration", "Finalizers"];
+  var DIRECT = ["Change", "Checks", "Report", "Merge", "Done"];
+  function phaseStrip(w) {
+    var list = w.kind === "direct" ? DIRECT : PHASES, at = list.indexOf(w.phase);
+    return '<div class="phases" aria-label="Phase: ' + esc(w.phase) + '">' + list.map(function (p, i) {
+      return '<span class="' + (i < at ? "done" : i === at ? "now" : "") + '">' + p + "</span>";
+    }).join("") + "</div>";
+  }
+  function timeline(w) {
+    var steps = w.steps || [];
+    if (!steps.length) return "";
+    var t0 = new Date(w.startedAt).getTime(), now = Date.now(), gen = new Date(data.generatedAt).getTime();
+    var end = Math.max(gen, ...steps.map(function (s) { return s.end ? new Date(s.end).getTime() : gen; }));
+    var span = Math.max(1, end - t0);
+    return '<div class="timeline">' + steps.map(function (s) {
+      var a = (new Date(s.start).getTime() - t0) / span * 100, b = ((s.end ? new Date(s.end).getTime() : end) - t0) / span * 100;
+      return '<div class="tl"><span>' + esc(s.name) + '</span><div class="lane"><i class="' + (s.end ? "" : "open") + '" style="left:' + a.toFixed(1) + "%;width:" + Math.max(1.5, b - a).toFixed(1) + '%"></i></div></div>';
+    }).join("") + "</div>";
+  }
+  function renderWorkers(d) {
+    var ws = d.workers || [];
+    var cards = ws.map(function (w) {
+      return '<article class="panel worker" id="worker-' + esc(w.id) + '"><div class="wh"><h3>' + esc(w.packetId) + "</h3>" + pill(w.state) + (w.kind !== "orchestrated" ? '<span class="chip">' + esc(w.kind) + "</span>" : "") +
+        '<span class="el">' + esc(dur(minsSince(w.startedAt, new Date(d.generatedAt).getTime()))) + "</span></div>" +
+        '<div class="wf"><span>' + esc(w.component) + "</span><span>phase <b>" + esc(w.phase) + "</b></span></div>" + phaseStrip(w) +
+        '<div class="rows">' + w.items.map(function (i) {
+          return '<div class="wi"><span class="iid">' + esc(i.id) + "</span><span>" + esc(i.title || "") + ' <span class="chip">' + i.size + " pts</span></span><span class=\"st\">" + esc(i.phase) + " · " + esc(i.status) + "</span></div>";
+        }).join("") + "</div>" + timeline(w) +
+        '<div class="wf"><span>tokens <b>' + fmtTok(w.tokens) + "</b></span><span>cost <b>" + usd(w.costUsd) + "</b></span><span>review loops <b>" + w.loops + "</b></span><span>escalations <b>" + w.escalations + "</b></span><span>commits <b>" + w.commits + "</b></span></div></article>";
+    }).join("") || '<div class="panel"><p class="empty">No live workers. The next packet starts when the hub dispatches it.</p></div>';
+    var recent = (d.recent || []).map(function (r) {
+      return "<tr><td class=\"mono\">" + esc(r.packetId) + "</td><td>" + esc(r.component) + "</td><td>" + esc(r.kind) + '</td><td class="n">' + r.items + '</td><td class="n">' + r.points + '</td><td class="n">' + dur(r.minutes) + '</td><td class="n">' + fmtTok(r.tokens) + '</td><td class="n">' + esc(ago(r.mergedAt, new Date(d.generatedAt).getTime())) + "</td></tr>";
+    }).join("");
+    $("view-workers").innerHTML = '<div class="grid">' + cards + "</div>" +
+      '<div class="panel"><h2>Finished packets</h2>' + (recent ? '<div class="table-wrap"><table><thead><tr><th>Packet</th><th>Component</th><th>Kind</th><th class="n">Items</th><th class="n">Points</th><th class="n">Time</th><th class="n">Tokens</th><th class="n">Merged</th></tr></thead><tbody>' + recent + "</tbody></table></div>" : '<p class="empty">None yet.</p>') + "</div>";
+  }
+
+  // ---------- Shell ----------
+  function renderAll() {
+    if (!data) return;
+    $("project-name").textContent = data.project.name || "Project Hub";
+    document.title = (data.project.name || "Project") + " · Project Hub Status";
+    var hp = $("hub-pill"); hp.className = "pill " + (STATE_TONE[data.hub.state] || ""); hp.textContent = "hub " + data.hub.state;
+    $("worker-count").textContent = (data.workers || []).length;
+    var m = minsSince(data.generatedAt);
+    $("updated").textContent = "updated " + ago(data.generatedAt);
+    var b = "";
+    if (data.sample) b += '<div class="banner sample">This is example data from the stash. The real page shows the hub\'s own figures once the mod publishes them.</div>';
+    if (!data.sample && m >= STALE_MIN) b += '<div class="banner stale">No update for ' + esc(dur(m)) + ". The hub session may be closed or the machine asleep; workers stop with it.</div>";
+    $("banners").innerHTML = b;
+    renderProject(data); renderHub(data); renderWorkers(data);
+  }
+  function show() {
+    var h = (location.hash || "#project").slice(1), view = h.indexOf("worker-") === 0 ? "workers" : h;
+    if (["project", "hub", "workers"].indexOf(view) < 0) view = "project";
+    ["project", "hub", "workers"].forEach(function (v) { $("view-" + v).hidden = v !== view; });
+    document.querySelectorAll("nav a").forEach(function (a) { if (a.dataset.view === view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    if (h.indexOf("worker-") === 0) { var el = $(h); if (el) el.scrollIntoView({ block: "start" }); }
+  }
+  function load() {
+    fetch(STATE_URL + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error(r.status); return r.json();
+    }).then(function (j) { data = j; renderAll(); show(); }).catch(function () {
+      $("updated").textContent = data ? "update failed, showing " + ago(data.generatedAt) : "could not load hub-state.json";
+    });
+  }
+  window.addEventListener("hashchange", show);
+  show(); load();
+  setInterval(load, 60000);
+  setInterval(function () { if (data) $("updated").textContent = "updated " + ago(data.generatedAt); }, 30000);
+})();
+</script>
+</body>
+</html>
