@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T06:48+11:00",
+  "generatedAt": "2026-11-23T06:50+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -54,7 +54,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 1,
+        "percentUsed": 2,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -66,8 +66,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1473612,
+      "costUsd": 2.24,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -77,8 +77,8 @@
     "week": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 245622583,
-      "costUsd": 227.41,
+      "tokens": 247096195,
+      "costUsd": 229.65,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -86,9 +86,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8187419,
+      "tokens": 8236540,
       "minutes": 8,
-      "costUsd": 7.58
+      "costUsd": 7.66
     },
     "daily": [
       {
@@ -172,8 +172,8 @@
       {
         "date": "2026-11-23",
         "points": 0,
-        "tokens": 0,
-        "costUsd": 0
+        "tokens": 1473612,
+        "costUsd": 2.24
       }
     ],
     "tests": {
@@ -192,7 +192,7 @@
         {
           "id": "shell-g7",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-F-008",
@@ -219,7 +219,7 @@
         {
           "id": "idp-g2",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-003",
@@ -251,7 +251,7 @@
         {
           "id": "component-library-g1",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "COMPONENT-LIBRARY-F-001",
@@ -271,7 +271,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Finalizers",
+      "phase": "Live stack pass (r37)",
       "items": [
         {
           "id": "IDP-F-003",
@@ -357,6 +357,11 @@
           "name": "Finalizers (PMBook+sweep, Handoff, Revision+Changelog+Runbook, Graphify)",
           "start": "2026-11-22T21:20+11:00",
           "end": null
+        },
+        {
+          "name": "Live stack pass (r37)",
+          "start": "2026-11-23T06:48+11:00",
+          "end": null
         }
       ],
       "loops": 0,
@@ -372,7 +377,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Park",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "SHELL-F-008",
@@ -446,6 +451,16 @@
           "name": "Park requested",
           "start": "2026-11-22T21:26+11:00",
           "end": null
+        },
+        {
+          "name": "Integration re-gate (post-merge)",
+          "start": "2026-11-23T06:48+11:00",
+          "end": "2026-11-23T06:49+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-23T06:50+11:00",
+          "end": null
         }
       ],
       "loops": 0,
@@ -461,21 +476,27 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T21:26+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-001",
           "title": "Component library plugin project",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer LIBRARY-F-001",
+          "start": "2026-11-23T06:49+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 903991,
-      "costUsd": 0.86,
+      "tokens": 1744329,
+      "costUsd": 1.81,
       "commits": 0
     }
   ],
