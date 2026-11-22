@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:47+11:00",
+  "generatedAt": "2026-11-23T08:49+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,11 +60,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 55,
+        "percentUsed": 56,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 33,
+        "percentUsed": 34,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 187623756,
-      "costUsd": 173.45,
+      "tokens": 192114125,
+      "costUsd": 178.13,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 433246339,
-      "costUsd": 400.86,
+      "tokens": 437736708,
+      "costUsd": 405.53,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6189233,
+      "tokens": 6253382,
       "minutes": 31,
-      "costUsd": 5.73
+      "costUsd": 5.79
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 187623756,
-        "costUsd": 173.45
+        "tokens": 192114125,
+        "costUsd": 178.13
       }
     ],
     "tests": {
@@ -401,8 +401,8 @@
       ],
       "loops": 0,
       "escalations": 6,
-      "tokens": 51959776,
-      "costUsd": 49.01,
+      "tokens": 54433242,
+      "costUsd": 51.91,
       "commits": 0
     },
     {
@@ -412,7 +412,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-028",
@@ -426,7 +426,7 @@
           "title": "Shared UI building blocks (@shell/ui)",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "fail loop 1: hand-back §11.10 misses two exports (code fine: ui 36/36, shell 211/211, lint, build green). developer retry started."
         },
         {
           "id": "SHELL-F-026",
@@ -467,13 +467,13 @@
         {
           "name": "Reviewer F-020",
           "start": "2026-11-23T08:46+11:00",
-          "end": null
+          "end": "2026-11-23T08:48+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 25032014,
-      "costUsd": 22.57,
+      "tokens": 27048917,
+      "costUsd": 24.35,
       "commits": 0
     }
   ],
