@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:59+11:00",
+  "generatedAt": "2026-11-23T09:00+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -368,6 +368,30 @@
       "escalations": 1,
       "tokens": 31802935,
       "costUsd": 28.11,
+      "commits": 0
+    },
+    {
+      "id": "w-20",
+      "packetId": "idp-g4",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-23T09:00+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-B-002",
+          "title": "Two tabs refreshing at once sign each other out",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
