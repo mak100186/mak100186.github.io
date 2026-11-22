@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:14+11:00",
+  "generatedAt": "2026-11-23T09:16+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 71,
+        "percentUsed": 72,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 57,
-      "tokens": 248024197,
-      "costUsd": 228.8,
+      "tokens": 249712425,
+      "costUsd": 230.65,
       "minutesWaiting": {
         "hub": 2,
         "you": 18,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 14,
       "points": 87,
-      "tokens": 493646780,
-      "costUsd": 456.2,
+      "tokens": 495335008,
+      "costUsd": 458.06,
       "minutesWaiting": {
         "hub": 48,
         "you": 120,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5674101,
+      "tokens": 5693506,
       "minutes": 26,
-      "costUsd": 5.24
+      "costUsd": 5.27
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 57,
-        "tokens": 248024197,
-        "costUsd": 228.8
+        "tokens": 249712425,
+        "costUsd": 230.65
       }
     ],
     "tests": {
@@ -354,14 +354,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-015",
           "title": "Profile page",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "running"
+          "phase": "Reviewer retry 1",
+          "status": "pass"
         },
         {
           "id": "SHELL-F-018",
@@ -402,13 +402,23 @@
         {
           "name": "Reviewer F-015",
           "start": "2026-11-23T09:13+11:00",
+          "end": "2026-11-23T09:14+11:00"
+        },
+        {
+          "name": "Developer retry 1 F-015",
+          "start": "2026-11-23T09:14+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer retry 1 F-015",
+          "start": "2026-11-23T09:16+11:00",
+          "end": "2026-11-23T09:16+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 11156620,
-      "costUsd": 10.53,
+      "tokens": 12844848,
+      "costUsd": 12.39,
       "commits": 0
     }
   ],
