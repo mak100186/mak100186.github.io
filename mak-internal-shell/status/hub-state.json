@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:32+11:00",
+  "generatedAt": "2026-11-23T06:48+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-11-27",
-      "optimistic": "2026-11-26",
-      "pessimistic": "2026-11-29"
+      "likely": "2026-12-03",
+      "optimistic": "2026-12-01",
+      "pessimistic": "2026-12-06"
     },
     "components": [
       {
@@ -50,12 +50,12 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 63,
-        "resetsAt": "2026-11-22T13:10:00.000Z"
+        "percentUsed": 0,
+        "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
         "percentUsed": 26,
@@ -64,13 +64,13 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 7,
-      "points": 30,
-      "tokens": 245622583,
-      "costUsd": 227.41,
+      "packetsMerged": 0,
+      "points": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "minutesWaiting": {
-        "hub": 46,
-        "you": 102,
+        "hub": 0,
+        "you": 0,
         "limit": 0
       }
     },
@@ -91,12 +91,6 @@
       "costUsd": 7.58
     },
     "daily": [
-      {
-        "date": "2026-11-09",
-        "points": 0,
-        "tokens": 0,
-        "costUsd": 0
-      },
       {
         "date": "2026-11-10",
         "points": 0,
@@ -174,6 +168,12 @@
         "points": 30,
         "tokens": 245622583,
         "costUsd": 227.41
+      },
+      {
+        "date": "2026-11-23",
+        "points": 0,
+        "tokens": 0,
+        "costUsd": 0
       }
     ],
     "tests": {
@@ -265,11 +265,11 @@
   ],
   "workers": [
     {
-      "id": "w-10",
+      "id": "w-13",
       "packetId": "idp-g2",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
       "phase": "Finalizers",
       "items": [
