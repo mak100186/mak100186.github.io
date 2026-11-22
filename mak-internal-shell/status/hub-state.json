@@ -54,7 +54,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 0,
+        "percentUsed": 1,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -366,11 +366,11 @@
       "commits": 0
     },
     {
-      "id": "w-11",
+      "id": "w-14",
       "packetId": "shell-g7",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
       "phase": "Park",
       "items": [
