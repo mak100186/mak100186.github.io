@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 38,
-      "tokens": 131411576,
-      "costUsd": 123.13,
+      "tokens": 131524925,
+      "costUsd": 123.2,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 11,
       "points": 68,
-      "tokens": 377034159,
-      "costUsd": 350.54,
+      "tokens": 377147508,
+      "costUsd": 350.61,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,7 +103,7 @@
       }
     },
     "perPoint": {
-      "tokens": 5544620,
+      "tokens": 5546287,
       "minutes": 32,
       "costUsd": 5.16
     },
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 38,
-        "tokens": 131411576,
-        "costUsd": 123.13
+        "tokens": 131524925,
+        "costUsd": 123.2
       }
     ],
     "tests": {
@@ -367,6 +367,37 @@
       "escalations": 5,
       "tokens": 29655168,
       "costUsd": 28.13,
+      "commits": 0
+    },
+    {
+      "id": "w-18",
+      "packetId": "direct-1",
+      "component": "shell, idp",
+      "kind": "direct",
+      "state": "running",
+      "startedAt": "2026-11-23T08:14+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "HUB-make-e2e",
+          "title": "make e2e target",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "HUB-make-down-db",
+          "title": "make down removes the Compose db container (keeps the volume)",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
