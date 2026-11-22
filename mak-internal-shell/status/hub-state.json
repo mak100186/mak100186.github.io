@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:42+11:00",
+  "generatedAt": "2026-11-22T20:44+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -74,11 +74,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 35,
+        "percentUsed": 36,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 22,
+        "percentUsed": 23,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -86,8 +86,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 143185782,
-      "costUsd": 131.39,
+      "tokens": 146245733,
+      "costUsd": 134.13,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -97,8 +97,8 @@
     "week": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 143185782,
-      "costUsd": 131.39,
+      "tokens": 146245733,
+      "costUsd": 134.13,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -106,9 +106,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6225469,
+      "tokens": 6358510,
       "minutes": 7,
-      "costUsd": 5.71
+      "costUsd": 5.83
     },
     "daily": [
       {
@@ -192,8 +192,8 @@
       {
         "date": "2026-11-22",
         "points": 23,
-        "tokens": 143185782,
-        "costUsd": 131.39
+        "tokens": 146245733,
+        "costUsd": 134.13
       }
     ],
     "tests": {
@@ -294,8 +294,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4401570,
-      "costUsd": 4.8,
+      "tokens": 4542713,
+      "costUsd": 4.87,
       "commits": 0
     },
     {
@@ -305,7 +305,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-001",
@@ -334,13 +334,23 @@
         {
           "name": "Integration",
           "start": "2026-11-22T20:41+11:00",
+          "end": "2026-11-22T20:43+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-22T20:43+11:00",
+          "end": "2026-11-22T20:44+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-22T20:44+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4541601,
-      "costUsd": 5.19,
+      "tokens": 7060360,
+      "costUsd": 7.64,
       "commits": 0
     }
   ],
