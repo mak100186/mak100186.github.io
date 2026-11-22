@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:45+11:00",
+  "generatedAt": "2026-11-23T07:47+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 26,
-      "tokens": 83308715,
-      "costUsd": 75.7,
+      "tokens": 85814616,
+      "costUsd": 77.37,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 10,
       "points": 56,
-      "tokens": 328931298,
-      "costUsd": 303.11,
+      "tokens": 331437199,
+      "costUsd": 304.78,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,9 +103,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5873773,
+      "tokens": 5918521,
       "minutes": 37,
-      "costUsd": 5.41
+      "costUsd": 5.44
     },
     "daily": [
       {
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 26,
-        "tokens": 83308715,
-        "costUsd": 75.7
+        "tokens": 85814616,
+        "costUsd": 77.37
       }
     ],
     "tests": {
@@ -285,7 +285,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Stack window r55 held on 4203: F-012 Developer runs its e2e suite first (its identity fixture gives the signed-in session), then F-010 and F-019 parity. Will report when free.",
+      "phase": "Parity + F-012 Reviewer (parallel, on 4203)",
       "items": [
         {
           "id": "SHELL-F-010",
@@ -306,7 +306,7 @@
           "title": "Shell end-to-end test fixtures",
           "size": 3,
           "phase": "Developer",
-          "status": "running"
+          "status": "done"
         },
         {
           "id": "SHELL-F-025",
@@ -360,7 +360,7 @@
         {
           "name": "Developer F-012",
           "start": "2026-11-23T07:31+11:00",
-          "end": null
+          "end": "2026-11-23T07:46+11:00"
         },
         {
           "name": "Stack window r55 scope widened: F-012 e2e run + F-010 and F-019 parity in one window (parity will use F-012's identity fixture for a signed-in session)",
@@ -370,6 +370,11 @@
         {
           "name": "Stack window r55 held on 4203: F-012 Developer runs its e2e suite first (its identity fixture gives the signed-in session), then F-010 and F-019 parity. Will report when free.",
           "start": "2026-11-23T07:34+11:00",
+          "end": null
+        },
+        {
+          "name": "Parity + F-012 Reviewer (parallel, on 4203)",
+          "start": "2026-11-23T07:46+11:00",
           "end": null
         }
       ],
@@ -441,8 +446,8 @@
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 6486993,
-      "costUsd": 5.58,
+      "tokens": 8502516,
+      "costUsd": 6.96,
       "commits": 0
     }
   ],
