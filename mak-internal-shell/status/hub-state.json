@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:47+11:00",
+  "generatedAt": "2026-11-22T20:49+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-11-29",
-      "optimistic": "2026-11-28",
-      "pessimistic": "2026-12-01"
+      "likely": "2026-11-28",
+      "optimistic": "2026-11-27",
+      "pessimistic": "2026-11-30"
     },
     "components": [
       {
@@ -74,7 +74,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 37,
+        "percentUsed": 38,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -84,10 +84,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 5,
-      "points": 23,
-      "tokens": 147776053,
-      "costUsd": 136.65,
+      "packetsMerged": 6,
+      "points": 26,
+      "tokens": 149593423,
+      "costUsd": 138.19,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -95,10 +95,10 @@
       }
     },
     "week": {
-      "packetsMerged": 5,
-      "points": 23,
-      "tokens": 147776053,
-      "costUsd": 136.65,
+      "packetsMerged": 6,
+      "points": 26,
+      "tokens": 149593423,
+      "costUsd": 138.19,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -106,9 +106,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6425046,
+      "tokens": 5753593,
       "minutes": 7,
-      "costUsd": 5.94
+      "costUsd": 5.32
     },
     "daily": [
       {
@@ -191,14 +191,14 @@
       },
       {
         "date": "2026-11-22",
-        "points": 23,
-        "tokens": 147776053,
-        "costUsd": 136.65
+        "points": 26,
+        "tokens": 149593423,
+        "costUsd": 138.19
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-22T20:26+11:00",
+        "at": "2026-11-22T20:49+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -294,67 +294,105 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4542713,
-      "costUsd": 4.87,
+      "tokens": 4826407,
+      "costUsd": 5.03,
       "commits": 0
     },
     {
-      "id": "w-9",
-      "packetId": "idp-g1",
+      "id": "idp-g2",
+      "packetId": "idp-g2",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "Start",
+      "state": "queued",
+      "startedAt": "2026-11-22T20:48+11:00",
+      "phase": "",
       "items": [
         {
-          "id": "IDP-F-001",
-          "title": "Idp.Api and idp database",
+          "id": "IDP-F-003",
+          "title": "Data model, settings and first-admin seeding",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-004",
+          "title": "Signing keys, token issuing and JWKS",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-005",
+          "title": "Sign-in endpoint and blocking",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-006",
+          "title": "Refresh, sign-out and effective permissions",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
         }
       ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-22T20:30+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-001",
-          "start": "2026-11-22T20:31+11:00",
-          "end": "2026-11-22T20:40+11:00"
-        },
-        {
-          "name": "Reviewer F-001",
-          "start": "2026-11-22T20:40+11:00",
-          "end": "2026-11-22T20:41+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-22T20:41+11:00",
-          "end": "2026-11-22T20:43+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-22T20:43+11:00",
-          "end": "2026-11-22T20:44+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-22T20:44+11:00",
-          "end": "2026-11-22T20:46+11:00"
-        }
-      ],
+      "steps": [],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 8590680,
-      "costUsd": 10.16,
-      "commits": 6
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "shell-g7",
+      "packetId": "shell-g7",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-22T20:49+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-008",
+          "title": "Identity bridge and sign-in slot",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-009",
+          "title": "Plugin Loader",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-011",
+          "title": "Message bus",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g1",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-22T20:47+11:00",
+      "items": 1,
+      "points": 3,
+      "minutes": 18,
+      "tokens": 8590680
+    },
     {
       "packetId": "shell-g3",
       "component": "shell",
