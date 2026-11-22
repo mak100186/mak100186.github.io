@@ -59,7 +59,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 4,
+        "percentUsed": 5,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -71,8 +71,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 12,
-      "tokens": 12210877,
-      "costUsd": 13.68,
+      "tokens": 12788245,
+      "costUsd": 14.44,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -82,8 +82,8 @@
     "week": {
       "packetsMerged": 8,
       "points": 42,
-      "tokens": 257833460,
-      "costUsd": 241.09,
+      "tokens": 258410828,
+      "costUsd": 241.85,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -91,9 +91,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6138892,
+      "tokens": 6152639,
       "minutes": 20,
-      "costUsd": 5.74
+      "costUsd": 5.76
     },
     "daily": [
       {
@@ -177,8 +177,8 @@
       {
         "date": "2026-11-23",
         "points": 12,
-        "tokens": 12210877,
-        "costUsd": 13.68
+        "tokens": 12788245,
+        "costUsd": 14.44
       }
     ],
     "tests": {
@@ -411,16 +411,16 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4873934,
-      "costUsd": 4.75,
+      "tokens": 5451302,
+      "costUsd": 5.51,
       "commits": 0
     },
     {
-      "id": "shell-g8",
+      "id": "w-16",
       "packetId": "shell-g8",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "queued",
+      "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
       "phase": "",
       "items": [
