@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:34+11:00",
+  "generatedAt": "2026-11-22T19:36+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -81,8 +81,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 94698723,
-      "costUsd": 85.34,
+      "tokens": 99264455,
+      "costUsd": 89.04,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -92,8 +92,8 @@
     "week": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 94698723,
-      "costUsd": 85.34,
+      "tokens": 99264455,
+      "costUsd": 89.04,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -101,9 +101,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6313248,
+      "tokens": 6617630,
       "minutes": 7,
-      "costUsd": 5.69
+      "costUsd": 5.94
     },
     "daily": [
       {
@@ -187,13 +187,13 @@
       {
         "date": "2026-11-22",
         "points": 15,
-        "tokens": 94698723,
-        "costUsd": 85.34
+        "tokens": 99264455,
+        "costUsd": 89.04
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-22T19:04+11:00",
+        "at": "2026-11-22T19:36+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -258,7 +258,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T19:15+11:00",
-      "phase": "Reviewer",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-004",
@@ -272,7 +272,7 @@
           "title": "Theming lint rules for plugin projects",
           "size": 3,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-023",
@@ -311,13 +311,18 @@
         {
           "name": "Reviewer F-005",
           "start": "2026-11-22T19:33+11:00",
+          "end": "2026-11-22T19:35+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-22T19:36+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 12702234,
-      "costUsd": 12.82,
+      "tokens": 15378903,
+      "costUsd": 14.94,
       "commits": 0
     }
   ],
