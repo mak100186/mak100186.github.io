@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:29+11:00",
+  "generatedAt": "2026-11-23T08:31+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -64,7 +64,7 @@
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 32,
+        "percentUsed": 33,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 161296563,
-      "costUsd": 148.94,
+      "tokens": 162601241,
+      "costUsd": 150.19,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 406919146,
-      "costUsd": 376.35,
+      "tokens": 408223824,
+      "costUsd": 377.59,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5813131,
+      "tokens": 5831769,
       "minutes": 31,
-      "costUsd": 5.38
+      "costUsd": 5.39
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 161296563,
-        "costUsd": 148.94
+        "tokens": 162601241,
+        "costUsd": 150.19
       }
     ],
     "tests": {
@@ -397,7 +397,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-028",
@@ -410,15 +410,15 @@
           "id": "SHELL-F-020",
           "title": "Shared UI building blocks (@shell/ui)",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-026",
           "title": "Dev proxy to plugin ports",
           "size": 2,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass (code). committed da8ed6c; main merged (aca4215). live check waits for the stack window (r78, make e2e)."
         },
         {
           "id": "SHELL-F-027",
@@ -442,13 +442,18 @@
         {
           "name": "Reviewer F-026",
           "start": "2026-11-23T08:28+11:00",
+          "end": "2026-11-23T08:30+11:00"
+        },
+        {
+          "name": "Developer F-020",
+          "start": "2026-11-23T08:30+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 11006918,
-      "costUsd": 10.58,
+      "tokens": 12311596,
+      "costUsd": 11.82,
       "commits": 0
     }
   ],
