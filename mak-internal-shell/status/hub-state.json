@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T06:52+11:00",
+  "generatedAt": "2026-11-23T06:54+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -66,8 +66,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 5189975,
-      "costUsd": 6.88,
+      "tokens": 9628274,
+      "costUsd": 11.63,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -77,8 +77,8 @@
     "week": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 250812558,
-      "costUsd": 234.29,
+      "tokens": 255250857,
+      "costUsd": 239.03,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -86,9 +86,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8360419,
+      "tokens": 8508362,
       "minutes": 8,
-      "costUsd": 7.81
+      "costUsd": 7.97
     },
     "daily": [
       {
@@ -172,8 +172,8 @@
       {
         "date": "2026-11-23",
         "points": 0,
-        "tokens": 5189975,
-        "costUsd": 6.88
+        "tokens": 9628274,
+        "costUsd": 11.63
       }
     ],
     "tests": {
@@ -465,8 +465,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 26209347,
-      "costUsd": 27.05,
+      "tokens": 27780539,
+      "costUsd": 29.42,
       "commits": 0
     },
     {
@@ -476,13 +476,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T21:26+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-001",
           "title": "Component library plugin project",
           "size": 2,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -490,13 +490,18 @@
         {
           "name": "Developer LIBRARY-F-001",
           "start": "2026-11-23T06:49+11:00",
+          "end": "2026-11-23T06:53+11:00"
+        },
+        {
+          "name": "Reviewer LIBRARY-F-001",
+          "start": "2026-11-23T06:53+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 1744329,
-      "costUsd": 1.81,
+      "escalations": 1,
+      "tokens": 3964590,
+      "costUsd": 3.8,
       "commits": 0
     }
   ],
