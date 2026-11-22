@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:26+11:00",
+  "generatedAt": "2026-11-22T19:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -59,11 +59,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 11,
+        "percentUsed": 13,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 19,
+        "percentUsed": 20,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -71,8 +71,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 8,
-      "tokens": 65988723,
-      "costUsd": 60.51,
+      "tokens": 76891317,
+      "costUsd": 70.88,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -82,8 +82,8 @@
     "week": {
       "packetsMerged": 2,
       "points": 8,
-      "tokens": 65988723,
-      "costUsd": 60.51,
+      "tokens": 76891317,
+      "costUsd": 70.88,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -91,9 +91,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8248590,
+      "tokens": 9611415,
       "minutes": 6,
-      "costUsd": 7.56
+      "costUsd": 8.86
     },
     "daily": [
       {
@@ -177,8 +177,8 @@
       {
         "date": "2026-11-22",
         "points": 8,
-        "tokens": 65988723,
-        "costUsd": 60.51
+        "tokens": 76891317,
+        "costUsd": 70.88
       }
     ],
     "tests": {
@@ -264,14 +264,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T19:06+11:00",
-      "phase": "Finalizers",
+      "phase": "Stack window r13: make up/status/down",
       "items": [
         {
           "id": "SHELL-F-006",
           "title": "Local and cloud development setup",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Stack window r13: make up/status/down",
+          "status": "running"
         },
         {
           "id": "SHELL-F-007",
@@ -320,13 +320,18 @@
         {
           "name": "Finalizers",
           "start": "2026-11-22T19:25+11:00",
+          "end": "2026-11-22T19:28+11:00"
+        },
+        {
+          "name": "Stack window r13: make up/status/down F-006",
+          "start": "2026-11-22T19:28+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 1,
-      "tokens": 9339979,
-      "costUsd": 12.21,
+      "tokens": 12030357,
+      "costUsd": 14.48,
       "commits": 0
     },
     {
@@ -336,13 +341,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T19:06+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-021",
           "title": "Spike: dashboard grid approach",
           "size": 2,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -360,13 +365,18 @@
         {
           "name": "Developer F-021",
           "start": "2026-11-22T19:16+11:00",
+          "end": "2026-11-22T19:27+11:00"
+        },
+        {
+          "name": "Reviewer F-021",
+          "start": "2026-11-22T19:28+11:00",
           "end": null
         }
       ],
       "loops": 1,
-      "escalations": 0,
-      "tokens": 3687804,
-      "costUsd": 3.91,
+      "escalations": 1,
+      "tokens": 8759357,
+      "costUsd": 9.24,
       "commits": 0
     },
     {
@@ -397,7 +407,7 @@
           "title": "Shared style classes",
           "size": 3,
           "phase": "Developer",
-          "status": "running"
+          "status": "built"
         }
       ],
       "steps": [
@@ -419,13 +429,13 @@
         {
           "name": "Developer F-023",
           "start": "2026-11-22T19:22+11:00",
-          "end": null
+          "end": "2026-11-22T19:28+11:00"
         }
       ],
       "loops": 0,
-      "escalations": 2,
-      "tokens": 5312350,
-      "costUsd": 5.16,
+      "escalations": 3,
+      "tokens": 7247624,
+      "costUsd": 7.23,
       "commits": 0
     }
   ],
