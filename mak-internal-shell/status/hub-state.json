@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:14+11:00",
+  "generatedAt": "2026-11-23T08:15+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -71,7 +71,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 39,
+        "percentUsed": 40,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 38,
-      "tokens": 131524925,
-      "costUsd": 123.2,
+      "tokens": 136652478,
+      "costUsd": 126.69,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 11,
       "points": 68,
-      "tokens": 377147508,
-      "costUsd": 350.61,
+      "tokens": 382275061,
+      "costUsd": 354.09,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,9 +103,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5546287,
+      "tokens": 5621692,
       "minutes": 32,
-      "costUsd": 5.16
+      "costUsd": 5.21
     },
     "daily": [
       {
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 38,
-        "tokens": 131524925,
-        "costUsd": 123.2
+        "tokens": 136652478,
+        "costUsd": 126.69
       }
     ],
     "tests": {
@@ -365,8 +365,8 @@
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 29655168,
-      "costUsd": 28.13,
+      "tokens": 33865069,
+      "costUsd": 30.63,
       "commits": 0
     },
     {
@@ -388,6 +388,51 @@
         {
           "id": "HUB-make-down-db",
           "title": "make down removes the Compose db container (keeps the volume)",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "w-19",
+      "packetId": "shell-g9",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-23T08:15+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-028",
+          "title": "Busy-button spinner size",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-020",
+          "title": "Shared UI building blocks (@shell/ui)",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-026",
+          "title": "Dev proxy to plugin ports",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-027",
+          "title": "Plugin icon in the manifest",
           "size": 1,
           "phase": "",
           "status": "queued"
