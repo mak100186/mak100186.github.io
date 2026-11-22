@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:36+11:00",
+  "generatedAt": "2026-11-23T09:38+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
       "likely": "2026-11-26",
-      "optimistic": "2026-11-26",
+      "optimistic": "2026-11-25",
       "pessimistic": "2026-11-27"
     },
     "components": [
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 80,
+        "percentUsed": 81,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -70,10 +70,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 7,
-      "points": 57,
-      "tokens": 276307393,
-      "costUsd": 254.3,
+      "packetsMerged": 8,
+      "points": 66,
+      "tokens": 281809575,
+      "costUsd": 260.63,
       "minutesWaiting": {
         "hub": 4,
         "you": 18,
@@ -81,10 +81,10 @@
       }
     },
     "week": {
-      "packetsMerged": 14,
-      "points": 87,
-      "tokens": 521929976,
-      "costUsd": 481.7,
+      "packetsMerged": 15,
+      "points": 96,
+      "tokens": 527432158,
+      "costUsd": 488.03,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5999195,
-      "minutes": 26,
-      "costUsd": 5.54
+      "tokens": 5494085,
+      "minutes": 24,
+      "costUsd": 5.08
     },
     "daily": [
       {
@@ -177,9 +177,9 @@
       },
       {
         "date": "2026-11-23",
-        "points": 57,
-        "tokens": 276307393,
-        "costUsd": 254.3
+        "points": 66,
+        "tokens": 281809575,
+        "costUsd": 260.63
       }
     ],
     "tests": {
@@ -256,112 +256,6 @@
     }
   ],
   "workers": [
-    {
-      "id": "w-19",
-      "packetId": "shell-g9",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-F-028",
-          "title": "Busy-button spinner size",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass; parity by render check (18x18, 0.13% vs material diameter=18; no shell screen draws k4 until f-020). committed on branch as 1c0120a (r74)."
-        },
-        {
-          "id": "SHELL-F-020",
-          "title": "Shared UI building blocks (@shell/ui)",
-          "size": 5,
-          "phase": "Parity (retry 2, K4)",
-          "status": "pass: all five k4 buttons, light and dark, match the board exactly (outlined export csv icon 18x18 at 17,9; label 71.8x20; button 139.8x36). the parity agent stalled after measuring, so the worker read its saved k4-compare results and stopped it. 4203 server stopped; the window is free."
-        },
-        {
-          "id": "SHELL-F-026",
-          "title": "Dev proxy to plugin ports",
-          "size": 2,
-          "phase": "make e2e (live in-shell check)",
-          "status": "pass 8/8 (incl. component library through the dev proxy, no css of its own); servers stopped. first real make e2e: works."
-        },
-        {
-          "id": "SHELL-F-027",
-          "title": "Plugin icon in the manifest",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass (20/20 frame-menu spec). no template change; parity by unit tests. committed 2d997c8."
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-028",
-          "start": "2026-11-23T08:17+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer F-028",
-          "start": "2026-11-23T08:22+11:00",
-          "end": "2026-11-23T08:23+11:00"
-        },
-        {
-          "name": "Reviewer F-026",
-          "start": "2026-11-23T08:28+11:00",
-          "end": "2026-11-23T08:30+11:00"
-        },
-        {
-          "name": "Developer F-020",
-          "start": "2026-11-23T08:30+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer F-020",
-          "start": "2026-11-23T08:46+11:00",
-          "end": "2026-11-23T08:48+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-23T08:50+11:00",
-          "end": "2026-11-23T08:52+11:00"
-        },
-        {
-          "name": "make e2e (live in-shell check) F-026",
-          "start": "2026-11-23T08:51+11:00",
-          "end": "2026-11-23T08:52+11:00"
-        },
-        {
-          "name": "Parity F-020",
-          "start": "2026-11-23T08:53+11:00",
-          "end": "2026-11-23T09:07+11:00"
-        },
-        {
-          "name": "Parity (retry 2, K4) F-020",
-          "start": "2026-11-23T09:09+11:00",
-          "end": "2026-11-23T09:28+11:00"
-        },
-        {
-          "name": "Integration pass 2",
-          "start": "2026-11-23T09:29+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-23T09:30+11:00",
-          "end": "2026-11-23T09:31+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-23T09:32+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 52912872,
-      "costUsd": 49.83,
-      "commits": 0
-    },
     {
       "id": "w-21",
       "packetId": "shell-g10",
@@ -452,12 +346,22 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 26456549,
-      "costUsd": 24.06,
+      "tokens": 26892015,
+      "costUsd": 25.4,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g9",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-23T09:38+11:00",
+      "items": 4,
+      "points": 9,
+      "minutes": 83,
+      "tokens": 55613777
+    },
     {
       "packetId": "idp-g4",
       "component": "idp",
