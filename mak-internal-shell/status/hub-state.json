@@ -299,12 +299,12 @@
       "commits": 0
     },
     {
-      "id": "idp-g2",
+      "id": "w-10",
       "packetId": "idp-g2",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "queued",
-      "startedAt": "2026-11-22T20:48+11:00",
+      "state": "running",
+      "startedAt": "2026-11-22T20:49+11:00",
       "phase": "",
       "items": [
         {
