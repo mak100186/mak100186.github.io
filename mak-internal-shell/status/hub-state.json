@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:59+11:00",
+  "generatedAt": "2026-11-23T08:01+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -71,7 +71,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 30,
+        "percentUsed": 31,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 26,
-      "tokens": 100683686,
-      "costUsd": 92.64,
+      "tokens": 106433339,
+      "costUsd": 98.59,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 10,
       "points": 56,
-      "tokens": 346306269,
-      "costUsd": 320.04,
+      "tokens": 352055922,
+      "costUsd": 326,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,9 +103,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6184041,
+      "tokens": 6286713,
       "minutes": 37,
-      "costUsd": 5.72
+      "costUsd": 5.82
     },
     "daily": [
       {
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 26,
-        "tokens": 100683686,
-        "costUsd": 92.64
+        "tokens": 106433339,
+        "costUsd": 98.59
       }
     ],
     "tests": {
@@ -285,13 +285,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Developer retry 1 (chevron)",
+      "phase": "Reviewer + Parity re-check (retry 1)",
       "items": [
         {
           "id": "SHELL-F-010",
           "title": "Shell frame",
           "size": 5,
-          "phase": "Developer retry 1 (chevron)",
+          "phase": "Reviewer + Parity re-check (retry 1)",
           "status": "running"
         },
         {
@@ -381,12 +381,17 @@
           "name": "Developer retry 1 (chevron) F-010",
           "start": "2026-11-23T07:56+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer + Parity re-check (retry 1) F-010",
+          "start": "2026-11-23T07:59+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 43926155,
-      "costUsd": 41.05,
+      "tokens": 44651591,
+      "costUsd": 41.52,
       "commits": 0
     },
     {
@@ -396,7 +401,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-F-002",
@@ -409,7 +414,7 @@
           "id": "IDP-F-007",
           "title": "./auth AuthProvider session",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -456,13 +461,18 @@
         {
           "name": "Developer F-007",
           "start": "2026-11-23T07:51+11:00",
+          "end": "2026-11-23T08:00+11:00"
+        },
+        {
+          "name": "Reviewer F-007",
+          "start": "2026-11-23T08:00+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 12148255,
-      "costUsd": 10.79,
+      "tokens": 17172472,
+      "costUsd": 16.27,
       "commits": 0
     }
   ],
