@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:15+11:00",
+  "generatedAt": "2026-11-22T21:17+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 54,
+        "percentUsed": 56,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 209335677,
-      "costUsd": 193.55,
+      "tokens": 214471962,
+      "costUsd": 198.28,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 209335677,
-      "costUsd": 193.55,
+      "tokens": 214471962,
+      "costUsd": 198.28,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8051372,
+      "tokens": 8248922,
       "minutes": 7,
-      "costUsd": 7.44
+      "costUsd": 7.63
     },
     "daily": [
       {
@@ -197,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 209335677,
-        "costUsd": 193.55
+        "tokens": 214471962,
+        "costUsd": 198.28
       }
     ],
     "tests": {
@@ -300,7 +300,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "SHELL-F-017",
@@ -346,13 +346,18 @@
         {
           "name": "Integration",
           "start": "2026-11-22T21:15+11:00",
+          "end": "2026-11-22T21:17+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-22T21:17+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 29373956,
-      "costUsd": 25.93,
+      "tokens": 30996608,
+      "costUsd": 27.69,
       "commits": 0
     },
     {
@@ -362,7 +367,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Reviewer retry 1",
+      "phase": "Integration (merged main fast-forward to 428eaa2; scope component: make check C=idp && make build C=idp)",
       "items": [
         {
           "id": "IDP-F-003",
@@ -390,7 +395,7 @@
           "title": "Refresh, sign-out and effective permissions",
           "size": 3,
           "phase": "Reviewer retry 1",
-          "status": "running"
+          "status": "pass (loop 1)"
         }
       ],
       "steps": [
@@ -432,13 +437,18 @@
         {
           "name": "Reviewer retry 1 F-006",
           "start": "2026-11-22T21:15+11:00",
+          "end": "2026-11-22T21:16+11:00"
+        },
+        {
+          "name": "Integration (merged main fast-forward to 428eaa2; scope component: make check C=idp && make build C=idp)",
+          "start": "2026-11-22T21:16+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 13622239,
-      "costUsd": 15.43,
+      "tokens": 14941625,
+      "costUsd": 16.67,
       "commits": 0
     },
     {
@@ -448,7 +458,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Developer",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-008",
@@ -468,8 +478,8 @@
           "id": "SHELL-F-011",
           "title": "Message bus",
           "size": 2,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -497,12 +507,22 @@
           "name": "Developer F-011",
           "start": "2026-11-22T21:11+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer F-011",
+          "start": "2026-11-22T21:16+11:00",
+          "end": "2026-11-22T21:16+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-22T21:17+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 12144537,
-      "costUsd": 13.46,
+      "tokens": 14338784,
+      "costUsd": 15.19,
       "commits": 0
     }
   ],
