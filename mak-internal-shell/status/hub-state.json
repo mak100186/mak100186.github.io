@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:33+11:00",
+  "generatedAt": "2026-11-22T20:35+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -74,7 +74,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 31,
+        "percentUsed": 32,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -86,8 +86,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 134458942,
-      "costUsd": 122.08,
+      "tokens": 138437860,
+      "costUsd": 126,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -97,8 +97,8 @@
     "week": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 134458942,
-      "costUsd": 122.08,
+      "tokens": 138437860,
+      "costUsd": 126,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -106,9 +106,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5846041,
+      "tokens": 6019037,
       "minutes": 7,
-      "costUsd": 5.31
+      "costUsd": 5.48
     },
     "daily": [
       {
@@ -192,8 +192,8 @@
       {
         "date": "2026-11-22",
         "points": 23,
-        "tokens": 134458942,
-        "costUsd": 122.08
+        "tokens": 138437860,
+        "costUsd": 126
       }
     ],
     "tests": {
@@ -264,28 +264,38 @@
           "id": "SHELL-F-017",
           "title": "Plugin project template — design driven by the shell",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-024",
           "title": "make graph and make ports on Linux",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
         {
           "name": "Developer F-024",
           "start": "2026-11-22T20:31+11:00",
+          "end": "2026-11-22T20:34+11:00"
+        },
+        {
+          "name": "Reviewer F-024",
+          "start": "2026-11-22T20:34+11:00",
+          "end": "2026-11-22T20:34+11:00"
+        },
+        {
+          "name": "Developer F-017",
+          "start": "2026-11-22T20:34+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 3978918,
+      "costUsd": 3.92,
       "commits": 0
     },
     {
