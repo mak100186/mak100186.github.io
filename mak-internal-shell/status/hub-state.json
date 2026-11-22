@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:35+11:00",
+  "generatedAt": "2026-11-23T08:37+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 50,
+        "percentUsed": 51,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 167044464,
-      "costUsd": 155.1,
+      "tokens": 167548119,
+      "costUsd": 155.64,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 412667047,
-      "costUsd": 382.5,
+      "tokens": 413170702,
+      "costUsd": 383.05,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5895244,
+      "tokens": 5902439,
       "minutes": 31,
-      "costUsd": 5.46
+      "costUsd": 5.47
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 167044464,
-        "costUsd": 155.1
+        "tokens": 167548119,
+        "costUsd": 155.64
       }
     ],
     "tests": {
@@ -291,7 +291,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity (retry 1)",
       "items": [
         {
           "id": "IDP-F-002",
@@ -311,8 +311,8 @@
           "id": "IDP-F-008",
           "title": "Sign-in screen",
           "size": 5,
-          "phase": "Developer (retry 1)",
-          "status": "done"
+          "phase": "Parity (retry 1)",
+          "status": "running"
         },
         {
           "id": "IDP-F-011",
@@ -387,12 +387,17 @@
           "name": "Developer (retry 1) F-008",
           "start": "2026-11-23T08:32+11:00",
           "end": "2026-11-23T08:34+11:00"
+        },
+        {
+          "name": "Parity (retry 1) F-008",
+          "start": "2026-11-23T08:35+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 6,
-      "tokens": 44439625,
-      "costUsd": 41.61,
+      "tokens": 44943280,
+      "costUsd": 42.15,
       "commits": 0
     },
     {
