@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:31+11:00",
+  "generatedAt": "2026-11-22T20:33+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -74,7 +74,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 30,
+        "percentUsed": 31,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -86,8 +86,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 131879678,
-      "costUsd": 120.1,
+      "tokens": 134458942,
+      "costUsd": 122.08,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -97,8 +97,8 @@
     "week": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 131879678,
-      "costUsd": 120.1,
+      "tokens": 134458942,
+      "costUsd": 122.08,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -106,9 +106,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5733899,
+      "tokens": 5846041,
       "minutes": 7,
-      "costUsd": 5.22
+      "costUsd": 5.31
     },
     "daily": [
       {
@@ -192,8 +192,8 @@
       {
         "date": "2026-11-22",
         "points": 23,
-        "tokens": 131879678,
-        "costUsd": 120.1
+        "tokens": 134458942,
+        "costUsd": 122.08
       }
     ],
     "tests": {
@@ -258,7 +258,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-017",
@@ -271,13 +271,19 @@
           "id": "SHELL-F-024",
           "title": "make graph and make ports on Linux",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer F-024",
+          "start": "2026-11-22T20:31+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 1,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
@@ -289,14 +295,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "Start",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-001",
           "title": "Idp.Api and idp database",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -304,12 +310,17 @@
           "name": "Start",
           "start": "2026-11-22T20:30+11:00",
           "end": null
+        },
+        {
+          "name": "Developer F-001",
+          "start": "2026-11-22T20:31+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "escalations": 1,
+      "tokens": 1210249,
+      "costUsd": 1.22,
       "commits": 0
     }
   ],
