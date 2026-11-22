@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:39+11:00",
+  "generatedAt": "2026-11-23T08:41+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 51,
+        "percentUsed": 52,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 168340454,
-      "costUsd": 156.65,
+      "tokens": 170110504,
+      "costUsd": 157.85,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 413963037,
-      "costUsd": 384.06,
+      "tokens": 415733087,
+      "costUsd": 385.25,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5913758,
+      "tokens": 5939044,
       "minutes": 31,
-      "costUsd": 5.49
+      "costUsd": 5.5
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 168340454,
-        "costUsd": 156.65
+        "tokens": 170110504,
+        "costUsd": 157.85
       }
     ],
     "tests": {
@@ -289,9 +289,9 @@
       "packetId": "idp-g3",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on you",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Parity (retry 1)",
+      "phase": "Integration (pass 1)",
       "items": [
         {
           "id": "IDP-F-002",
@@ -311,8 +311,8 @@
           "id": "IDP-F-008",
           "title": "Sign-in screen",
           "size": 5,
-          "phase": "Parity (retry 1)",
-          "status": "running"
+          "phase": "Parity (retry 1); browser window released, port 4204 server down",
+          "status": "pass (in-shell check done via r67 harness; deferred: r65 logo, r70 spinner, r79 height)"
         },
         {
           "id": "IDP-F-011",
@@ -392,12 +392,17 @@
           "name": "Parity (retry 1) F-008",
           "start": "2026-11-23T08:35+11:00",
           "end": null
+        },
+        {
+          "name": "Integration (pass 1)",
+          "start": "2026-11-23T08:40+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 6,
-      "tokens": 45735615,
-      "costUsd": 43.16,
+      "tokens": 47166942,
+      "costUsd": 44.16,
       "commits": 0
     },
     {
