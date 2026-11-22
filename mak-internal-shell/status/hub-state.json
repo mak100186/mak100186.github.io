@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:49+11:00",
+  "generatedAt": "2026-11-22T20:51+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -20,9 +20,9 @@
       },
       {
         "name": "idp",
-        "pointsDone": 0,
-        "pointsRemaining": 63,
-        "itemsRemaining": 20,
+        "pointsDone": 3,
+        "pointsRemaining": 60,
+        "itemsRemaining": 19,
         "state": "building"
       },
       {
@@ -36,7 +36,7 @@
     "burnup": [
       {
         "date": "2026-11-22",
-        "done": 23,
+        "done": 26,
         "total": 175
       }
     ],
@@ -66,6 +66,11 @@
         "name": "Shell theme, theming lint and shared classes on main",
         "date": "2026-11-22",
         "kind": "actual"
+      },
+      {
+        "name": "First .NET code: Idp.Api and its database on main",
+        "date": "2026-11-22",
+        "kind": "actual"
       }
     ]
   },
@@ -74,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 38,
+        "percentUsed": 40,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -86,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 149593423,
-      "costUsd": 138.19,
+      "tokens": 153691298,
+      "costUsd": 140.8,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -97,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 149593423,
-      "costUsd": 138.19,
+      "tokens": 153691298,
+      "costUsd": 140.8,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -106,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5753593,
+      "tokens": 5911204,
       "minutes": 7,
-      "costUsd": 5.32
+      "costUsd": 5.42
     },
     "daily": [
       {
@@ -192,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 149593423,
-        "costUsd": 138.19
+        "tokens": 153691298,
+        "costUsd": 140.8
       }
     ],
     "tests": {
@@ -225,6 +230,28 @@
               "size": 1
             }
           ]
+        },
+        {
+          "id": "shell-g7",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "SHELL-F-008",
+              "title": "Identity bridge and sign-in slot",
+              "size": 5
+            },
+            {
+              "id": "SHELL-F-009",
+              "title": "Plugin Loader",
+              "size": 5
+            },
+            {
+              "id": "SHELL-F-011",
+              "title": "Message bus",
+              "size": 2
+            }
+          ]
         }
       ]
     },
@@ -232,13 +259,28 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-g1",
+          "id": "idp-g2",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "IDP-F-001",
-              "title": "Idp.Api and idp database",
+              "id": "IDP-F-003",
+              "title": "Data model, settings and first-admin seeding",
+              "size": 3
+            },
+            {
+              "id": "IDP-F-004",
+              "title": "Signing keys, token issuing and JWKS",
+              "size": 3
+            },
+            {
+              "id": "IDP-F-005",
+              "title": "Sign-in endpoint and blocking",
+              "size": 3
+            },
+            {
+              "id": "IDP-F-006",
+              "title": "Refresh, sign-out and effective permissions",
               "size": 3
             }
           ]
