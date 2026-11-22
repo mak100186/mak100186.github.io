@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:28+11:00",
+  "generatedAt": "2026-11-22T20:29+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -77,11 +77,11 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 28,
+        "percentUsed": 29,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -93,8 +93,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 128945097,
-      "costUsd": 118.22,
+      "tokens": 131111686,
+      "costUsd": 119.64,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -104,8 +104,8 @@
     "week": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 128945097,
-      "costUsd": 118.22,
+      "tokens": 131111686,
+      "costUsd": 119.64,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -113,9 +113,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5606309,
+      "tokens": 5700508,
       "minutes": 7,
-      "costUsd": 5.14
+      "costUsd": 5.2
     },
     "daily": [
       {
@@ -199,8 +199,8 @@
       {
         "date": "2026-11-22",
         "points": 23,
-        "tokens": 128945097,
-        "costUsd": 118.22
+        "tokens": 131111686,
+        "costUsd": 119.64
       }
     ],
     "tests": {
@@ -257,7 +257,63 @@
       "packets": []
     }
   ],
-  "workers": [],
+  "workers": [
+    {
+      "id": "w-8",
+      "packetId": "shell-g6",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-22T20:29+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-017",
+          "title": "Plugin project template — design driven by the shell",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-024",
+          "title": "make graph and make ports on Linux",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "idp-g1",
+      "packetId": "idp-g1",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-22T20:29+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-F-001",
+          "title": "Idp.Api and idp database",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    }
+  ],
   "recent": [
     {
       "packetId": "shell-g3",
