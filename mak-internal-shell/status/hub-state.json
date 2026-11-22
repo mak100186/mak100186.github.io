@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T06:59+11:00",
+  "generatedAt": "2026-11-23T07:01+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -66,7 +66,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 6,
+        "percentUsed": 8,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -78,8 +78,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 12,
-      "tokens": 19445831,
-      "costUsd": 19.19,
+      "tokens": 20809091,
+      "costUsd": 20.4,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -89,8 +89,8 @@
     "week": {
       "packetsMerged": 8,
       "points": 42,
-      "tokens": 265068414,
-      "costUsd": 246.6,
+      "tokens": 266431674,
+      "costUsd": 247.81,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6311153,
+      "tokens": 6343611,
       "minutes": 20,
-      "costUsd": 5.87
+      "costUsd": 5.9
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-23",
         "points": 12,
-        "tokens": 19445831,
-        "costUsd": 19.19
+        "tokens": 20809091,
+        "costUsd": 20.4
       }
     ],
     "tests": {
@@ -288,7 +288,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Live stack pass (r37)",
+      "phase": "Developer (fix r49)",
       "items": [
         {
           "id": "IDP-F-003",
@@ -308,8 +308,8 @@
           "id": "IDP-F-005",
           "title": "Sign-in endpoint and blocking",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass (loop 0)"
+          "phase": "Developer (fix r49)",
+          "status": "running"
         },
         {
           "id": "IDP-F-006",
@@ -379,6 +379,11 @@
           "name": "Live stack pass (r37)",
           "start": "2026-11-23T06:48+11:00",
           "end": null
+        },
+        {
+          "name": "Developer (fix r49) F-005",
+          "start": "2026-11-23T06:59+11:00",
+          "end": null
         }
       ],
       "loops": 0,
@@ -394,7 +399,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T21:26+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-001",
@@ -424,12 +429,17 @@
           "name": "Reviewer-Integration",
           "start": "2026-11-23T06:59+11:00",
           "end": null
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-23T07:00+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 2,
-      "tokens": 7352330,
-      "costUsd": 6.8,
+      "escalations": 3,
+      "tokens": 8328179,
+      "costUsd": 7.79,
       "commits": 0
     },
     {
@@ -439,14 +449,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-010",
           "title": "Shell frame",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-019",
@@ -466,11 +476,22 @@
           "id": "SHELL-F-025",
           "title": "Plugin generator adds tsconfig references",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer F-010",
+          "start": "2026-11-23T06:59+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer F-025",
+          "start": "2026-11-23T06:59+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
