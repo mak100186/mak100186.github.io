@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:29+11:00",
+  "generatedAt": "2026-11-22T20:31+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -23,7 +23,7 @@
         "pointsDone": 0,
         "pointsRemaining": 63,
         "itemsRemaining": 20,
-        "state": "waiting"
+        "state": "building"
       },
       {
         "name": "component-library",
@@ -40,14 +40,7 @@
         "total": 175
       }
     ],
-    "waitingOnPeople": [
-      {
-        "who": "you",
-        "what": "Restart Claude Code before the next packets start",
-        "ref": "restart",
-        "since": "2026-11-22T20:30+11:00"
-      }
-    ],
+    "waitingOnPeople": [],
     "milestones": [
       {
         "name": "Shell spike F-001 answered YES",
@@ -81,7 +74,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 29,
+        "percentUsed": 30,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -93,8 +86,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 131111686,
-      "costUsd": 119.64,
+      "tokens": 131879678,
+      "costUsd": 120.1,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -104,8 +97,8 @@
     "week": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 131111686,
-      "costUsd": 119.64,
+      "tokens": 131879678,
+      "costUsd": 120.1,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -113,9 +106,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5700508,
+      "tokens": 5733899,
       "minutes": 7,
-      "costUsd": 5.2
+      "costUsd": 5.22
     },
     "daily": [
       {
@@ -199,8 +192,8 @@
       {
         "date": "2026-11-22",
         "points": 23,
-        "tokens": 131111686,
-        "costUsd": 119.64
+        "tokens": 131879678,
+        "costUsd": 120.1
       }
     ],
     "tests": {
@@ -219,11 +212,11 @@
         {
           "id": "shell-g6",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-F-017",
-              "title": "Plugin template",
+              "title": "Plugin project template",
               "size": 3
             },
             {
@@ -241,7 +234,7 @@
         {
           "id": "idp-g1",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-001",
@@ -296,7 +289,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "",
+      "phase": "Start",
       "items": [
         {
           "id": "IDP-F-001",
@@ -306,7 +299,13 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-22T20:30+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
