@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:21+11:00",
+  "generatedAt": "2026-11-23T08:23+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 45,
+        "percentUsed": 46,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -70,10 +70,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 4,
-      "points": 38,
-      "tokens": 150754362,
-      "costUsd": 139.51,
+      "packetsMerged": 5,
+      "points": 40,
+      "tokens": 156130648,
+      "costUsd": 144.14,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -81,10 +81,10 @@
       }
     },
     "week": {
-      "packetsMerged": 11,
-      "points": 68,
-      "tokens": 396376945,
-      "costUsd": 366.92,
+      "packetsMerged": 12,
+      "points": 70,
+      "tokens": 401753231,
+      "costUsd": 371.55,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5829073,
-      "minutes": 32,
-      "costUsd": 5.4
+      "tokens": 5739332,
+      "minutes": 31,
+      "costUsd": 5.31
     },
     "daily": [
       {
@@ -177,9 +177,9 @@
       },
       {
         "date": "2026-11-23",
-        "points": 38,
-        "tokens": 150754362,
-        "costUsd": 139.51
+        "points": 40,
+        "tokens": 156130648,
+        "costUsd": 144.14
       }
     ],
     "tests": {
@@ -391,50 +391,19 @@
       "commits": 0
     },
     {
-      "id": "w-18",
-      "packetId": "direct-1",
-      "component": "shell, idp",
-      "kind": "direct",
-      "state": "running",
-      "startedAt": "2026-11-23T08:14+11:00",
-      "phase": "",
-      "items": [
-        {
-          "id": "HUB-make-e2e",
-          "title": "make e2e target",
-          "size": 1,
-          "phase": "",
-          "status": "queued"
-        },
-        {
-          "id": "HUB-make-down-db",
-          "title": "make down removes the Compose db container (keeps the volume)",
-          "size": 1,
-          "phase": "",
-          "status": "queued"
-        }
-      ],
-      "steps": [],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 1141566,
-      "costUsd": 0.97,
-      "commits": 0
-    },
-    {
       "id": "w-19",
       "packetId": "shell-g9",
       "component": "shell",
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-028",
           "title": "Busy-button spinner size",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -464,16 +433,31 @@
           "name": "Developer F-028",
           "start": "2026-11-23T08:17+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer F-028",
+          "start": "2026-11-23T08:22+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3316975,
-      "costUsd": 2.89,
+      "tokens": 6169517,
+      "costUsd": 5.96,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "direct-1",
+      "component": "shell, idp",
+      "kind": "direct",
+      "mergedAt": "2026-11-23T08:22+11:00",
+      "items": 2,
+      "points": 2,
+      "minutes": 8,
+      "tokens": 2052480
+    },
     {
       "packetId": "shell-g8",
       "component": "shell",
