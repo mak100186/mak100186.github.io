@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:25+11:00",
+  "generatedAt": "2026-11-23T08:27+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 157466775,
-      "costUsd": 145.4,
+      "tokens": 158163418,
+      "costUsd": 146.05,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 403089358,
-      "costUsd": 372.81,
+      "tokens": 403786001,
+      "costUsd": 373.46,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5758419,
+      "tokens": 5768371,
       "minutes": 31,
-      "costUsd": 5.33
+      "costUsd": 5.34
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 157466775,
-        "costUsd": 145.4
+        "tokens": 158163418,
+        "costUsd": 146.05
       }
     ],
     "tests": {
@@ -424,8 +424,8 @@
           "id": "SHELL-F-027",
           "title": "Plugin icon in the manifest",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Reviewer",
+          "status": "pass (20/20 frame-menu spec). no template change; parity by unit tests. committed 2d997c8."
         }
       ],
       "steps": [
@@ -442,8 +442,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 7505644,
-      "costUsd": 7.21,
+      "tokens": 8202287,
+      "costUsd": 7.87,
       "commits": 0
     }
   ],
