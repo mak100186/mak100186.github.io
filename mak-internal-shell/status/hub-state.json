@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:51+11:00",
+  "generatedAt": "2026-11-23T08:53+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 57,
+        "percentUsed": 58,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,29 +72,29 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 196326780,
-      "costUsd": 182.66,
+      "tokens": 202036098,
+      "costUsd": 186.68,
       "minutesWaiting": {
-        "hub": 1,
-        "you": 0,
+        "hub": 2,
+        "you": 13,
         "limit": 0
       }
     },
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 441949363,
-      "costUsd": 410.07,
+      "tokens": 447658681,
+      "costUsd": 414.09,
       "minutesWaiting": {
-        "hub": 47,
-        "you": 102,
+        "hub": 48,
+        "you": 114,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 6313562,
+      "tokens": 6395124,
       "minutes": 31,
-      "costUsd": 5.86
+      "costUsd": 5.92
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 196326780,
-        "costUsd": 182.66
+        "tokens": 202036098,
+        "costUsd": 186.68
       }
     ],
     "tests": {
@@ -289,9 +289,9 @@
       "packetId": "idp-g3",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on you",
+      "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Parity",
+      "phase": "Developer (retry 2, r82)",
       "items": [
         {
           "id": "IDP-F-002",
@@ -311,8 +311,8 @@
           "id": "IDP-F-008",
           "title": "Sign-in screen",
           "size": 5,
-          "phase": "Parity (retry 1); browser window released, port 4204 server down",
-          "status": "pass (in-shell check done via r67 harness; deferred: r65 logo, r70 spinner, r79 height)"
+          "phase": "Developer (retry 2, r82)",
+          "status": "running"
         },
         {
           "id": "IDP-F-011",
@@ -397,12 +397,17 @@
           "name": "Integration (pass 1)",
           "start": "2026-11-23T08:40+11:00",
           "end": "2026-11-23T08:43+11:00"
+        },
+        {
+          "name": "Developer (retry 2, r82) F-008",
+          "start": "2026-11-23T08:52+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 6,
-      "tokens": 55866311,
-      "costUsd": 54.47,
+      "escalations": 7,
+      "tokens": 58397305,
+      "costUsd": 56.03,
       "commits": 0
     },
     {
@@ -412,7 +417,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Integration",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-028",
@@ -425,15 +430,15 @@
           "id": "SHELL-F-020",
           "title": "Shared UI building blocks (@shell/ui)",
           "size": 5,
-          "phase": "Reviewer",
-          "status": "pass (loop 1). code committed; parity waits for the r78/r81 window."
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "SHELL-F-026",
           "title": "Dev proxy to plugin ports",
           "size": 2,
-          "phase": "Reviewer",
-          "status": "pass (code). committed da8ed6c; main merged (aca4215). live check waits for the stack window (r78, make e2e)."
+          "phase": "make e2e (live in-shell check)",
+          "status": "pass 8/8 (incl. component library through the dev proxy, no css of its own); servers stopped. first real make e2e: works."
         },
         {
           "id": "SHELL-F-027",
@@ -472,13 +477,23 @@
         {
           "name": "Integration",
           "start": "2026-11-23T08:50+11:00",
+          "end": "2026-11-23T08:52+11:00"
+        },
+        {
+          "name": "make e2e (live in-shell check) F-026",
+          "start": "2026-11-23T08:51+11:00",
+          "end": "2026-11-23T08:52+11:00"
+        },
+        {
+          "name": "Parity F-020",
+          "start": "2026-11-23T08:53+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 29488177,
-      "costUsd": 26.15,
+      "tokens": 31802935,
+      "costUsd": 28.11,
       "commits": 0
     }
   ],
