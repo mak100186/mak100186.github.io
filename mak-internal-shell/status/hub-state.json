@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:24+11:00",
+  "generatedAt": "2026-11-22T20:26+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-12-03",
-      "optimistic": "2026-12-01",
-      "pessimistic": "2026-12-07"
+      "likely": "2026-11-29",
+      "optimistic": "2026-11-28",
+      "pessimistic": "2026-12-02"
     },
     "components": [
       {
@@ -65,24 +65,24 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 27,
+        "percentUsed": 28,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 21,
+        "percentUsed": 22,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 4,
-      "points": 15,
-      "tokens": 122725441,
-      "costUsd": 112.48,
+      "packetsMerged": 5,
+      "points": 23,
+      "tokens": 125187398,
+      "costUsd": 115.85,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -90,10 +90,10 @@
       }
     },
     "week": {
-      "packetsMerged": 4,
-      "points": 15,
-      "tokens": 122725441,
-      "costUsd": 112.48,
+      "packetsMerged": 5,
+      "points": 23,
+      "tokens": 125187398,
+      "costUsd": 115.85,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -101,9 +101,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8181696,
+      "tokens": 5442930,
       "minutes": 7,
-      "costUsd": 7.5
+      "costUsd": 5.04
     },
     "daily": [
       {
@@ -186,14 +186,14 @@
       },
       {
         "date": "2026-11-22",
-        "points": 15,
-        "tokens": 122725441,
-        "costUsd": 112.48
+        "points": 23,
+        "tokens": 125187398,
+        "costUsd": 115.85
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-22T19:36+11:00",
+        "at": "2026-11-22T20:26+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -250,108 +250,18 @@
       "packets": []
     }
   ],
-  "workers": [
+  "workers": [],
+  "recent": [
     {
-      "id": "w-7",
       "packetId": "shell-g3",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-22T19:15+11:00",
-      "phase": "Waiting on the user's UI gate answers (r22 F-004, r23 F-023); head 652f14f, all gated and committed",
-      "items": [
-        {
-          "id": "SHELL-F-004",
-          "title": "Global Theme",
-          "size": 2,
-          "phase": "Parity",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-005",
-          "title": "Theming lint rules for plugin projects",
-          "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-023",
-          "title": "Shared style classes",
-          "size": 3,
-          "phase": "Parity",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-004",
-          "start": "2026-11-22T19:18+11:00",
-          "end": "2026-11-22T19:21+11:00"
-        },
-        {
-          "name": "Reviewer F-004",
-          "start": "2026-11-22T19:21+11:00",
-          "end": "2026-11-22T19:22+11:00"
-        },
-        {
-          "name": "Developer F-005",
-          "start": "2026-11-22T19:22+11:00",
-          "end": "2026-11-22T19:33+11:00"
-        },
-        {
-          "name": "Developer F-023",
-          "start": "2026-11-22T19:22+11:00",
-          "end": "2026-11-22T19:28+11:00"
-        },
-        {
-          "name": "Reviewer F-023",
-          "start": "2026-11-22T19:28+11:00",
-          "end": "2026-11-22T19:29+11:00"
-        },
-        {
-          "name": "Reviewer F-005",
-          "start": "2026-11-22T19:33+11:00",
-          "end": "2026-11-22T19:35+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-22T19:36+11:00",
-          "end": "2026-11-22T19:38+11:00"
-        },
-        {
-          "name": "Parity F-004",
-          "start": "2026-11-22T19:37+11:00",
-          "end": "2026-11-22T19:49+11:00"
-        },
-        {
-          "name": "Parity F-023",
-          "start": "2026-11-22T19:37+11:00",
-          "end": "2026-11-22T19:51+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-22T19:38+11:00",
-          "end": "2026-11-22T19:39+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-22T19:52+11:00",
-          "end": "2026-11-22T19:55+11:00"
-        },
-        {
-          "name": "Waiting on the user's UI gate answers (r22 F-004, r23 F-023); head 652f14f, all gated and committed",
-          "start": "2026-11-22T19:55+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 5,
-      "tokens": 37316794,
-      "costUsd": 37.45,
-      "commits": 26
-    }
-  ],
-  "recent": [
+      "mergedAt": "2026-11-22T20:24+11:00",
+      "items": 3,
+      "points": 8,
+      "minutes": 69,
+      "tokens": 37316794
+    },
     {
       "packetId": "shell-g5",
       "component": "shell",
