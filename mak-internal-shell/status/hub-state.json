@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:11+11:00",
+  "generatedAt": "2026-11-22T21:13+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 52,
+        "percentUsed": 53,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 198236896,
-      "costUsd": 182.06,
+      "tokens": 204123249,
+      "costUsd": 188.59,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 198236896,
-      "costUsd": 182.06,
+      "tokens": 204123249,
+      "costUsd": 188.59,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7624496,
+      "tokens": 7850894,
       "minutes": 7,
-      "costUsd": 7
+      "costUsd": 7.25
     },
     "daily": [
       {
@@ -197,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 198236896,
-        "costUsd": 182.06
+        "tokens": 204123249,
+        "costUsd": 188.59
       }
     ],
     "tests": {
@@ -346,8 +346,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 21829674,
-      "costUsd": 18.71,
+      "tokens": 25647074,
+      "costUsd": 22.9,
       "commits": 0
     },
     {
@@ -357,7 +357,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Developer",
+      "phase": "Developer retry 1",
       "items": [
         {
           "id": "IDP-F-003",
@@ -384,7 +384,7 @@
           "id": "IDP-F-006",
           "title": "Refresh, sign-out and effective permissions",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Developer retry 1",
           "status": "running"
         }
       ],
@@ -412,13 +412,23 @@
         {
           "name": "Developer F-006",
           "start": "2026-11-22T21:07+11:00",
+          "end": "2026-11-22T21:11+11:00"
+        },
+        {
+          "name": "Reviewer F-006",
+          "start": "2026-11-22T21:11+11:00",
+          "end": "2026-11-22T21:13+11:00"
+        },
+        {
+          "name": "Developer retry 1 F-006",
+          "start": "2026-11-22T21:13+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 12258254,
-      "costUsd": 13.62,
+      "tokens": 13361328,
+      "costUsd": 14.88,
       "commits": 0
     },
     {
@@ -428,7 +438,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-008",
@@ -442,14 +452,14 @@
           "title": "Plugin Loader",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-011",
           "title": "Message bus",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -471,13 +481,18 @@
         {
           "name": "Reviewer F-009",
           "start": "2026-11-22T21:10+11:00",
+          "end": "2026-11-22T21:11+11:00"
+        },
+        {
+          "name": "Developer F-011",
+          "start": "2026-11-22T21:11+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 9954023,
-      "costUsd": 11,
+      "tokens": 10919902,
+      "costUsd": 12.08,
       "commits": 0
     }
   ],
