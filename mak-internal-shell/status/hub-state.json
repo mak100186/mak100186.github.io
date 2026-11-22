@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:09+11:00",
+  "generatedAt": "2026-11-23T08:12+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-11-28",
-      "optimistic": "2026-11-27",
-      "pessimistic": "2026-11-29"
+      "likely": "2026-11-27",
+      "optimistic": "2026-11-26",
+      "pessimistic": "2026-11-28"
     },
     "components": [
       {
@@ -71,7 +71,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 36,
+        "percentUsed": 37,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -81,10 +81,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 3,
-      "points": 26,
-      "tokens": 117120973,
-      "costUsd": 108.6,
+      "packetsMerged": 4,
+      "points": 38,
+      "tokens": 128670988,
+      "costUsd": 121.33,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -92,10 +92,10 @@
       }
     },
     "week": {
-      "packetsMerged": 10,
-      "points": 56,
-      "tokens": 362743556,
-      "costUsd": 336.01,
+      "packetsMerged": 11,
+      "points": 68,
+      "tokens": 374293571,
+      "costUsd": 348.74,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,9 +103,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6477564,
-      "minutes": 37,
-      "costUsd": 6
+      "tokens": 5504317,
+      "minutes": 32,
+      "costUsd": 5.13
     },
     "daily": [
       {
@@ -188,9 +188,9 @@
       },
       {
         "date": "2026-11-23",
-        "points": 26,
-        "tokens": 117120973,
-        "costUsd": 108.6
+        "points": 38,
+        "tokens": 128670988,
+        "costUsd": 121.33
       }
     ],
     "tests": {
@@ -279,132 +279,6 @@
   ],
   "workers": [
     {
-      "id": "w-16",
-      "packetId": "shell-g8",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-F-010",
-          "title": "Shell frame",
-          "size": 5,
-          "phase": "Parity retry 1",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-019",
-          "title": "Plugin context: loading line, breadcrumb row, menu badges",
-          "size": 3,
-          "phase": "Parity",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-012",
-          "title": "Shell end-to-end test fixtures",
-          "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-025",
-          "title": "Plugin generator adds tsconfig references",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-010",
-          "start": "2026-11-23T06:59+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-025",
-          "start": "2026-11-23T06:59+11:00",
-          "end": "2026-11-23T07:02+11:00"
-        },
-        {
-          "name": "Reviewer F-025",
-          "start": "2026-11-23T07:02+11:00",
-          "end": "2026-11-23T07:02+11:00"
-        },
-        {
-          "name": "Reviewer F-010",
-          "start": "2026-11-23T07:12+11:00",
-          "end": "2026-11-23T07:14+11:00"
-        },
-        {
-          "name": "Developer F-019",
-          "start": "2026-11-23T07:14+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer F-019",
-          "start": "2026-11-23T07:25+11:00",
-          "end": "2026-11-23T07:26+11:00"
-        },
-        {
-          "name": "Developer retry 1 (+ r57) F-019",
-          "start": "2026-11-23T07:26+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer retry 1 (+ r57 re-review) F-019",
-          "start": "2026-11-23T07:30+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-012",
-          "start": "2026-11-23T07:31+11:00",
-          "end": "2026-11-23T07:46+11:00"
-        },
-        {
-          "name": "Stack window r55 scope widened: F-012 e2e run + F-010 and F-019 parity in one window (parity will use F-012's identity fixture for a signed-in session)",
-          "start": "2026-11-23T07:31+11:00",
-          "end": null
-        },
-        {
-          "name": "Stack window r55 held on 4203: F-012 Developer runs its e2e suite first (its identity fixture gives the signed-in session), then F-010 and F-019 parity. Will report when free.",
-          "start": "2026-11-23T07:34+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity + F-012 Reviewer (parallel, on 4203)",
-          "start": "2026-11-23T07:46+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer retry 1 (chevron) F-010",
-          "start": "2026-11-23T07:56+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer + Parity re-check (retry 1) F-010",
-          "start": "2026-11-23T07:59+11:00",
-          "end": null
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-23T08:02+11:00",
-          "end": "2026-11-23T08:04+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-23T08:06+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 4,
-      "tokens": 52727310,
-      "costUsd": 49.51,
-      "commits": 0
-    },
-    {
       "id": "w-17",
       "packetId": "idp-g3",
       "component": "idp",
@@ -439,7 +313,7 @@
           "title": "idp notification source",
           "size": 3,
           "phase": "Developer",
-          "status": "running"
+          "status": "done"
         }
       ],
       "steps": [
@@ -486,17 +360,27 @@
         {
           "name": "Developer F-011",
           "start": "2026-11-23T08:02+11:00",
-          "end": null
+          "end": "2026-11-23T08:10+11:00"
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 19285998,
-      "costUsd": 18.01,
+      "tokens": 28365168,
+      "costUsd": 27.26,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g8",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-23T08:12+11:00",
+      "items": 4,
+      "points": 12,
+      "minutes": 76,
+      "tokens": 54257548
+    },
     {
       "packetId": "idp-g2",
       "component": "idp",
