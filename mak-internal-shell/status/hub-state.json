@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T06:56+11:00",
+  "generatedAt": "2026-11-23T06:59+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -8,14 +8,14 @@
     "forecast": {
       "likely": "2026-11-30",
       "optimistic": "2026-11-29",
-      "pessimistic": "2026-12-03"
+      "pessimistic": "2026-12-02"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 27,
-        "pointsRemaining": 52,
-        "itemsRemaining": 13,
+        "pointsDone": 39,
+        "pointsRemaining": 41,
+        "itemsRemaining": 11,
         "state": "building"
       },
       {
@@ -41,11 +41,18 @@
       },
       {
         "date": "2026-11-23",
-        "done": 30,
-        "total": 175
+        "done": 42,
+        "total": 176
       }
     ],
-    "waitingOnPeople": [],
+    "waitingOnPeople": [
+      {
+        "who": "user",
+        "what": "Strict parity check on shell? (3 UI merges)",
+        "ref": "SHELL-F-008",
+        "since": "2026-11-23T00:00:00+11:00"
+      }
+    ],
     "milestones": [
       {
         "name": "Shell Phase 0 done",
@@ -59,7 +66,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 5,
+        "percentUsed": 6,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -71,8 +78,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 12,
-      "tokens": 12788245,
-      "costUsd": 14.44,
+      "tokens": 19445831,
+      "costUsd": 19.19,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -82,8 +89,8 @@
     "week": {
       "packetsMerged": 8,
       "points": 42,
-      "tokens": 258410828,
-      "costUsd": 241.85,
+      "tokens": 265068414,
+      "costUsd": 246.6,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -91,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6152639,
+      "tokens": 6311153,
       "minutes": 20,
-      "costUsd": 5.76
+      "costUsd": 5.87
     },
     "daily": [
       {
@@ -177,13 +184,13 @@
       {
         "date": "2026-11-23",
         "points": 12,
-        "tokens": 12788245,
-        "costUsd": 14.44
+        "tokens": 19445831,
+        "costUsd": 19.19
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-22T21:24+11:00",
+        "at": "2026-11-23T06:57+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -195,24 +202,29 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g7",
+          "id": "shell-g8",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "SHELL-F-008",
-              "title": "Identity bridge",
-              "size": 3
-            },
-            {
-              "id": "SHELL-F-009",
-              "title": "Plugin loader",
+              "id": "SHELL-F-010",
+              "title": "Shell frame",
               "size": 5
             },
             {
-              "id": "SHELL-F-011",
-              "title": "Message bus",
-              "size": 2
+              "id": "SHELL-F-019",
+              "title": "Loading line, breadcrumb row, menu badges",
+              "size": 3
+            },
+            {
+              "id": "SHELL-F-012",
+              "title": "Shell end-to-end test fixtures",
+              "size": 3
+            },
+            {
+              "id": "SHELL-F-025",
+              "title": "Plugin generator adds tsconfig references",
+              "size": 1
             }
           ]
         }
@@ -370,7 +382,7 @@
         }
       ],
       "loops": 0,
-      "escalations": 1,
+      "escalations": 2,
       "tokens": 23632305,
       "costUsd": 26.16,
       "commits": 0
@@ -382,7 +394,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T21:26+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-001",
@@ -406,13 +418,18 @@
         {
           "name": "Integration",
           "start": "2026-11-23T06:55+11:00",
+          "end": "2026-11-23T06:59+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-23T06:59+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 5451302,
-      "costUsd": 5.51,
+      "escalations": 2,
+      "tokens": 7352330,
+      "costUsd": 6.8,
       "commits": 0
     },
     {
