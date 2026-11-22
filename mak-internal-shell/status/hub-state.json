@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:19+11:00",
+  "generatedAt": "2026-11-22T21:21+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,11 +79,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 57,
+        "percentUsed": 58,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 25,
+        "percentUsed": 26,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 219203396,
-      "costUsd": 203.35,
+      "tokens": 220531108,
+      "costUsd": 204.64,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 219203396,
-      "costUsd": 203.35,
+      "tokens": 220531108,
+      "costUsd": 204.64,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8430900,
+      "tokens": 8481966,
       "minutes": 7,
-      "costUsd": 7.82
+      "costUsd": 7.87
     },
     "daily": [
       {
@@ -197,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 219203396,
-        "costUsd": 203.35
+        "tokens": 220531108,
+        "costUsd": 204.64
       }
     ],
     "tests": {
@@ -372,7 +372,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers (PMBook+sweep, Handoff, Revision+Changelog+Runbook, Graphify)",
       "items": [
         {
           "id": "IDP-F-003",
@@ -452,13 +452,18 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-22T21:19+11:00",
+          "end": "2026-11-22T21:20+11:00"
+        },
+        {
+          "name": "Finalizers (PMBook+sweep, Handoff, Revision+Changelog+Runbook, Graphify)",
+          "start": "2026-11-22T21:20+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 15955167,
-      "costUsd": 17.77,
+      "tokens": 16197760,
+      "costUsd": 18.22,
       "commits": 0
     },
     {
@@ -468,7 +473,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "SHELL-F-008",
@@ -526,13 +531,18 @@
         {
           "name": "Integration",
           "start": "2026-11-22T21:17+11:00",
+          "end": "2026-11-22T21:19+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-22T21:19+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 15272678,
-      "costUsd": 16.31,
+      "tokens": 15858992,
+      "costUsd": 16.88,
       "commits": 0
     }
   ],
