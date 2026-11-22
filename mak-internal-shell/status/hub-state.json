@@ -1,21 +1,21 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:30+11:00",
+  "generatedAt": "2026-11-22T19:32+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-12-05",
-      "optimistic": "2026-12-03",
-      "pessimistic": "2026-12-10"
+      "likely": "2026-12-03",
+      "optimistic": "2026-12-01",
+      "pessimistic": "2026-12-07"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 8,
-        "pointsRemaining": 70,
-        "itemsRemaining": 20,
+        "pointsDone": 13,
+        "pointsRemaining": 66,
+        "itemsRemaining": 19,
         "state": "building"
       },
       {
@@ -36,8 +36,8 @@
     "burnup": [
       {
         "date": "2026-11-22",
-        "done": 8,
-        "total": 174
+        "done": 13,
+        "total": 175
       }
     ],
     "waitingOnPeople": [],
@@ -49,6 +49,11 @@
       },
       {
         "name": "Shell workspace and plugin SDK on main",
+        "date": "2026-11-22",
+        "kind": "actual"
+      },
+      {
+        "name": "Shell dev setup and plugin catalog on main",
         "date": "2026-11-22",
         "kind": "actual"
       }
@@ -69,10 +74,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 3,
-      "points": 13,
-      "tokens": 82646629,
-      "costUsd": 75.26,
+      "packetsMerged": 4,
+      "points": 15,
+      "tokens": 92607130,
+      "costUsd": 83.45,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -80,10 +85,10 @@
       }
     },
     "week": {
-      "packetsMerged": 3,
-      "points": 13,
-      "tokens": 82646629,
-      "costUsd": 75.26,
+      "packetsMerged": 4,
+      "points": 15,
+      "tokens": 92607130,
+      "costUsd": 83.45,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -91,9 +96,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6357433,
-      "minutes": 6,
-      "costUsd": 5.79
+      "tokens": 6173809,
+      "minutes": 7,
+      "costUsd": 5.56
     },
     "daily": [
       {
@@ -176,9 +181,9 @@
       },
       {
         "date": "2026-11-22",
-        "points": 13,
-        "tokens": 82646629,
-        "costUsd": 75.26
+        "points": 15,
+        "tokens": 92607130,
+        "costUsd": 83.45
       }
     ],
     "tests": {
@@ -194,23 +199,6 @@
     {
       "component": "shell",
       "packets": [
-        {
-          "id": "shell-g4",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-006",
-              "title": "Local and cloud development setup",
-              "size": 3
-            },
-            {
-              "id": "SHELL-F-007",
-              "title": "Plugin Catalog (plugins.json)",
-              "size": 2
-            }
-          ]
-        },
         {
           "id": "shell-g5",
           "kind": "orchestrated",
@@ -249,7 +237,20 @@
     },
     {
       "component": "idp",
-      "packets": []
+      "packets": [
+        {
+          "id": "idp-g1",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "IDP-F-001",
+              "title": "Idp.Api and idp database",
+              "size": 3
+            }
+          ]
+        }
+      ]
     },
     {
       "component": "component-library",
@@ -257,56 +258,6 @@
     }
   ],
   "workers": [
-    {
-      "id": "w-6",
-      "packetId": "shell-g5",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-22T19:06+11:00",
-      "phase": "Finalizers (Spike Log)",
-      "items": [
-        {
-          "id": "SHELL-F-021",
-          "title": "Spike: dashboard grid approach",
-          "size": 2,
-          "phase": "Finalizers (Spike Log)",
-          "status": "running"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-021",
-          "start": "2026-11-22T19:08+11:00",
-          "end": null
-        },
-        {
-          "name": "Resume F-021",
-          "start": "2026-11-22T19:15+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-021",
-          "start": "2026-11-22T19:16+11:00",
-          "end": "2026-11-22T19:27+11:00"
-        },
-        {
-          "name": "Reviewer F-021",
-          "start": "2026-11-22T19:28+11:00",
-          "end": "2026-11-22T19:29+11:00"
-        },
-        {
-          "name": "Finalizers (Spike Log) F-021",
-          "start": "2026-11-22T19:29+11:00",
-          "end": null
-        }
-      ],
-      "loops": 1,
-      "escalations": 1,
-      "tokens": 9983844,
-      "costUsd": 10.46,
-      "commits": 0
-    },
     {
       "id": "w-7",
       "packetId": "shell-g3",
@@ -367,12 +318,22 @@
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 9049417,
-      "costUsd": 8.89,
+      "tokens": 12006941,
+      "costUsd": 12.27,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g5",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-22T19:32+11:00",
+      "items": 1,
+      "points": 2,
+      "minutes": 27,
+      "tokens": 11601471
+    },
     {
       "packetId": "shell-g4",
       "component": "shell",
