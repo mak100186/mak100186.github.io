@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:40+11:00",
+  "generatedAt": "2026-11-22T20:42+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -74,7 +74,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 34,
+        "percentUsed": 35,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -86,8 +86,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 142017512,
-      "costUsd": 129.71,
+      "tokens": 143185782,
+      "costUsd": 131.39,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -97,8 +97,8 @@
     "week": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 142017512,
-      "costUsd": 129.71,
+      "tokens": 143185782,
+      "costUsd": 131.39,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -106,9 +106,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6174674,
+      "tokens": 6225469,
       "minutes": 7,
-      "costUsd": 5.64
+      "costUsd": 5.71
     },
     "daily": [
       {
@@ -192,8 +192,8 @@
       {
         "date": "2026-11-22",
         "points": 23,
-        "tokens": 142017512,
-        "costUsd": 129.71
+        "tokens": 143185782,
+        "costUsd": 131.39
       }
     ],
     "tests": {
@@ -264,8 +264,8 @@
           "id": "SHELL-F-017",
           "title": "Plugin project template — design driven by the shell",
           "size": 3,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Quiet acknowledged",
+          "status": "ack: no stack, browser or playwright runs until the window is ours. the f-017 developer is building and running unit/node tests only, and it is barred from starting servers. parity will wait for hub_stack."
         },
         {
           "id": "SHELL-F-024",
@@ -294,8 +294,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3978918,
-      "costUsd": 3.92,
+      "tokens": 4401570,
+      "costUsd": 4.8,
       "commits": 0
     },
     {
@@ -305,14 +305,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "Reviewer",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-F-001",
           "title": "Idp.Api and idp database",
           "size": 3,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -329,13 +329,18 @@
         {
           "name": "Reviewer F-001",
           "start": "2026-11-22T20:40+11:00",
+          "end": "2026-11-22T20:41+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-22T20:41+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4194563,
-      "costUsd": 4.6,
+      "tokens": 4541601,
+      "costUsd": 5.19,
       "commits": 0
     }
   ],
