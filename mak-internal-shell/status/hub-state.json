@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:26+11:00",
+  "generatedAt": "2026-11-22T21:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -13,9 +13,9 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 23,
-        "pointsRemaining": 56,
-        "itemsRemaining": 15,
+        "pointsDone": 27,
+        "pointsRemaining": 52,
+        "itemsRemaining": 13,
         "state": "building"
       },
       {
@@ -30,45 +30,20 @@
         "pointsDone": 0,
         "pointsRemaining": 33,
         "itemsRemaining": 12,
-        "state": "waiting"
+        "state": "building"
       }
     ],
     "burnup": [
       {
         "date": "2026-11-22",
-        "done": 26,
+        "done": 30,
         "total": 175
       }
     ],
     "waitingOnPeople": [],
     "milestones": [
       {
-        "name": "Shell spike F-001 answered YES",
-        "date": "2026-11-22",
-        "kind": "actual"
-      },
-      {
-        "name": "Shell workspace and plugin SDK on main",
-        "date": "2026-11-22",
-        "kind": "actual"
-      },
-      {
-        "name": "Shell dev setup and plugin catalog on main",
-        "date": "2026-11-22",
-        "kind": "actual"
-      },
-      {
-        "name": "Dashboard grid spike answered (CSS grid + CDK)",
-        "date": "2026-11-22",
-        "kind": "actual"
-      },
-      {
-        "name": "Shell theme, theming lint and shared classes on main",
-        "date": "2026-11-22",
-        "kind": "actual"
-      },
-      {
-        "name": "First .NET code: Idp.Api and its database on main",
+        "name": "Shell Phase 0 done",
         "date": "2026-11-22",
         "kind": "actual"
       }
@@ -79,7 +54,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 61,
+        "percentUsed": 62,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +66,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 232236170,
-      "costUsd": 215.12,
+      "tokens": 240521323,
+      "costUsd": 223.13,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +77,8 @@
     "week": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 232236170,
-      "costUsd": 215.12,
+      "tokens": 240521323,
+      "costUsd": 223.13,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +86,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7741206,
+      "tokens": 8017377,
       "minutes": 8,
-      "costUsd": 7.17
+      "costUsd": 7.44
     },
     "daily": [
       {
@@ -197,8 +172,8 @@
       {
         "date": "2026-11-22",
         "points": 30,
-        "tokens": 232236170,
-        "costUsd": 215.12
+        "tokens": 240521323,
+        "costUsd": 223.13
       }
     ],
     "tests": {
@@ -215,35 +190,18 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g6",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-017",
-              "title": "Plugin project template",
-              "size": 3
-            },
-            {
-              "id": "SHELL-F-024",
-              "title": "make graph and make ports on Linux",
-              "size": 1
-            }
-          ]
-        },
-        {
           "id": "shell-g7",
           "kind": "orchestrated",
-          "state": "running",
+          "state": "held",
           "items": [
             {
               "id": "SHELL-F-008",
-              "title": "Identity bridge and sign-in slot",
-              "size": 5
+              "title": "Identity bridge",
+              "size": 3
             },
             {
               "id": "SHELL-F-009",
-              "title": "Plugin Loader",
+              "title": "Plugin loader",
               "size": 5
             },
             {
@@ -261,26 +219,26 @@
         {
           "id": "idp-g2",
           "kind": "orchestrated",
-          "state": "running",
+          "state": "held",
           "items": [
             {
               "id": "IDP-F-003",
-              "title": "Data model, settings and first-admin seeding",
+              "title": "Data model",
               "size": 3
             },
             {
               "id": "IDP-F-004",
-              "title": "Signing keys, token issuing and JWKS",
-              "size": 3
+              "title": "Signing keys",
+              "size": 2
             },
             {
               "id": "IDP-F-005",
-              "title": "Sign-in endpoint and blocking",
+              "title": "Sign-in",
               "size": 3
             },
             {
               "id": "IDP-F-006",
-              "title": "Refresh, sign-out and effective permissions",
+              "title": "Refresh and sign-out",
               "size": 3
             }
           ]
@@ -289,7 +247,20 @@
     },
     {
       "component": "component-library",
-      "packets": []
+      "packets": [
+        {
+          "id": "component-library-g1",
+          "kind": "orchestrated",
+          "state": "held",
+          "items": [
+            {
+              "id": "COMPONENT-LIBRARY-F-001",
+              "title": "Component library plugin project",
+              "size": 2
+            }
+          ]
+        }
+      ]
     }
   ],
   "workers": [
@@ -298,9 +269,9 @@
       "packetId": "idp-g2",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "parked",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Finalizers (PMBook+sweep, Handoff, Revision+Changelog+Runbook, Graphify)",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-003",
@@ -390,8 +361,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 20197226,
-      "costUsd": 22.22,
+      "tokens": 23632305,
+      "costUsd": 26.16,
       "commits": 0
     },
     {
@@ -401,7 +372,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Parity (stack window r36)",
+      "phase": "Park requested",
       "items": [
         {
           "id": "SHELL-F-008",
@@ -470,12 +441,17 @@
           "name": "Parity (stack window r36)",
           "start": "2026-11-22T21:23+11:00",
           "end": null
+        },
+        {
+          "name": "Park requested",
+          "start": "2026-11-22T21:26+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 17591374,
-      "costUsd": 18.25,
+      "tokens": 18010713,
+      "costUsd": 18.48,
       "commits": 0
     },
     {
@@ -483,7 +459,7 @@
       "packetId": "component-library-g1",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "parked",
       "startedAt": "2026-11-22T21:26+11:00",
       "phase": "",
       "items": [
@@ -498,8 +474,8 @@
       "steps": [],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 903991,
+      "costUsd": 0.86,
       "commits": 0
     }
   ],
