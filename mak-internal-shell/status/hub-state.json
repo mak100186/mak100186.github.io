@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:01+11:00",
+  "generatedAt": "2026-11-23T07:03+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -66,7 +66,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 8,
+        "percentUsed": 9,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -78,8 +78,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 12,
-      "tokens": 20809091,
-      "costUsd": 20.4,
+      "tokens": 27782053,
+      "costUsd": 27.95,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -89,8 +89,8 @@
     "week": {
       "packetsMerged": 8,
       "points": 42,
-      "tokens": 266431674,
-      "costUsd": 247.81,
+      "tokens": 273404636,
+      "costUsd": 255.36,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6343611,
+      "tokens": 6509634,
       "minutes": 20,
-      "costUsd": 5.9
+      "costUsd": 6.08
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-23",
         "points": 12,
-        "tokens": 20809091,
-        "costUsd": 20.4
+        "tokens": 27782053,
+        "costUsd": 27.95
       }
     ],
     "tests": {
@@ -388,8 +388,8 @@
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 23632305,
-      "costUsd": 26.16,
+      "tokens": 23919458,
+      "costUsd": 26.68,
       "commits": 0
     },
     {
@@ -397,7 +397,7 @@
       "packetId": "component-library-g1",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "ready to merge",
       "startedAt": "2026-11-22T21:26+11:00",
       "phase": "Finalizers",
       "items": [
@@ -428,19 +428,19 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-23T06:59+11:00",
-          "end": null
+          "end": "2026-11-23T07:01+11:00"
         },
         {
           "name": "Finalizers",
           "start": "2026-11-23T07:00+11:00",
-          "end": null
+          "end": "2026-11-23T07:02+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 8328179,
-      "costUsd": 7.79,
-      "commits": 0
+      "tokens": 10082431,
+      "costUsd": 10.36,
+      "commits": 22
     },
     {
       "id": "w-16",
@@ -476,8 +476,8 @@
           "id": "SHELL-F-025",
           "title": "Plugin generator adds tsconfig references",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -489,13 +489,18 @@
         {
           "name": "Developer F-025",
           "start": "2026-11-23T06:59+11:00",
-          "end": null
+          "end": "2026-11-23T07:02+11:00"
+        },
+        {
+          "name": "Reviewer F-025",
+          "start": "2026-11-23T07:02+11:00",
+          "end": "2026-11-23T07:02+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 4931557,
+      "costUsd": 4.46,
       "commits": 0
     }
   ],
