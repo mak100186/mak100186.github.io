@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:59+11:00",
+  "generatedAt": "2026-11-22T21:01+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 45,
+        "percentUsed": 47,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 184450296,
-      "costUsd": 167.4,
+      "tokens": 189714281,
+      "costUsd": 172.3,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 184450296,
-      "costUsd": 167.4,
+      "tokens": 189714281,
+      "costUsd": 172.3,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7094242,
+      "tokens": 7296703,
       "minutes": 7,
-      "costUsd": 6.44
+      "costUsd": 6.63
     },
     "daily": [
       {
@@ -197,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 184450296,
-        "costUsd": 167.4
+        "tokens": 189714281,
+        "costUsd": 172.3
       }
     ],
     "tests": {
@@ -357,7 +357,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Reviewer (wave 1: IDP-F-003, IDP-F-004)",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-003",
@@ -377,8 +377,8 @@
           "id": "IDP-F-005",
           "title": "Sign-in endpoint and blocking",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-F-006",
@@ -397,13 +397,18 @@
         {
           "name": "Reviewer (wave 1: IDP-F-003, IDP-F-004)",
           "start": "2026-11-22T20:59+11:00",
+          "end": "2026-11-22T21:00+11:00"
+        },
+        {
+          "name": "Developer F-005",
+          "start": "2026-11-22T21:00+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 6726575,
-      "costUsd": 6.88,
+      "escalations": 1,
+      "tokens": 8924536,
+      "costUsd": 9.43,
       "commits": 0
     },
     {
@@ -413,21 +418,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-008",
           "title": "Identity bridge and sign-in slot",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-009",
           "title": "Plugin Loader",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-011",
@@ -446,13 +451,18 @@
         {
           "name": "Reviewer F-008",
           "start": "2026-11-22T20:59+11:00",
+          "end": "2026-11-22T21:00+11:00"
+        },
+        {
+          "name": "Developer F-009",
+          "start": "2026-11-22T21:00+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 5367828,
-      "costUsd": 5.09,
+      "tokens": 6983991,
+      "costUsd": 6.65,
       "commits": 0
     }
   ],
