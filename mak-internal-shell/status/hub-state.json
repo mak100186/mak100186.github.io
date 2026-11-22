@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:25+11:00",
+  "generatedAt": "2026-11-23T07:27+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -66,7 +66,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 15,
+        "percentUsed": 17,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -78,8 +78,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 14,
-      "tokens": 49488729,
-      "costUsd": 46.63,
+      "tokens": 51830325,
+      "costUsd": 49.53,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -89,8 +89,8 @@
     "week": {
       "packetsMerged": 9,
       "points": 44,
-      "tokens": 295111312,
-      "costUsd": 274.04,
+      "tokens": 297452908,
+      "costUsd": 276.94,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6707075,
+      "tokens": 6760293,
       "minutes": 32,
-      "costUsd": 6.23
+      "costUsd": 6.29
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-23",
         "points": 14,
-        "tokens": 49488729,
-        "costUsd": 46.63
+        "tokens": 51830325,
+        "costUsd": 49.53
       }
     ],
     "tests": {
@@ -404,7 +404,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Developer",
+      "phase": "Developer retry 1 (+ r57)",
       "items": [
         {
           "id": "SHELL-F-010",
@@ -417,7 +417,7 @@
           "id": "SHELL-F-019",
           "title": "Plugin context: loading line, breadcrumb row, menu badges",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Developer retry 1 (+ r57)",
           "status": "running"
         },
         {
@@ -460,12 +460,22 @@
           "name": "Developer F-019",
           "start": "2026-11-23T07:14+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer F-019",
+          "start": "2026-11-23T07:25+11:00",
+          "end": "2026-11-23T07:26+11:00"
+        },
+        {
+          "name": "Developer retry 1 (+ r57) F-019",
+          "start": "2026-11-23T07:26+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 2,
-      "tokens": 20564721,
-      "costUsd": 18.85,
+      "escalations": 3,
+      "tokens": 22475715,
+      "costUsd": 21.51,
       "commits": 0
     }
   ],
