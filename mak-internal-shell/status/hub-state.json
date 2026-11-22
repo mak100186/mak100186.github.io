@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:10+11:00",
+  "generatedAt": "2026-11-23T09:12+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 69,
+        "percentUsed": 70,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -70,31 +70,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 6,
-      "points": 55,
-      "tokens": 236361825,
-      "costUsd": 219,
+      "packetsMerged": 7,
+      "points": 57,
+      "tokens": 241553954,
+      "costUsd": 222.69,
       "minutesWaiting": {
         "hub": 2,
-        "you": 13,
+        "you": 18,
         "limit": 0
       }
     },
     "week": {
-      "packetsMerged": 13,
-      "points": 85,
-      "tokens": 481984408,
-      "costUsd": 446.41,
+      "packetsMerged": 14,
+      "points": 87,
+      "tokens": 487176537,
+      "costUsd": 450.09,
       "minutesWaiting": {
         "hub": 48,
-        "you": 114,
+        "you": 120,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 5670405,
+      "tokens": 5599730,
       "minutes": 26,
-      "costUsd": 5.25
+      "costUsd": 5.17
     },
     "daily": [
       {
@@ -177,9 +177,9 @@
       },
       {
         "date": "2026-11-23",
-        "points": 55,
-        "tokens": 236361825,
-        "costUsd": 219
+        "points": 57,
+        "tokens": 241553954,
+        "costUsd": 222.69
       }
     ],
     "tests": {
@@ -248,20 +248,7 @@
     },
     {
       "component": "idp",
-      "packets": [
-        {
-          "id": "idp-g4",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "IDP-B-002",
-              "title": "Two tabs refreshing at once sign each other out",
-              "size": 2
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "component-library",
@@ -361,56 +348,6 @@
       "commits": 0
     },
     {
-      "id": "w-20",
-      "packetId": "idp-g4",
-      "component": "idp",
-      "kind": "orchestrated",
-      "state": "waiting on you",
-      "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Finalizers (PMBook+arch sweep, Handoff, Revision/Changelog/Runbook, Graphify)",
-      "items": [
-        {
-          "id": "IDP-B-002",
-          "title": "Two tabs refreshing at once sign each other out",
-          "size": 2,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer B-002",
-          "start": "2026-11-23T09:01+11:00",
-          "end": "2026-11-23T09:04+11:00"
-        },
-        {
-          "name": "Reviewer B-002",
-          "start": "2026-11-23T09:05+11:00",
-          "end": "2026-11-23T09:06+11:00"
-        },
-        {
-          "name": "Finalizer: test-cases.md",
-          "start": "2026-11-23T09:06+11:00",
-          "end": "2026-11-23T09:08+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-23T09:06+11:00",
-          "end": "2026-11-23T09:08+11:00"
-        },
-        {
-          "name": "Finalizers (PMBook+arch sweep, Handoff, Revision/Changelog/Runbook, Graphify)",
-          "start": "2026-11-23T09:09+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 7176648,
-      "costUsd": 8.13,
-      "commits": 0
-    },
-    {
       "id": "w-21",
       "packetId": "shell-g10",
       "component": "shell",
@@ -471,6 +408,16 @@
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g4",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-23T09:11+11:00",
+      "items": 1,
+      "points": 2,
+      "minutes": 12,
+      "tokens": 8559140
+    },
     {
       "packetId": "idp-g3",
       "component": "idp",
