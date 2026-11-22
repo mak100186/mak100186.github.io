@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:26+11:00",
+  "generatedAt": "2026-11-22T20:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -8,14 +8,14 @@
     "forecast": {
       "likely": "2026-11-29",
       "optimistic": "2026-11-28",
-      "pessimistic": "2026-12-02"
+      "pessimistic": "2026-12-01"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 15,
-        "pointsRemaining": 64,
-        "itemsRemaining": 18,
+        "pointsDone": 23,
+        "pointsRemaining": 56,
+        "itemsRemaining": 15,
         "state": "building"
       },
       {
@@ -36,11 +36,18 @@
     "burnup": [
       {
         "date": "2026-11-22",
-        "done": 15,
+        "done": 23,
         "total": 175
       }
     ],
-    "waitingOnPeople": [],
+    "waitingOnPeople": [
+      {
+        "who": "you",
+        "what": "Restart Claude Code before the next packets start",
+        "ref": "restart",
+        "since": "2026-11-22T20:30+11:00"
+      }
+    ],
     "milestones": [
       {
         "name": "Shell spike F-001 answered YES",
@@ -59,6 +66,11 @@
       },
       {
         "name": "Dashboard grid spike answered (CSS grid + CDK)",
+        "date": "2026-11-22",
+        "kind": "actual"
+      },
+      {
+        "name": "Shell theme, theming lint and shared classes on main",
         "date": "2026-11-22",
         "kind": "actual"
       }
@@ -81,8 +93,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 125187398,
-      "costUsd": 115.85,
+      "tokens": 128945097,
+      "costUsd": 118.22,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -92,8 +104,8 @@
     "week": {
       "packetsMerged": 5,
       "points": 23,
-      "tokens": 125187398,
-      "costUsd": 115.85,
+      "tokens": 128945097,
+      "costUsd": 118.22,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -101,9 +113,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5442930,
+      "tokens": 5606309,
       "minutes": 7,
-      "costUsd": 5.04
+      "costUsd": 5.14
     },
     "daily": [
       {
@@ -187,8 +199,8 @@
       {
         "date": "2026-11-22",
         "points": 23,
-        "tokens": 125187398,
-        "costUsd": 115.85
+        "tokens": 128945097,
+        "costUsd": 118.22
       }
     ],
     "tests": {
@@ -205,24 +217,19 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g3",
+          "id": "shell-g6",
           "kind": "orchestrated",
-          "state": "running",
+          "state": "held",
           "items": [
             {
-              "id": "SHELL-F-004",
-              "title": "Global Theme",
-              "size": 2
-            },
-            {
-              "id": "SHELL-F-005",
-              "title": "Theming lint rules for plugin projects",
+              "id": "SHELL-F-017",
+              "title": "Plugin template",
               "size": 3
             },
             {
-              "id": "SHELL-F-023",
-              "title": "Shared style classes",
-              "size": 3
+              "id": "SHELL-F-024",
+              "title": "make graph and make ports on Linux",
+              "size": 1
             }
           ]
         }
@@ -234,7 +241,7 @@
         {
           "id": "idp-g1",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "held",
           "items": [
             {
               "id": "IDP-F-001",
