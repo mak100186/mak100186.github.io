@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:01+11:00",
+  "generatedAt": "2026-11-23T08:03+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -71,7 +71,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 31,
+        "percentUsed": 33,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 26,
-      "tokens": 106433339,
-      "costUsd": 98.59,
+      "tokens": 109790309,
+      "costUsd": 101.54,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 10,
       "points": 56,
-      "tokens": 352055922,
-      "costUsd": 326,
+      "tokens": 355412892,
+      "costUsd": 328.94,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,9 +103,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6286713,
+      "tokens": 6346659,
       "minutes": 37,
-      "costUsd": 5.82
+      "costUsd": 5.87
     },
     "daily": [
       {
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 26,
-        "tokens": 106433339,
-        "costUsd": 98.59
+        "tokens": 109790309,
+        "costUsd": 101.54
       }
     ],
     "tests": {
@@ -285,14 +285,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Reviewer + Parity re-check (retry 1)",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-010",
           "title": "Shell frame",
           "size": 5,
-          "phase": "Reviewer + Parity re-check (retry 1)",
-          "status": "running"
+          "phase": "Parity retry 1",
+          "status": "pass"
         },
         {
           "id": "SHELL-F-019",
@@ -386,12 +386,17 @@
           "name": "Reviewer + Parity re-check (retry 1) F-010",
           "start": "2026-11-23T07:59+11:00",
           "end": null
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-23T08:02+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 44651591,
-      "costUsd": 41.52,
+      "tokens": 45396646,
+      "costUsd": 42.45,
       "commits": 0
     },
     {
@@ -401,7 +406,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-002",
@@ -415,21 +420,21 @@
           "title": "./auth AuthProvider session",
           "size": 3,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "IDP-F-008",
           "title": "Sign-in screen",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-F-011",
           "title": "idp notification source",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -466,13 +471,23 @@
         {
           "name": "Reviewer F-007",
           "start": "2026-11-23T08:00+11:00",
+          "end": "2026-11-23T08:02+11:00"
+        },
+        {
+          "name": "Developer F-008",
+          "start": "2026-11-23T08:02+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer F-011",
+          "start": "2026-11-23T08:02+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 17172472,
-      "costUsd": 16.27,
+      "tokens": 19285998,
+      "costUsd": 18.01,
       "commits": 0
     }
   ],
