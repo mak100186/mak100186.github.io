@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:25+11:00",
+  "generatedAt": "2026-11-22T21:26+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -479,12 +479,12 @@
       "commits": 0
     },
     {
-      "id": "component-library-g1",
+      "id": "w-12",
       "packetId": "component-library-g1",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "queued",
-      "startedAt": "2026-11-22T21:25+11:00",
+      "state": "running",
+      "startedAt": "2026-11-22T21:26+11:00",
       "phase": "",
       "items": [
         {
