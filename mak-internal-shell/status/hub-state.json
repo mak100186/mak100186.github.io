@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:49+11:00",
+  "generatedAt": "2026-11-22T19:51+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -40,7 +40,14 @@
         "total": 175
       }
     ],
-    "waitingOnPeople": [],
+    "waitingOnPeople": [
+      {
+        "who": "you",
+        "what": "UI gate: Global Theme (F-004) code review and parity",
+        "ref": "SHELL-F-004",
+        "since": "2026-11-22T19:40+11:00"
+      }
+    ],
     "milestones": [
       {
         "name": "Shell spike F-001 answered YES",
@@ -69,7 +76,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 21,
+        "percentUsed": 23,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -81,10 +88,10 @@
     "today": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 107918181,
-      "costUsd": 96.78,
+      "tokens": 113019759,
+      "costUsd": 102.92,
       "minutesWaiting": {
-        "hub": 45,
+        "hub": 46,
         "you": 1,
         "limit": 0
       }
@@ -92,18 +99,18 @@
     "week": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 107918181,
-      "costUsd": 96.78,
+      "tokens": 113019759,
+      "costUsd": 102.92,
       "minutesWaiting": {
-        "hub": 45,
+        "hub": 46,
         "you": 1,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 7194545,
+      "tokens": 7534651,
       "minutes": 7,
-      "costUsd": 6.45
+      "costUsd": 6.86
     },
     "daily": [
       {
@@ -187,8 +194,8 @@
       {
         "date": "2026-11-22",
         "points": 15,
-        "tokens": 107918181,
-        "costUsd": 96.78
+        "tokens": 113019759,
+        "costUsd": 102.92
       }
     ],
     "tests": {
@@ -256,7 +263,7 @@
       "packetId": "shell-g3",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on you",
       "startedAt": "2026-11-22T19:15+11:00",
       "phase": "Parity",
       "items": [
@@ -265,7 +272,7 @@
           "title": "Global Theme",
           "size": 2,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-005",
@@ -279,7 +286,7 @@
           "title": "Shared style classes",
           "size": 3,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -321,12 +328,12 @@
         {
           "name": "Parity F-004",
           "start": "2026-11-22T19:37+11:00",
-          "end": null
+          "end": "2026-11-22T19:49+11:00"
         },
         {
           "name": "Parity F-023",
           "start": "2026-11-22T19:37+11:00",
-          "end": null
+          "end": "2026-11-22T19:51+11:00"
         },
         {
           "name": "Reviewer-Integration",
@@ -335,9 +342,9 @@
         }
       ],
       "loops": 0,
-      "escalations": 3,
-      "tokens": 24032629,
-      "costUsd": 22.68,
+      "escalations": 5,
+      "tokens": 29134207,
+      "costUsd": 28.82,
       "commits": 0
     }
   ],
