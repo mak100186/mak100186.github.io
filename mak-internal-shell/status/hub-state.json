@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:04+11:00",
+  "generatedAt": "2026-11-23T09:06+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 63,
+        "percentUsed": 65,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 55,
-      "tokens": 213760559,
-      "costUsd": 196.53,
+      "tokens": 219608122,
+      "costUsd": 201.64,
       "minutesWaiting": {
         "hub": 2,
         "you": 13,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 13,
       "points": 85,
-      "tokens": 459383142,
-      "costUsd": 423.93,
+      "tokens": 465230705,
+      "costUsd": 429.04,
       "minutesWaiting": {
         "hub": 48,
         "you": 114,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5404508,
+      "tokens": 5473302,
       "minutes": 26,
-      "costUsd": 4.99
+      "costUsd": 5.05
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 55,
-        "tokens": 213760559,
-        "costUsd": 196.53
+        "tokens": 219608122,
+        "costUsd": 201.64
       }
     ],
     "tests": {
@@ -360,29 +360,39 @@
       "packetId": "idp-g4",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on you",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Developer",
+      "phase": "Finalizer: test-cases.md",
       "items": [
         {
           "id": "IDP-B-002",
           "title": "Two tabs refreshing at once sign each other out",
           "size": 2,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
         {
           "name": "Developer B-002",
           "start": "2026-11-23T09:01+11:00",
+          "end": "2026-11-23T09:04+11:00"
+        },
+        {
+          "name": "Reviewer B-002",
+          "start": "2026-11-23T09:05+11:00",
+          "end": "2026-11-23T09:06+11:00"
+        },
+        {
+          "name": "Finalizer: test-cases.md",
+          "start": "2026-11-23T09:06+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 1968552,
-      "costUsd": 2.29,
+      "tokens": 2859056,
+      "costUsd": 3.15,
       "commits": 0
     },
     {
@@ -392,7 +402,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Developer",
+      "phase": "Wait: wave 1 Developers",
       "items": [
         {
           "id": "SHELL-F-015",
@@ -426,12 +436,17 @@
           "name": "Developer F-015",
           "start": "2026-11-23T09:04+11:00",
           "end": null
+        },
+        {
+          "name": "Wait: wave 1 Developers",
+          "start": "2026-11-23T09:04+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 4521932,
+      "costUsd": 4,
       "commits": 0
     }
   ],
