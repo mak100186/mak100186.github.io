@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:43+11:00",
+  "generatedAt": "2026-11-23T07:45+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -71,7 +71,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 24,
+        "percentUsed": 25,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 26,
-      "tokens": 83127845,
-      "costUsd": 75.31,
+      "tokens": 83308715,
+      "costUsd": 75.7,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 10,
       "points": 56,
-      "tokens": 328750428,
-      "costUsd": 302.71,
+      "tokens": 328931298,
+      "costUsd": 303.11,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,7 +103,7 @@
       }
     },
     "perPoint": {
-      "tokens": 5870543,
+      "tokens": 5873773,
       "minutes": 37,
       "costUsd": 5.41
     },
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 26,
-        "tokens": 83127845,
-        "costUsd": 75.31
+        "tokens": 83308715,
+        "costUsd": 75.7
       }
     ],
     "tests": {
@@ -386,14 +386,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Reviewer",
+      "phase": "Stack:",
       "items": [
         {
           "id": "IDP-F-002",
           "title": "idp plugin project",
           "size": 2,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "IDP-F-007",
@@ -436,13 +436,13 @@
         {
           "name": "Reviewer F-002",
           "start": "2026-11-23T07:43+11:00",
-          "end": null
+          "end": "2026-11-23T07:44+11:00"
         }
       ],
       "loops": 0,
-      "escalations": 3,
-      "tokens": 6306123,
-      "costUsd": 5.19,
+      "escalations": 4,
+      "tokens": 6486993,
+      "costUsd": 5.58,
       "commits": 0
     }
   ],
