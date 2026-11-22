@@ -290,11 +290,11 @@
       "commits": 0
     },
     {
-      "id": "idp-g1",
+      "id": "w-9",
       "packetId": "idp-g1",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "queued",
+      "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
       "phase": "",
       "items": [
