@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:14+11:00",
+  "generatedAt": "2026-11-22T19:16+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -42,10 +42,10 @@
     ],
     "waitingOnPeople": [
       {
-        "who": "designer",
-        "what": "Review design row T5 (code font, round 005)",
-        "ref": "T5",
-        "since": "2026-11-22T18:00:00+11:00"
+        "who": "you",
+        "what": "Add libs/theming-lint to the shell's roots before the shell-g3 merge",
+        "ref": "SHELL-F-005",
+        "since": "2026-11-22T19:20:00+11:00"
       }
     ],
     "milestones": [
@@ -62,11 +62,11 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 2,
+        "percentUsed": 4,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -78,8 +78,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 8,
-      "tokens": 46017310,
-      "costUsd": 42.12,
+      "tokens": 50280231,
+      "costUsd": 45.37,
       "minutesWaiting": {
         "hub": 45,
         "you": 0,
@@ -89,8 +89,8 @@
     "week": {
       "packetsMerged": 2,
       "points": 8,
-      "tokens": 46017310,
-      "costUsd": 42.12,
+      "tokens": 50280231,
+      "costUsd": 45.37,
       "minutesWaiting": {
         "hub": 45,
         "you": 0,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5752164,
+      "tokens": 6285029,
       "minutes": 6,
-      "costUsd": 5.27
+      "costUsd": 5.67
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-22",
         "points": 8,
-        "tokens": 46017310,
-        "costUsd": 42.12
+        "tokens": 50280231,
+        "costUsd": 45.37
       }
     ],
     "tests": {
@@ -233,7 +233,7 @@
         {
           "id": "shell-g3",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-F-004",
@@ -265,11 +265,11 @@
   ],
   "workers": [
     {
-      "id": "w-3",
+      "id": "w-5",
       "packetId": "shell-g4",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-22T19:06+11:00",
       "phase": "Developer",
       "items": [
@@ -303,20 +303,25 @@
           "name": "Reviewer F-007",
           "start": "2026-11-22T19:12+11:00",
           "end": "2026-11-22T19:12+11:00"
+        },
+        {
+          "name": "Developer F-006",
+          "start": "2026-11-22T19:15+11:00",
+          "end": null
         }
       ],
-      "loops": 0,
+      "loops": 1,
       "escalations": 1,
-      "tokens": 3474388,
-      "costUsd": 4.5,
+      "tokens": 4331237,
+      "costUsd": 5.3,
       "commits": 0
     },
     {
-      "id": "w-4",
+      "id": "w-6",
       "packetId": "shell-g5",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-22T19:06+11:00",
       "phase": "Developer",
       "items": [
@@ -333,12 +338,60 @@
           "name": "Developer F-021",
           "start": "2026-11-22T19:08+11:00",
           "end": null
+        },
+        {
+          "name": "Resume F-021",
+          "start": "2026-11-22T19:15+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer F-021",
+          "start": "2026-11-22T19:16+11:00",
+          "end": null
         }
       ],
+      "loops": 1,
+      "escalations": 0,
+      "tokens": 3445206,
+      "costUsd": 3.74,
+      "commits": 0
+    },
+    {
+      "id": "w-7",
+      "packetId": "shell-g3",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-22T19:15+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-004",
+          "title": "Global Theme",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-005",
+          "title": "Theming lint rules for plugin projects",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-023",
+          "title": "Shared style classes",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
       "loops": 0,
       "escalations": 0,
-      "tokens": 2508792,
-      "costUsd": 2.87,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
