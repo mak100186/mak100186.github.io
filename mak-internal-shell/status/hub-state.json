@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:00+11:00",
+  "generatedAt": "2026-11-23T09:02+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 61,
+        "percentUsed": 62,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 55,
-      "tokens": 206510605,
-      "costUsd": 190.33,
+      "tokens": 212297524,
+      "costUsd": 195,
       "minutesWaiting": {
         "hub": 2,
         "you": 13,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 13,
       "points": 85,
-      "tokens": 452133188,
-      "costUsd": 417.74,
+      "tokens": 457920107,
+      "costUsd": 422.41,
       "minutesWaiting": {
         "hub": 48,
         "you": 114,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5319214,
+      "tokens": 5387295,
       "minutes": 26,
-      "costUsd": 4.91
+      "costUsd": 4.97
     },
     "daily": [
       {
@@ -178,13 +178,13 @@
       {
         "date": "2026-11-23",
         "points": 55,
-        "tokens": 206510605,
-        "costUsd": 190.33
+        "tokens": 212297524,
+        "costUsd": 195
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-23T08:15+11:00",
+        "at": "2026-11-23T09:00+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -223,19 +223,24 @@
           ]
         },
         {
-          "id": "direct-1",
-          "kind": "direct",
+          "id": "shell-g10",
+          "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "HUB-make-e2e",
-              "title": "make e2e target",
+              "id": "SHELL-F-015",
+              "title": "Profile page",
+              "size": 3
+            },
+            {
+              "id": "SHELL-F-029",
+              "title": "Sign-in slot fills the page",
               "size": 1
             },
             {
-              "id": "HUB-make-down-db",
-              "title": "make down removes the db container",
-              "size": 1
+              "id": "SHELL-F-018",
+              "title": "Identity contract additions for idp v1",
+              "size": 3
             }
           ]
         }
@@ -245,33 +250,13 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-g3",
+          "id": "idp-g4",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "IDP-F-002",
-              "title": "idp plugin project",
-              "size": 1
-            },
-            {
-              "id": "IDP-F-007",
-              "title": "./auth session",
-              "size": 3
-            },
-            {
-              "id": "IDP-F-008",
-              "title": "Sign-in screen",
-              "size": 3
-            },
-            {
-              "id": "IDP-F-011",
-              "title": "Notification source",
-              "size": 2
-            },
-            {
-              "id": "IDP-B-001",
-              "title": "Refresh and revoke under concurrency on Postgres",
+              "id": "IDP-B-002",
+              "title": "Two tabs refreshing at once sign each other out",
               "size": 2
             }
           ]
@@ -377,21 +362,27 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-B-002",
           "title": "Two tabs refreshing at once sign each other out",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer B-002",
+          "start": "2026-11-23T09:01+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "escalations": 1,
+      "tokens": 937602,
+      "costUsd": 1.02,
       "commits": 0
     },
     {
