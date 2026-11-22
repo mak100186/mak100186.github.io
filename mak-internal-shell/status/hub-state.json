@@ -455,11 +455,11 @@
       "commits": 0
     },
     {
-      "id": "w-12",
+      "id": "w-15",
       "packetId": "component-library-g1",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-22T21:26+11:00",
       "phase": "",
       "items": [
