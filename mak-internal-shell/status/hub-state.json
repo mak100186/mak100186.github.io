@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:37+11:00",
+  "generatedAt": "2026-11-23T07:39+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -71,7 +71,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 21,
+        "percentUsed": 22,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 26,
-      "tokens": 69093333,
-      "costUsd": 64.16,
+      "tokens": 70766856,
+      "costUsd": 65.11,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 10,
       "points": 56,
-      "tokens": 314715916,
-      "costUsd": 291.57,
+      "tokens": 316389439,
+      "costUsd": 292.52,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,9 +103,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5619927,
+      "tokens": 5649811,
       "minutes": 37,
-      "costUsd": 5.21
+      "costUsd": 5.22
     },
     "daily": [
       {
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 26,
-        "tokens": 69093333,
-        "costUsd": 64.16
+        "tokens": 70766856,
+        "costUsd": 65.11
       }
     ],
     "tests": {
@@ -386,14 +386,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "",
+      "phase": "Stack: db (5436) for IDP-B-001",
       "items": [
         {
           "id": "IDP-F-002",
           "title": "idp plugin project",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-F-007",
@@ -417,9 +417,25 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer F-002",
+          "start": "2026-11-23T07:38+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer B-001",
+          "start": "2026-11-23T07:38+11:00",
+          "end": null
+        },
+        {
+          "name": "Stack: db (5436) for IDP-B-001 B-001",
+          "start": "2026-11-23T07:39+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 2,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
