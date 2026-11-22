@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:30+11:00",
+  "generatedAt": "2026-11-22T21:32+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -50,11 +50,11 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 62,
+        "percentUsed": 63,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -66,8 +66,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 243696748,
-      "costUsd": 226.21,
+      "tokens": 245622583,
+      "costUsd": 227.41,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -77,8 +77,8 @@
     "week": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 243696748,
-      "costUsd": 226.21,
+      "tokens": 245622583,
+      "costUsd": 227.41,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -86,9 +86,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8123225,
+      "tokens": 8187419,
       "minutes": 8,
-      "costUsd": 7.54
+      "costUsd": 7.58
     },
     "daily": [
       {
@@ -172,8 +172,8 @@
       {
         "date": "2026-11-22",
         "points": 30,
-        "tokens": 243696748,
-        "costUsd": 226.21
+        "tokens": 245622583,
+        "costUsd": 227.41
       }
     ],
     "tests": {
@@ -370,9 +370,9 @@
       "packetId": "shell-g7",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "parked",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Park requested",
+      "phase": "Park",
       "items": [
         {
           "id": "SHELL-F-008",
@@ -440,7 +440,7 @@
         {
           "name": "Parity (stack window r36)",
           "start": "2026-11-22T21:23+11:00",
-          "end": null
+          "end": "2026-11-22T21:30+11:00"
         },
         {
           "name": "Park requested",
@@ -450,8 +450,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 21186138,
-      "costUsd": 21.57,
+      "tokens": 22492984,
+      "costUsd": 22.41,
       "commits": 0
     },
     {
