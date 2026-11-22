@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:13+11:00",
+  "generatedAt": "2026-11-23T07:15+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -78,8 +78,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 14,
-      "tokens": 41682585,
-      "costUsd": 39.43,
+      "tokens": 44339682,
+      "costUsd": 41.89,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -89,8 +89,8 @@
     "week": {
       "packetsMerged": 9,
       "points": 44,
-      "tokens": 287305168,
-      "costUsd": 266.83,
+      "tokens": 289962265,
+      "costUsd": 269.29,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6529663,
+      "tokens": 6590051,
       "minutes": 32,
-      "costUsd": 6.06
+      "costUsd": 6.12
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-23",
         "points": 14,
-        "tokens": 41682585,
-        "costUsd": 39.43
+        "tokens": 44339682,
+        "costUsd": 41.89
       }
     ],
     "tests": {
@@ -404,21 +404,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-010",
           "title": "Shell frame",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-019",
           "title": "Plugin context: loading line, breadcrumb row, menu badges",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-012",
@@ -454,13 +454,18 @@
         {
           "name": "Reviewer F-010",
           "start": "2026-11-23T07:12+11:00",
+          "end": "2026-11-23T07:14+11:00"
+        },
+        {
+          "name": "Developer F-019",
+          "start": "2026-11-23T07:14+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 13186427,
-      "costUsd": 11.89,
+      "escalations": 2,
+      "tokens": 15415674,
+      "costUsd": 14.11,
       "commits": 0
     }
   ],
