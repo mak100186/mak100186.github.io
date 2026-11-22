@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:32+11:00",
+  "generatedAt": "2026-11-22T19:34+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -13,9 +13,9 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 13,
-        "pointsRemaining": 66,
-        "itemsRemaining": 19,
+        "pointsDone": 15,
+        "pointsRemaining": 64,
+        "itemsRemaining": 18,
         "state": "building"
       },
       {
@@ -36,7 +36,7 @@
     "burnup": [
       {
         "date": "2026-11-22",
-        "done": 13,
+        "done": 15,
         "total": 175
       }
     ],
@@ -56,6 +56,11 @@
         "name": "Shell dev setup and plugin catalog on main",
         "date": "2026-11-22",
         "kind": "actual"
+      },
+      {
+        "name": "Dashboard grid spike answered (CSS grid + CDK)",
+        "date": "2026-11-22",
+        "kind": "actual"
       }
     ]
   },
@@ -64,7 +69,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 16,
+        "percentUsed": 18,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -76,8 +81,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 92607130,
-      "costUsd": 83.45,
+      "tokens": 94698723,
+      "costUsd": 85.34,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -87,8 +92,8 @@
     "week": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 92607130,
-      "costUsd": 83.45,
+      "tokens": 94698723,
+      "costUsd": 85.34,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -96,9 +101,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6173809,
+      "tokens": 6313248,
       "minutes": 7,
-      "costUsd": 5.56
+      "costUsd": 5.69
     },
     "daily": [
       {
@@ -182,8 +187,8 @@
       {
         "date": "2026-11-22",
         "points": 15,
-        "tokens": 92607130,
-        "costUsd": 83.45
+        "tokens": 94698723,
+        "costUsd": 85.34
       }
     ],
     "tests": {
@@ -199,18 +204,6 @@
     {
       "component": "shell",
       "packets": [
-        {
-          "id": "shell-g5",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-021",
-              "title": "Spike: dashboard grid approach",
-              "size": 2
-            }
-          ]
-        },
         {
           "id": "shell-g3",
           "kind": "orchestrated",
@@ -265,7 +258,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T19:15+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-004",
@@ -278,7 +271,7 @@
           "id": "SHELL-F-005",
           "title": "Theming lint rules for plugin projects",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -303,7 +296,7 @@
         {
           "name": "Developer F-005",
           "start": "2026-11-22T19:22+11:00",
-          "end": null
+          "end": "2026-11-22T19:33+11:00"
         },
         {
           "name": "Developer F-023",
@@ -314,12 +307,17 @@
           "name": "Reviewer F-023",
           "start": "2026-11-22T19:28+11:00",
           "end": "2026-11-22T19:29+11:00"
+        },
+        {
+          "name": "Reviewer F-005",
+          "start": "2026-11-22T19:33+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 12006941,
-      "costUsd": 12.27,
+      "tokens": 12702234,
+      "costUsd": 12.82,
       "commits": 0
     }
   ],
