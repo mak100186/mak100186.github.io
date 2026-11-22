@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:13+11:00",
+  "generatedAt": "2026-11-22T19:14+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -62,7 +62,7 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -78,10 +78,10 @@
     "today": {
       "packetsMerged": 2,
       "points": 8,
-      "tokens": 43664293,
-      "costUsd": 39.17,
+      "tokens": 46017310,
+      "costUsd": 42.12,
       "minutesWaiting": {
-        "hub": 36,
+        "hub": 45,
         "you": 0,
         "limit": 0
       }
@@ -89,18 +89,18 @@
     "week": {
       "packetsMerged": 2,
       "points": 8,
-      "tokens": 43664293,
-      "costUsd": 39.17,
+      "tokens": 46017310,
+      "costUsd": 42.12,
       "minutesWaiting": {
-        "hub": 36,
+        "hub": 45,
         "you": 0,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 5458037,
+      "tokens": 5752164,
       "minutes": 6,
-      "costUsd": 4.9
+      "costUsd": 5.27
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-22",
         "points": 8,
-        "tokens": 43664293,
-        "costUsd": 39.17
+        "tokens": 46017310,
+        "costUsd": 42.12
       }
     ],
     "tests": {
@@ -269,7 +269,7 @@
       "packetId": "shell-g4",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "parked",
       "startedAt": "2026-11-22T19:06+11:00",
       "phase": "Developer",
       "items": [
@@ -307,8 +307,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 2717865,
-      "costUsd": 3.29,
+      "tokens": 3474388,
+      "costUsd": 4.5,
       "commits": 0
     },
     {
@@ -316,7 +316,7 @@
       "packetId": "shell-g5",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "parked",
       "startedAt": "2026-11-22T19:06+11:00",
       "phase": "Developer",
       "items": [
@@ -337,8 +337,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 912298,
-      "costUsd": 1.14,
+      "tokens": 2508792,
+      "costUsd": 2.87,
       "commits": 0
     }
   ],
