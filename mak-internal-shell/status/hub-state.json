@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:38+11:00",
+  "generatedAt": "2026-11-22T19:40+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -69,7 +69,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 19,
+        "percentUsed": 20,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -81,8 +81,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 101500716,
-      "costUsd": 90.97,
+      "tokens": 102937371,
+      "costUsd": 92.22,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -92,8 +92,8 @@
     "week": {
       "packetsMerged": 4,
       "points": 15,
-      "tokens": 101500716,
-      "costUsd": 90.97,
+      "tokens": 102937371,
+      "costUsd": 92.22,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -101,9 +101,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6766714,
+      "tokens": 6862491,
       "minutes": 7,
-      "costUsd": 6.06
+      "costUsd": 6.15
     },
     "daily": [
       {
@@ -187,8 +187,8 @@
       {
         "date": "2026-11-22",
         "points": 15,
-        "tokens": 101500716,
-        "costUsd": 90.97
+        "tokens": 102937371,
+        "costUsd": 92.22
       }
     ],
     "tests": {
@@ -327,12 +327,17 @@
           "name": "Parity F-023",
           "start": "2026-11-22T19:37+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-22T19:38+11:00",
+          "end": "2026-11-22T19:39+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 17615164,
-      "costUsd": 16.86,
+      "tokens": 19051819,
+      "costUsd": 18.12,
       "commits": 0
     }
   ],
