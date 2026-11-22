@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:27+11:00",
+  "generatedAt": "2026-11-23T08:29+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 47,
+        "percentUsed": 48,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 158163418,
-      "costUsd": 146.05,
+      "tokens": 161296563,
+      "costUsd": 148.94,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 403786001,
-      "costUsd": 373.46,
+      "tokens": 406919146,
+      "costUsd": 376.35,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5768371,
+      "tokens": 5813131,
       "minutes": 31,
-      "costUsd": 5.34
+      "costUsd": 5.38
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 158163418,
-        "costUsd": 146.05
+        "tokens": 161296563,
+        "costUsd": 148.94
       }
     ],
     "tests": {
@@ -397,7 +397,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-028",
@@ -417,8 +417,8 @@
           "id": "SHELL-F-026",
           "title": "Dev proxy to plugin ports",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Reviewer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-027",
@@ -438,12 +438,17 @@
           "name": "Reviewer F-028",
           "start": "2026-11-23T08:22+11:00",
           "end": "2026-11-23T08:23+11:00"
+        },
+        {
+          "name": "Reviewer F-026",
+          "start": "2026-11-23T08:28+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 8202287,
-      "costUsd": 7.87,
+      "tokens": 11006918,
+      "costUsd": 10.58,
       "commits": 0
     }
   ],
