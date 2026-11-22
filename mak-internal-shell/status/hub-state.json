@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:16+11:00",
+  "generatedAt": "2026-11-23T09:18+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -72,10 +72,10 @@
     "today": {
       "packetsMerged": 7,
       "points": 57,
-      "tokens": 249712425,
-      "costUsd": 230.65,
+      "tokens": 251886278,
+      "costUsd": 231.89,
       "minutesWaiting": {
-        "hub": 2,
+        "hub": 3,
         "you": 18,
         "limit": 0
       }
@@ -83,18 +83,18 @@
     "week": {
       "packetsMerged": 14,
       "points": 87,
-      "tokens": 495335008,
-      "costUsd": 458.06,
+      "tokens": 497508861,
+      "costUsd": 459.3,
       "minutesWaiting": {
-        "hub": 48,
+        "hub": 49,
         "you": 120,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 5693506,
+      "tokens": 5718493,
       "minutes": 26,
-      "costUsd": 5.27
+      "costUsd": 5.28
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 57,
-        "tokens": 249712425,
-        "costUsd": 230.65
+        "tokens": 251886278,
+        "costUsd": 231.89
       }
     ],
     "tests": {
@@ -367,8 +367,8 @@
           "id": "SHELL-F-018",
           "title": "Identity contract additions for idp v1",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-029",
@@ -413,12 +413,17 @@
           "name": "Reviewer retry 1 F-015",
           "start": "2026-11-23T09:16+11:00",
           "end": "2026-11-23T09:16+11:00"
+        },
+        {
+          "name": "Developer F-018",
+          "start": "2026-11-23T09:17+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 12844848,
-      "costUsd": 12.39,
+      "tokens": 14099996,
+      "costUsd": 13.14,
       "commits": 0
     }
   ],
