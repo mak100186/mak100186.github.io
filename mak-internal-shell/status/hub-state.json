@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:24+11:00",
+  "generatedAt": "2026-11-23T09:26+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 73,
+        "percentUsed": 75,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 57,
-      "tokens": 256973380,
-      "costUsd": 236.25,
+      "tokens": 258269530,
+      "costUsd": 238.34,
       "minutesWaiting": {
         "hub": 3,
         "you": 18,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 14,
       "points": 87,
-      "tokens": 502595963,
-      "costUsd": 463.66,
+      "tokens": 503892113,
+      "costUsd": 465.75,
       "minutesWaiting": {
         "hub": 49,
         "you": 120,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5776965,
+      "tokens": 5791863,
       "minutes": 26,
-      "costUsd": 5.33
+      "costUsd": 5.35
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 57,
-        "tokens": 256973380,
-        "costUsd": 236.25
+        "tokens": 258269530,
+        "costUsd": 238.34
       }
     ],
     "tests": {
@@ -354,7 +354,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-015",
@@ -367,7 +367,7 @@
           "id": "SHELL-F-018",
           "title": "Identity contract additions for idp v1",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -417,13 +417,18 @@
         {
           "name": "Developer F-018",
           "start": "2026-11-23T09:17+11:00",
+          "end": "2026-11-23T09:26+11:00"
+        },
+        {
+          "name": "Reviewer F-018",
+          "start": "2026-11-23T09:26+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 19187098,
-      "costUsd": 17.5,
+      "tokens": 20483248,
+      "costUsd": 19.59,
       "commits": 0
     }
   ],
