@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:31+11:00",
+  "generatedAt": "2026-11-23T07:33+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -66,7 +66,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 18,
+        "percentUsed": 19,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -78,8 +78,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 14,
-      "tokens": 56746085,
-      "costUsd": 54.23,
+      "tokens": 57561795,
+      "costUsd": 54.75,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -89,8 +89,8 @@
     "week": {
       "packetsMerged": 9,
       "points": 44,
-      "tokens": 302368668,
-      "costUsd": 281.63,
+      "tokens": 303184378,
+      "costUsd": 282.15,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6872015,
+      "tokens": 6890554,
       "minutes": 32,
-      "costUsd": 6.4
+      "costUsd": 6.41
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-23",
         "points": 14,
-        "tokens": 56746085,
-        "costUsd": 54.23
+        "tokens": 57561795,
+        "costUsd": 54.75
       }
     ],
     "tests": {
@@ -288,7 +288,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Finalizers (live pass + r49)",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-003",
@@ -393,7 +393,7 @@
         {
           "name": "Finalizers (live pass + r49)",
           "start": "2026-11-23T07:29+11:00",
-          "end": null
+          "end": "2026-11-23T07:33+11:00"
         }
       ],
       "loops": 0,
@@ -409,7 +409,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Reviewer retry 1 (+ r57 re-review)",
+      "phase": "Stack window r55 scope widened: F-012 e2e run + F-010 and F-019 parity in one window (parity will use F-012's identity fixture for a signed-in session)",
       "items": [
         {
           "id": "SHELL-F-010",
@@ -422,15 +422,15 @@
           "id": "SHELL-F-019",
           "title": "Plugin context: loading line, breadcrumb row, menu badges",
           "size": 3,
-          "phase": "Reviewer retry 1 (+ r57 re-review)",
-          "status": "running"
+          "phase": "Reviewer retry 1",
+          "status": "pass (r57 pass)"
         },
         {
           "id": "SHELL-F-012",
           "title": "Shell end-to-end test fixtures",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-025",
@@ -480,12 +480,22 @@
           "name": "Reviewer retry 1 (+ r57 re-review) F-019",
           "start": "2026-11-23T07:30+11:00",
           "end": null
+        },
+        {
+          "name": "Developer F-012",
+          "start": "2026-11-23T07:31+11:00",
+          "end": null
+        },
+        {
+          "name": "Stack window r55 scope widened: F-012 e2e run + F-010 and F-019 parity in one window (parity will use F-012's identity fixture for a signed-in session)",
+          "start": "2026-11-23T07:31+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 26234462,
-      "costUsd": 24.35,
+      "tokens": 27050172,
+      "costUsd": 24.87,
       "commits": 0
     }
   ],
