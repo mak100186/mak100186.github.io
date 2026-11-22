@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:06+11:00",
+  "generatedAt": "2026-11-23T09:08+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 65,
+        "percentUsed": 68,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 55,
-      "tokens": 219608122,
-      "costUsd": 201.64,
+      "tokens": 232622479,
+      "costUsd": 215.13,
       "minutesWaiting": {
         "hub": 2,
         "you": 13,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 13,
       "points": 85,
-      "tokens": 465230705,
-      "costUsd": 429.04,
+      "tokens": 478245062,
+      "costUsd": 442.54,
       "minutesWaiting": {
         "hub": 48,
         "you": 114,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5473302,
+      "tokens": 5626412,
       "minutes": 26,
-      "costUsd": 5.05
+      "costUsd": 5.21
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 55,
-        "tokens": 219608122,
-        "costUsd": 201.64
+        "tokens": 232622479,
+        "costUsd": 215.13
       }
     ],
     "tests": {
@@ -276,7 +276,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Parity",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-028",
@@ -290,7 +290,7 @@
           "title": "Shared UI building blocks (@shell/ui)",
           "size": 5,
           "phase": "Parity",
-          "status": "running"
+          "status": "fail (loop 2): k4 outlined busy button leading icon lands in the label (24px vs 18px). all other k1-k7, k10 states match. browser window done: all slot-3 servers down (4203/4303 free)."
         },
         {
           "id": "SHELL-F-026",
@@ -346,13 +346,13 @@
         {
           "name": "Parity F-020",
           "start": "2026-11-23T08:53+11:00",
-          "end": null
+          "end": "2026-11-23T09:07+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 31802935,
-      "costUsd": 28.11,
+      "tokens": 41361120,
+      "costUsd": 38.25,
       "commits": 0
     },
     {
@@ -362,7 +362,7 @@
       "kind": "orchestrated",
       "state": "waiting on you",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Finalizer: test-cases.md",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-B-002",
@@ -386,13 +386,18 @@
         {
           "name": "Finalizer: test-cases.md",
           "start": "2026-11-23T09:06+11:00",
-          "end": null
+          "end": "2026-11-23T09:08+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-23T09:06+11:00",
+          "end": "2026-11-23T09:08+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 2859056,
-      "costUsd": 3.15,
+      "tokens": 5014636,
+      "costUsd": 5.49,
       "commits": 0
     },
     {
@@ -402,7 +407,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Wait: wave 1 Developers",
+      "phase": "Wait:",
       "items": [
         {
           "id": "SHELL-F-015",
@@ -422,15 +427,15 @@
           "id": "SHELL-F-029",
           "title": "Sign-in slot fills the page",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
         {
           "name": "Developer F-029",
           "start": "2026-11-23T09:04+11:00",
-          "end": null
+          "end": "2026-11-23T09:06+11:00"
         },
         {
           "name": "Developer F-015",
@@ -441,12 +446,17 @@
           "name": "Wait: wave 1 Developers",
           "start": "2026-11-23T09:04+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer F-029",
+          "start": "2026-11-23T09:06+11:00",
+          "end": "2026-11-23T09:07+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4521932,
-      "costUsd": 4,
+      "tokens": 5385940,
+      "costUsd": 4.79,
       "commits": 0
     }
   ],
