@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:15+11:00",
+  "generatedAt": "2026-11-23T08:17+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -13,9 +13,9 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 39,
-        "pointsRemaining": 44,
-        "itemsRemaining": 13,
+        "pointsDone": 51,
+        "pointsRemaining": 33,
+        "itemsRemaining": 10,
         "state": "building"
       },
       {
@@ -41,41 +41,30 @@
       },
       {
         "date": "2026-11-23",
-        "done": 56,
-        "total": 181
+        "done": 68,
+        "total": 182
       }
     ],
     "waitingOnPeople": [
       {
-        "who": "user",
-        "what": "Strict parity check on shell? (3 UI merges)",
-        "ref": "SHELL-F-008",
-        "since": "2026-11-23T00:00:00+11:00"
+        "who": "owner",
+        "what": "Run the strict look check on the shell now?",
+        "ref": "SHELL-F-010",
+        "since": "2026-11-23T08:00:00+11:00"
       }
     ],
-    "milestones": [
-      {
-        "name": "Shell Phase 0 done",
-        "date": "2026-11-22",
-        "kind": "actual"
-      },
-      {
-        "name": "idp sign-in API on main",
-        "date": "2026-11-23",
-        "kind": "actual"
-      }
-    ]
+    "milestones": []
   },
   "hub": {
     "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 40,
+        "percentUsed": 42,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 31,
+        "percentUsed": 32,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -83,10 +72,10 @@
     "today": {
       "packetsMerged": 4,
       "points": 38,
-      "tokens": 136652478,
-      "costUsd": 126.69,
+      "tokens": 141939246,
+      "costUsd": 131.66,
       "minutesWaiting": {
-        "hub": 0,
+        "hub": 1,
         "you": 0,
         "limit": 0
       }
@@ -94,18 +83,18 @@
     "week": {
       "packetsMerged": 11,
       "points": 68,
-      "tokens": 382275061,
-      "costUsd": 354.09,
+      "tokens": 387561829,
+      "costUsd": 359.07,
       "minutesWaiting": {
-        "hub": 46,
+        "hub": 47,
         "you": 102,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 5621692,
+      "tokens": 5699439,
       "minutes": 32,
-      "costUsd": 5.21
+      "costUsd": 5.28
     },
     "daily": [
       {
@@ -189,13 +178,13 @@
       {
         "date": "2026-11-23",
         "points": 38,
-        "tokens": 136652478,
-        "costUsd": 126.69
+        "tokens": 141939246,
+        "costUsd": 131.66
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-23T07:05+11:00",
+        "at": "2026-11-23T08:15+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -207,28 +196,45 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g8",
+          "id": "shell-g9",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "SHELL-F-010",
-              "title": "Shell frame",
+              "id": "SHELL-F-028",
+              "title": "Busy-button spinner size",
+              "size": 1
+            },
+            {
+              "id": "SHELL-F-020",
+              "title": "Shared UI building blocks (@shell/ui)",
               "size": 5
             },
             {
-              "id": "SHELL-F-019",
-              "title": "Loading line, breadcrumb row, menu badges",
-              "size": 3
+              "id": "SHELL-F-026",
+              "title": "Dev proxy to plugin ports",
+              "size": 2
             },
             {
-              "id": "SHELL-F-012",
-              "title": "Shell end-to-end test fixtures",
-              "size": 3
+              "id": "SHELL-F-027",
+              "title": "Plugin icon in the manifest",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "direct-1",
+          "kind": "direct",
+          "state": "running",
+          "items": [
+            {
+              "id": "HUB-make-e2e",
+              "title": "make e2e target",
+              "size": 1
             },
             {
-              "id": "SHELL-F-025",
-              "title": "Plugin generator adds tsconfig references",
+              "id": "HUB-make-down-db",
+              "title": "make down removes the db container",
               "size": 1
             }
           ]
@@ -246,22 +252,22 @@
             {
               "id": "IDP-F-002",
               "title": "idp plugin project",
-              "size": 2
+              "size": 1
             },
             {
               "id": "IDP-F-007",
-              "title": "./auth AuthProvider session",
+              "title": "./auth session",
               "size": 3
             },
             {
               "id": "IDP-F-008",
               "title": "Sign-in screen",
-              "size": 5
+              "size": 3
             },
             {
               "id": "IDP-F-011",
-              "title": "idp notification source",
-              "size": 3
+              "title": "Notification source",
+              "size": 2
             },
             {
               "id": "IDP-B-001",
@@ -285,7 +291,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer (wave 3: F-008, F-011, F-007 r2 delta)",
       "items": [
         {
           "id": "IDP-F-002",
@@ -305,7 +311,7 @@
           "id": "IDP-F-008",
           "title": "Sign-in screen",
           "size": 5,
-          "phase": "Developer",
+          "phase": "Stack window r67 (Parity, 4204)",
           "status": "running"
         },
         {
@@ -361,12 +367,22 @@
           "name": "Developer F-011",
           "start": "2026-11-23T08:02+11:00",
           "end": "2026-11-23T08:10+11:00"
+        },
+        {
+          "name": "Stack window r67 (Parity, 4204) F-008",
+          "start": "2026-11-23T08:15+11:00",
+          "end": null
+        },
+        {
+          "name": "Reviewer (wave 3: F-008, F-011, F-007 r2 delta)",
+          "start": "2026-11-23T08:17+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 33865069,
-      "costUsd": 30.63,
+      "tokens": 35475098,
+      "costUsd": 32.34,
       "commits": 0
     },
     {
@@ -395,9 +411,9 @@
       ],
       "steps": [],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "escalations": 1,
+      "tokens": 1141566,
+      "costUsd": 0.97,
       "commits": 0
     },
     {
