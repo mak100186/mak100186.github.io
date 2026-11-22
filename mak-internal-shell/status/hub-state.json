@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:23+11:00",
+  "generatedAt": "2026-11-23T08:25+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 46,
+        "percentUsed": 47,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 156130648,
-      "costUsd": 144.14,
+      "tokens": 157466775,
+      "costUsd": 145.4,
       "minutesWaiting": {
         "hub": 1,
         "you": 0,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 401753231,
-      "costUsd": 371.55,
+      "tokens": 403089358,
+      "costUsd": 372.81,
       "minutesWaiting": {
         "hub": 47,
         "you": 102,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5739332,
+      "tokens": 5758419,
       "minutes": 31,
-      "costUsd": 5.31
+      "costUsd": 5.33
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 156130648,
-        "costUsd": 144.14
+        "tokens": 157466775,
+        "costUsd": 145.4
       }
     ],
     "tests": {
@@ -397,14 +397,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-028",
           "title": "Busy-button spinner size",
           "size": 1,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass; parity by render check (18x18, 0.13% vs material diameter=18; no shell screen draws k4 until f-020). committed on branch as 1c0120a (r74)."
         },
         {
           "id": "SHELL-F-020",
@@ -437,13 +437,13 @@
         {
           "name": "Reviewer F-028",
           "start": "2026-11-23T08:22+11:00",
-          "end": null
+          "end": "2026-11-23T08:23+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 6169517,
-      "costUsd": 5.96,
+      "tokens": 7505644,
+      "costUsd": 7.21,
       "commits": 0
     }
   ],
