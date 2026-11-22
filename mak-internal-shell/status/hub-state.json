@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:12+11:00",
+  "generatedAt": "2026-11-23T09:14+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,11 +60,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 70,
+        "percentUsed": 71,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 35,
+        "percentUsed": 36,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 57,
-      "tokens": 241553954,
-      "costUsd": 222.69,
+      "tokens": 248024197,
+      "costUsd": 228.8,
       "minutesWaiting": {
         "hub": 2,
         "you": 18,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 14,
       "points": 87,
-      "tokens": 487176537,
-      "costUsd": 450.09,
+      "tokens": 493646780,
+      "costUsd": 456.2,
       "minutesWaiting": {
         "hub": 48,
         "you": 120,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5599730,
+      "tokens": 5674101,
       "minutes": 26,
-      "costUsd": 5.17
+      "costUsd": 5.24
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 57,
-        "tokens": 241553954,
-        "costUsd": 222.69
+        "tokens": 248024197,
+        "costUsd": 228.8
       }
     ],
     "tests": {
@@ -343,8 +343,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 42938454,
-      "costUsd": 39.48,
+      "tokens": 43181641,
+      "costUsd": 39.6,
       "commits": 0
     },
     {
@@ -354,13 +354,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Wait:",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-015",
           "title": "Profile page",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -387,7 +387,7 @@
         {
           "name": "Developer F-015",
           "start": "2026-11-23T09:04+11:00",
-          "end": null
+          "end": "2026-11-23T09:13+11:00"
         },
         {
           "name": "Wait: wave 1 Developers",
@@ -398,12 +398,17 @@
           "name": "Reviewer F-029",
           "start": "2026-11-23T09:06+11:00",
           "end": "2026-11-23T09:07+11:00"
+        },
+        {
+          "name": "Reviewer F-015",
+          "start": "2026-11-23T09:13+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 5385940,
-      "costUsd": 4.79,
+      "tokens": 11156620,
+      "costUsd": 10.53,
       "commits": 0
     }
   ],
