@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:49+11:00",
+  "generatedAt": "2026-11-23T07:51+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,8 +83,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 26,
-      "tokens": 90443716,
-      "costUsd": 83.03,
+      "tokens": 92877555,
+      "costUsd": 85.86,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -94,8 +94,8 @@
     "week": {
       "packetsMerged": 10,
       "points": 56,
-      "tokens": 336066299,
-      "costUsd": 310.44,
+      "tokens": 338500138,
+      "costUsd": 313.27,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -103,9 +103,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6001184,
+      "tokens": 6044645,
       "minutes": 37,
-      "costUsd": 5.54
+      "costUsd": 5.59
     },
     "daily": [
       {
@@ -189,8 +189,8 @@
       {
         "date": "2026-11-23",
         "points": 26,
-        "tokens": 90443716,
-        "costUsd": 83.03
+        "tokens": 92877555,
+        "costUsd": 85.86
       }
     ],
     "tests": {
@@ -298,8 +298,8 @@
           "id": "SHELL-F-019",
           "title": "Plugin context: loading line, breadcrumb row, menu badges",
           "size": 3,
-          "phase": "Reviewer retry 1",
-          "status": "pass (r57 pass)"
+          "phase": "Parity",
+          "status": "pass"
         },
         {
           "id": "SHELL-F-012",
@@ -380,8 +380,8 @@
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 35467432,
-      "costUsd": 32.83,
+      "tokens": 37614624,
+      "costUsd": 35.2,
       "commits": 0
     },
     {
@@ -391,7 +391,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-002",
@@ -404,8 +404,8 @@
           "id": "IDP-F-007",
           "title": "./auth AuthProvider session",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-F-008",
@@ -436,7 +436,7 @@
         {
           "name": "Stack: db (5436) for IDP-B-001 B-001",
           "start": "2026-11-23T07:39+11:00",
-          "end": null
+          "end": "2026-11-23T07:51+11:00"
         },
         {
           "name": "Reviewer F-002",
@@ -446,13 +446,18 @@
         {
           "name": "Reviewer B-001",
           "start": "2026-11-23T07:48+11:00",
+          "end": "2026-11-23T07:51+11:00"
+        },
+        {
+          "name": "Developer F-007",
+          "start": "2026-11-23T07:51+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 11109116,
-      "costUsd": 9.83,
+      "tokens": 11395763,
+      "costUsd": 10.29,
       "commits": 0
     }
   ],
