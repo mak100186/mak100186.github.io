@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:07+11:00",
+  "generatedAt": "2026-11-23T07:09+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -288,7 +288,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Reviewer (fix r49)",
+      "phase": "Live",
       "items": [
         {
           "id": "IDP-F-003",
@@ -309,7 +309,7 @@
           "title": "Sign-in endpoint and blocking",
           "size": 3,
           "phase": "Reviewer (fix r49)",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "IDP-F-006",
@@ -388,7 +388,7 @@
         {
           "name": "Reviewer (fix r49) F-005",
           "start": "2026-11-23T07:04+11:00",
-          "end": null
+          "end": "2026-11-23T07:07+11:00"
         }
       ],
       "loops": 0,
