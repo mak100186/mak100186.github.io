@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:28+11:00",
+  "generatedAt": "2026-11-23T09:30+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,11 +60,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 77,
+        "percentUsed": 78,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 36,
+        "percentUsed": 37,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 57,
-      "tokens": 263026838,
-      "costUsd": 241.48,
+      "tokens": 270295359,
+      "costUsd": 247.75,
       "minutesWaiting": {
         "hub": 4,
         "you": 18,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 14,
       "points": 87,
-      "tokens": 508649421,
-      "costUsd": 468.88,
+      "tokens": 515917942,
+      "costUsd": 475.16,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5846545,
+      "tokens": 5930091,
       "minutes": 26,
-      "costUsd": 5.39
+      "costUsd": 5.46
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 57,
-        "tokens": 263026838,
-        "costUsd": 241.48
+        "tokens": 270295359,
+        "costUsd": 247.75
       }
     ],
     "tests": {
@@ -263,7 +263,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Parity (retry 2, K4)",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "SHELL-F-028",
@@ -277,7 +277,7 @@
           "title": "Shared UI building blocks (@shell/ui)",
           "size": 5,
           "phase": "Parity (retry 2, K4)",
-          "status": "running"
+          "status": "pass: all five k4 buttons, light and dark, match the board exactly (outlined export csv icon 18x18 at 17,9; label 71.8x20; button 139.8x36). the parity agent stalled after measuring, so the worker read its saved k4-compare results and stopped it. 4203 server stopped; the window is free."
         },
         {
           "id": "SHELL-F-026",
@@ -338,13 +338,23 @@
         {
           "name": "Parity (retry 2, K4) F-020",
           "start": "2026-11-23T09:09+11:00",
+          "end": "2026-11-23T09:28+11:00"
+        },
+        {
+          "name": "Integration pass 2",
+          "start": "2026-11-23T09:29+11:00",
+          "end": null
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-23T09:30+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 43181641,
-      "costUsd": 39.6,
+      "tokens": 46900838,
+      "costUsd": 43.29,
       "commits": 0
     },
     {
@@ -354,14 +364,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Developer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-015",
           "title": "Profile page",
           "size": 3,
-          "phase": "Reviewer retry 1",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "SHELL-F-018",
@@ -374,7 +384,7 @@
           "id": "SHELL-F-029",
           "title": "Sign-in slot fills the page",
           "size": 1,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "pass"
         }
       ],
@@ -423,12 +433,22 @@
           "name": "Reviewer F-018",
           "start": "2026-11-23T09:26+11:00",
           "end": "2026-11-23T09:27+11:00"
+        },
+        {
+          "name": "Parity F-029",
+          "start": "2026-11-23T09:29+11:00",
+          "end": "2026-11-23T09:30+11:00"
+        },
+        {
+          "name": "Parity F-015",
+          "start": "2026-11-23T09:29+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 22907225,
-      "costUsd": 21.47,
+      "tokens": 26456549,
+      "costUsd": 24.06,
       "commits": 0
     }
   ],
