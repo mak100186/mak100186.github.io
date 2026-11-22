@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:29+11:00",
+  "generatedAt": "2026-11-23T07:31+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -66,11 +66,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 17,
+        "percentUsed": 18,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 28,
+        "percentUsed": 29,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -78,8 +78,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 14,
-      "tokens": 51830325,
-      "costUsd": 49.53,
+      "tokens": 56746085,
+      "costUsd": 54.23,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -89,8 +89,8 @@
     "week": {
       "packetsMerged": 9,
       "points": 44,
-      "tokens": 297452908,
-      "costUsd": 276.94,
+      "tokens": 302368668,
+      "costUsd": 281.63,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6760293,
+      "tokens": 6872015,
       "minutes": 32,
-      "costUsd": 6.29
+      "costUsd": 6.4
     },
     "daily": [
       {
@@ -184,8 +184,8 @@
       {
         "date": "2026-11-23",
         "points": 14,
-        "tokens": 51830325,
-        "costUsd": 49.53
+        "tokens": 56746085,
+        "costUsd": 54.23
       }
     ],
     "tests": {
@@ -288,7 +288,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Finalizers",
+      "phase": "Finalizers (live pass + r49)",
       "items": [
         {
           "id": "IDP-F-003",
@@ -389,12 +389,17 @@
           "name": "Reviewer (fix r49) F-005",
           "start": "2026-11-23T07:04+11:00",
           "end": "2026-11-23T07:07+11:00"
+        },
+        {
+          "name": "Finalizers (live pass + r49)",
+          "start": "2026-11-23T07:29+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 24056476,
-      "costUsd": 26.97,
+      "tokens": 25213489,
+      "costUsd": 28.82,
       "commits": 0
     },
     {
@@ -404,7 +409,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T06:56+11:00",
-      "phase": "Developer retry 1 (+ r57)",
+      "phase": "Reviewer retry 1 (+ r57 re-review)",
       "items": [
         {
           "id": "SHELL-F-010",
@@ -417,7 +422,7 @@
           "id": "SHELL-F-019",
           "title": "Plugin context: loading line, breadcrumb row, menu badges",
           "size": 3,
-          "phase": "Developer retry 1 (+ r57)",
+          "phase": "Reviewer retry 1 (+ r57 re-review)",
           "status": "running"
         },
         {
@@ -470,12 +475,17 @@
           "name": "Developer retry 1 (+ r57) F-019",
           "start": "2026-11-23T07:26+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer retry 1 (+ r57 re-review) F-019",
+          "start": "2026-11-23T07:30+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 22475715,
-      "costUsd": 21.51,
+      "tokens": 26234462,
+      "costUsd": 24.35,
       "commits": 0
     }
   ],
