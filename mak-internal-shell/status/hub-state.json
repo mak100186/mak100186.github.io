@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T20:55+11:00",
+  "generatedAt": "2026-11-22T20:57+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 43,
+        "percentUsed": 45,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 173484143,
-      "costUsd": 157.07,
+      "tokens": 177263730,
+      "costUsd": 159.93,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 173484143,
-      "costUsd": 157.07,
+      "tokens": 177263730,
+      "costUsd": 159.93,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6672467,
+      "tokens": 6817836,
       "minutes": 7,
-      "costUsd": 6.04
+      "costUsd": 6.15
     },
     "daily": [
       {
@@ -197,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 173484143,
-        "costUsd": 157.07
+        "tokens": 177263730,
+        "costUsd": 159.93
       }
     ],
     "tests": {
@@ -300,13 +300,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-017",
           "title": "Plugin project template — design driven by the shell",
           "size": 3,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "running"
         },
         {
@@ -336,13 +336,18 @@
         {
           "name": "Reviewer F-017",
           "start": "2026-11-22T20:53+11:00",
+          "end": "2026-11-22T20:56+11:00"
+        },
+        {
+          "name": "Parity F-017",
+          "start": "2026-11-22T20:56+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 19130733,
-      "costUsd": 16.44,
+      "tokens": 21829674,
+      "costUsd": 18.71,
       "commits": 0
     },
     {
@@ -352,7 +357,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Developer (wave 1: IDP-F-003, IDP-F-004)",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-003",
@@ -392,8 +397,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1764710,
-      "costUsd": 1.86,
+      "tokens": 2105566,
+      "costUsd": 2.05,
       "commits": 0
     },
     {
@@ -436,8 +441,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 2541331,
-      "costUsd": 2.31,
+      "tokens": 2802271,
+      "costUsd": 2.46,
       "commits": 0
     }
   ],
