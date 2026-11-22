@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:53+11:00",
+  "generatedAt": "2026-11-23T08:55+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 202036098,
-      "costUsd": 186.68,
+      "tokens": 202938609,
+      "costUsd": 187.81,
       "minutesWaiting": {
         "hub": 2,
         "you": 13,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 447658681,
-      "costUsd": 414.09,
+      "tokens": 448561192,
+      "costUsd": 415.22,
       "minutesWaiting": {
         "hub": 48,
         "you": 114,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6395124,
+      "tokens": 6408017,
       "minutes": 31,
-      "costUsd": 5.92
+      "costUsd": 5.93
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 202036098,
-        "costUsd": 186.68
+        "tokens": 202938609,
+        "costUsd": 187.81
       }
     ],
     "tests": {
@@ -291,7 +291,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T07:35+11:00",
-      "phase": "Developer (retry 2, r82)",
+      "phase": "Parity",
       "items": [
         {
           "id": "IDP-F-002",
@@ -312,7 +312,7 @@
           "title": "Sign-in screen",
           "size": 5,
           "phase": "Developer (retry 2, r82)",
-          "status": "running"
+          "status": "done"
         },
         {
           "id": "IDP-F-011",
@@ -401,13 +401,13 @@
         {
           "name": "Developer (retry 2, r82) F-008",
           "start": "2026-11-23T08:52+11:00",
-          "end": null
+          "end": "2026-11-23T08:55+11:00"
         }
       ],
       "loops": 0,
       "escalations": 7,
-      "tokens": 58397305,
-      "costUsd": 56.03,
+      "tokens": 59299816,
+      "costUsd": 57.16,
       "commits": 0
     },
     {
