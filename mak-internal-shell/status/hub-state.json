@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T08:55+11:00",
+  "generatedAt": "2026-11-23T08:57+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 58,
+        "percentUsed": 59,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 40,
-      "tokens": 202938609,
-      "costUsd": 187.81,
+      "tokens": 203500175,
+      "costUsd": 188.48,
       "minutesWaiting": {
         "hub": 2,
         "you": 13,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 12,
       "points": 70,
-      "tokens": 448561192,
-      "costUsd": 415.22,
+      "tokens": 449122758,
+      "costUsd": 415.88,
       "minutesWaiting": {
         "hub": 48,
         "you": 114,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6408017,
+      "tokens": 6416039,
       "minutes": 31,
-      "costUsd": 5.93
+      "costUsd": 5.94
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 40,
-        "tokens": 202938609,
-        "costUsd": 187.81
+        "tokens": 203500175,
+        "costUsd": 188.48
       }
     ],
     "tests": {
@@ -311,8 +311,8 @@
           "id": "IDP-F-008",
           "title": "Sign-in screen",
           "size": 5,
-          "phase": "Developer (retry 2, r82)",
-          "status": "done"
+          "phase": "Reviewer (retry 2, r82)",
+          "status": "pass"
         },
         {
           "id": "IDP-F-011",
@@ -406,8 +406,8 @@
       ],
       "loops": 0,
       "escalations": 7,
-      "tokens": 59299816,
-      "costUsd": 57.16,
+      "tokens": 59861382,
+      "costUsd": 57.82,
       "commits": 0
     },
     {
