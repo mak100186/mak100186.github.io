@@ -344,11 +344,11 @@
       "commits": 0
     },
     {
-      "id": "shell-g7",
+      "id": "w-11",
       "packetId": "shell-g7",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "queued",
+      "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
       "phase": "",
       "items": [
