@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:03+11:00",
+  "generatedAt": "2026-11-23T07:05+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
       "likely": "2026-11-30",
-      "optimistic": "2026-11-29",
+      "optimistic": "2026-11-28",
       "pessimistic": "2026-12-02"
     },
     "components": [
@@ -66,20 +66,20 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 9,
+        "percentUsed": 10,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 27,
+        "percentUsed": 28,
         "resetsAt": "2026-11-23T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 1,
-      "points": 12,
-      "tokens": 27782053,
-      "costUsd": 27.95,
+      "packetsMerged": 2,
+      "points": 14,
+      "tokens": 31478233,
+      "costUsd": 30.43,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -87,10 +87,10 @@
       }
     },
     "week": {
-      "packetsMerged": 8,
-      "points": 42,
-      "tokens": 273404636,
-      "costUsd": 255.36,
+      "packetsMerged": 9,
+      "points": 44,
+      "tokens": 277100816,
+      "costUsd": 257.83,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -98,9 +98,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6509634,
-      "minutes": 20,
-      "costUsd": 6.08
+      "tokens": 6297746,
+      "minutes": 32,
+      "costUsd": 5.86
     },
     "daily": [
       {
@@ -183,9 +183,9 @@
       },
       {
         "date": "2026-11-23",
-        "points": 12,
-        "tokens": 27782053,
-        "costUsd": 27.95
+        "points": 14,
+        "tokens": 31478233,
+        "costUsd": 30.43
       }
     ],
     "tests": {
@@ -288,7 +288,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Developer (fix r49)",
+      "phase": "Reviewer (fix r49)",
       "items": [
         {
           "id": "IDP-F-003",
@@ -308,7 +308,7 @@
           "id": "IDP-F-005",
           "title": "Sign-in endpoint and blocking",
           "size": 3,
-          "phase": "Developer (fix r49)",
+          "phase": "Reviewer (fix r49)",
           "status": "running"
         },
         {
@@ -383,64 +383,19 @@
         {
           "name": "Developer (fix r49) F-005",
           "start": "2026-11-23T06:59+11:00",
+          "end": "2026-11-23T07:04+11:00"
+        },
+        {
+          "name": "Reviewer (fix r49) F-005",
+          "start": "2026-11-23T07:04+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 23919458,
-      "costUsd": 26.68,
+      "tokens": 24056476,
+      "costUsd": 26.97,
       "commits": 0
-    },
-    {
-      "id": "w-15",
-      "packetId": "component-library-g1",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-22T21:26+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "COMPONENT-LIBRARY-F-001",
-          "title": "Component library plugin project",
-          "size": 2,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer LIBRARY-F-001",
-          "start": "2026-11-23T06:49+11:00",
-          "end": "2026-11-23T06:53+11:00"
-        },
-        {
-          "name": "Reviewer LIBRARY-F-001",
-          "start": "2026-11-23T06:53+11:00",
-          "end": "2026-11-23T06:55+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-23T06:55+11:00",
-          "end": "2026-11-23T06:59+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-23T06:59+11:00",
-          "end": "2026-11-23T07:01+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-23T07:00+11:00",
-          "end": "2026-11-23T07:02+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 3,
-      "tokens": 10082431,
-      "costUsd": 10.36,
-      "commits": 22
     },
     {
       "id": "w-16",
@@ -505,6 +460,16 @@
     }
   ],
   "recent": [
+    {
+      "packetId": "component-library-g1",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-23T07:03+11:00",
+      "items": 1,
+      "points": 2,
+      "minutes": 577,
+      "tokens": 11119054
+    },
     {
       "packetId": "shell-g7",
       "component": "shell",
