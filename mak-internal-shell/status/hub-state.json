@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:08+11:00",
+  "generatedAt": "2026-11-23T09:10+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 68,
+        "percentUsed": 69,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +72,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 55,
-      "tokens": 232622479,
-      "costUsd": 215.13,
+      "tokens": 236361825,
+      "costUsd": 219,
       "minutesWaiting": {
         "hub": 2,
         "you": 13,
@@ -83,8 +83,8 @@
     "week": {
       "packetsMerged": 13,
       "points": 85,
-      "tokens": 478245062,
-      "costUsd": 442.54,
+      "tokens": 481984408,
+      "costUsd": 446.41,
       "minutesWaiting": {
         "hub": 48,
         "you": 114,
@@ -92,9 +92,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5626412,
+      "tokens": 5670405,
       "minutes": 26,
-      "costUsd": 5.21
+      "costUsd": 5.25
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 55,
-        "tokens": 232622479,
-        "costUsd": 215.13
+        "tokens": 236361825,
+        "costUsd": 219
       }
     ],
     "tests": {
@@ -276,7 +276,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T08:15+11:00",
-      "phase": "Developer",
+      "phase": "Parity (retry 2, K4)",
       "items": [
         {
           "id": "SHELL-F-028",
@@ -289,8 +289,8 @@
           "id": "SHELL-F-020",
           "title": "Shared UI building blocks (@shell/ui)",
           "size": 5,
-          "phase": "Parity",
-          "status": "fail (loop 2): k4 outlined busy button leading icon lands in the label (24px vs 18px). all other k1-k7, k10 states match. browser window done: all slot-3 servers down (4203/4303 free)."
+          "phase": "Parity (retry 2, K4)",
+          "status": "running"
         },
         {
           "id": "SHELL-F-026",
@@ -347,12 +347,17 @@
           "name": "Parity F-020",
           "start": "2026-11-23T08:53+11:00",
           "end": "2026-11-23T09:07+11:00"
+        },
+        {
+          "name": "Parity (retry 2, K4) F-020",
+          "start": "2026-11-23T09:09+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 41361120,
-      "costUsd": 38.25,
+      "tokens": 42938454,
+      "costUsd": 39.48,
       "commits": 0
     },
     {
@@ -362,7 +367,7 @@
       "kind": "orchestrated",
       "state": "waiting on you",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers (PMBook+arch sweep, Handoff, Revision/Changelog/Runbook, Graphify)",
       "items": [
         {
           "id": "IDP-B-002",
@@ -392,12 +397,17 @@
           "name": "Integration",
           "start": "2026-11-23T09:06+11:00",
           "end": "2026-11-23T09:08+11:00"
+        },
+        {
+          "name": "Finalizers (PMBook+arch sweep, Handoff, Revision/Changelog/Runbook, Graphify)",
+          "start": "2026-11-23T09:09+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 5014636,
-      "costUsd": 5.49,
+      "tokens": 7176648,
+      "costUsd": 8.13,
       "commits": 0
     },
     {
