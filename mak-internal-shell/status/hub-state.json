@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:23+11:00",
+  "generatedAt": "2026-11-22T21:25+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 60,
+        "percentUsed": 61,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 230040461,
-      "costUsd": 213.34,
+      "tokens": 232236170,
+      "costUsd": 215.12,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 7,
       "points": 30,
-      "tokens": 230040461,
-      "costUsd": 213.34,
+      "tokens": 232236170,
+      "costUsd": 215.12,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7668015,
+      "tokens": 7741206,
       "minutes": 8,
-      "costUsd": 7.11
+      "costUsd": 7.17
     },
     "daily": [
       {
@@ -197,13 +197,13 @@
       {
         "date": "2026-11-22",
         "points": 30,
-        "tokens": 230040461,
-        "costUsd": 213.34
+        "tokens": 232236170,
+        "costUsd": 215.12
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-22T20:49+11:00",
+        "at": "2026-11-22T21:24+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -474,8 +474,32 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 16166585,
-      "costUsd": 17.32,
+      "tokens": 17591374,
+      "costUsd": 18.25,
+      "commits": 0
+    },
+    {
+      "id": "component-library-g1",
+      "packetId": "component-library-g1",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-22T21:25+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-F-001",
+          "title": "Component library plugin project",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
