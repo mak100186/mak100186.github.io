@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T06:54+11:00",
+  "generatedAt": "2026-11-23T06:56+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-12-03",
-      "optimistic": "2026-12-01",
-      "pessimistic": "2026-12-06"
+      "likely": "2026-11-30",
+      "optimistic": "2026-11-29",
+      "pessimistic": "2026-12-03"
     },
     "components": [
       {
@@ -38,6 +38,11 @@
         "date": "2026-11-22",
         "done": 30,
         "total": 175
+      },
+      {
+        "date": "2026-11-23",
+        "done": 30,
+        "total": 175
       }
     ],
     "waitingOnPeople": [],
@@ -54,7 +59,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 3,
+        "percentUsed": 4,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -64,10 +69,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 0,
-      "points": 0,
-      "tokens": 9628274,
-      "costUsd": 11.63,
+      "packetsMerged": 1,
+      "points": 12,
+      "tokens": 12210877,
+      "costUsd": 13.68,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -75,10 +80,10 @@
       }
     },
     "week": {
-      "packetsMerged": 7,
-      "points": 30,
-      "tokens": 255250857,
-      "costUsd": 239.03,
+      "packetsMerged": 8,
+      "points": 42,
+      "tokens": 257833460,
+      "costUsd": 241.09,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -86,9 +91,9 @@
       }
     },
     "perPoint": {
-      "tokens": 8508362,
-      "minutes": 8,
-      "costUsd": 7.97
+      "tokens": 6138892,
+      "minutes": 20,
+      "costUsd": 5.74
     },
     "daily": [
       {
@@ -171,9 +176,9 @@
       },
       {
         "date": "2026-11-23",
-        "points": 0,
-        "tokens": 9628274,
-        "costUsd": 11.63
+        "points": 12,
+        "tokens": 12210877,
+        "costUsd": 13.68
       }
     ],
     "tests": {
@@ -371,119 +376,20 @@
       "commits": 0
     },
     {
-      "id": "w-14",
-      "packetId": "shell-g7",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-F-008",
-          "title": "Identity bridge and sign-in slot",
-          "size": 5,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-009",
-          "title": "Plugin Loader",
-          "size": 5,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-011",
-          "title": "Message bus",
-          "size": 2,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-008",
-          "start": "2026-11-22T20:52+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer F-008",
-          "start": "2026-11-22T20:59+11:00",
-          "end": "2026-11-22T21:00+11:00"
-        },
-        {
-          "name": "Developer F-009",
-          "start": "2026-11-22T21:00+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer F-009",
-          "start": "2026-11-22T21:10+11:00",
-          "end": "2026-11-22T21:11+11:00"
-        },
-        {
-          "name": "Developer F-011",
-          "start": "2026-11-22T21:11+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer F-011",
-          "start": "2026-11-22T21:16+11:00",
-          "end": "2026-11-22T21:16+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-22T21:17+11:00",
-          "end": "2026-11-22T21:19+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-22T21:19+11:00",
-          "end": "2026-11-22T21:22+11:00"
-        },
-        {
-          "name": "Parity (stack window r36)",
-          "start": "2026-11-22T21:23+11:00",
-          "end": "2026-11-22T21:30+11:00"
-        },
-        {
-          "name": "Park requested",
-          "start": "2026-11-22T21:26+11:00",
-          "end": null
-        },
-        {
-          "name": "Integration re-gate (post-merge)",
-          "start": "2026-11-23T06:48+11:00",
-          "end": "2026-11-23T06:49+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-23T06:50+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 27780539,
-      "costUsd": 29.42,
-      "commits": 0
-    },
-    {
       "id": "w-15",
       "packetId": "component-library-g1",
       "component": "component-library",
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T21:26+11:00",
-      "phase": "Reviewer",
+      "phase": "Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-001",
           "title": "Component library plugin project",
           "size": 2,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -495,17 +401,77 @@
         {
           "name": "Reviewer LIBRARY-F-001",
           "start": "2026-11-23T06:53+11:00",
+          "end": "2026-11-23T06:55+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-23T06:55+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3964590,
-      "costUsd": 3.8,
+      "tokens": 4873934,
+      "costUsd": 4.75,
+      "commits": 0
+    },
+    {
+      "id": "shell-g8",
+      "packetId": "shell-g8",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-23T06:56+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-010",
+          "title": "Shell frame",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-019",
+          "title": "Plugin context: loading line, breadcrumb row, menu badges",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-012",
+          "title": "Shell end-to-end test fixtures",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-025",
+          "title": "Plugin generator adds tsconfig references",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g7",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-23T06:55+11:00",
+      "items": 3,
+      "points": 12,
+      "minutes": 606,
+      "tokens": 27780539
+    },
     {
       "packetId": "shell-g6",
       "component": "shell",
