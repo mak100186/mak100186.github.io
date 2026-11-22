@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:05+11:00",
+  "generatedAt": "2026-11-22T21:07+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 49,
+        "percentUsed": 50,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 191435544,
-      "costUsd": 173.26,
+      "tokens": 194334770,
+      "costUsd": 176.26,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 191435544,
-      "costUsd": 173.26,
+      "tokens": 194334770,
+      "costUsd": 176.26,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7362906,
+      "tokens": 7474414,
       "minutes": 7,
-      "costUsd": 6.66
+      "costUsd": 6.78
     },
     "daily": [
       {
@@ -197,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 191435544,
-        "costUsd": 173.26
+        "tokens": 194334770,
+        "costUsd": 176.26
       }
     ],
     "tests": {
@@ -377,15 +377,15 @@
           "id": "IDP-F-005",
           "title": "Sign-in endpoint and blocking",
           "size": 3,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass (loop 0)"
         },
         {
           "id": "IDP-F-006",
           "title": "Refresh, sign-out and effective permissions",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -402,13 +402,23 @@
         {
           "name": "Developer F-005",
           "start": "2026-11-22T21:00+11:00",
+          "end": "2026-11-22T21:06+11:00"
+        },
+        {
+          "name": "Reviewer F-005",
+          "start": "2026-11-22T21:06+11:00",
+          "end": "2026-11-22T21:07+11:00"
+        },
+        {
+          "name": "Developer F-006",
+          "start": "2026-11-22T21:07+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 8924536,
-      "costUsd": 9.43,
+      "tokens": 11326160,
+      "costUsd": 12.17,
       "commits": 0
     },
     {
