@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 60,
+        "percentUsed": 61,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -383,6 +383,44 @@
           "id": "IDP-B-002",
           "title": "Two tabs refreshing at once sign each other out",
           "size": 2,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "w-21",
+      "packetId": "shell-g10",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-23T09:00+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-015",
+          "title": "Profile page",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-018",
+          "title": "Identity contract additions for idp v1",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-029",
+          "title": "Sign-in slot fills the page",
+          "size": 1,
           "phase": "",
           "status": "queued"
         }
