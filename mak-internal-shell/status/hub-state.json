@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T21:13+11:00",
+  "generatedAt": "2026-11-22T21:15+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -79,7 +79,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 53,
+        "percentUsed": 54,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -91,8 +91,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 204123249,
-      "costUsd": 188.59,
+      "tokens": 209335677,
+      "costUsd": 193.55,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -102,8 +102,8 @@
     "week": {
       "packetsMerged": 6,
       "points": 26,
-      "tokens": 204123249,
-      "costUsd": 188.59,
+      "tokens": 209335677,
+      "costUsd": 193.55,
       "minutesWaiting": {
         "hub": 46,
         "you": 102,
@@ -111,9 +111,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7850894,
+      "tokens": 8051372,
       "minutes": 7,
-      "costUsd": 7.25
+      "costUsd": 7.44
     },
     "daily": [
       {
@@ -197,8 +197,8 @@
       {
         "date": "2026-11-22",
         "points": 26,
-        "tokens": 204123249,
-        "costUsd": 188.59
+        "tokens": 209335677,
+        "costUsd": 193.55
       }
     ],
     "tests": {
@@ -300,14 +300,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:29+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-017",
           "title": "Plugin project template — design driven by the shell",
           "size": 3,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass. the stack window is free: both servers (4201 and 4301) are stopped and no browser or dev-server processes are left."
         },
         {
           "id": "SHELL-F-024",
@@ -341,13 +341,18 @@
         {
           "name": "Parity F-017",
           "start": "2026-11-22T20:56+11:00",
+          "end": "2026-11-22T21:13+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-22T21:15+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 25647074,
-      "costUsd": 22.9,
+      "tokens": 29373956,
+      "costUsd": 25.93,
       "commits": 0
     },
     {
@@ -357,7 +362,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Developer retry 1",
+      "phase": "Reviewer retry 1",
       "items": [
         {
           "id": "IDP-F-003",
@@ -384,7 +389,7 @@
           "id": "IDP-F-006",
           "title": "Refresh, sign-out and effective permissions",
           "size": 3,
-          "phase": "Developer retry 1",
+          "phase": "Reviewer retry 1",
           "status": "running"
         }
       ],
@@ -422,13 +427,18 @@
         {
           "name": "Developer retry 1 F-006",
           "start": "2026-11-22T21:13+11:00",
+          "end": "2026-11-22T21:15+11:00"
+        },
+        {
+          "name": "Reviewer retry 1 F-006",
+          "start": "2026-11-22T21:15+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 13361328,
-      "costUsd": 14.88,
+      "tokens": 13622239,
+      "costUsd": 15.43,
       "commits": 0
     },
     {
@@ -491,8 +501,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 10919902,
-      "costUsd": 12.08,
+      "tokens": 12144537,
+      "costUsd": 13.46,
       "commits": 0
     }
   ],
