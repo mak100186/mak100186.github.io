@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T07:27+11:00",
+  "generatedAt": "2026-11-23T07:29+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -288,7 +288,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T20:49+11:00",
-      "phase": "Live",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-003",
@@ -378,7 +378,7 @@
         {
           "name": "Live stack pass (r37)",
           "start": "2026-11-23T06:48+11:00",
-          "end": null
+          "end": "2026-11-23T07:28+11:00"
         },
         {
           "name": "Developer (fix r49) F-005",
