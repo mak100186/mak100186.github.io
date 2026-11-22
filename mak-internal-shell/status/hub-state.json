@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-23T09:26+11:00",
+  "generatedAt": "2026-11-23T09:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -60,7 +60,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 75,
+        "percentUsed": 77,
         "resetsAt": "2026-11-23T00:40:00.000Z"
       },
       "sevenDay": {
@@ -72,10 +72,10 @@
     "today": {
       "packetsMerged": 7,
       "points": 57,
-      "tokens": 258269530,
-      "costUsd": 238.34,
+      "tokens": 263026838,
+      "costUsd": 241.48,
       "minutesWaiting": {
-        "hub": 3,
+        "hub": 4,
         "you": 18,
         "limit": 0
       }
@@ -83,18 +83,18 @@
     "week": {
       "packetsMerged": 14,
       "points": 87,
-      "tokens": 503892113,
-      "costUsd": 465.75,
+      "tokens": 508649421,
+      "costUsd": 468.88,
       "minutesWaiting": {
-        "hub": 49,
+        "hub": 50,
         "you": 120,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 5791863,
+      "tokens": 5846545,
       "minutes": 26,
-      "costUsd": 5.35
+      "costUsd": 5.39
     },
     "daily": [
       {
@@ -178,8 +178,8 @@
       {
         "date": "2026-11-23",
         "points": 57,
-        "tokens": 258269530,
-        "costUsd": 238.34
+        "tokens": 263026838,
+        "costUsd": 241.48
       }
     ],
     "tests": {
@@ -354,7 +354,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-015",
@@ -368,7 +368,7 @@
           "title": "Identity contract additions for idp v1",
           "size": 3,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-029",
@@ -422,13 +422,13 @@
         {
           "name": "Reviewer F-018",
           "start": "2026-11-23T09:26+11:00",
-          "end": null
+          "end": "2026-11-23T09:27+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 20483248,
-      "costUsd": 19.59,
+      "tokens": 22907225,
+      "costUsd": 21.47,
       "commits": 0
     }
   ],
