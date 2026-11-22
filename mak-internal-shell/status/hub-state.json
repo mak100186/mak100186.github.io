@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-22T19:28+11:00",
+  "generatedAt": "2026-11-22T19:30+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-12-13",
-      "optimistic": "2026-12-09",
-      "pessimistic": "2026-12-20"
+      "likely": "2026-12-05",
+      "optimistic": "2026-12-03",
+      "pessimistic": "2026-12-10"
     },
     "components": [
       {
@@ -59,7 +59,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 13,
+        "percentUsed": 16,
         "resetsAt": "2026-11-22T13:10:00.000Z"
       },
       "sevenDay": {
@@ -69,10 +69,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 2,
-      "points": 8,
-      "tokens": 76891317,
-      "costUsd": 70.88,
+      "packetsMerged": 3,
+      "points": 13,
+      "tokens": 82646629,
+      "costUsd": 75.26,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -80,10 +80,10 @@
       }
     },
     "week": {
-      "packetsMerged": 2,
-      "points": 8,
-      "tokens": 76891317,
-      "costUsd": 70.88,
+      "packetsMerged": 3,
+      "points": 13,
+      "tokens": 82646629,
+      "costUsd": 75.26,
       "minutesWaiting": {
         "hub": 45,
         "you": 1,
@@ -91,9 +91,9 @@
       }
     },
     "perPoint": {
-      "tokens": 9611415,
+      "tokens": 6357433,
       "minutes": 6,
-      "costUsd": 8.86
+      "costUsd": 5.79
     },
     "daily": [
       {
@@ -176,9 +176,9 @@
       },
       {
         "date": "2026-11-22",
-        "points": 8,
-        "tokens": 76891317,
-        "costUsd": 70.88
+        "points": 13,
+        "tokens": 82646629,
+        "costUsd": 75.26
       }
     ],
     "tests": {
@@ -258,96 +258,19 @@
   ],
   "workers": [
     {
-      "id": "w-5",
-      "packetId": "shell-g4",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-22T19:06+11:00",
-      "phase": "Stack window r13: make up/status/down",
-      "items": [
-        {
-          "id": "SHELL-F-006",
-          "title": "Local and cloud development setup",
-          "size": 3,
-          "phase": "Stack window r13: make up/status/down",
-          "status": "running"
-        },
-        {
-          "id": "SHELL-F-007",
-          "title": "Plugin Catalog (plugins.json)",
-          "size": 2,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-006",
-          "start": "2026-11-22T19:09+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-007",
-          "start": "2026-11-22T19:09+11:00",
-          "end": "2026-11-22T19:12+11:00"
-        },
-        {
-          "name": "Reviewer F-007",
-          "start": "2026-11-22T19:12+11:00",
-          "end": "2026-11-22T19:12+11:00"
-        },
-        {
-          "name": "Developer F-006",
-          "start": "2026-11-22T19:15+11:00",
-          "end": "2026-11-22T19:20+11:00"
-        },
-        {
-          "name": "Reviewer F-006",
-          "start": "2026-11-22T19:20+11:00",
-          "end": "2026-11-22T19:22+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-22T19:22+11:00",
-          "end": "2026-11-22T19:23+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-22T19:23+11:00",
-          "end": "2026-11-22T19:24+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-22T19:25+11:00",
-          "end": "2026-11-22T19:28+11:00"
-        },
-        {
-          "name": "Stack window r13: make up/status/down F-006",
-          "start": "2026-11-22T19:28+11:00",
-          "end": null
-        }
-      ],
-      "loops": 1,
-      "escalations": 1,
-      "tokens": 12030357,
-      "costUsd": 14.48,
-      "commits": 0
-    },
-    {
       "id": "w-6",
       "packetId": "shell-g5",
       "component": "shell",
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-22T19:06+11:00",
-      "phase": "Reviewer",
+      "phase": "Finalizers (Spike Log)",
       "items": [
         {
           "id": "SHELL-F-021",
           "title": "Spike: dashboard grid approach",
           "size": 2,
-          "phase": "Reviewer",
+          "phase": "Finalizers (Spike Log)",
           "status": "running"
         }
       ],
@@ -370,13 +293,18 @@
         {
           "name": "Reviewer F-021",
           "start": "2026-11-22T19:28+11:00",
+          "end": "2026-11-22T19:29+11:00"
+        },
+        {
+          "name": "Finalizers (Spike Log) F-021",
+          "start": "2026-11-22T19:29+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 1,
-      "tokens": 8759357,
-      "costUsd": 9.24,
+      "tokens": 9983844,
+      "costUsd": 10.46,
       "commits": 0
     },
     {
@@ -406,8 +334,8 @@
           "id": "SHELL-F-023",
           "title": "Shared style classes",
           "size": 3,
-          "phase": "Developer",
-          "status": "built"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -430,16 +358,31 @@
           "name": "Developer F-023",
           "start": "2026-11-22T19:22+11:00",
           "end": "2026-11-22T19:28+11:00"
+        },
+        {
+          "name": "Reviewer F-023",
+          "start": "2026-11-22T19:28+11:00",
+          "end": "2026-11-22T19:29+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 7247624,
-      "costUsd": 7.23,
+      "tokens": 9049417,
+      "costUsd": 8.89,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g4",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-22T19:30+11:00",
+      "items": 2,
+      "points": 5,
+      "minutes": 24,
+      "tokens": 12030357
+    },
     {
       "packetId": "shell-g2",
       "component": "shell",
