@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:02+11:00",
+  "generatedAt": "2026-11-25T13:04+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-11-29",
+      "likely": "2026-11-28",
       "optimistic": "2026-11-28",
-      "pessimistic": "2026-11-30"
+      "pessimistic": "2026-11-29"
     },
     "components": [
       {
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 59,
+        "percentUsed": 60,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -104,10 +104,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 3,
-      "points": 19,
-      "tokens": 200139727,
-      "costUsd": 188.29,
+      "packetsMerged": 4,
+      "points": 25,
+      "tokens": 205343881,
+      "costUsd": 191.39,
       "minutesWaiting": {
         "hub": 26,
         "you": 0,
@@ -115,10 +115,10 @@
       }
     },
     "week": {
-      "packetsMerged": 18,
-      "points": 115,
-      "tokens": 732950510,
-      "costUsd": 681.6,
+      "packetsMerged": 19,
+      "points": 121,
+      "tokens": 738154664,
+      "costUsd": 684.7,
       "minutesWaiting": {
         "hub": 76,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6373483,
-      "minutes": 47,
-      "costUsd": 5.93
+      "tokens": 6100452,
+      "minutes": 46,
+      "costUsd": 5.66
     },
     "daily": [
       {
@@ -211,9 +211,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 19,
-        "tokens": 200139727,
-        "costUsd": 188.29
+        "points": 25,
+        "tokens": 205343881,
+        "costUsd": 191.39
       }
     ],
     "tests": {
@@ -247,9 +247,29 @@
           "state": "queued",
           "items": [
             {
-              "id": "SHELL-F-016",
-              "title": "Docker Compose deployment",
-              "size": 3
+              "id": "SHELL-B-001",
+              "title": "Profile avatar accepts types idp refuses",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-002",
+              "title": "Change password dialog too narrow",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-003",
+              "title": "Profile page loads data several times",
+              "size": 1
+            },
+            {
+              "id": "SHELL-F-030",
+              "title": "Page crumb below the menu item",
+              "size": 2
+            },
+            {
+              "id": "SHELL-F-031",
+              "title": "Filled page action",
+              "size": 1
             }
           ]
         }
@@ -259,18 +279,13 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-g5",
+          "id": "idp-next",
           "kind": "orchestrated",
-          "state": "running",
+          "state": "queued",
           "items": [
             {
-              "id": "IDP-F-009",
-              "title": "Change own password",
-              "size": 3
-            },
-            {
-              "id": "IDP-F-010",
-              "title": "Profile and preferences",
+              "id": "IDP-F-012",
+              "title": "idp end-to-end tests",
               "size": 3
             }
           ]
@@ -307,90 +322,13 @@
   ],
   "workers": [
     {
-      "id": "w-24",
-      "packetId": "idp-g5",
-      "component": "idp",
-      "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-25T11:53+11:00",
-      "phase": "Stack",
-      "items": [
-        {
-          "id": "IDP-F-009",
-          "title": "Change own password",
-          "size": 3,
-          "phase": "Parity",
-          "status": "pass with deferred gap (dialog width, shell-b-002, r117)"
-        },
-        {
-          "id": "IDP-F-010",
-          "title": "Profile and preferences",
-          "size": 3,
-          "phase": "Developer",
-          "status": "built; make test c=idp green (angular 129, idp.api 154+3 skipped)"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-009",
-          "start": "2026-11-25T11:56+11:00",
-          "end": "2026-11-25T12:17+11:00"
-        },
-        {
-          "name": "Reviewer F-009",
-          "start": "2026-11-25T12:17+11:00",
-          "end": "2026-11-25T12:18+11:00"
-        },
-        {
-          "name": "Developer F-010",
-          "start": "2026-11-25T12:18+11:00",
-          "end": "2026-11-25T12:30+11:00"
-        },
-        {
-          "name": "Stack window (quiet ack: no browser runs; unit gates only)",
-          "start": "2026-11-25T12:27+11:00",
-          "end": null
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T12:33+11:00",
-          "end": "2026-11-25T12:35+11:00"
-        },
-        {
-          "name": "Parity F-009",
-          "start": "2026-11-25T12:35+11:00",
-          "end": "2026-11-25T12:51+11:00"
-        },
-        {
-          "name": "Integration pass 2",
-          "start": "2026-11-25T12:51+11:00",
-          "end": "2026-11-25T12:53+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T12:53+11:00",
-          "end": "2026-11-25T12:55+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-25T12:55+11:00",
-          "end": "2026-11-25T13:02+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 3,
-      "tokens": 49979805,
-      "costUsd": 46.49,
-      "commits": 26
-    },
-    {
       "id": "w-25",
       "packetId": "shell-g12",
       "component": "shell",
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Wait: browser window for Parity re-check + make e2e (r119)",
+      "phase": "Integration (pass 1, non-browser gate while waiting for window)",
       "items": [
         {
           "id": "SHELL-F-022",
@@ -440,12 +378,17 @@
           "name": "Wait: browser window for Parity re-check + make e2e (r119) F-022",
           "start": "2026-11-25T13:02+11:00",
           "end": null
+        },
+        {
+          "name": "Integration (pass 1, non-browser gate while waiting for window)",
+          "start": "2026-11-25T13:02+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 30537622,
-      "costUsd": 26.45,
+      "tokens": 31673151,
+      "costUsd": 27.17,
       "commits": 0
     },
     {
@@ -531,9 +474,43 @@
       "tokens": 22688839,
       "costUsd": 23.26,
       "commits": 0
+    },
+    {
+      "id": "w-27",
+      "packetId": "idp-g6",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T13:04+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-F-012",
+          "title": "idp end-to-end tests",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g5",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T13:02+11:00",
+      "items": 2,
+      "points": 6,
+      "minutes": 70,
+      "tokens": 49979805
+    },
     {
       "packetId": "shell-g11",
       "component": "shell",
