@@ -112,7 +112,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 24,
+        "percentUsed": 25,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -493,6 +493,30 @@
       "escalations": 4,
       "tokens": 12544671,
       "costUsd": 11.52,
+      "commits": 0
+    },
+    {
+      "id": "w-35",
+      "packetId": "shell-g14",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T17:23+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-032",
+          "title": "T4 sizes and looks: slider, progress bar, spinner, stretch in example area, toolbar, icon colour",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
