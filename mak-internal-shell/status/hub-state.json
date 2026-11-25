@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:41+11:00",
+  "generatedAt": "2026-11-25T13:43+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": "2026-11-25T16:25+11:00",
     "limits": {
       "fiveHour": {
-        "percentUsed": 90,
+        "percentUsed": 91,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 315535324,
-      "costUsd": 290.53,
+      "tokens": 327452768,
+      "costUsd": 300.33,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 848346107,
-      "costUsd": 783.85,
+      "tokens": 860263551,
+      "costUsd": 793.64,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6192307,
+      "tokens": 6279296,
       "minutes": 41,
-      "costUsd": 5.72
+      "costUsd": 5.79
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 315535324,
-        "costUsd": 290.53
+        "tokens": 327452768,
+        "costUsd": 300.33
       }
     ],
     "tests": {
@@ -382,9 +382,9 @@
       "packetId": "shell-g13",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "parked",
       "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "Parity",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-B-001",
@@ -398,7 +398,7 @@
           "title": "Change password dialog too narrow",
           "size": 1,
           "phase": "Parity (B-002, B-004)",
-          "status": "running"
+          "status": "pass (both); window released"
         },
         {
           "id": "SHELL-B-003",
@@ -472,13 +472,13 @@
         {
           "name": "Parity (B-002, B-004) B-002",
           "start": "2026-11-25T13:38+11:00",
-          "end": null
+          "end": "2026-11-25T13:42+11:00"
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 17950618,
-      "costUsd": 17.2,
+      "tokens": 20805819,
+      "costUsd": 19.78,
       "commits": 0
     },
     {
@@ -486,7 +486,7 @@
       "packetId": "component-library-g4",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "parked",
       "startedAt": "2026-11-25T13:24+11:00",
       "phase": "Reviewer",
       "items": [
@@ -495,7 +495,7 @@
           "title": "Pages: form controls",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "COMPONENT-LIBRARY-F-007",
@@ -531,13 +531,13 @@
         {
           "name": "Reviewer LIBRARY-F-005",
           "start": "2026-11-25T13:40+11:00",
-          "end": null
+          "end": "2026-11-25T13:41+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 13034987,
-      "costUsd": 11.87,
+      "tokens": 15092404,
+      "costUsd": 13.59,
       "commits": 0
     },
     {
@@ -545,7 +545,7 @@
       "packetId": "idp-g7",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "parked",
       "startedAt": "2026-11-25T13:28+11:00",
       "phase": "Developer",
       "items": [
@@ -554,7 +554,7 @@
           "title": "Dashboard layouts in preferences",
           "size": 2,
           "phase": "Developer",
-          "status": "running"
+          "status": "built, unreviewed"
         },
         {
           "id": "IDP-B-003",
@@ -578,13 +578,13 @@
         {
           "name": "Developer F-020",
           "start": "2026-11-25T13:34+11:00",
-          "end": null
+          "end": "2026-11-25T13:42+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 4055581,
-      "costUsd": 3.79,
+      "tokens": 8788696,
+      "costUsd": 7.95,
       "commits": 0
     }
   ],
