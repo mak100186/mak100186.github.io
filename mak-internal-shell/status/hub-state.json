@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T19:05+11:00",
+  "generatedAt": "2026-11-25T19:10+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -124,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 55,
+        "percentUsed": 56,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -136,8 +136,8 @@
     "today": {
       "packetsMerged": 13,
       "points": 67,
-      "tokens": 510792040,
-      "costUsd": 477.15,
+      "tokens": 514183445,
+      "costUsd": 480.6,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -147,8 +147,8 @@
     "week": {
       "packetsMerged": 28,
       "points": 163,
-      "tokens": 1043602823,
-      "costUsd": 970.46,
+      "tokens": 1046994228,
+      "costUsd": 973.91,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -156,9 +156,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6402471,
+      "tokens": 6423277,
       "minutes": 34,
-      "costUsd": 5.95
+      "costUsd": 5.97
     },
     "daily": [
       {
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-25",
         "points": 67,
-        "tokens": 510792040,
-        "costUsd": 477.15
+        "tokens": 514183445,
+        "costUsd": 480.6
       }
     ],
     "tests": {
@@ -419,7 +419,7 @@
           "title": "Block page third crumb",
           "size": 1,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -461,13 +461,13 @@
         {
           "name": "Parity LIBRARY-F-013",
           "start": "2026-11-25T18:46+11:00",
-          "end": null
+          "end": "2026-11-25T19:10+11:00"
         }
       ],
       "loops": 0,
-      "escalations": 2,
-      "tokens": 13484684,
-      "costUsd": 12.35,
+      "escalations": 4,
+      "tokens": 16876089,
+      "costUsd": 15.79,
       "commits": 0
     }
   ],
