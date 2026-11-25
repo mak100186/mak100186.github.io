@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:48+11:00",
+  "generatedAt": "2026-11-25T12:50+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 173379620,
-      "costUsd": 160.22,
+      "tokens": 174049110,
+      "costUsd": 160.62,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 706190403,
-      "costUsd": 653.53,
+      "tokens": 706859893,
+      "costUsd": 653.93,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6140786,
+      "tokens": 6146608,
       "minutes": 47,
-      "costUsd": 5.68
+      "costUsd": 5.69
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 173379620,
-        "costUsd": 160.22
+        "tokens": 174049110,
+        "costUsd": 160.62
       }
     ],
     "tests": {
@@ -418,9 +418,9 @@
       "packetId": "component-library-g3",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Parity",
+      "phase": "Wait: stack window for F-008 Parity (r114)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -440,8 +440,8 @@
           "id": "COMPONENT-LIBRARY-F-008",
           "title": "Pages: the shell's own blocks",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Wait: stack window for F-008 Parity (r114)",
+          "status": "running"
         }
       ],
       "steps": [
@@ -479,12 +479,17 @@
           "name": "Reviewer LIBRARY-F-008",
           "start": "2026-11-25T12:47+11:00",
           "end": "2026-11-25T12:48+11:00"
+        },
+        {
+          "name": "Wait: stack window for F-008 Parity (r114) LIBRARY-F-008",
+          "start": "2026-11-25T12:48+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 21681833,
-      "costUsd": 21.65,
+      "tokens": 22082176,
+      "costUsd": 21.9,
       "commits": 0
     }
   ],
