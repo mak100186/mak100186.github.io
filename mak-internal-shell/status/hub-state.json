@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:51+11:00",
+  "generatedAt": "2026-11-25T18:55+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -124,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 52,
+        "percentUsed": 53,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -136,8 +136,8 @@
     "today": {
       "packetsMerged": 12,
       "points": 66,
-      "tokens": 502193332,
-      "costUsd": 467.01,
+      "tokens": 504068299,
+      "costUsd": 469,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -147,8 +147,8 @@
     "week": {
       "packetsMerged": 27,
       "points": 162,
-      "tokens": 1035004115,
-      "costUsd": 960.32,
+      "tokens": 1036879082,
+      "costUsd": 962.32,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -156,9 +156,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6388914,
+      "tokens": 6400488,
       "minutes": 38,
-      "costUsd": 5.93
+      "costUsd": 5.94
     },
     "daily": [
       {
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-25",
         "points": 66,
-        "tokens": 502193332,
-        "costUsd": 467.01
+        "tokens": 504068299,
+        "costUsd": 469
       }
     ],
     "tests": {
@@ -489,13 +489,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T18:46+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-B-005",
           "title": "Bad text at sign-in and change password may give a 500",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -508,13 +508,18 @@
         {
           "name": "Developer B-005",
           "start": "2026-11-25T18:48+11:00",
+          "end": "2026-11-25T18:55+11:00"
+        },
+        {
+          "name": "Reviewer B-005",
+          "start": "2026-11-25T18:55+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1309630,
-      "costUsd": 1.27,
+      "tokens": 3184597,
+      "costUsd": 3.26,
       "commits": 0
     }
   ],
