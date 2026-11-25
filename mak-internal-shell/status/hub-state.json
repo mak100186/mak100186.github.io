@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:50+11:00",
+  "generatedAt": "2026-11-25T16:52+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 11,
+        "percentUsed": 12,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 363161440,
-      "costUsd": 334.72,
+      "tokens": 366168009,
+      "costUsd": 337.06,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 895972223,
-      "costUsd": 828.03,
+      "tokens": 898978792,
+      "costUsd": 830.37,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6539943,
+      "tokens": 6561889,
       "minutes": 41,
-      "costUsd": 6.04
+      "costUsd": 6.06
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 363161440,
-        "costUsd": 334.72
+        "tokens": 366168009,
+        "costUsd": 337.06
       }
     ],
     "tests": {
@@ -498,7 +498,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Parity",
+      "phase": "Reviewer + Parity retry 1",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
@@ -511,7 +511,7 @@
           "id": "COMPONENT-LIBRARY-F-007",
           "title": "Pages: data and feedback",
           "size": 3,
-          "phase": "Parity",
+          "phase": "Reviewer + Parity retry 1",
           "status": "running"
         },
         {
@@ -561,7 +561,7 @@
         {
           "name": "Parity LIBRARY-F-007",
           "start": "2026-11-25T16:35+11:00",
-          "end": null
+          "end": "2026-11-25T16:50+11:00"
         },
         {
           "name": "Developer retry 1 LIBRARY-F-005",
@@ -577,12 +577,17 @@
           "name": "Parity retry 1 LIBRARY-F-005",
           "start": "2026-11-25T16:44+11:00",
           "end": "2026-11-25T16:46+11:00"
+        },
+        {
+          "name": "Reviewer + Parity retry 1 LIBRARY-F-007",
+          "start": "2026-11-25T16:51+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 2,
-      "tokens": 35791947,
-      "costUsd": 33.28,
+      "escalations": 3,
+      "tokens": 37931852,
+      "costUsd": 35.05,
       "commits": 0
     },
     {
