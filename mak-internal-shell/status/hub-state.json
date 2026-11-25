@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:18+11:00",
+  "generatedAt": "2026-11-25T13:20+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 69,
+        "percentUsed": 72,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -104,31 +104,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 4,
-      "points": 25,
-      "tokens": 240009388,
-      "costUsd": 224.71,
+      "packetsMerged": 5,
+      "points": 30,
+      "tokens": 254804810,
+      "costUsd": 235.97,
       "minutesWaiting": {
-        "hub": 26,
+        "hub": 27,
         "you": 0,
         "limit": 0
       }
     },
     "week": {
-      "packetsMerged": 19,
-      "points": 121,
-      "tokens": 772820171,
-      "costUsd": 718.02,
+      "packetsMerged": 20,
+      "points": 126,
+      "tokens": 787615593,
+      "costUsd": 729.28,
       "minutesWaiting": {
-        "hub": 76,
+        "hub": 77,
         "you": 120,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 6386944,
-      "minutes": 46,
-      "costUsd": 5.93
+      "tokens": 6250917,
+      "minutes": 44,
+      "costUsd": 5.79
     },
     "daily": [
       {
@@ -211,9 +211,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 25,
-        "tokens": 240009388,
-        "costUsd": 224.71
+        "points": 30,
+        "tokens": 254804810,
+        "costUsd": 235.97
       }
     ],
     "tests": {
@@ -334,101 +334,6 @@
   ],
   "workers": [
     {
-      "id": "w-25",
-      "packetId": "shell-g12",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Integration",
-      "items": [
-        {
-          "id": "SHELL-F-022",
-          "title": "Dashboard block and saved layouts",
-          "size": 5,
-          "phase": "Parity (re-check, loop 1)",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start: plan 1 wave (SHELL-F-022 alone)",
-          "start": "2026-11-25T12:20+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-022",
-          "start": "2026-11-25T12:21+11:00",
-          "end": "2026-11-25T12:43+11:00"
-        },
-        {
-          "name": "Reviewer F-022",
-          "start": "2026-11-25T12:43+11:00",
-          "end": "2026-11-25T12:45+11:00"
-        },
-        {
-          "name": "Wait: browser window for Parity (r111, next after idp-g5) F-022",
-          "start": "2026-11-25T12:45+11:00",
-          "end": "2026-11-25T12:51+11:00"
-        },
-        {
-          "name": "Parity F-022",
-          "start": "2026-11-25T12:51+11:00",
-          "end": "2026-11-25T12:56+11:00"
-        },
-        {
-          "name": "Developer (retry 1, Parity issues) F-022",
-          "start": "2026-11-25T12:56+11:00",
-          "end": "2026-11-25T13:01+11:00"
-        },
-        {
-          "name": "Reviewer (loop 1) F-022",
-          "start": "2026-11-25T13:01+11:00",
-          "end": "2026-11-25T13:02+11:00"
-        },
-        {
-          "name": "Wait: browser window for Parity re-check + make e2e (r119) F-022",
-          "start": "2026-11-25T13:02+11:00",
-          "end": null
-        },
-        {
-          "name": "Integration (pass 1, non-browser gate while waiting for window)",
-          "start": "2026-11-25T13:02+11:00",
-          "end": "2026-11-25T13:07+11:00"
-        },
-        {
-          "name": "Parity (re-check, loop 1) F-022",
-          "start": "2026-11-25T13:07+11:00",
-          "end": "2026-11-25T13:08+11:00"
-        },
-        {
-          "name": "make e2e",
-          "start": "2026-11-25T13:09+11:00",
-          "end": "2026-11-25T13:09+11:00"
-        },
-        {
-          "name": "Integration (pass 2: fix dashboard e2e assertions, rerun make e2e)",
-          "start": "2026-11-25T13:09+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T13:11+11:00",
-          "end": "2026-11-25T13:12+11:00"
-        },
-        {
-          "name": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
-          "start": "2026-11-25T13:12+11:00",
-          "end": "2026-11-25T13:17+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 3,
-      "tokens": 45372070,
-      "costUsd": 40.88,
-      "commits": 25
-    },
-    {
       "id": "w-26",
       "packetId": "component-library-g3",
       "component": "component-library",
@@ -538,8 +443,8 @@
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 38436643,
-      "costUsd": 38.7,
+      "tokens": 39875229,
+      "costUsd": 40.15,
       "commits": 0
     },
     {
@@ -578,12 +483,22 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1731992,
-      "costUsd": 1.91,
+      "tokens": 10306772,
+      "costUsd": 8.71,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g12",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T13:18+11:00",
+      "items": 1,
+      "points": 5,
+      "minutes": 59,
+      "tokens": 45372070
+    },
     {
       "packetId": "idp-g5",
       "component": "idp",
