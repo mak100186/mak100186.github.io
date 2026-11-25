@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:38+11:00",
+  "generatedAt": "2026-11-25T18:40+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -130,29 +130,29 @@
     "today": {
       "packetsMerged": 11,
       "points": 65,
-      "tokens": 489224596,
-      "costUsd": 454.38,
+      "tokens": 491144193,
+      "costUsd": 455.92,
       "minutesWaiting": {
-        "hub": 208,
-        "you": 10,
+        "hub": 209,
+        "you": 11,
         "limit": 490
       }
     },
     "week": {
       "packetsMerged": 26,
       "points": 161,
-      "tokens": 1022035379,
-      "costUsd": 947.69,
+      "tokens": 1023954976,
+      "costUsd": 949.23,
       "minutesWaiting": {
-        "hub": 258,
-        "you": 130,
+        "hub": 259,
+        "you": 131,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6348046,
+      "tokens": 6359969,
       "minutes": 39,
-      "costUsd": 5.89
+      "costUsd": 5.9
     },
     "daily": [
       {
@@ -236,8 +236,8 @@
       {
         "date": "2026-11-25",
         "points": 65,
-        "tokens": 489224596,
-        "costUsd": 454.38
+        "tokens": 491144193,
+        "costUsd": 455.92
       }
     ],
     "tests": {
@@ -473,14 +473,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T18:32+11:00",
-      "phase": "Developer",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-B-004",
           "title": "Bad text in other preference fields gives a 500",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -492,18 +492,28 @@
         {
           "name": "Developer B-004",
           "start": "2026-11-25T18:33+11:00",
-          "end": null
+          "end": "2026-11-25T18:38+11:00"
         },
         {
           "name": "Build window (Angular half of make build C=idp)",
           "start": "2026-11-25T18:34+11:00",
           "end": "2026-11-25T18:34+11:00"
+        },
+        {
+          "name": "Reviewer B-004",
+          "start": "2026-11-25T18:38+11:00",
+          "end": "2026-11-25T18:39+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T18:39+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3505867,
-      "costUsd": 3.08,
+      "tokens": 4441511,
+      "costUsd": 4.08,
       "commits": 0
     }
   ],
