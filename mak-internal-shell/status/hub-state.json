@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:25+11:00",
+  "generatedAt": "2026-11-25T12:27+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 37,
+        "percentUsed": 38,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 120786123,
-      "costUsd": 112.22,
+      "tokens": 123896119,
+      "costUsd": 115.34,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 653596906,
-      "costUsd": 605.53,
+      "tokens": 656706902,
+      "costUsd": 608.65,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5683451,
+      "tokens": 5710495,
       "minutes": 47,
-      "costUsd": 5.27
+      "costUsd": 5.29
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 120786123,
-        "costUsd": 112.22
+        "tokens": 123896119,
+        "costUsd": 115.34
       }
     ],
     "tests": {
@@ -395,21 +395,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer (F-003, F-004 in parallel)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
           "title": "Catalog screen",
           "size": 2,
           "phase": "Developer",
-          "status": "running"
+          "status": "returned (tests unrun by packet rule; waiting on f-004 before review)"
         },
         {
           "id": "COMPONENT-LIBRARY-F-004",
           "title": "Block page",
           "size": 3,
           "phase": "Developer",
-          "status": "running"
+          "status": "returned"
         },
         {
           "id": "COMPONENT-LIBRARY-F-008",
@@ -428,18 +428,23 @@
         {
           "name": "Developer LIBRARY-F-003",
           "start": "2026-11-25T12:23+11:00",
-          "end": null
+          "end": "2026-11-25T12:26+11:00"
         },
         {
           "name": "Developer LIBRARY-F-004",
           "start": "2026-11-25T12:23+11:00",
+          "end": "2026-11-25T12:27+11:00"
+        },
+        {
+          "name": "Reviewer (F-003, F-004 in parallel)",
+          "start": "2026-11-25T12:27+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3930035,
-      "costUsd": 3.42,
+      "tokens": 7040031,
+      "costUsd": 6.54,
       "commits": 0
     }
   ],
