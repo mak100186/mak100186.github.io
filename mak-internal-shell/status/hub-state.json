@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:17+11:00",
+  "generatedAt": "2026-11-25T12:19+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 30,
+        "percentUsed": 31,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 107812948,
-      "costUsd": 101.35,
+      "tokens": 110282553,
+      "costUsd": 103.97,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 640623731,
-      "costUsd": 594.66,
+      "tokens": 643093336,
+      "costUsd": 597.28,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5570641,
+      "tokens": 5592116,
       "minutes": 47,
-      "costUsd": 5.17
+      "costUsd": 5.19
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 107812948,
-        "costUsd": 101.35
+        "tokens": 110282553,
+        "costUsd": 103.97
       }
     ],
     "tests": {
@@ -267,21 +267,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:53+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-009",
           "title": "Change own password",
           "size": 3,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass (committed a36d0b4)"
         },
         {
           "id": "IDP-F-010",
           "title": "Profile and preferences",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -293,13 +293,80 @@
         {
           "name": "Reviewer F-009",
           "start": "2026-11-25T12:17+11:00",
+          "end": "2026-11-25T12:18+11:00"
+        },
+        {
+          "name": "Developer F-010",
+          "start": "2026-11-25T12:18+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 20069451,
-      "costUsd": 16.03,
+      "tokens": 21992197,
+      "costUsd": 17.91,
+      "commits": 0
+    },
+    {
+      "id": "w-25",
+      "packetId": "shell-g12",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T12:19+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-022",
+          "title": "Dashboard block and saved layouts",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "component-library-g3",
+      "packetId": "component-library-g3",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-25T12:19+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-F-003",
+          "title": "Catalog screen",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "COMPONENT-LIBRARY-F-004",
+          "title": "Block page",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "COMPONENT-LIBRARY-F-008",
+          "title": "Pages: the shell's own blocks",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
