@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:57+11:00",
+  "generatedAt": "2026-11-25T18:59+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -136,8 +136,8 @@
     "today": {
       "packetsMerged": 12,
       "points": 66,
-      "tokens": 504592766,
-      "costUsd": 470,
+      "tokens": 505524948,
+      "costUsd": 470.89,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -147,8 +147,8 @@
     "week": {
       "packetsMerged": 27,
       "points": 162,
-      "tokens": 1037403549,
-      "costUsd": 963.31,
+      "tokens": 1038335731,
+      "costUsd": 964.2,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -156,7 +156,7 @@
       }
     },
     "perPoint": {
-      "tokens": 6403726,
+      "tokens": 6409480,
       "minutes": 38,
       "costUsd": 5.95
     },
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-25",
         "points": 66,
-        "tokens": 504592766,
-        "costUsd": 470
+        "tokens": 505524948,
+        "costUsd": 470.89
       }
     ],
     "tests": {
@@ -489,14 +489,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T18:46+11:00",
-      "phase": "Reviewer",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-B-005",
           "title": "Bad text at sign-in and change password may give a 500",
           "size": 1,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass (65/65 incl. live postgres)"
         }
       ],
       "steps": [
@@ -513,13 +513,18 @@
         {
           "name": "Reviewer B-005",
           "start": "2026-11-25T18:55+11:00",
+          "end": "2026-11-25T18:57+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T18:57+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3709064,
-      "costUsd": 4.26,
+      "tokens": 4641246,
+      "costUsd": 5.15,
       "commits": 0
     }
   ],
