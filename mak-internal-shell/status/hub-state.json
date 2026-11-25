@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:16+11:00",
+  "generatedAt": "2026-11-25T13:18+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 68,
+        "percentUsed": 69,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 25,
-      "tokens": 233407601,
-      "costUsd": 217.63,
+      "tokens": 240009388,
+      "costUsd": 224.71,
       "minutesWaiting": {
         "hub": 26,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 19,
       "points": 121,
-      "tokens": 766218384,
-      "costUsd": 710.94,
+      "tokens": 772820171,
+      "costUsd": 718.02,
       "minutesWaiting": {
         "hub": 76,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6332383,
+      "tokens": 6386944,
       "minutes": 46,
-      "costUsd": 5.88
+      "costUsd": 5.93
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 25,
-        "tokens": 233407601,
-        "costUsd": 217.63
+        "tokens": 240009388,
+        "costUsd": 224.71
       }
     ],
     "tests": {
@@ -338,9 +338,9 @@
       "packetId": "shell-g12",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "ready to merge",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Finalizers",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-022",
@@ -419,14 +419,14 @@
         {
           "name": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
           "start": "2026-11-25T13:12+11:00",
-          "end": null
+          "end": "2026-11-25T13:17+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 42537746,
-      "costUsd": 37.55,
-      "commits": 0
+      "tokens": 45372070,
+      "costUsd": 40.88,
+      "commits": 25
     },
     {
       "id": "w-26",
@@ -435,7 +435,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers (PMBook+architecture sweep, Handoff, Revision+Changelog, Test Runbook+test-cases); Graphify done by script",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -529,12 +529,17 @@
           "name": "Reviewer-Integration",
           "start": "2026-11-25T13:13+11:00",
           "end": "2026-11-25T13:15+11:00"
+        },
+        {
+          "name": "Finalizers (PMBook+architecture sweep, Handoff, Revision+Changelog, Test Runbook+test-cases); Graphify done by script",
+          "start": "2026-11-25T13:16+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 34669180,
-      "costUsd": 34.94,
+      "tokens": 38436643,
+      "costUsd": 38.7,
       "commits": 0
     },
     {
