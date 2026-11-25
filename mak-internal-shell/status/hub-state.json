@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:27+11:00",
+  "generatedAt": "2026-11-25T13:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,20 +106,20 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 78,
+        "percentUsed": 80,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 10,
+        "percentUsed": 11,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 6,
-      "points": 38,
-      "tokens": 273769511,
-      "costUsd": 252.53,
+      "packetsMerged": 7,
+      "points": 41,
+      "tokens": 282204380,
+      "costUsd": 260.01,
       "minutesWaiting": {
         "hub": 27,
         "you": 0,
@@ -127,10 +127,10 @@
       }
     },
     "week": {
-      "packetsMerged": 21,
-      "points": 134,
-      "tokens": 806580294,
-      "costUsd": 745.84,
+      "packetsMerged": 22,
+      "points": 137,
+      "tokens": 815015163,
+      "costUsd": 753.32,
       "minutesWaiting": {
         "hub": 77,
         "you": 120,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6019256,
-      "minutes": 42,
-      "costUsd": 5.57
+      "tokens": 5949016,
+      "minutes": 41,
+      "costUsd": 5.5
     },
     "daily": [
       {
@@ -223,9 +223,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 38,
-        "tokens": 273769511,
-        "costUsd": 252.53
+        "points": 41,
+        "tokens": 282204380,
+        "costUsd": 260.01
       }
     ],
     "tests": {
@@ -373,68 +373,13 @@
   ],
   "workers": [
     {
-      "id": "w-27",
-      "packetId": "idp-g6",
-      "component": "idp",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T13:04+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "IDP-F-012",
-          "title": "idp end-to-end tests",
-          "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-25T13:04+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-012",
-          "start": "2026-11-25T13:05+11:00",
-          "end": "2026-11-25T13:20+11:00"
-        },
-        {
-          "name": "Stack window r122",
-          "start": "2026-11-25T13:14+11:00",
-          "end": "2026-11-25T13:25+11:00"
-        },
-        {
-          "name": "Reviewer F-012",
-          "start": "2026-11-25T13:20+11:00",
-          "end": "2026-11-25T13:22+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T13:23+11:00",
-          "end": "2026-11-25T13:25+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-25T13:26+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 2,
-      "tokens": 14094397,
-      "costUsd": 12.62,
-      "commits": 0
-    },
-    {
       "id": "w-28",
       "packetId": "shell-g13",
       "component": "shell",
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-B-001",
@@ -476,7 +421,7 @@
           "title": "Notification center keeps polling after sign-out",
           "size": 1,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-030",
@@ -502,13 +447,13 @@
         {
           "name": "Reviewer B-006",
           "start": "2026-11-25T13:26+11:00",
-          "end": null
+          "end": "2026-11-25T13:27+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3064939,
-      "costUsd": 3.16,
+      "tokens": 3724784,
+      "costUsd": 3.79,
       "commits": 0
     },
     {
@@ -518,14 +463,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
           "title": "Pages: form controls",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-007",
@@ -537,6 +482,48 @@
         {
           "id": "COMPONENT-LIBRARY-F-009",
           "title": "Search provider",
+          "size": 1,
+          "phase": "Developer",
+          "status": "running"
+        }
+      ],
+      "steps": [
+        {
+          "name": "Developer LIBRARY-F-005",
+          "start": "2026-11-25T13:27+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer LIBRARY-F-009",
+          "start": "2026-11-25T13:27+11:00",
+          "end": null
+        }
+      ],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 2903167,
+      "costUsd": 2.54,
+      "commits": 0
+    },
+    {
+      "id": "w-30",
+      "packetId": "idp-g7",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T13:28+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-F-020",
+          "title": "Dashboard layouts in preferences",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-B-003",
+          "title": "Idle and expired sign-out tell the shell late",
           "size": 1,
           "phase": "",
           "status": "queued"
@@ -551,6 +538,16 @@
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g6",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T13:27+11:00",
+      "items": 1,
+      "points": 3,
+      "minutes": 24,
+      "tokens": 15835476
+    },
     {
       "packetId": "component-library-g3",
       "component": "component-library",
@@ -740,16 +737,6 @@
       "points": 5,
       "minutes": 24,
       "tokens": 12030357
-    },
-    {
-      "packetId": "shell-g2",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-22T19:04+11:00",
-      "items": 2,
-      "points": 5,
-      "minutes": 34,
-      "tokens": 14825327
     }
   ]
 }
