@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:40+11:00",
+  "generatedAt": "2026-11-25T11:42+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 12,
+        "percentUsed": 15,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 2,
-      "tokens": 40516763,
-      "costUsd": 39.81,
+      "tokens": 45841288,
+      "costUsd": 44.41,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 16,
       "points": 98,
-      "tokens": 573327546,
-      "costUsd": 533.12,
+      "tokens": 578652071,
+      "costUsd": 537.73,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5850281,
+      "tokens": 5904613,
       "minutes": 24,
-      "costUsd": 5.44
+      "costUsd": 5.49
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 2,
-        "tokens": 40516763,
-        "costUsd": 39.81
+        "tokens": 45841288,
+        "costUsd": 44.41
       }
     ],
     "tests": {
@@ -306,7 +306,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-015",
@@ -320,7 +320,7 @@
           "title": "Identity contract additions for idp v1",
           "size": 3,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-029",
@@ -399,18 +399,23 @@
         {
           "name": "Parity F-018",
           "start": "2026-11-25T11:33+11:00",
-          "end": null
+          "end": "2026-11-25T11:40+11:00"
         },
         {
           "name": "Parity recheck F-015",
           "start": "2026-11-25T11:33+11:00",
           "end": "2026-11-25T11:34+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T11:40+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 40206906,
-      "costUsd": 37.78,
+      "tokens": 42979870,
+      "costUsd": 40.61,
       "commits": 0
     },
     {
@@ -420,7 +425,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-013",
@@ -433,7 +438,7 @@
           "id": "SHELL-F-014",
           "title": "Notification Center",
           "size": 5,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -446,18 +451,23 @@
         {
           "name": "Developer F-014",
           "start": "2026-11-25T11:28+11:00",
-          "end": null
+          "end": "2026-11-25T11:40+11:00"
         },
         {
           "name": "Reviewer F-013",
           "start": "2026-11-25T11:35+11:00",
           "end": "2026-11-25T11:37+11:00"
+        },
+        {
+          "name": "Reviewer F-014",
+          "start": "2026-11-25T11:41+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 15131955,
-      "costUsd": 13.84,
+      "tokens": 17005839,
+      "costUsd": 15.25,
       "commits": 0
     }
   ],
