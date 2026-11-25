@@ -572,6 +572,30 @@
       "tokens": 16391889,
       "costUsd": 15.62,
       "commits": 0
+    },
+    {
+      "id": "w-34",
+      "packetId": "component-library-g5",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T17:02+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-F-006",
+          "title": "Pages: buttons, navigation and layout",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
     }
   ],
   "recent": [
