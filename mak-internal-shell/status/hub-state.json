@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:50+11:00",
+  "generatedAt": "2026-11-25T12:52+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 51,
+        "percentUsed": 54,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,10 +106,10 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 174049110,
-      "costUsd": 160.62,
+      "tokens": 180850101,
+      "costUsd": 167.99,
       "minutesWaiting": {
-        "hub": 11,
+        "hub": 17,
         "you": 0,
         "limit": 0
       }
@@ -117,18 +117,18 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 706859893,
-      "costUsd": 653.93,
+      "tokens": 713660884,
+      "costUsd": 661.3,
       "minutesWaiting": {
-        "hub": 61,
+        "hub": 67,
         "you": 120,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 6146608,
+      "tokens": 6205747,
       "minutes": 47,
-      "costUsd": 5.69
+      "costUsd": 5.75
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 174049110,
-        "costUsd": 160.62
+        "tokens": 180850101,
+        "costUsd": 167.99
       }
     ],
     "tests": {
@@ -313,14 +313,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:53+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-F-009",
           "title": "Change own password",
           "size": 3,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass with deferred gap (dialog width, shell-b-002, r117)"
         },
         {
           "id": "IDP-F-010",
@@ -359,13 +359,18 @@
         {
           "name": "Parity F-009",
           "start": "2026-11-25T12:35+11:00",
+          "end": "2026-11-25T12:51+11:00"
+        },
+        {
+          "name": "Integration pass 2",
+          "start": "2026-11-25T12:51+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 33185434,
-      "costUsd": 28.58,
+      "escalations": 3,
+      "tokens": 38739596,
+      "costUsd": 34.47,
       "commits": 0
     },
     {
@@ -373,15 +378,15 @@
       "packetId": "shell-g12",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Wait: browser window for Parity (r111, next after idp-g5)",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-022",
           "title": "Dashboard block and saved layouts",
           "size": 5,
-          "phase": "Wait: browser window for Parity (r111, next after idp-g5)",
+          "phase": "Parity",
           "status": "running"
         }
       ],
@@ -404,13 +409,18 @@
         {
           "name": "Wait: browser window for Parity (r111, next after idp-g5) F-022",
           "start": "2026-11-25T12:45+11:00",
+          "end": "2026-11-25T12:51+11:00"
+        },
+        {
+          "name": "Parity F-022",
+          "start": "2026-11-25T12:51+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 22824159,
-      "costUsd": 18.7,
+      "tokens": 23377984,
+      "costUsd": 19.7,
       "commits": 0
     },
     {
