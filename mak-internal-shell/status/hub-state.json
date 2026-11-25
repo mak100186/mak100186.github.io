@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:10+11:00",
+  "generatedAt": "2026-11-25T17:12+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -112,7 +112,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 19,
+        "percentUsed": 20,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -124,8 +124,8 @@
     "today": {
       "packetsMerged": 8,
       "points": 50,
-      "tokens": 388199479,
-      "costUsd": 357.11,
+      "tokens": 389319654,
+      "costUsd": 358.21,
       "minutesWaiting": {
         "hub": 57,
         "you": 4,
@@ -135,8 +135,8 @@
     "week": {
       "packetsMerged": 23,
       "points": 146,
-      "tokens": 921010262,
-      "costUsd": 850.42,
+      "tokens": 922130437,
+      "costUsd": 851.52,
       "minutesWaiting": {
         "hub": 107,
         "you": 124,
@@ -144,9 +144,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6308289,
+      "tokens": 6315962,
       "minutes": 40,
-      "costUsd": 5.82
+      "costUsd": 5.83
     },
     "daily": [
       {
@@ -230,8 +230,8 @@
       {
         "date": "2026-11-25",
         "points": 50,
-        "tokens": 388199479,
-        "costUsd": 357.11
+        "tokens": 389319654,
+        "costUsd": 358.21
       }
     ],
     "tests": {
@@ -390,7 +390,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-B-001",
@@ -494,12 +494,17 @@
           "name": "Parity F-030",
           "start": "2026-11-25T17:01+11:00",
           "end": null
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T17:11+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 30303397,
-      "costUsd": 30.03,
+      "tokens": 31423572,
+      "costUsd": 31.13,
       "commits": 0
     },
     {
