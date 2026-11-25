@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T19:12+11:00",
+  "generatedAt": "2026-11-25T19:14+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -128,7 +128,7 @@
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 19,
+        "percentUsed": 20,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -136,8 +136,8 @@
     "today": {
       "packetsMerged": 13,
       "points": 67,
-      "tokens": 514682870,
-      "costUsd": 481.84,
+      "tokens": 520863228,
+      "costUsd": 487.84,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -147,8 +147,8 @@
     "week": {
       "packetsMerged": 28,
       "points": 163,
-      "tokens": 1047493653,
-      "costUsd": 975.15,
+      "tokens": 1053674011,
+      "costUsd": 981.15,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -156,9 +156,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6426341,
+      "tokens": 6464258,
       "minutes": 34,
-      "costUsd": 5.98
+      "costUsd": 6.02
     },
     "daily": [
       {
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-25",
         "points": 67,
-        "tokens": 514682870,
-        "costUsd": 481.84
+        "tokens": 520863228,
+        "costUsd": 487.84
       }
     ],
     "tests": {
@@ -403,7 +403,7 @@
       "packetId": "component-library-g6",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T17:36+11:00",
       "phase": "Parity",
       "items": [
@@ -412,7 +412,7 @@
           "title": "Dashboard page",
           "size": 3,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass (reload check pass with the real idp)"
         },
         {
           "id": "COMPONENT-LIBRARY-F-013",
@@ -456,7 +456,7 @@
         {
           "name": "Parity LIBRARY-F-010",
           "start": "2026-11-25T18:46+11:00",
-          "end": null
+          "end": "2026-11-25T19:13+11:00"
         },
         {
           "name": "Parity LIBRARY-F-013",
@@ -465,9 +465,9 @@
         }
       ],
       "loops": 0,
-      "escalations": 4,
-      "tokens": 17375514,
-      "costUsd": 17.04,
+      "escalations": 5,
+      "tokens": 23555872,
+      "costUsd": 23.03,
       "commits": 0
     }
   ],
