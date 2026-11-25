@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:44+11:00",
+  "generatedAt": "2026-11-25T18:46+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -118,20 +118,20 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 48,
+        "percentUsed": 49,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 18,
+        "percentUsed": 19,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 11,
-      "points": 65,
-      "tokens": 494403131,
-      "costUsd": 459.76,
+      "packetsMerged": 12,
+      "points": 66,
+      "tokens": 497038146,
+      "costUsd": 462.52,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -139,10 +139,10 @@
       }
     },
     "week": {
-      "packetsMerged": 26,
-      "points": 161,
-      "tokens": 1027213914,
-      "costUsd": 953.08,
+      "packetsMerged": 27,
+      "points": 162,
+      "tokens": 1029848929,
+      "costUsd": 955.84,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -150,9 +150,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6380211,
-      "minutes": 39,
-      "costUsd": 5.92
+      "tokens": 6357092,
+      "minutes": 38,
+      "costUsd": 5.9
     },
     "daily": [
       {
@@ -235,9 +235,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 65,
-        "tokens": 494403131,
-        "costUsd": 459.76
+        "points": 66,
+        "tokens": 497038146,
+        "costUsd": 462.52
       }
     ],
     "tests": {
@@ -270,18 +270,6 @@
     {
       "component": "idp",
       "packets": [
-        {
-          "id": "idp-g8",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "IDP-B-004",
-              "title": "Bad text in other preference fields gives a 500",
-              "size": 1
-            }
-          ]
-        },
         {
           "id": "idp-next",
           "kind": "orchestrated",
@@ -411,14 +399,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:36+11:00",
-      "phase": "Stack: make up (slot 3, real idp)",
+      "phase": "Parity",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-010",
           "title": "Dashboard page",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-013",
@@ -457,6 +445,11 @@
         {
           "name": "Stack: make up (slot 3, real idp)",
           "start": "2026-11-25T18:35+11:00",
+          "end": "2026-11-25T18:46+11:00"
+        },
+        {
+          "name": "Parity LIBRARY-F-010",
+          "start": "2026-11-25T18:46+11:00",
           "end": null
         }
       ],
@@ -465,69 +458,19 @@
       "tokens": 11917798,
       "costUsd": 10.6,
       "commits": 0
-    },
-    {
-      "id": "w-37",
-      "packetId": "idp-g8",
-      "component": "idp",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T18:32+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "IDP-B-004",
-          "title": "Bad text in other preference fields gives a 500",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-25T18:32+11:00",
-          "end": "2026-11-25T18:33+11:00"
-        },
-        {
-          "name": "Developer B-004",
-          "start": "2026-11-25T18:33+11:00",
-          "end": "2026-11-25T18:38+11:00"
-        },
-        {
-          "name": "Build window (Angular half of make build C=idp)",
-          "start": "2026-11-25T18:34+11:00",
-          "end": "2026-11-25T18:34+11:00"
-        },
-        {
-          "name": "Reviewer B-004",
-          "start": "2026-11-25T18:38+11:00",
-          "end": "2026-11-25T18:39+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T18:39+11:00",
-          "end": "2026-11-25T18:41+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T18:41+11:00",
-          "end": "2026-11-25T18:42+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-25T18:42+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 7700449,
-      "costUsd": 7.92,
-      "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g8",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T18:45+11:00",
+      "items": 1,
+      "points": 1,
+      "minutes": 14,
+      "tokens": 8850786
+    },
     {
       "packetId": "shell-g14",
       "component": "shell",
@@ -717,16 +660,6 @@
       "points": 12,
       "minutes": 606,
       "tokens": 27780539
-    },
-    {
-      "packetId": "shell-g6",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-22T21:22+11:00",
-      "items": 2,
-      "points": 4,
-      "minutes": 54,
-      "tokens": 34981117
     }
   ]
 }
