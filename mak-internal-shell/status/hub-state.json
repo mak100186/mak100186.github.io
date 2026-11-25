@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:09+11:00",
+  "generatedAt": "2026-11-25T12:11+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,11 +83,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 26,
+        "percentUsed": 27,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 3,
+        "percentUsed": 4,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 9,
-      "tokens": 77788975,
-      "costUsd": 76.63,
+      "tokens": 80601553,
+      "costUsd": 79.14,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 17,
       "points": 105,
-      "tokens": 610599758,
-      "costUsd": 569.94,
+      "tokens": 613412336,
+      "costUsd": 572.45,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5815236,
+      "tokens": 5842022,
       "minutes": 51,
-      "costUsd": 5.43
+      "costUsd": 5.45
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 9,
-        "tokens": 77788975,
-        "costUsd": 76.63
+        "tokens": 80601553,
+        "costUsd": 79.14
       }
     ],
     "tests": {
@@ -284,7 +284,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Integration",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-013",
@@ -330,13 +330,18 @@
         {
           "name": "Integration",
           "start": "2026-11-25T12:07+11:00",
-          "end": null
+          "end": "2026-11-25T12:10+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-25T12:10+11:00",
+          "end": "2026-11-25T12:11+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 32092162,
-      "costUsd": 29.79,
+      "tokens": 34904740,
+      "costUsd": 32.3,
       "commits": 0
     },
     {
