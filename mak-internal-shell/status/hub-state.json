@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:04+11:00",
+  "generatedAt": "2026-11-25T13:06+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -14,22 +14,22 @@
       {
         "name": "shell",
         "pointsDone": 77,
-        "pointsRemaining": 8,
-        "itemsRemaining": 2,
+        "pointsRemaining": 14,
+        "itemsRemaining": 7,
         "state": "building"
       },
       {
         "name": "idp",
-        "pointsDone": 15,
-        "pointsRemaining": 50,
-        "itemsRemaining": 16,
+        "pointsDone": 21,
+        "pointsRemaining": 44,
+        "itemsRemaining": 14,
         "state": "building"
       },
       {
         "name": "component-library",
         "pointsDone": 4,
-        "pointsRemaining": 29,
-        "itemsRemaining": 10,
+        "pointsRemaining": 30,
+        "itemsRemaining": 11,
         "state": "building"
       }
     ],
@@ -46,8 +46,8 @@
       },
       {
         "date": "2026-11-25",
-        "done": 96,
-        "total": 183
+        "done": 102,
+        "total": 190
       }
     ],
     "waitingOnPeople": [
@@ -65,13 +65,13 @@
       },
       {
         "who": "user",
-        "what": "Strict look check on shell (3+ UI merges)",
+        "what": "Strict look check on shell",
         "ref": "parity-shell",
         "since": "2026-11-25T12:00:00+11:00"
       },
       {
         "who": "designer",
-        "what": "Open design rows: Profile P8, DesignSystem T6, Notifications N7, ShellFrame F10-F12, SignIn I9, BlockPage B6",
+        "what": "Open design rows: Profile P8 P9, DesignSystem T6, Notifications N7, Dashboard DB7 DB8, ChangePassword W5 W6, ShellFrame F10-F12, SignIn I9, BlockPage B6",
         "ref": "next-round",
         "since": "2026-11-25T12:00:00+11:00"
       }
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 60,
+        "percentUsed": 61,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 25,
-      "tokens": 205343881,
-      "costUsd": 191.39,
+      "tokens": 208022617,
+      "costUsd": 193.65,
       "minutesWaiting": {
         "hub": 26,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 19,
       "points": 121,
-      "tokens": 738154664,
-      "costUsd": 684.7,
+      "tokens": 740833400,
+      "costUsd": 686.96,
       "minutesWaiting": {
         "hub": 76,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6100452,
+      "tokens": 6122590,
       "minutes": 46,
-      "costUsd": 5.66
+      "costUsd": 5.68
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 25,
-        "tokens": 205343881,
-        "costUsd": 191.39
+        "tokens": 208022617,
+        "costUsd": 193.65
       }
     ],
     "tests": {
@@ -279,14 +279,26 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-next",
+          "id": "idp-g6",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-012",
               "title": "idp end-to-end tests",
               "size": 3
+            }
+          ]
+        },
+        {
+          "id": "idp-next",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "IDP-F-020",
+              "title": "Dashboard layouts in preferences",
+              "size": 1
             }
           ]
         }
@@ -482,21 +494,32 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:04+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-012",
           "title": "idp end-to-end tests",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-25T13:04+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer F-012",
+          "start": "2026-11-25T13:05+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1243085,
+      "costUsd": 1.24,
       "commits": 0
     }
   ],
