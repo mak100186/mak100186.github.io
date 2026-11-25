@@ -349,6 +349,61 @@
       "tokens": 26892015,
       "costUsd": 25.4,
       "commits": 0
+    },
+    {
+      "id": "w-22",
+      "packetId": "shell-g11",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T11:25+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-013",
+          "title": "Search",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-014",
+          "title": "Notification Center",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "component-library-g2",
+      "packetId": "component-library-g2",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-25T11:25+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-F-002",
+          "title": "Block registry and coverage check",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
     }
   ],
   "recent": [
