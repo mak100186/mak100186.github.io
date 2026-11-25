@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:30+11:00",
+  "generatedAt": "2026-11-25T11:32+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 6,
+        "percentUsed": 7,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 10747811,
-      "costUsd": 13.36,
+      "tokens": 13154873,
+      "costUsd": 16.06,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 15,
       "points": 96,
-      "tokens": 543558594,
-      "costUsd": 506.67,
+      "tokens": 545965656,
+      "costUsd": 509.37,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5662069,
+      "tokens": 5687142,
       "minutes": 24,
-      "costUsd": 5.28
+      "costUsd": 5.31
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 0,
-        "tokens": 10747811,
-        "costUsd": 13.36
+        "tokens": 13154873,
+        "costUsd": 16.06
       }
     ],
     "tests": {
@@ -212,7 +212,7 @@
       },
       "knownReds": 0
     },
-    "publish": "ok"
+    "publish": "failing"
   },
   "queue": [
     {
@@ -319,13 +319,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Developer retry 2",
+      "phase": "Reviewer retry 2",
       "items": [
         {
           "id": "SHELL-F-015",
           "title": "Profile page",
           "size": 3,
-          "phase": "Developer retry 2",
+          "phase": "Reviewer retry 2",
           "status": "running"
         },
         {
@@ -403,12 +403,17 @@
           "name": "Developer retry 2 F-015",
           "start": "2026-11-25T11:29+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer retry 2 F-015",
+          "start": "2026-11-25T11:30+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 30082476,
-      "costUsd": 29.96,
+      "tokens": 31119642,
+      "costUsd": 31.08,
       "commits": 0
     },
     {
@@ -460,27 +465,37 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Developer",
+      "phase": "Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-002",
           "title": "Block registry and coverage check",
           "size": 2,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
         {
           "name": "Developer LIBRARY-F-002",
           "start": "2026-11-25T11:26+11:00",
+          "end": "2026-11-25T11:30+11:00"
+        },
+        {
+          "name": "Reviewer LIBRARY-F-002",
+          "start": "2026-11-25T11:30+11:00",
+          "end": "2026-11-25T11:30+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T11:30+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1821431,
-      "costUsd": 2.09,
+      "tokens": 3191327,
+      "costUsd": 3.66,
       "commits": 0
     }
   ],
