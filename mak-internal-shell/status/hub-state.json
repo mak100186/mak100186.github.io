@@ -541,11 +541,11 @@
       "commits": 0
     },
     {
-      "id": "w-30",
+      "id": "w-33",
       "packetId": "idp-g7",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-25T13:28+11:00",
       "phase": "Developer",
       "items": [
