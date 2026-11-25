@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:07+11:00",
+  "generatedAt": "2026-11-25T12:09+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 25,
+        "percentUsed": 26,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 9,
-      "tokens": 76378273,
-      "costUsd": 75.64,
+      "tokens": 77788975,
+      "costUsd": 76.63,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 17,
       "points": 105,
-      "tokens": 609189056,
-      "costUsd": 568.95,
+      "tokens": 610599758,
+      "costUsd": 569.94,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5801801,
+      "tokens": 5815236,
       "minutes": 51,
-      "costUsd": 5.42
+      "costUsd": 5.43
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 9,
-        "tokens": 76378273,
-        "costUsd": 75.64
+        "tokens": 77788975,
+        "costUsd": 76.63
       }
     ],
     "tests": {
@@ -284,7 +284,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-013",
@@ -298,7 +298,7 @@
           "title": "Notification Center",
           "size": 5,
           "phase": "Parity",
-          "status": "fail (meta line font, panel top 5px) — retry loop 1"
+          "status": "pass (retry 1, n1-n6 exact at 1440)"
         }
       ],
       "steps": [
@@ -326,12 +326,17 @@
           "name": "Parity",
           "start": "2026-11-25T11:58+11:00",
           "end": null
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T12:07+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 30681460,
-      "costUsd": 28.79,
+      "tokens": 32092162,
+      "costUsd": 29.79,
       "commits": 0
     },
     {
