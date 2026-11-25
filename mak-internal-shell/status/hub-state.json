@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:54+11:00",
+  "generatedAt": "2026-11-25T16:56+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 12,
+        "percentUsed": 13,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 366534368,
-      "costUsd": 337.49,
+      "tokens": 368270311,
+      "costUsd": 338.93,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 899345151,
-      "costUsd": 830.8,
+      "tokens": 901081094,
+      "costUsd": 832.24,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6564563,
+      "tokens": 6577234,
       "minutes": 41,
-      "costUsd": 6.06
+      "costUsd": 6.07
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 366534368,
-        "costUsd": 337.49
+        "tokens": 368270311,
+        "costUsd": 338.93
       }
     ],
     "tests": {
@@ -498,7 +498,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Reviewer + Parity retry 1",
+      "phase": "Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
@@ -512,7 +512,7 @@
           "title": "Pages: data and feedback",
           "size": 3,
           "phase": "Reviewer + Parity retry 1",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "COMPONENT-LIBRARY-F-009",
@@ -581,13 +581,18 @@
         {
           "name": "Reviewer + Parity retry 1 LIBRARY-F-007",
           "start": "2026-11-25T16:51+11:00",
+          "end": "2026-11-25T16:54+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T16:55+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 38298211,
-      "costUsd": 35.48,
+      "tokens": 40034154,
+      "costUsd": 36.92,
       "commits": 0
     },
     {
