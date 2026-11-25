@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:23+11:00",
+  "generatedAt": "2026-11-25T17:26+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -13,9 +13,9 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 82,
-        "pointsRemaining": 14,
-        "itemsRemaining": 10,
+        "pointsDone": 91,
+        "pointsRemaining": 6,
+        "itemsRemaining": 2,
         "state": "building"
       },
       {
@@ -46,11 +46,17 @@
       },
       {
         "date": "2026-11-25",
-        "done": 127,
-        "total": 197
+        "done": 136,
+        "total": 198
       }
     ],
     "waitingOnPeople": [
+      {
+        "who": "user",
+        "what": "Verify SHELL-B-001 to B-006",
+        "ref": "SHELL-B-001..006",
+        "since": "2026-11-25T17:30:00+11:00"
+      },
       {
         "who": "user",
         "what": "Verify IDP-B-001 concurrency fix",
@@ -112,11 +118,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 25,
+        "percentUsed": 26,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 15,
+        "percentUsed": 16,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -124,10 +130,10 @@
     "today": {
       "packetsMerged": 9,
       "points": 59,
-      "tokens": 409721344,
-      "costUsd": 379.07,
+      "tokens": 420629302,
+      "costUsd": 387.44,
       "minutesWaiting": {
-        "hub": 97,
+        "hub": 100,
         "you": 10,
         "limit": 490
       }
@@ -135,18 +141,18 @@
     "week": {
       "packetsMerged": 24,
       "points": 155,
-      "tokens": 942532127,
-      "costUsd": 872.39,
+      "tokens": 953440085,
+      "costUsd": 880.75,
       "minutesWaiting": {
-        "hub": 147,
+        "hub": 150,
         "you": 130,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6080852,
+      "tokens": 6151226,
       "minutes": 39,
-      "costUsd": 5.63
+      "costUsd": 5.68
     },
     "daily": [
       {
@@ -230,13 +236,13 @@
       {
         "date": "2026-11-25",
         "points": 59,
-        "tokens": 409721344,
-        "costUsd": 379.07
+        "tokens": 420629302,
+        "costUsd": 387.44
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-25T13:30+11:00",
+        "at": "2026-11-25T17:24+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -248,49 +254,14 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g13",
+          "id": "shell-g14",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "SHELL-B-001",
-              "title": "Profile avatar accepts types idp refuses",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-002",
-              "title": "Change password dialog too narrow",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-003",
-              "title": "Profile page loads data several times",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-004",
-              "title": "Table page empty message off-screen",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-005",
-              "title": "Table column resize ignores arrow keys",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-006",
-              "title": "Notification polling after sign-out",
-              "size": 1
-            },
-            {
-              "id": "SHELL-F-030",
-              "title": "Page crumb below the menu item",
-              "size": 2
-            },
-            {
-              "id": "SHELL-F-031",
-              "title": "Filled page action",
-              "size": 1
+              "id": "SHELL-F-032",
+              "title": "T4 sizes and looks",
+              "size": 3
             }
           ]
         },
@@ -299,11 +270,6 @@
           "kind": "orchestrated",
           "state": "queued",
           "items": [
-            {
-              "id": "SHELL-F-032",
-              "title": "T4 sizes: slider, progress bar, spinner, stretch",
-              "size": 2
-            },
             {
               "id": "SHELL-F-016",
               "title": "Docker Compose deployment",
@@ -388,9 +354,9 @@
       "packetId": "idp-g7",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T13:28+11:00",
-      "phase": "Wait for stack window (part B)",
+      "phase": "Integration part B",
       "items": [
         {
           "id": "IDP-F-020",
@@ -451,13 +417,18 @@
         {
           "name": "Wait for stack window (part B)",
           "start": "2026-11-25T16:42+11:00",
+          "end": "2026-11-25T17:24+11:00"
+        },
+        {
+          "name": "Integration part B",
+          "start": "2026-11-25T17:24+11:00",
           "end": null
         }
       ],
       "loops": 3,
       "escalations": 1,
-      "tokens": 17034121,
-      "costUsd": 16.55,
+      "tokens": 17426830,
+      "costUsd": 16.79,
       "commits": 0
     },
     {
@@ -465,7 +436,7 @@
       "packetId": "component-library-g5",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T17:02+11:00",
       "phase": "Reviewer",
       "items": [
@@ -474,7 +445,7 @@
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -486,13 +457,13 @@
         {
           "name": "Reviewer LIBRARY-F-006",
           "start": "2026-11-25T17:21+11:00",
-          "end": null
+          "end": "2026-11-25T17:24+11:00"
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 12544671,
-      "costUsd": 11.52,
+      "tokens": 14407934,
+      "costUsd": 13.44,
       "commits": 0
     },
     {
@@ -502,21 +473,27 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:23+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-032",
           "title": "T4 sizes and looks: slider, progress bar, spinner, stretch in example area, toolbar, icon colour",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer F-032",
+          "start": "2026-11-25T17:25+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1827846,
+      "costUsd": 1.57,
       "commits": 0
     }
   ],
