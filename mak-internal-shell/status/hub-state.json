@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:46+11:00",
+  "generatedAt": "2026-11-25T12:48+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 50,
+        "percentUsed": 51,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 165493048,
-      "costUsd": 151.76,
+      "tokens": 173379620,
+      "costUsd": 160.22,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 698303831,
-      "costUsd": 645.07,
+      "tokens": 706190403,
+      "costUsd": 653.53,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6072207,
+      "tokens": 6140786,
       "minutes": 47,
-      "costUsd": 5.61
+      "costUsd": 5.68
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 165493048,
-        "costUsd": 151.76
+        "tokens": 173379620,
+        "costUsd": 160.22
       }
     ],
     "tests": {
@@ -420,7 +420,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Developer",
+      "phase": "Parity",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -440,8 +440,8 @@
           "id": "COMPONENT-LIBRARY-F-008",
           "title": "Pages: the shell's own blocks",
           "size": 3,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -473,13 +473,18 @@
         {
           "name": "Developer LIBRARY-F-008",
           "start": "2026-11-25T12:34+11:00",
-          "end": null
+          "end": "2026-11-25T12:47+11:00"
+        },
+        {
+          "name": "Reviewer LIBRARY-F-008",
+          "start": "2026-11-25T12:47+11:00",
+          "end": "2026-11-25T12:48+11:00"
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 13795261,
-      "costUsd": 13.19,
+      "tokens": 21681833,
+      "costUsd": 21.65,
       "commits": 0
     }
   ],
