@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:53+11:00",
+  "generatedAt": "2026-11-25T11:55+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,11 +83,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 18,
+        "percentUsed": 20,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 2,
+        "percentUsed": 3,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 9,
-      "tokens": 56932588,
-      "costUsd": 57.26,
+      "tokens": 61231852,
+      "costUsd": 60.52,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 17,
       "points": 105,
-      "tokens": 589743371,
-      "costUsd": 550.57,
+      "tokens": 594042635,
+      "costUsd": 553.83,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5616604,
+      "tokens": 5657549,
       "minutes": 51,
-      "costUsd": 5.24
+      "costUsd": 5.27
     },
     "daily": [
       {
@@ -201,13 +201,13 @@
       {
         "date": "2026-11-25",
         "points": 9,
-        "tokens": 56932588,
-        "costUsd": 57.26
+        "tokens": 61231852,
+        "costUsd": 60.52
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-23T09:40+11:00",
+        "at": "2026-11-25T11:55+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -218,28 +218,6 @@
     {
       "component": "shell",
       "packets": [
-        {
-          "id": "shell-g10",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-029",
-              "title": "Sign-in slot fills the page",
-              "size": 1
-            },
-            {
-              "id": "SHELL-F-015",
-              "title": "Profile page",
-              "size": 3
-            },
-            {
-              "id": "SHELL-F-018",
-              "title": "Identity contract additions for idp v1",
-              "size": 3
-            }
-          ]
-        },
         {
           "id": "shell-g11",
           "kind": "orchestrated",
@@ -275,9 +253,9 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-next",
+          "id": "idp-g5",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-009",
