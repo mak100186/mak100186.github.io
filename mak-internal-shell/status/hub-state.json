@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:31+11:00",
+  "generatedAt": "2026-11-25T16:33+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 5,
+        "percentUsed": 6,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 335888915,
-      "costUsd": 309.13,
+      "tokens": 339439342,
+      "costUsd": 312.72,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 868699698,
-      "costUsd": 802.44,
+      "tokens": 872250125,
+      "costUsd": 806.03,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6340874,
+      "tokens": 6366789,
       "minutes": 41,
-      "costUsd": 5.86
+      "costUsd": 5.88
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 335888915,
-        "costUsd": 309.13
+        "tokens": 339439342,
+        "costUsd": 312.72
       }
     ],
     "tests": {
@@ -487,8 +487,8 @@
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 24790465,
-      "costUsd": 23.96,
+      "tokens": 25087710,
+      "costUsd": 24.15,
       "commits": 0
     },
     {
@@ -498,14 +498,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Developer",
+      "phase": "Parity",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
           "title": "Pages: form controls",
           "size": 5,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-007",
@@ -547,12 +547,17 @@
           "name": "Developer LIBRARY-F-007",
           "start": "2026-11-25T16:25+11:00",
           "end": null
+        },
+        {
+          "name": "Parity LIBRARY-F-005",
+          "start": "2026-11-25T16:32+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 15092404,
-      "costUsd": 13.59,
+      "tokens": 16865269,
+      "costUsd": 15.5,
       "commits": 0
     },
     {
@@ -562,13 +567,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:28+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-020",
           "title": "Dashboard layouts in preferences",
           "size": 2,
-          "phase": "Reviewer",
+          "phase": "Developer",
           "status": "running"
         },
         {
@@ -603,13 +608,18 @@
         {
           "name": "Reviewer F-020",
           "start": "2026-11-25T16:31+11:00",
+          "end": "2026-11-25T16:32+11:00"
+        },
+        {
+          "name": "Developer F-020",
+          "start": "2026-11-25T16:33+11:00",
           "end": null
         }
       ],
-      "loops": 1,
+      "loops": 2,
       "escalations": 1,
-      "tokens": 11291121,
-      "costUsd": 10.57,
+      "tokens": 12272192,
+      "costUsd": 11.77,
       "commits": 0
     }
   ],
