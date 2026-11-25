@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:19+11:00",
+  "generatedAt": "2026-11-25T12:21+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -13,9 +13,9 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 60,
-        "pointsRemaining": 24,
-        "itemsRemaining": 6,
+        "pointsDone": 77,
+        "pointsRemaining": 8,
+        "itemsRemaining": 2,
         "state": "building"
       },
       {
@@ -23,13 +23,13 @@
         "pointsDone": 15,
         "pointsRemaining": 50,
         "itemsRemaining": 16,
-        "state": "waiting"
+        "state": "building"
       },
       {
         "name": "component-library",
-        "pointsDone": 2,
-        "pointsRemaining": 31,
-        "itemsRemaining": 11,
+        "pointsDone": 4,
+        "pointsRemaining": 29,
+        "itemsRemaining": 10,
         "state": "building"
       }
     ],
@@ -46,8 +46,8 @@
       },
       {
         "date": "2026-11-25",
-        "done": 77,
-        "total": 182
+        "done": 96,
+        "total": 183
       }
     ],
     "waitingOnPeople": [
@@ -64,16 +64,27 @@
         "since": "2026-11-23T09:40:00+11:00"
       },
       {
+        "who": "user",
+        "what": "Strict look check on shell (3+ UI merges)",
+        "ref": "parity-shell",
+        "since": "2026-11-25T12:00:00+11:00"
+      },
+      {
         "who": "designer",
-        "what": "Review round 003/004 rows (Blocks, Dashboard, Catalog, Block page, idp M12/M13)",
-        "ref": "round-003",
-        "since": "2026-11-22T00:00:00+11:00"
+        "what": "Open design rows: Profile P8, DesignSystem T6, Notifications N7, ShellFrame F10-F12, SignIn I9, BlockPage B6",
+        "ref": "next-round",
+        "since": "2026-11-25T12:00:00+11:00"
       }
     ],
     "milestones": [
       {
         "name": "shell Phase 0 done",
         "date": "2026-11-23",
+        "kind": "actual"
+      },
+      {
+        "name": "component-library Phase 0 done",
+        "date": "2026-11-25",
         "kind": "actual"
       }
     ]
@@ -83,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 32,
+        "percentUsed": 34,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 110282553,
-      "costUsd": 103.97,
+      "tokens": 116075503,
+      "costUsd": 108.31,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -106,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 643093336,
-      "costUsd": 597.28,
+      "tokens": 648886286,
+      "costUsd": 601.62,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -115,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5592116,
+      "tokens": 5642489,
       "minutes": 47,
-      "costUsd": 5.19
+      "costUsd": 5.23
     },
     "daily": [
       {
@@ -201,13 +212,13 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 110282553,
-        "costUsd": 103.97
+        "tokens": 116075503,
+        "costUsd": 108.31
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-25T11:55+11:00",
+        "at": "2026-11-25T12:19+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -219,14 +230,26 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-next",
+          "id": "shell-g12",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-F-022",
               "title": "Dashboard block and saved layouts",
               "size": 5
+            }
+          ]
+        },
+        {
+          "id": "shell-next",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "SHELL-F-016",
+              "title": "Docker Compose deployment",
+              "size": 3
             }
           ]
         }
@@ -256,7 +279,30 @@
     },
     {
       "component": "component-library",
-      "packets": []
+      "packets": [
+        {
+          "id": "component-library-g3",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "COMPONENT-LIBRARY-F-003",
+              "title": "Catalog screen",
+              "size": 2
+            },
+            {
+              "id": "COMPONENT-LIBRARY-F-004",
+              "title": "Block page",
+              "size": 3
+            },
+            {
+              "id": "COMPONENT-LIBRARY-F-008",
+              "title": "Pages: the shell's own blocks",
+              "size": 3
+            }
+          ]
+        }
+      ]
     }
   ],
   "workers": [
@@ -314,21 +360,32 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-022",
           "title": "Dashboard block and saved layouts",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start: plan 1 wave (SHELL-F-022 alone)",
+          "start": "2026-11-25T12:20+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer F-022",
+          "start": "2026-11-25T12:21+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1773717,
+      "costUsd": 1.63,
       "commits": 0
     },
     {
@@ -338,7 +395,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "",
+      "phase": "Start: plan waves [F-003, F-004] then [F-008]; F-004 owns entries.spec.ts, both add one route each to routes.ts; neither changes blocks.ts; F-008 owns blocks.ts",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -362,7 +419,13 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start: plan waves [F-003, F-004] then [F-008]; F-004 owns entries.spec.ts, both add one route each to routes.ts; neither changes blocks.ts; F-008 owns blocks.ts",
+          "start": "2026-11-25T12:21+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
