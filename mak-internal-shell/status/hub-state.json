@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:34+11:00",
+  "generatedAt": "2026-11-25T11:36+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 9,
+        "percentUsed": 11,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -93,10 +93,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 0,
-      "points": 0,
-      "tokens": 19904969,
-      "costUsd": 21.34,
+      "packetsMerged": 1,
+      "points": 2,
+      "tokens": 28235827,
+      "costUsd": 28.66,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -104,10 +104,10 @@
       }
     },
     "week": {
-      "packetsMerged": 15,
-      "points": 96,
-      "tokens": 552715752,
-      "costUsd": 514.65,
+      "packetsMerged": 16,
+      "points": 98,
+      "tokens": 561046610,
+      "costUsd": 521.97,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5757456,
+      "tokens": 5724965,
       "minutes": 24,
-      "costUsd": 5.36
+      "costUsd": 5.33
     },
     "daily": [
       {
@@ -200,9 +200,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 0,
-        "tokens": 19904969,
-        "costUsd": 21.34
+        "points": 2,
+        "tokens": 28235827,
+        "costUsd": 28.66
       }
     ],
     "tests": {
@@ -295,20 +295,7 @@
     },
     {
       "component": "component-library",
-      "packets": [
-        {
-          "id": "component-library-g2",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "COMPONENT-LIBRARY-F-002",
-              "title": "Block registry and coverage check",
-              "size": 2
-            }
-          ]
-        }
-      ]
+      "packets": []
     }
   ],
   "workers": [
@@ -319,14 +306,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Parity recheck",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-015",
           "title": "Profile page",
           "size": 3,
           "phase": "Parity recheck",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-F-018",
@@ -417,13 +404,13 @@
         {
           "name": "Parity recheck F-015",
           "start": "2026-11-25T11:33+11:00",
-          "end": null
+          "end": "2026-11-25T11:34+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 35611548,
-      "costUsd": 33.58,
+      "tokens": 36804147,
+      "costUsd": 34.35,
       "commits": 0
     },
     {
@@ -433,13 +420,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-013",
           "title": "Search",
           "size": 5,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -454,72 +441,37 @@
         {
           "name": "Developer F-013",
           "start": "2026-11-25T11:28+11:00",
-          "end": null
+          "end": "2026-11-25T11:35+11:00"
         },
         {
           "name": "Developer F-014",
           "start": "2026-11-25T11:28+11:00",
           "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 0,
-      "tokens": 2377920,
-      "costUsd": 2.12,
-      "commits": 0
-    },
-    {
-      "id": "w-23",
-      "packetId": "component-library-g2",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "COMPONENT-LIBRARY-F-002",
-          "title": "Block registry and coverage check",
-          "size": 2,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer LIBRARY-F-002",
-          "start": "2026-11-25T11:26+11:00",
-          "end": "2026-11-25T11:30+11:00"
         },
         {
-          "name": "Reviewer LIBRARY-F-002",
-          "start": "2026-11-25T11:30+11:00",
-          "end": "2026-11-25T11:30+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T11:30+11:00",
-          "end": "2026-11-25T11:32+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T11:32+11:00",
-          "end": "2026-11-25T11:32+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-25T11:32+11:00",
+          "name": "Reviewer F-013",
+          "start": "2026-11-25T11:35+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 5449517,
-      "costUsd": 6.44,
+      "tokens": 6253778,
+      "costUsd": 6.13,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "component-library-g2",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T11:34+11:00",
+      "items": 1,
+      "points": 2,
+      "minutes": 10,
+      "tokens": 5908713
+    },
     {
       "packetId": "shell-g9",
       "component": "shell",
