@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:56+11:00",
+  "generatedAt": "2026-11-25T16:58+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 368270311,
-      "costUsd": 338.93,
+      "tokens": 369619276,
+      "costUsd": 340.56,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 901081094,
-      "costUsd": 832.24,
+      "tokens": 902430059,
+      "costUsd": 833.87,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6577234,
+      "tokens": 6587081,
       "minutes": 41,
-      "costUsd": 6.07
+      "costUsd": 6.09
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 368270311,
-        "costUsd": 338.93
+        "tokens": 369619276,
+        "costUsd": 340.56
       }
     ],
     "tests": {
@@ -498,7 +498,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
@@ -586,13 +586,18 @@
         {
           "name": "Integration",
           "start": "2026-11-25T16:55+11:00",
-          "end": null
+          "end": "2026-11-25T16:56+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-25T16:56+11:00",
+          "end": "2026-11-25T16:57+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 40034154,
-      "costUsd": 36.92,
+      "tokens": 41383119,
+      "costUsd": 38.55,
       "commits": 0
     },
     {
