@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:06+11:00",
+  "generatedAt": "2026-11-25T17:08+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -112,7 +112,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 17,
+        "percentUsed": 18,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -124,8 +124,8 @@
     "today": {
       "packetsMerged": 8,
       "points": 50,
-      "tokens": 382783154,
-      "costUsd": 351.58,
+      "tokens": 387105089,
+      "costUsd": 355.82,
       "minutesWaiting": {
         "hub": 57,
         "you": 4,
@@ -135,8 +135,8 @@
     "week": {
       "packetsMerged": 23,
       "points": 146,
-      "tokens": 915593937,
-      "costUsd": 844.9,
+      "tokens": 919915872,
+      "costUsd": 849.13,
       "minutesWaiting": {
         "hub": 107,
         "you": 124,
@@ -144,9 +144,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6271191,
+      "tokens": 6300794,
       "minutes": 40,
-      "costUsd": 5.79
+      "costUsd": 5.82
     },
     "daily": [
       {
@@ -230,8 +230,8 @@
       {
         "date": "2026-11-25",
         "points": 50,
-        "tokens": 382783154,
-        "costUsd": 351.58
+        "tokens": 387105089,
+        "costUsd": 355.82
       }
     ],
     "tests": {
@@ -445,8 +445,8 @@
           "id": "SHELL-F-031",
           "title": "Filled page action",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Parity",
+          "status": "f-030 pass; f-031 fail (action gap 4px vs 8px)"
         }
       ],
       "steps": [
@@ -497,9 +497,9 @@
         }
       ],
       "loops": 0,
-      "escalations": 3,
-      "tokens": 25701476,
-      "costUsd": 24.96,
+      "escalations": 4,
+      "tokens": 29209007,
+      "costUsd": 28.74,
       "commits": 0
     },
     {
