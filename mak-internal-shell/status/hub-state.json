@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:32+11:00",
+  "generatedAt": "2026-11-25T11:34+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 7,
+        "percentUsed": 9,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 13154873,
-      "costUsd": 16.06,
+      "tokens": 19904969,
+      "costUsd": 21.34,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 15,
       "points": 96,
-      "tokens": 545965656,
-      "costUsd": 509.37,
+      "tokens": 552715752,
+      "costUsd": 514.65,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5687142,
+      "tokens": 5757456,
       "minutes": 24,
-      "costUsd": 5.31
+      "costUsd": 5.36
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 0,
-        "tokens": 13154873,
-        "costUsd": 16.06
+        "tokens": 19904969,
+        "costUsd": 21.34
       }
     ],
     "tests": {
@@ -212,7 +212,7 @@
       },
       "knownReds": 0
     },
-    "publish": "failing"
+    "publish": "ok"
   },
   "queue": [
     {
@@ -319,21 +319,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Reviewer retry 2",
+      "phase": "Parity recheck",
       "items": [
         {
           "id": "SHELL-F-015",
           "title": "Profile page",
           "size": 3,
-          "phase": "Reviewer retry 2",
+          "phase": "Parity recheck",
           "status": "running"
         },
         {
           "id": "SHELL-F-018",
           "title": "Identity contract additions for idp v1",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "SHELL-F-029",
@@ -408,12 +408,22 @@
           "name": "Reviewer retry 2 F-015",
           "start": "2026-11-25T11:30+11:00",
           "end": null
+        },
+        {
+          "name": "Parity F-018",
+          "start": "2026-11-25T11:33+11:00",
+          "end": null
+        },
+        {
+          "name": "Parity recheck F-015",
+          "start": "2026-11-25T11:33+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 31119642,
-      "costUsd": 31.08,
+      "tokens": 35611548,
+      "costUsd": 33.58,
       "commits": 0
     },
     {
@@ -465,7 +475,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-002",
@@ -489,13 +499,23 @@
         {
           "name": "Integration",
           "start": "2026-11-25T11:30+11:00",
+          "end": "2026-11-25T11:32+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-25T11:32+11:00",
+          "end": "2026-11-25T11:32+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-25T11:32+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3191327,
-      "costUsd": 3.66,
+      "tokens": 5449517,
+      "costUsd": 6.44,
       "commits": 0
     }
   ],
