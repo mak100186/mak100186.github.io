@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:33+11:00",
+  "generatedAt": "2026-11-25T13:35+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 85,
+        "percentUsed": 86,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 297576886,
-      "costUsd": 274.73,
+      "tokens": 299728485,
+      "costUsd": 276.85,
       "minutesWaiting": {
         "hub": 27,
         "you": 0,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 830387669,
-      "costUsd": 768.04,
+      "tokens": 832539268,
+      "costUsd": 770.16,
       "minutesWaiting": {
         "hub": 77,
         "you": 120,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6061224,
+      "tokens": 6076929,
       "minutes": 41,
-      "costUsd": 5.61
+      "costUsd": 5.62
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 297576886,
-        "costUsd": 274.73
+        "tokens": 299728485,
+        "costUsd": 276.85
       }
     ],
     "tests": {
@@ -530,7 +530,7 @@
       "packetId": "idp-g7",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on you",
       "startedAt": "2026-11-25T13:28+11:00",
       "phase": "Developer",
       "items": [
@@ -538,28 +538,38 @@
           "id": "IDP-F-020",
           "title": "Dashboard layouts in preferences",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-B-003",
           "title": "Idle and expired sign-out tell the shell late",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
         {
           "name": "Developer B-003",
           "start": "2026-11-25T13:30+11:00",
+          "end": "2026-11-25T13:33+11:00"
+        },
+        {
+          "name": "Reviewer B-003",
+          "start": "2026-11-25T13:33+11:00",
+          "end": "2026-11-25T13:33+11:00"
+        },
+        {
+          "name": "Developer F-020",
+          "start": "2026-11-25T13:34+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1513050,
-      "costUsd": 1.45,
+      "tokens": 3393117,
+      "costUsd": 3.4,
       "commits": 0
     }
   ],
