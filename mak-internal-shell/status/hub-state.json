@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:21+11:00",
+  "generatedAt": "2026-11-25T17:23+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -112,7 +112,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 22,
+        "percentUsed": 24,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -122,31 +122,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 8,
-      "points": 50,
-      "tokens": 406627068,
-      "costUsd": 375.83,
+      "packetsMerged": 9,
+      "points": 59,
+      "tokens": 409721344,
+      "costUsd": 379.07,
       "minutesWaiting": {
-        "hub": 57,
-        "you": 4,
+        "hub": 97,
+        "you": 10,
         "limit": 490
       }
     },
     "week": {
-      "packetsMerged": 23,
-      "points": 146,
-      "tokens": 939437851,
-      "costUsd": 869.15,
+      "packetsMerged": 24,
+      "points": 155,
+      "tokens": 942532127,
+      "costUsd": 872.39,
       "minutesWaiting": {
-        "hub": 107,
-        "you": 124,
+        "hub": 147,
+        "you": 130,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6434506,
-      "minutes": 40,
-      "costUsd": 5.95
+      "tokens": 6080852,
+      "minutes": 39,
+      "costUsd": 5.63
     },
     "daily": [
       {
@@ -229,9 +229,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 50,
-        "tokens": 406627068,
-        "costUsd": 375.83
+        "points": 59,
+        "tokens": 409721344,
+        "costUsd": 379.07
       }
     ],
     "tests": {
@@ -384,135 +384,6 @@
   ],
   "workers": [
     {
-      "id": "w-32",
-      "packetId": "shell-g13",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "waiting on you",
-      "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "Parity",
-      "items": [
-        {
-          "id": "SHELL-B-001",
-          "title": "Profile avatar accepts types idp refuses",
-          "size": 1,
-          "phase": "Reviewer (profile chain B-001, B-002, B-003; re-check B-006 on the shared identity files)",
-          "status": "b-001 pass, b-002 pass (code); b-003 stale, re-review after r140"
-        },
-        {
-          "id": "SHELL-B-002",
-          "title": "Change password dialog too narrow",
-          "size": 1,
-          "phase": "Parity (B-002, B-004)",
-          "status": "pass (both); window released"
-        },
-        {
-          "id": "SHELL-B-003",
-          "title": "Profile page loads data several times",
-          "size": 1,
-          "phase": "Reviewer (B-003 after r140; B-006 re-check)",
-          "status": "pass (b-003, b-006)"
-        },
-        {
-          "id": "SHELL-B-004",
-          "title": "Table page empty message off-screen on wide tables",
-          "size": 1,
-          "phase": "Reviewer (table chain B-004, B-005)",
-          "status": "b-004 pass (code), b-005 pass"
-        },
-        {
-          "id": "SHELL-B-005",
-          "title": "Table column resize ignores arrow keys",
-          "size": 1,
-          "phase": "",
-          "status": "queued"
-        },
-        {
-          "id": "SHELL-B-006",
-          "title": "Notification center keeps polling after sign-out",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-F-030",
-          "title": "Page crumb below the menu item",
-          "size": 2,
-          "phase": "Parity",
-          "status": "running"
-        },
-        {
-          "id": "SHELL-F-031",
-          "title": "Filled page action",
-          "size": 1,
-          "phase": "Parity",
-          "status": "f-030 pass; f-031 fail (action gap 4px vs 8px)"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer (wave 1: profile chain, table chain, B-006)",
-          "start": "2026-11-25T13:23+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer B-006",
-          "start": "2026-11-25T13:26+11:00",
-          "end": "2026-11-25T13:27+11:00"
-        },
-        {
-          "name": "Reviewer (profile chain B-001, B-002, B-003; re-check B-006 on the shared identity files) B-001",
-          "start": "2026-11-25T13:30+11:00",
-          "end": "2026-11-25T13:31+11:00"
-        },
-        {
-          "name": "Reviewer (table chain B-004, B-005) B-004",
-          "start": "2026-11-25T13:31+11:00",
-          "end": "2026-11-25T13:32+11:00"
-        },
-        {
-          "name": "Reviewer (B-003 after r140; B-006 re-check) B-003",
-          "start": "2026-11-25T13:37+11:00",
-          "end": "2026-11-25T13:39+11:00"
-        },
-        {
-          "name": "Parity (B-002, B-004) B-002",
-          "start": "2026-11-25T13:38+11:00",
-          "end": "2026-11-25T13:42+11:00"
-        },
-        {
-          "name": "Developer F-030",
-          "start": "2026-11-25T16:25+11:00",
-          "end": "2026-11-25T16:30+11:00"
-        },
-        {
-          "name": "Reviewer F-030",
-          "start": "2026-11-25T16:30+11:00",
-          "end": "2026-11-25T16:31+11:00"
-        },
-        {
-          "name": "Parity F-030",
-          "start": "2026-11-25T17:01+11:00",
-          "end": null
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T17:11+11:00",
-          "end": "2026-11-25T17:15+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-25T17:16+11:00",
-          "end": "2026-11-25T17:21+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 4,
-      "tokens": 39302834,
-      "costUsd": 40.69,
-      "commits": 0
-    },
-    {
       "id": "w-33",
       "packetId": "idp-g7",
       "component": "idp",
@@ -585,8 +456,8 @@
       ],
       "loops": 3,
       "escalations": 1,
-      "tokens": 16391889,
-      "costUsd": 15.62,
+      "tokens": 17034121,
+      "costUsd": 16.55,
       "commits": 0
     },
     {
@@ -596,13 +467,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-006",
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -610,17 +481,32 @@
         {
           "name": "Developer LIBRARY-F-006",
           "start": "2026-11-25T17:05+11:00",
+          "end": "2026-11-25T17:21+11:00"
+        },
+        {
+          "name": "Reviewer LIBRARY-F-006",
+          "start": "2026-11-25T17:21+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 3,
-      "tokens": 12106635,
-      "costUsd": 10.47,
+      "escalations": 4,
+      "tokens": 12544671,
+      "costUsd": 11.52,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g13",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T17:21+11:00",
+      "items": 8,
+      "points": 9,
+      "minutes": 240,
+      "tokens": 39302834
+    },
     {
       "packetId": "component-library-g4",
       "component": "component-library",
@@ -810,16 +696,6 @@
       "points": 8,
       "minutes": 69,
       "tokens": 37316794
-    },
-    {
-      "packetId": "shell-g5",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-22T19:32+11:00",
-      "items": 1,
-      "points": 2,
-      "minutes": 27,
-      "tokens": 11601471
     }
   ]
 }
