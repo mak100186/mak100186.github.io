@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:28+11:00",
+  "generatedAt": "2026-11-25T18:30+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -128,31 +128,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 10,
-      "points": 62,
-      "tokens": 472611786,
-      "costUsd": 439.88,
+      "packetsMerged": 11,
+      "points": 65,
+      "tokens": 475712456,
+      "costUsd": 442.72,
       "minutesWaiting": {
-        "hub": 142,
+        "hub": 203,
         "you": 10,
         "limit": 490
       }
     },
     "week": {
-      "packetsMerged": 25,
-      "points": 158,
-      "tokens": 1005422569,
-      "costUsd": 933.19,
+      "packetsMerged": 26,
+      "points": 161,
+      "tokens": 1008523239,
+      "costUsd": 936.03,
       "minutesWaiting": {
-        "hub": 192,
+        "hub": 253,
         "you": 130,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6363434,
+      "tokens": 6264119,
       "minutes": 39,
-      "costUsd": 5.91
+      "costUsd": 5.81
     },
     "daily": [
       {
@@ -235,9 +235,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 62,
-        "tokens": 472611786,
-        "costUsd": 439.88
+        "points": 65,
+        "tokens": 475712456,
+        "costUsd": 442.72
       }
     ],
     "tests": {
@@ -361,7 +361,7 @@
       "packetId": "component-library-g5",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
       "phase": "Reviewer (retry 1)",
       "items": [
@@ -412,91 +412,11 @@
       "commits": 0
     },
     {
-      "id": "w-35",
-      "packetId": "shell-g14",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T17:23+11:00",
-      "phase": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
-      "items": [
-        {
-          "id": "SHELL-F-032",
-          "title": "T4 sizes and looks: slider, progress bar, spinner, stretch in example area, toolbar, icon colour",
-          "size": 3,
-          "phase": "Reviewer (r176)",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-032",
-          "start": "2026-11-25T17:25+11:00",
-          "end": "2026-11-25T17:35+11:00"
-        },
-        {
-          "name": "Reviewer F-032",
-          "start": "2026-11-25T17:35+11:00",
-          "end": "2026-11-25T17:37+11:00"
-        },
-        {
-          "name": "Parity (waiting for stack window r169) F-032",
-          "start": "2026-11-25T17:37+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity F-032",
-          "start": "2026-11-25T18:07+11:00",
-          "end": "2026-11-25T18:14+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T18:14+11:00",
-          "end": "2026-11-25T18:18+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T18:18+11:00",
-          "end": "2026-11-25T18:18+11:00"
-        },
-        {
-          "name": "Developer (r176 ruling) F-032",
-          "start": "2026-11-25T18:18+11:00",
-          "end": "2026-11-25T18:20+11:00"
-        },
-        {
-          "name": "Reviewer (r176) F-032",
-          "start": "2026-11-25T18:20+11:00",
-          "end": "2026-11-25T18:21+11:00"
-        },
-        {
-          "name": "Integration pass 2",
-          "start": "2026-11-25T18:21+11:00",
-          "end": "2026-11-25T18:24+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T18:24+11:00",
-          "end": "2026-11-25T18:25+11:00"
-        },
-        {
-          "name": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
-          "start": "2026-11-25T18:25+11:00",
-          "end": null
-        }
-      ],
-      "loops": 1,
-      "escalations": 1,
-      "tokens": 20495724,
-      "costUsd": 22.08,
-      "commits": 0
-    },
-    {
       "id": "w-36",
       "packetId": "component-library-g6",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T17:36+11:00",
       "phase": "Wait: stack window (r174) for Parity F-010/F-013 and the build gate",
       "items": [
@@ -550,6 +470,16 @@
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g14",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T18:29+11:00",
+      "items": 1,
+      "points": 3,
+      "minutes": 67,
+      "tokens": 21969907
+    },
     {
       "packetId": "idp-g7",
       "component": "idp",
@@ -739,16 +669,6 @@
       "points": 4,
       "minutes": 54,
       "tokens": 34981117
-    },
-    {
-      "packetId": "idp-g1",
-      "component": "idp",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-22T20:47+11:00",
-      "items": 1,
-      "points": 3,
-      "minutes": 18,
-      "tokens": 8590680
     }
   ]
 }
