@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:02+11:00",
+  "generatedAt": "2026-11-25T17:04+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-11-28",
+      "likely": "2026-11-27",
       "optimistic": "2026-11-27",
       "pessimistic": "2026-11-28"
     },
@@ -14,22 +14,22 @@
       {
         "name": "shell",
         "pointsDone": 82,
-        "pointsRemaining": 12,
-        "itemsRemaining": 9,
+        "pointsRemaining": 14,
+        "itemsRemaining": 10,
         "state": "building"
       },
       {
         "name": "idp",
         "pointsDone": 24,
-        "pointsRemaining": 42,
-        "itemsRemaining": 14,
+        "pointsRemaining": 43,
+        "itemsRemaining": 15,
         "state": "building"
       },
       {
         "name": "component-library",
-        "pointsDone": 12,
-        "pointsRemaining": 22,
-        "itemsRemaining": 8,
+        "pointsDone": 21,
+        "pointsRemaining": 13,
+        "itemsRemaining": 5,
         "state": "building"
       }
     ],
@@ -46,8 +46,8 @@
       },
       {
         "date": "2026-11-25",
-        "done": 118,
-        "total": 194
+        "done": 127,
+        "total": 197
       }
     ],
     "waitingOnPeople": [
@@ -62,6 +62,12 @@
         "what": "Verify IDP-B-002 two-tab refresh",
         "ref": "IDP-B-002",
         "since": "2026-11-23T09:40:00+11:00"
+      },
+      {
+        "who": "user",
+        "what": "Verify IDP-B-003 sign-out signal",
+        "ref": "IDP-B-003",
+        "since": "2026-11-25T13:36:00+11:00"
       },
       {
         "who": "user",
@@ -83,7 +89,7 @@
       },
       {
         "who": "designer",
-        "what": "Open design rows: Profile P8 P9, DesignSystem T6, Notifications N7, Dashboard DB7 DB8, ChangePassword W5 W6, ShellFrame F10-F12, SignIn I9, BlockPage B6",
+        "what": "Open design rows: Profile P8 P9, DesignSystem T6 T7, Notifications N7, Dashboard DB7 DB8, ChangePassword W5 W6, ShellFrame F10-F12, SignIn I9, BlockPage B6",
         "ref": "next-round",
         "since": "2026-11-25T12:00:00+11:00"
       }
@@ -106,7 +112,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 15,
+        "percentUsed": 16,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +124,8 @@
     "today": {
       "packetsMerged": 8,
       "points": 50,
-      "tokens": 375673741,
-      "costUsd": 346.43,
+      "tokens": 378486889,
+      "costUsd": 348.24,
       "minutesWaiting": {
         "hub": 57,
         "you": 4,
@@ -129,8 +135,8 @@
     "week": {
       "packetsMerged": 23,
       "points": 146,
-      "tokens": 908484524,
-      "costUsd": 839.74,
+      "tokens": 911297672,
+      "costUsd": 841.55,
       "minutesWaiting": {
         "hub": 107,
         "you": 124,
@@ -138,9 +144,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6222497,
+      "tokens": 6241765,
       "minutes": 40,
-      "costUsd": 5.75
+      "costUsd": 5.76
     },
     "daily": [
       {
@@ -224,8 +230,8 @@
       {
         "date": "2026-11-25",
         "points": 50,
-        "tokens": 375673741,
-        "costUsd": 346.43
+        "tokens": 378486889,
+        "costUsd": 348.24
       }
     ],
     "tests": {
@@ -294,6 +300,11 @@
           "state": "queued",
           "items": [
             {
+              "id": "SHELL-F-032",
+              "title": "T4 sizes: slider, progress bar, spinner, stretch",
+              "size": 2
+            },
+            {
               "id": "SHELL-F-016",
               "title": "Docker Compose deployment",
               "size": 3
@@ -340,24 +351,14 @@
       "component": "component-library",
       "packets": [
         {
-          "id": "component-library-g4",
+          "id": "component-library-g5",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "COMPONENT-LIBRARY-F-005",
-              "title": "Pages: form controls",
+              "id": "COMPONENT-LIBRARY-F-006",
+              "title": "Pages: buttons, navigation and layout",
               "size": 5
-            },
-            {
-              "id": "COMPONENT-LIBRARY-F-007",
-              "title": "Pages: data and feedback",
-              "size": 3
-            },
-            {
-              "id": "COMPONENT-LIBRARY-F-009",
-              "title": "Search provider",
-              "size": 1
             }
           ]
         },
@@ -367,9 +368,14 @@
           "state": "queued",
           "items": [
             {
-              "id": "COMPONENT-LIBRARY-F-006",
-              "title": "Pages: buttons, navigation and layout",
-              "size": 5
+              "id": "COMPONENT-LIBRARY-F-013",
+              "title": "Block page third crumb",
+              "size": 1
+            },
+            {
+              "id": "COMPONENT-LIBRARY-F-010",
+              "title": "Dashboard page",
+              "size": 3
             }
           ]
         }
@@ -592,7 +598,7 @@
       ],
       "steps": [],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 3,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
