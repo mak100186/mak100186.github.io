@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:43+11:00",
+  "generatedAt": "2026-11-25T16:45+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,11 +106,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 10,
+        "percentUsed": 11,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 13,
+        "percentUsed": 14,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 354549281,
-      "costUsd": 327.35,
+      "tokens": 355632966,
+      "costUsd": 328.33,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 887360064,
-      "costUsd": 820.67,
+      "tokens": 888443749,
+      "costUsd": 821.65,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6477081,
+      "tokens": 6484991,
       "minutes": 41,
-      "costUsd": 5.99
+      "costUsd": 6
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 354549281,
-        "costUsd": 327.35
+        "tokens": 355632966,
+        "costUsd": 328.33
       }
     ],
     "tests": {
@@ -498,14 +498,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Developer retry 1",
+      "phase": "Parity",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
           "title": "Pages: form controls",
           "size": 5,
-          "phase": "Developer retry 1",
-          "status": "running"
+          "phase": "Reviewer retry 1",
+          "status": "pass"
         },
         {
           "id": "COMPONENT-LIBRARY-F-007",
@@ -566,13 +566,23 @@
         {
           "name": "Developer retry 1 LIBRARY-F-005",
           "start": "2026-11-25T16:42+11:00",
+          "end": "2026-11-25T16:43+11:00"
+        },
+        {
+          "name": "Reviewer retry 1 LIBRARY-F-005",
+          "start": "2026-11-25T16:43+11:00",
+          "end": "2026-11-25T16:44+11:00"
+        },
+        {
+          "name": "Parity retry 1 LIBRARY-F-005",
+          "start": "2026-11-25T16:44+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 27179788,
-      "costUsd": 25.92,
+      "tokens": 28263473,
+      "costUsd": 26.89,
       "commits": 0
     },
     {
