@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:06+11:00",
+  "generatedAt": "2026-11-25T13:08+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 61,
+        "percentUsed": 63,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 25,
-      "tokens": 208022617,
-      "costUsd": 193.65,
+      "tokens": 217318787,
+      "costUsd": 202.74,
       "minutesWaiting": {
         "hub": 26,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 19,
       "points": 121,
-      "tokens": 740833400,
-      "costUsd": 686.96,
+      "tokens": 750129570,
+      "costUsd": 696.05,
       "minutesWaiting": {
         "hub": 76,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6122590,
+      "tokens": 6199418,
       "minutes": 46,
-      "costUsd": 5.68
+      "costUsd": 5.75
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 25,
-        "tokens": 208022617,
-        "costUsd": 193.65
+        "tokens": 217318787,
+        "costUsd": 202.74
       }
     ],
     "tests": {
@@ -340,13 +340,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Integration (pass 1, non-browser gate while waiting for window)",
+      "phase": "Parity (re-check, loop 1)",
       "items": [
         {
           "id": "SHELL-F-022",
           "title": "Dashboard block and saved layouts",
           "size": 5,
-          "phase": "Wait: browser window for Parity re-check + make e2e (r119)",
+          "phase": "Parity (re-check, loop 1)",
           "status": "running"
         }
       ],
@@ -394,13 +394,18 @@
         {
           "name": "Integration (pass 1, non-browser gate while waiting for window)",
           "start": "2026-11-25T13:02+11:00",
+          "end": "2026-11-25T13:07+11:00"
+        },
+        {
+          "name": "Parity (re-check, loop 1) F-022",
+          "start": "2026-11-25T13:07+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 31673151,
-      "costUsd": 27.17,
+      "tokens": 34491596,
+      "costUsd": 29.89,
       "commits": 0
     },
     {
@@ -410,7 +415,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Parity",
+      "phase": "Developer (retry 1)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -430,7 +435,7 @@
           "id": "COMPONENT-LIBRARY-F-008",
           "title": "Pages: the shell's own blocks",
           "size": 3,
-          "phase": "Parity",
+          "phase": "Developer (retry 1)",
           "status": "running"
         }
       ],
@@ -478,13 +483,18 @@
         {
           "name": "Parity LIBRARY-F-008",
           "start": "2026-11-25T12:57+11:00",
+          "end": "2026-11-25T13:06+11:00"
+        },
+        {
+          "name": "Developer (retry 1) LIBRARY-F-008",
+          "start": "2026-11-25T13:06+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 2,
-      "tokens": 22688839,
-      "costUsd": 23.26,
+      "escalations": 3,
+      "tokens": 28397016,
+      "costUsd": 29.17,
       "commits": 0
     },
     {
@@ -518,8 +528,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1243085,
-      "costUsd": 1.24,
+      "tokens": 1340175,
+      "costUsd": 1.29,
       "commits": 0
     }
   ],
