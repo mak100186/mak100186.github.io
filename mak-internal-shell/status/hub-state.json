@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:28+11:00",
+  "generatedAt": "2026-11-25T11:30+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,11 +83,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 3,
+        "percentUsed": 6,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 0,
+        "percentUsed": 1,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 4203150,
-      "costUsd": 5.52,
+      "tokens": 10747811,
+      "costUsd": 13.36,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 15,
       "points": 96,
-      "tokens": 537013933,
-      "costUsd": 498.83,
+      "tokens": 543558594,
+      "costUsd": 506.67,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5593895,
+      "tokens": 5662069,
       "minutes": 24,
-      "costUsd": 5.2
+      "costUsd": 5.28
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 0,
-        "tokens": 4203150,
-        "costUsd": 5.52
+        "tokens": 10747811,
+        "costUsd": 13.36
       }
     ],
     "tests": {
@@ -319,13 +319,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Parity",
+      "phase": "Developer retry 2",
       "items": [
         {
           "id": "SHELL-F-015",
           "title": "Profile page",
           "size": 3,
-          "phase": "Parity",
+          "phase": "Developer retry 2",
           "status": "running"
         },
         {
@@ -397,13 +397,18 @@
         {
           "name": "Parity F-015",
           "start": "2026-11-23T09:29+11:00",
+          "end": "2026-11-25T11:29+11:00"
+        },
+        {
+          "name": "Developer retry 2 F-015",
+          "start": "2026-11-25T11:29+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 26892015,
-      "costUsd": 25.4,
+      "tokens": 30082476,
+      "costUsd": 29.96,
       "commits": 0
     },
     {
@@ -413,28 +418,39 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-013",
           "title": "Search",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-014",
           "title": "Notification Center",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer F-013",
+          "start": "2026-11-25T11:28+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer F-014",
+          "start": "2026-11-25T11:28+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 2377920,
+      "costUsd": 2.12,
       "commits": 0
     },
     {
@@ -463,8 +479,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 845151,
-      "costUsd": 0.93,
+      "tokens": 1821431,
+      "costUsd": 2.09,
       "commits": 0
     }
   ],
