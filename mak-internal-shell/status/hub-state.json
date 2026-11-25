@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:45+11:00",
+  "generatedAt": "2026-11-25T16:47+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 355632966,
-      "costUsd": 328.33,
+      "tokens": 356713532,
+      "costUsd": 329.45,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 888443749,
-      "costUsd": 821.65,
+      "tokens": 889524315,
+      "costUsd": 822.76,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6484991,
+      "tokens": 6492878,
       "minutes": 41,
-      "costUsd": 6
+      "costUsd": 6.01
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 355632966,
-        "costUsd": 328.33
+        "tokens": 356713532,
+        "costUsd": 329.45
       }
     ],
     "tests": {
@@ -504,7 +504,7 @@
           "id": "COMPONENT-LIBRARY-F-005",
           "title": "Pages: form controls",
           "size": 5,
-          "phase": "Reviewer retry 1",
+          "phase": "Parity retry 1",
           "status": "pass"
         },
         {
@@ -576,13 +576,13 @@
         {
           "name": "Parity retry 1 LIBRARY-F-005",
           "start": "2026-11-25T16:44+11:00",
-          "end": null
+          "end": "2026-11-25T16:46+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 28263473,
-      "costUsd": 26.89,
+      "tokens": 29344039,
+      "costUsd": 28.01,
       "commits": 0
     },
     {
