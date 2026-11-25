@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:57+11:00",
+  "generatedAt": "2026-11-25T11:59+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 9,
-      "tokens": 65020795,
-      "costUsd": 64.18,
+      "tokens": 67874004,
+      "costUsd": 66.64,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 17,
       "points": 105,
-      "tokens": 597831578,
-      "costUsd": 557.5,
+      "tokens": 600684787,
+      "costUsd": 559.95,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5693634,
+      "tokens": 5720807,
       "minutes": 51,
-      "costUsd": 5.31
+      "costUsd": 5.33
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 9,
-        "tokens": 65020795,
-        "costUsd": 64.18
+        "tokens": 67874004,
+        "costUsd": 66.64
       }
     ],
     "tests": {
@@ -284,7 +284,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-013",
@@ -321,12 +321,17 @@
           "name": "Reviewer F-014",
           "start": "2026-11-25T11:41+11:00",
           "end": "2026-11-25T11:42+11:00"
+        },
+        {
+          "name": "Parity",
+          "start": "2026-11-25T11:58+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 19323982,
-      "costUsd": 17.34,
+      "tokens": 22177191,
+      "costUsd": 19.79,
       "commits": 0
     },
     {
