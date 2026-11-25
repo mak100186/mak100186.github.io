@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:30+11:00",
+  "generatedAt": "2026-11-25T18:32+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -118,7 +118,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 43,
+        "percentUsed": 45,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -130,8 +130,8 @@
     "today": {
       "packetsMerged": 11,
       "points": 65,
-      "tokens": 475712456,
-      "costUsd": 442.72,
+      "tokens": 478159469,
+      "costUsd": 445.77,
       "minutesWaiting": {
         "hub": 203,
         "you": 10,
@@ -141,8 +141,8 @@
     "week": {
       "packetsMerged": 26,
       "points": 161,
-      "tokens": 1008523239,
-      "costUsd": 936.03,
+      "tokens": 1010970252,
+      "costUsd": 939.08,
       "minutesWaiting": {
         "hub": 253,
         "you": 130,
@@ -150,9 +150,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6264119,
+      "tokens": 6279318,
       "minutes": 39,
-      "costUsd": 5.81
+      "costUsd": 5.83
     },
     "daily": [
       {
@@ -236,8 +236,8 @@
       {
         "date": "2026-11-25",
         "points": 65,
-        "tokens": 475712456,
-        "costUsd": 442.72
+        "tokens": 478159469,
+        "costUsd": 445.77
       }
     ],
     "tests": {
@@ -363,14 +363,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Reviewer (retry 1)",
+      "phase": "Developer (adopt SHELL-F-032 primary-icon)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-006",
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
-          "phase": "Reviewer (retry 1)",
-          "status": "pass"
+          "phase": "Developer (adopt SHELL-F-032 primary-icon)",
+          "status": "running"
         }
       ],
       "steps": [
@@ -403,12 +403,17 @@
           "name": "Reviewer (retry 1) LIBRARY-F-006",
           "start": "2026-11-25T18:10+11:00",
           "end": "2026-11-25T18:11+11:00"
+        },
+        {
+          "name": "Developer (adopt SHELL-F-032 primary-icon) LIBRARY-F-006",
+          "start": "2026-11-25T18:30+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 23871671,
-      "costUsd": 24.29,
+      "tokens": 24780780,
+      "costUsd": 25.72,
       "commits": 0
     },
     {
@@ -416,7 +421,7 @@
       "packetId": "component-library-g6",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T17:36+11:00",
       "phase": "Wait: stack window (r174) for Parity F-010/F-013 and the build gate",
       "items": [
@@ -464,8 +469,32 @@
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 11315558,
-      "costUsd": 9.56,
+      "tokens": 11917798,
+      "costUsd": 10.6,
+      "commits": 0
+    },
+    {
+      "id": "idp-g8",
+      "packetId": "idp-g8",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-25T18:32+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-B-004",
+          "title": "Bad text in other preference fields gives a 500",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
