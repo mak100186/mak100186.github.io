@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:35+11:00",
+  "generatedAt": "2026-11-25T16:37+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 7,
+        "percentUsed": 8,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 344617842,
-      "costUsd": 317.72,
+      "tokens": 346481539,
+      "costUsd": 319.56,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 877428625,
-      "costUsd": 811.03,
+      "tokens": 879292322,
+      "costUsd": 812.87,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6404589,
+      "tokens": 6418192,
       "minutes": 41,
-      "costUsd": 5.92
+      "costUsd": 5.93
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 344617842,
-        "costUsd": 317.72
+        "tokens": 346481539,
+        "costUsd": 319.56
       }
     ],
     "tests": {
@@ -511,8 +511,8 @@
           "id": "COMPONENT-LIBRARY-F-007",
           "title": "Pages: data and feedback",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-009",
@@ -557,12 +557,17 @@
           "name": "Reviewer LIBRARY-F-007",
           "start": "2026-11-25T16:34+11:00",
           "end": "2026-11-25T16:35+11:00"
+        },
+        {
+          "name": "Parity LIBRARY-F-007",
+          "start": "2026-11-25T16:35+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 22043769,
-      "costUsd": 20.5,
+      "tokens": 22464922,
+      "costUsd": 20.81,
       "commits": 0
     },
     {
@@ -572,13 +577,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:28+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-F-020",
           "title": "Dashboard layouts in preferences",
           "size": 2,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -618,13 +623,18 @@
         {
           "name": "Developer F-020",
           "start": "2026-11-25T16:33+11:00",
+          "end": "2026-11-25T16:36+11:00"
+        },
+        {
+          "name": "Reviewer F-020",
+          "start": "2026-11-25T16:36+11:00",
           "end": null
         }
       ],
-      "loops": 2,
+      "loops": 3,
       "escalations": 1,
-      "tokens": 12272192,
-      "costUsd": 11.77,
+      "tokens": 13714736,
+      "costUsd": 13.3,
       "commits": 0
     }
   ],
