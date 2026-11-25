@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:20+11:00",
+  "generatedAt": "2026-11-25T13:21+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,11 +94,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 72,
+        "percentUsed": 73,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 9,
+        "percentUsed": 10,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 30,
-      "tokens": 254804810,
-      "costUsd": 235.97,
+      "tokens": 258094785,
+      "costUsd": 239.23,
       "minutesWaiting": {
         "hub": 27,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 20,
       "points": 126,
-      "tokens": 787615593,
-      "costUsd": 729.28,
+      "tokens": 790905568,
+      "costUsd": 732.55,
       "minutesWaiting": {
         "hub": 77,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6250917,
+      "tokens": 6277028,
       "minutes": 44,
-      "costUsd": 5.79
+      "costUsd": 5.81
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 30,
-        "tokens": 254804810,
-        "costUsd": 235.97
+        "tokens": 258094785,
+        "costUsd": 239.23
       }
     ],
     "tests": {
@@ -340,7 +340,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Finalizers (PMBook+architecture sweep, Handoff, Revision+Changelog, Test Runbook+test-cases); Graphify done by script",
+      "phase": "Integration pass 2 (post-merge gate)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -439,6 +439,11 @@
           "name": "Finalizers (PMBook+architecture sweep, Handoff, Revision+Changelog, Test Runbook+test-cases); Graphify done by script",
           "start": "2026-11-25T13:16+11:00",
           "end": null
+        },
+        {
+          "name": "Integration pass 2 (post-merge gate)",
+          "start": "2026-11-25T13:20+11:00",
+          "end": null
         }
       ],
       "loops": 0,
@@ -454,13 +459,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:04+11:00",
-      "phase": "Stack window r122",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-F-012",
           "title": "idp end-to-end tests",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -473,18 +478,96 @@
         {
           "name": "Developer F-012",
           "start": "2026-11-25T13:05+11:00",
-          "end": null
+          "end": "2026-11-25T13:20+11:00"
         },
         {
           "name": "Stack window r122",
           "start": "2026-11-25T13:14+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer F-012",
+          "start": "2026-11-25T13:20+11:00",
+          "end": null
         }
       ],
       "loops": 0,
+      "escalations": 1,
+      "tokens": 10855313,
+      "costUsd": 9.23,
+      "commits": 0
+    },
+    {
+      "id": "w-28",
+      "packetId": "shell-g13",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T13:21+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-B-001",
+          "title": "Profile avatar accepts types idp refuses",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-002",
+          "title": "Change password dialog too narrow",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-003",
+          "title": "Profile page loads data several times",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-004",
+          "title": "Table page empty message off-screen on wide tables",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-005",
+          "title": "Table column resize ignores arrow keys",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-006",
+          "title": "Notification center keeps polling after sign-out",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-030",
+          "title": "Page crumb below the menu item",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-031",
+          "title": "Filled page action",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
       "escalations": 0,
-      "tokens": 10306772,
-      "costUsd": 8.71,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
