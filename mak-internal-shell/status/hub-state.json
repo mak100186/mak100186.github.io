@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:42+11:00",
+  "generatedAt": "2026-11-25T11:44+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 15,
+        "percentUsed": 16,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,8 +95,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 2,
-      "tokens": 45841288,
-      "costUsd": 44.41,
+      "tokens": 49393505,
+      "costUsd": 48.07,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -106,8 +106,8 @@
     "week": {
       "packetsMerged": 16,
       "points": 98,
-      "tokens": 578652071,
-      "costUsd": 537.73,
+      "tokens": 582204288,
+      "costUsd": 541.38,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -115,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5904613,
+      "tokens": 5940860,
       "minutes": 24,
-      "costUsd": 5.49
+      "costUsd": 5.52
     },
     "daily": [
       {
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 2,
-        "tokens": 45841288,
-        "costUsd": 44.41
+        "tokens": 49393505,
+        "costUsd": 48.07
       }
     ],
     "tests": {
@@ -306,7 +306,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "SHELL-F-015",
@@ -409,13 +409,18 @@
         {
           "name": "Integration",
           "start": "2026-11-25T11:40+11:00",
+          "end": "2026-11-25T11:43+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-25T11:43+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 42979870,
-      "costUsd": 40.61,
+      "tokens": 43701511,
+      "costUsd": 41.91,
       "commits": 0
     },
     {
@@ -423,7 +428,7 @@
       "packetId": "shell-g11",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T11:25+11:00",
       "phase": "Reviewer",
       "items": [
@@ -439,7 +444,7 @@
           "title": "Notification Center",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass (loop 0); f-013 wave-end re-review pass"
         }
       ],
       "steps": [
@@ -461,13 +466,13 @@
         {
           "name": "Reviewer F-014",
           "start": "2026-11-25T11:41+11:00",
-          "end": null
+          "end": "2026-11-25T11:42+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 17005839,
-      "costUsd": 15.25,
+      "tokens": 19323982,
+      "costUsd": 17.34,
       "commits": 0
     }
   ],
