@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:56+11:00",
+  "generatedAt": "2026-11-25T12:58+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,11 +94,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 55,
+        "percentUsed": 57,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 7,
+        "percentUsed": 8,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -106,10 +106,10 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 188687678,
-      "costUsd": 175.52,
+      "tokens": 193203764,
+      "costUsd": 180.92,
       "minutesWaiting": {
-        "hub": 17,
+        "hub": 26,
         "you": 0,
         "limit": 0
       }
@@ -117,18 +117,18 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 721498461,
-      "costUsd": 668.83,
+      "tokens": 726014547,
+      "costUsd": 674.23,
       "minutesWaiting": {
-        "hub": 67,
+        "hub": 76,
         "you": 120,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 6273900,
+      "tokens": 6313170,
       "minutes": 47,
-      "costUsd": 5.82
+      "costUsd": 5.86
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 188687678,
-        "costUsd": 175.52
+        "tokens": 193203764,
+        "costUsd": 180.92
       }
     ],
     "tests": {
@@ -379,8 +379,8 @@
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 43574627,
-      "costUsd": 38.9,
+      "tokens": 46463497,
+      "costUsd": 42.23,
       "commits": 0
     },
     {
@@ -390,14 +390,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Parity",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-022",
           "title": "Dashboard block and saved layouts",
           "size": 5,
-          "phase": "Parity",
-          "status": "running"
+          "phase": "Ack r119: re-check (Parity, then make e2e, slot 2) queued after component-library-g3; Developer retry 1 running, no browser",
+          "status": "done"
         }
       ],
       "steps": [
@@ -424,13 +424,18 @@
         {
           "name": "Parity F-022",
           "start": "2026-11-25T12:51+11:00",
+          "end": "2026-11-25T12:56+11:00"
+        },
+        {
+          "name": "Developer (retry 1, Parity issues) F-022",
+          "start": "2026-11-25T12:56+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 26380530,
-      "costUsd": 22.8,
+      "tokens": 27117967,
+      "costUsd": 23.33,
       "commits": 0
     },
     {
@@ -438,9 +443,9 @@
       "packetId": "component-library-g3",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Wait: stack window for F-008 Parity (r114)",
+      "phase": "Parity",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -460,7 +465,7 @@
           "id": "COMPONENT-LIBRARY-F-008",
           "title": "Pages: the shell's own blocks",
           "size": 3,
-          "phase": "Wait: stack window for F-008 Parity (r114)",
+          "phase": "Parity",
           "status": "running"
         }
       ],
@@ -504,12 +509,17 @@
           "name": "Wait: stack window for F-008 Parity (r114) LIBRARY-F-008",
           "start": "2026-11-25T12:48+11:00",
           "end": null
+        },
+        {
+          "name": "Parity LIBRARY-F-008",
+          "start": "2026-11-25T12:57+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 22082176,
-      "costUsd": 21.9,
+      "tokens": 22688839,
+      "costUsd": 23.26,
       "commits": 0
     }
   ],
