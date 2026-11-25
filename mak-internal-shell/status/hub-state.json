@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:46+11:00",
+  "generatedAt": "2026-11-25T18:49+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -20,7 +20,7 @@
       },
       {
         "name": "idp",
-        "pointsDone": 27,
+        "pointsDone": 28,
         "pointsRemaining": 41,
         "itemsRemaining": 14,
         "state": "building"
@@ -46,8 +46,8 @@
       },
       {
         "date": "2026-11-25",
-        "done": 142,
-        "total": 199
+        "done": 143,
+        "total": 200
       }
     ],
     "waitingOnPeople": [
@@ -74,6 +74,12 @@
         "what": "Verify IDP-B-003 sign-out signal",
         "ref": "IDP-B-003",
         "since": "2026-11-25T13:36:00+11:00"
+      },
+      {
+        "who": "user",
+        "what": "Verify IDP-B-004 bad text refused",
+        "ref": "IDP-B-004",
+        "since": "2026-11-25T18:45:00+11:00"
       },
       {
         "who": "user",
@@ -118,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 50,
+        "percentUsed": 51,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -130,8 +136,8 @@
     "today": {
       "packetsMerged": 12,
       "points": 66,
-      "tokens": 498605032,
-      "costUsd": 464.27,
+      "tokens": 502193332,
+      "costUsd": 467.01,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -141,8 +147,8 @@
     "week": {
       "packetsMerged": 27,
       "points": 162,
-      "tokens": 1031415815,
-      "costUsd": 957.59,
+      "tokens": 1035004115,
+      "costUsd": 960.32,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -150,9 +156,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6366764,
+      "tokens": 6388914,
       "minutes": 38,
-      "costUsd": 5.91
+      "costUsd": 5.93
     },
     "daily": [
       {
@@ -236,8 +242,8 @@
       {
         "date": "2026-11-25",
         "points": 66,
-        "tokens": 498605032,
-        "costUsd": 464.27
+        "tokens": 502193332,
+        "costUsd": 467.01
       }
     ],
     "tests": {
@@ -270,6 +276,18 @@
     {
       "component": "idp",
       "packets": [
+        {
+          "id": "idp-g9",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "IDP-B-005",
+              "title": "Bad text at sign-in and change password may give a 500",
+              "size": 1
+            }
+          ]
+        },
         {
           "id": "idp-next",
           "kind": "orchestrated",
@@ -471,21 +489,32 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T18:46+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-B-005",
           "title": "Bad text at sign-in and change password may give a 500",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-25T18:46+11:00",
+          "end": "2026-11-25T18:48+11:00"
+        },
+        {
+          "name": "Developer B-005",
+          "start": "2026-11-25T18:48+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1309630,
+      "costUsd": 1.27,
       "commits": 0
     }
   ],
