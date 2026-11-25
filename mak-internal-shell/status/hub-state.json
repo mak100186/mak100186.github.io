@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:10+11:00",
+  "generatedAt": "2026-11-25T18:12+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -130,8 +130,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 62,
-      "tokens": 459602861,
-      "costUsd": 425,
+      "tokens": 461811888,
+      "costUsd": 427.22,
       "minutesWaiting": {
         "hub": 142,
         "you": 10,
@@ -141,8 +141,8 @@
     "week": {
       "packetsMerged": 25,
       "points": 158,
-      "tokens": 992413644,
-      "costUsd": 918.31,
+      "tokens": 994622671,
+      "costUsd": 920.53,
       "minutesWaiting": {
         "hub": 192,
         "you": 130,
@@ -150,9 +150,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6281099,
+      "tokens": 6295080,
       "minutes": 39,
-      "costUsd": 5.81
+      "costUsd": 5.83
     },
     "daily": [
       {
@@ -236,8 +236,8 @@
       {
         "date": "2026-11-25",
         "points": 62,
-        "tokens": 459602861,
-        "costUsd": 425
+        "tokens": 461811888,
+        "costUsd": 427.22
       }
     ],
     "tests": {
@@ -361,16 +361,16 @@
       "packetId": "component-library-g5",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Developer (retry 1)",
+      "phase": "Reviewer (retry 1)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-006",
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
-          "phase": "Developer (retry 1)",
-          "status": "running"
+          "phase": "Reviewer (retry 1)",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -397,13 +397,18 @@
         {
           "name": "Developer (retry 1) LIBRARY-F-006",
           "start": "2026-11-25T18:07+11:00",
-          "end": null
+          "end": "2026-11-25T18:10+11:00"
+        },
+        {
+          "name": "Reviewer (retry 1) LIBRARY-F-006",
+          "start": "2026-11-25T18:10+11:00",
+          "end": "2026-11-25T18:11+11:00"
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 21809704,
-      "costUsd": 22.15,
+      "tokens": 23871671,
+      "costUsd": 24.29,
       "commits": 0
     },
     {
