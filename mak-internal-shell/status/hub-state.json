@@ -118,7 +118,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 49,
+        "percentUsed": 50,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -130,8 +130,8 @@
     "today": {
       "packetsMerged": 12,
       "points": 66,
-      "tokens": 497038146,
-      "costUsd": 462.52,
+      "tokens": 498605032,
+      "costUsd": 464.27,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -141,8 +141,8 @@
     "week": {
       "packetsMerged": 27,
       "points": 162,
-      "tokens": 1029848929,
-      "costUsd": 955.84,
+      "tokens": 1031415815,
+      "costUsd": 957.59,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -150,9 +150,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6357092,
+      "tokens": 6366764,
       "minutes": 38,
-      "costUsd": 5.9
+      "costUsd": 5.91
     },
     "daily": [
       {
@@ -236,8 +236,8 @@
       {
         "date": "2026-11-25",
         "points": 66,
-        "tokens": 497038146,
-        "costUsd": 462.52
+        "tokens": 498605032,
+        "costUsd": 464.27
       }
     ],
     "tests": {
@@ -412,8 +412,8 @@
           "id": "COMPONENT-LIBRARY-F-013",
           "title": "Block page third crumb",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         }
       ],
       "steps": [
@@ -451,12 +451,41 @@
           "name": "Parity LIBRARY-F-010",
           "start": "2026-11-25T18:46+11:00",
           "end": null
+        },
+        {
+          "name": "Parity LIBRARY-F-013",
+          "start": "2026-11-25T18:46+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 11917798,
-      "costUsd": 10.6,
+      "tokens": 13484684,
+      "costUsd": 12.35,
+      "commits": 0
+    },
+    {
+      "id": "w-38",
+      "packetId": "idp-g9",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T18:46+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-B-005",
+          "title": "Bad text at sign-in and change password may give a 500",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
