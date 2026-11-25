@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:37+11:00",
+  "generatedAt": "2026-11-25T13:39+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 87,
+        "percentUsed": 89,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -118,29 +118,29 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 302920951,
-      "costUsd": 279.68,
+      "tokens": 313353602,
+      "costUsd": 289.08,
       "minutesWaiting": {
         "hub": 27,
-        "you": 0,
+        "you": 4,
         "limit": 0
       }
     },
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 835731734,
-      "costUsd": 772.99,
+      "tokens": 846164385,
+      "costUsd": 782.39,
       "minutesWaiting": {
         "hub": 77,
-        "you": 120,
+        "you": 124,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 6100232,
+      "tokens": 6176382,
       "minutes": 41,
-      "costUsd": 5.64
+      "costUsd": 5.71
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 302920951,
-        "costUsd": 279.68
+        "tokens": 313353602,
+        "costUsd": 289.08
       }
     ],
     "tests": {
@@ -384,7 +384,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "Developer",
+      "phase": "Parity (B-002, B-004)",
       "items": [
         {
           "id": "SHELL-B-001",
@@ -397,15 +397,15 @@
           "id": "SHELL-B-002",
           "title": "Change password dialog too narrow",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Parity (B-002, B-004)",
+          "status": "running"
         },
         {
           "id": "SHELL-B-003",
           "title": "Profile page loads data several times",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Reviewer (B-003 after r140; B-006 re-check)",
+          "status": "running"
         },
         {
           "id": "SHELL-B-004",
@@ -463,12 +463,22 @@
           "name": "Reviewer (table chain B-004, B-005) B-004",
           "start": "2026-11-25T13:31+11:00",
           "end": "2026-11-25T13:32+11:00"
+        },
+        {
+          "name": "Reviewer (B-003 after r140; B-006 re-check) B-003",
+          "start": "2026-11-25T13:37+11:00",
+          "end": null
+        },
+        {
+          "name": "Parity (B-002, B-004) B-002",
+          "start": "2026-11-25T13:38+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 15510402,
-      "costUsd": 14.95,
+      "tokens": 17450310,
+      "costUsd": 16.9,
       "commits": 0
     },
     {
@@ -498,8 +508,8 @@
           "id": "COMPONENT-LIBRARY-F-009",
           "title": "Search provider",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Commit F-009 (gated) b0579aa; stack queued r143",
+          "status": "done"
         }
       ],
       "steps": [
@@ -521,8 +531,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 4786179,
-      "costUsd": 4.44,
+      "tokens": 12144746,
+      "costUsd": 11.21,
       "commits": 0
     },
     {
@@ -530,7 +540,7 @@
       "packetId": "idp-g7",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on you",
+      "state": "running",
       "startedAt": "2026-11-25T13:28+11:00",
       "phase": "Developer",
       "items": [
@@ -568,8 +578,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3393117,
-      "costUsd": 3.4,
+      "tokens": 3833131,
+      "costUsd": 3.66,
       "commits": 0
     }
   ],
