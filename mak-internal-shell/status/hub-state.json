@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:36+11:00",
+  "generatedAt": "2026-11-25T17:38+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -118,7 +118,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 31,
+        "percentUsed": 32,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -130,8 +130,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 62,
-      "tokens": 437113542,
-      "costUsd": 403.56,
+      "tokens": 439315428,
+      "costUsd": 406.04,
       "minutesWaiting": {
         "hub": 111,
         "you": 10,
@@ -141,8 +141,8 @@
     "week": {
       "packetsMerged": 25,
       "points": 158,
-      "tokens": 969924325,
-      "costUsd": 896.88,
+      "tokens": 972126211,
+      "costUsd": 899.35,
       "minutesWaiting": {
         "hub": 161,
         "you": 130,
@@ -150,9 +150,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6138762,
+      "tokens": 6152698,
       "minutes": 39,
-      "costUsd": 5.68
+      "costUsd": 5.69
     },
     "daily": [
       {
@@ -236,8 +236,8 @@
       {
         "date": "2026-11-25",
         "points": 62,
-        "tokens": 437113542,
-        "costUsd": 403.56
+        "tokens": 439315428,
+        "costUsd": 406.04
       }
     ],
     "tests": {
@@ -283,18 +283,13 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-g7",
+          "id": "idp-g8",
           "kind": "orchestrated",
-          "state": "running",
+          "state": "queued",
           "items": [
             {
-              "id": "IDP-F-020",
-              "title": "Dashboard layouts in preferences",
-              "size": 2
-            },
-            {
-              "id": "IDP-B-003",
-              "title": "Idle and expired sign-out tell the shell late",
+              "id": "IDP-B-004",
+              "title": "Bad text in other preference fields gives a 500",
               "size": 1
             }
           ]
@@ -329,18 +324,30 @@
           ]
         },
         {
+          "id": "component-library-g6",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "COMPONENT-LIBRARY-F-010",
+              "title": "Dashboard page",
+              "size": 3
+            },
+            {
+              "id": "COMPONENT-LIBRARY-F-013",
+              "title": "Block page third crumb",
+              "size": 1
+            }
+          ]
+        },
+        {
           "id": "component-library-next",
           "kind": "orchestrated",
           "state": "queued",
           "items": [
             {
-              "id": "COMPONENT-LIBRARY-F-013",
-              "title": "Block page third crumb",
-              "size": 1
-            },
-            {
-              "id": "COMPONENT-LIBRARY-F-010",
-              "title": "Dashboard page",
+              "id": "COMPONENT-LIBRARY-F-011",
+              "title": "End-to-end tests",
               "size": 3
             }
           ]
@@ -399,15 +406,15 @@
       "packetId": "shell-g14",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T17:23+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity (waiting for stack window r169)",
       "items": [
         {
           "id": "SHELL-F-032",
           "title": "T4 sizes and looks: slider, progress bar, spinner, stretch in example area, toolbar, icon colour",
           "size": 3,
-          "phase": "Reviewer",
+          "phase": "Parity (waiting for stack window r169)",
           "status": "running"
         }
       ],
@@ -420,13 +427,18 @@
         {
           "name": "Reviewer F-032",
           "start": "2026-11-25T17:35+11:00",
+          "end": "2026-11-25T17:37+11:00"
+        },
+        {
+          "name": "Parity (waiting for stack window r169) F-032",
+          "start": "2026-11-25T17:37+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 8572562,
-      "costUsd": 7.54,
+      "tokens": 9950933,
+      "costUsd": 8.97,
       "commits": 0
     },
     {
@@ -436,24 +448,35 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:36+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-010",
           "title": "Dashboard page",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-013",
           "title": "Block page third crumb",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer LIBRARY-F-010",
+          "start": "2026-11-25T17:38+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer LIBRARY-F-013",
+          "start": "2026-11-25T17:38+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
