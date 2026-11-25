@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:24+11:00",
+  "generatedAt": "2026-11-25T13:27+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
       "likely": "2026-11-28",
-      "optimistic": "2026-11-28",
+      "optimistic": "2026-11-27",
       "pessimistic": "2026-11-29"
     },
     "components": [
@@ -27,9 +27,9 @@
       },
       {
         "name": "component-library",
-        "pointsDone": 4,
-        "pointsRemaining": 30,
-        "itemsRemaining": 11,
+        "pointsDone": 12,
+        "pointsRemaining": 22,
+        "itemsRemaining": 8,
         "state": "building"
       }
     ],
@@ -46,7 +46,7 @@
       },
       {
         "date": "2026-11-25",
-        "done": 107,
+        "done": 115,
         "total": 193
       }
     ],
@@ -76,6 +76,12 @@
         "since": "2026-11-25T14:00:00+11:00"
       },
       {
+        "who": "user",
+        "what": "Link node_modules in worktree setup (hub.json)",
+        "ref": "worktree-provision",
+        "since": "2026-11-25T15:00:00+11:00"
+      },
+      {
         "who": "designer",
         "what": "Open design rows: Profile P8 P9, DesignSystem T6, Notifications N7, Dashboard DB7 DB8, ChangePassword W5 W6, ShellFrame F10-F12, SignIn I9, BlockPage B6",
         "ref": "next-round",
@@ -100,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 75,
+        "percentUsed": 78,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -112,8 +118,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 38,
-      "tokens": 266798023,
-      "costUsd": 246.1,
+      "tokens": 273769511,
+      "costUsd": 252.53,
       "minutesWaiting": {
         "hub": 27,
         "you": 0,
@@ -123,8 +129,8 @@
     "week": {
       "packetsMerged": 21,
       "points": 134,
-      "tokens": 799608806,
-      "costUsd": 739.41,
+      "tokens": 806580294,
+      "costUsd": 745.84,
       "minutesWaiting": {
         "hub": 77,
         "you": 120,
@@ -132,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5967230,
+      "tokens": 6019256,
       "minutes": 42,
-      "costUsd": 5.52
+      "costUsd": 5.57
     },
     "daily": [
       {
@@ -218,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 38,
-        "tokens": 266798023,
-        "costUsd": 246.1
+        "tokens": 273769511,
+        "costUsd": 252.53
       }
     ],
     "tests": {
@@ -329,24 +335,36 @@
       "component": "component-library",
       "packets": [
         {
-          "id": "component-library-g3",
+          "id": "component-library-g4",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "COMPONENT-LIBRARY-F-003",
-              "title": "Catalog screen",
-              "size": 2
+              "id": "COMPONENT-LIBRARY-F-005",
+              "title": "Pages: form controls",
+              "size": 5
             },
             {
-              "id": "COMPONENT-LIBRARY-F-004",
-              "title": "Block page",
+              "id": "COMPONENT-LIBRARY-F-007",
+              "title": "Pages: data and feedback",
               "size": 3
             },
             {
-              "id": "COMPONENT-LIBRARY-F-008",
-              "title": "Pages: the shell's own blocks",
-              "size": 3
+              "id": "COMPONENT-LIBRARY-F-009",
+              "title": "Search provider",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "component-library-next",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "COMPONENT-LIBRARY-F-006",
+              "title": "Pages: buttons, navigation and layout",
+              "size": 5
             }
           ]
         }
@@ -361,7 +379,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:04+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-012",
@@ -385,7 +403,7 @@
         {
           "name": "Stack window r122",
           "start": "2026-11-25T13:14+11:00",
-          "end": null
+          "end": "2026-11-25T13:25+11:00"
         },
         {
           "name": "Reviewer F-012",
@@ -395,13 +413,18 @@
         {
           "name": "Integration",
           "start": "2026-11-25T13:23+11:00",
+          "end": "2026-11-25T13:25+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-25T13:26+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 12552404,
-      "costUsd": 10.87,
+      "tokens": 14094397,
+      "costUsd": 12.62,
       "commits": 0
     },
     {
@@ -411,7 +434,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "Developer (wave 1: profile chain, table chain, B-006)",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-B-001",
@@ -452,8 +475,8 @@
           "id": "SHELL-B-006",
           "title": "Notification center keeps polling after sign-out",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Reviewer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-030",
@@ -475,12 +498,17 @@
           "name": "Developer (wave 1: profile chain, table chain, B-006)",
           "start": "2026-11-25T13:23+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer B-006",
+          "start": "2026-11-25T13:26+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "escalations": 1,
+      "tokens": 3064939,
+      "costUsd": 3.16,
       "commits": 0
     },
     {
