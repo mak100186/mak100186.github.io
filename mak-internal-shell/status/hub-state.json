@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:25+11:00",
+  "generatedAt": "2026-11-25T11:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -8,14 +8,14 @@
     "forecast": {
       "likely": "2026-11-30",
       "optimistic": "2026-11-29",
-      "pessimistic": "2026-12-02"
+      "pessimistic": "2026-12-01"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 51,
-        "pointsRemaining": 33,
-        "itemsRemaining": 10,
+        "pointsDone": 60,
+        "pointsRemaining": 24,
+        "itemsRemaining": 6,
         "state": "building"
       },
       {
@@ -23,14 +23,14 @@
         "pointsDone": 15,
         "pointsRemaining": 50,
         "itemsRemaining": 16,
-        "state": "building"
+        "state": "waiting"
       },
       {
         "name": "component-library",
         "pointsDone": 2,
         "pointsRemaining": 31,
         "itemsRemaining": 11,
-        "state": "waiting"
+        "state": "building"
       }
     ],
     "burnup": [
@@ -43,24 +43,47 @@
         "date": "2026-11-23",
         "done": 68,
         "total": 182
+      },
+      {
+        "date": "2026-11-25",
+        "done": 77,
+        "total": 182
       }
     ],
     "waitingOnPeople": [
       {
-        "who": "owner",
-        "what": "Run the strict look check on the shell now?",
-        "ref": "SHELL-F-010",
-        "since": "2026-11-23T08:00:00+11:00"
+        "who": "user",
+        "what": "Verify IDP-B-001 concurrency fix",
+        "ref": "IDP-B-001",
+        "since": "2026-11-23T00:00:00+11:00"
+      },
+      {
+        "who": "user",
+        "what": "Verify IDP-B-002 two-tab refresh",
+        "ref": "IDP-B-002",
+        "since": "2026-11-23T09:40:00+11:00"
+      },
+      {
+        "who": "designer",
+        "what": "Review round 003/004 rows (Blocks, Dashboard, Catalog, Block page, idp M12/M13)",
+        "ref": "round-003",
+        "since": "2026-11-22T00:00:00+11:00"
       }
     ],
-    "milestones": []
+    "milestones": [
+      {
+        "name": "shell Phase 0 done",
+        "date": "2026-11-23",
+        "kind": "actual"
+      }
+    ]
   },
   "hub": {
     "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 2,
+        "percentUsed": 3,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -72,8 +95,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 844370,
-      "costUsd": 2.06,
+      "tokens": 4203150,
+      "costUsd": 5.52,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -83,8 +106,8 @@
     "week": {
       "packetsMerged": 15,
       "points": 96,
-      "tokens": 533655153,
-      "costUsd": 495.38,
+      "tokens": 537013933,
+      "costUsd": 498.83,
       "minutesWaiting": {
         "hub": 50,
         "you": 120,
@@ -92,9 +115,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5558908,
+      "tokens": 5593895,
       "minutes": 24,
-      "costUsd": 5.16
+      "costUsd": 5.2
     },
     "daily": [
       {
@@ -178,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 0,
-        "tokens": 844370,
-        "costUsd": 2.06
+        "tokens": 4203150,
+        "costUsd": 5.52
       }
     ],
     "tests": {
@@ -196,46 +219,19 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g9",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-028",
-              "title": "Busy-button spinner size",
-              "size": 1
-            },
-            {
-              "id": "SHELL-F-020",
-              "title": "Shared UI building blocks (@shell/ui)",
-              "size": 5
-            },
-            {
-              "id": "SHELL-F-026",
-              "title": "Dev proxy to plugin ports",
-              "size": 2
-            },
-            {
-              "id": "SHELL-F-027",
-              "title": "Plugin icon in the manifest",
-              "size": 1
-            }
-          ]
-        },
-        {
           "id": "shell-g10",
           "kind": "orchestrated",
           "state": "running",
           "items": [
             {
-              "id": "SHELL-F-015",
-              "title": "Profile page",
-              "size": 3
-            },
-            {
               "id": "SHELL-F-029",
               "title": "Sign-in slot fills the page",
               "size": 1
+            },
+            {
+              "id": "SHELL-F-015",
+              "title": "Profile page",
+              "size": 3
             },
             {
               "id": "SHELL-F-018",
@@ -243,16 +239,76 @@
               "size": 3
             }
           ]
+        },
+        {
+          "id": "shell-g11",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "SHELL-F-013",
+              "title": "Search",
+              "size": 5
+            },
+            {
+              "id": "SHELL-F-014",
+              "title": "Notification Center",
+              "size": 5
+            }
+          ]
+        },
+        {
+          "id": "shell-next",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "SHELL-F-022",
+              "title": "Dashboard block and saved layouts",
+              "size": 5
+            }
+          ]
         }
       ]
     },
     {
       "component": "idp",
-      "packets": []
+      "packets": [
+        {
+          "id": "idp-next",
+          "kind": "orchestrated",
+          "state": "held",
+          "items": [
+            {
+              "id": "IDP-F-009",
+              "title": "Change own password",
+              "size": 3
+            },
+            {
+              "id": "IDP-F-010",
+              "title": "Profile and preferences",
+              "size": 3
+            }
+          ]
+        }
+      ]
     },
     {
       "component": "component-library",
-      "packets": []
+      "packets": [
+        {
+          "id": "component-library-g2",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "COMPONENT-LIBRARY-F-002",
+              "title": "Block registry and coverage check",
+              "size": 2
+            }
+          ]
+        }
+      ]
     }
   ],
   "workers": [
@@ -388,21 +444,27 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-002",
           "title": "Block registry and coverage check",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer LIBRARY-F-002",
+          "start": "2026-11-25T11:26+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 845151,
+      "costUsd": 0.93,
       "commits": 0
     }
   ],
