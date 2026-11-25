@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:33+11:00",
+  "generatedAt": "2026-11-25T12:35+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 42,
+        "percentUsed": 44,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 135463640,
-      "costUsd": 126.33,
+      "tokens": 142556775,
+      "costUsd": 132.77,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 668274423,
-      "costUsd": 619.64,
+      "tokens": 675367558,
+      "costUsd": 626.08,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5811082,
+      "tokens": 5872761,
       "minutes": 47,
-      "costUsd": 5.39
+      "costUsd": 5.44
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 135463640,
-        "costUsd": 126.33
+        "tokens": 142556775,
+        "costUsd": 132.77
       }
     ],
     "tests": {
@@ -313,14 +313,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:53+11:00",
-      "phase": "Integration",
+      "phase": "Parity",
       "items": [
         {
           "id": "IDP-F-009",
           "title": "Change own password",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass (committed a36d0b4)"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "IDP-F-010",
@@ -354,13 +354,18 @@
         {
           "name": "Integration",
           "start": "2026-11-25T12:33+11:00",
+          "end": "2026-11-25T12:35+11:00"
+        },
+        {
+          "name": "Parity F-009",
+          "start": "2026-11-25T12:35+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 28954417,
-      "costUsd": 24.54,
+      "tokens": 31448883,
+      "costUsd": 26.37,
       "commits": 0
     },
     {
@@ -405,28 +410,28 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Parity (F-003, F-004 in parallel)",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
           "title": "Catalog screen",
           "size": 2,
-          "phase": "Developer",
-          "status": "returned (tests unrun by packet rule; waiting on f-004 before review)"
+          "phase": "Parity",
+          "status": "pass"
         },
         {
           "id": "COMPONENT-LIBRARY-F-004",
           "title": "Block page",
           "size": 3,
-          "phase": "Developer",
-          "status": "returned"
+          "phase": "Parity",
+          "status": "pass"
         },
         {
           "id": "COMPONENT-LIBRARY-F-008",
           "title": "Pages: the shell's own blocks",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -454,12 +459,17 @@
           "name": "Parity (F-003, F-004 in parallel)",
           "start": "2026-11-25T12:28+11:00",
           "end": null
+        },
+        {
+          "name": "Developer LIBRARY-F-008",
+          "start": "2026-11-25T12:34+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 9702726,
-      "costUsd": 8.88,
+      "escalations": 2,
+      "tokens": 13795261,
+      "costUsd": 13.19,
       "commits": 0
     }
   ],
