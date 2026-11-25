@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:40+11:00",
+  "generatedAt": "2026-11-25T17:42+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -130,8 +130,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 62,
-      "tokens": 443917915,
-      "costUsd": 409.78,
+      "tokens": 444569189,
+      "costUsd": 410.49,
       "minutesWaiting": {
         "hub": 111,
         "you": 10,
@@ -141,8 +141,8 @@
     "week": {
       "packetsMerged": 25,
       "points": 158,
-      "tokens": 976728698,
-      "costUsd": 903.09,
+      "tokens": 977379972,
+      "costUsd": 903.8,
       "minutesWaiting": {
         "hub": 161,
         "you": 130,
@@ -150,7 +150,7 @@
       }
     },
     "perPoint": {
-      "tokens": 6181827,
+      "tokens": 6185949,
       "minutes": 39,
       "costUsd": 5.72
     },
@@ -236,8 +236,8 @@
       {
         "date": "2026-11-25",
         "points": 62,
-        "tokens": 443917915,
-        "costUsd": 409.78
+        "tokens": 444569189,
+        "costUsd": 410.49
       }
     ],
     "tests": {
@@ -461,8 +461,8 @@
           "id": "COMPONENT-LIBRARY-F-013",
           "title": "Block page third crumb",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -474,13 +474,18 @@
         {
           "name": "Developer LIBRARY-F-013",
           "start": "2026-11-25T17:38+11:00",
-          "end": null
+          "end": "2026-11-25T17:40+11:00"
+        },
+        {
+          "name": "Reviewer LIBRARY-F-013",
+          "start": "2026-11-25T17:40+11:00",
+          "end": "2026-11-25T17:41+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4039685,
-      "costUsd": 3.42,
+      "tokens": 4690959,
+      "costUsd": 4.13,
       "commits": 0
     }
   ],
