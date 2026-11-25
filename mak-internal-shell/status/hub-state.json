@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:41+11:00",
+  "generatedAt": "2026-11-25T16:43+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 9,
+        "percentUsed": 10,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 351776179,
-      "costUsd": 324.18,
+      "tokens": 354549281,
+      "costUsd": 327.35,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 884586962,
-      "costUsd": 817.49,
+      "tokens": 887360064,
+      "costUsd": 820.67,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6456839,
+      "tokens": 6477081,
       "minutes": 41,
-      "costUsd": 5.97
+      "costUsd": 5.99
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 351776179,
-        "costUsd": 324.18
+        "tokens": 354549281,
+        "costUsd": 327.35
       }
     ],
     "tests": {
@@ -498,13 +498,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Parity",
+      "phase": "Developer retry 1",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
           "title": "Pages: form controls",
           "size": 5,
-          "phase": "Parity",
+          "phase": "Developer retry 1",
           "status": "running"
         },
         {
@@ -551,7 +551,7 @@
         {
           "name": "Parity LIBRARY-F-005",
           "start": "2026-11-25T16:32+11:00",
-          "end": null
+          "end": "2026-11-25T16:41+11:00"
         },
         {
           "name": "Reviewer LIBRARY-F-007",
@@ -562,12 +562,17 @@
           "name": "Parity LIBRARY-F-007",
           "start": "2026-11-25T16:35+11:00",
           "end": null
+        },
+        {
+          "name": "Developer retry 1 LIBRARY-F-005",
+          "start": "2026-11-25T16:42+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 26061169,
-      "costUsd": 24.31,
+      "tokens": 27179788,
+      "costUsd": 25.92,
       "commits": 0
     },
     {
@@ -575,9 +580,9 @@
       "packetId": "idp-g7",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T13:28+11:00",
-      "phase": "Integration",
+      "phase": "Wait for stack window (part B)",
       "items": [
         {
           "id": "IDP-F-020",
@@ -634,12 +639,17 @@
           "name": "Integration",
           "start": "2026-11-25T16:38+11:00",
           "end": null
+        },
+        {
+          "name": "Wait for stack window (part B)",
+          "start": "2026-11-25T16:42+11:00",
+          "end": null
         }
       ],
       "loops": 3,
       "escalations": 1,
-      "tokens": 15076168,
-      "costUsd": 14.23,
+      "tokens": 16391889,
+      "costUsd": 15.62,
       "commits": 0
     }
   ],
