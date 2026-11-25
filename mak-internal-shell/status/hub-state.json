@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:12+11:00",
+  "generatedAt": "2026-11-25T13:14+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 65,
+        "percentUsed": 67,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 25,
-      "tokens": 224047880,
-      "costUsd": 208.54,
+      "tokens": 227598825,
+      "costUsd": 212.05,
       "minutesWaiting": {
         "hub": 26,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 19,
       "points": 121,
-      "tokens": 756858663,
-      "costUsd": 701.85,
+      "tokens": 760409608,
+      "costUsd": 705.36,
       "minutesWaiting": {
         "hub": 76,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6255030,
+      "tokens": 6284377,
       "minutes": 46,
-      "costUsd": 5.8
+      "costUsd": 5.83
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 25,
-        "tokens": 224047880,
-        "costUsd": 208.54
+        "tokens": 227598825,
+        "costUsd": 212.05
       }
     ],
     "tests": {
@@ -340,7 +340,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
       "items": [
         {
           "id": "SHELL-F-022",
@@ -414,13 +414,18 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-25T13:11+11:00",
+          "end": "2026-11-25T13:12+11:00"
+        },
+        {
+          "name": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
+          "start": "2026-11-25T13:12+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 37431882,
-      "costUsd": 32.37,
+      "tokens": 39777281,
+      "costUsd": 34.7,
       "commits": 0
     },
     {
@@ -430,7 +435,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Parity (re-check, retry 1)",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
@@ -451,7 +456,7 @@
           "title": "Pages: the shell's own blocks",
           "size": 3,
           "phase": "Parity (re-check, retry 1)",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -518,13 +523,18 @@
         {
           "name": "Parity (re-check, retry 1) LIBRARY-F-008",
           "start": "2026-11-25T13:11+11:00",
+          "end": "2026-11-25T13:13+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-25T13:13+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 3,
-      "tokens": 31846984,
-      "costUsd": 32.31,
+      "escalations": 4,
+      "tokens": 33052530,
+      "costUsd": 33.49,
       "commits": 0
     },
     {
