@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T18:32+11:00",
+  "generatedAt": "2026-11-25T18:34+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -8,21 +8,21 @@
     "forecast": {
       "likely": "2026-11-27",
       "optimistic": "2026-11-27",
-      "pessimistic": "2026-11-28"
+      "pessimistic": "2026-11-27"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 91,
-        "pointsRemaining": 6,
-        "itemsRemaining": 2,
+        "pointsDone": 94,
+        "pointsRemaining": 3,
+        "itemsRemaining": 1,
         "state": "building"
       },
       {
         "name": "idp",
-        "pointsDone": 24,
-        "pointsRemaining": 43,
-        "itemsRemaining": 15,
+        "pointsDone": 27,
+        "pointsRemaining": 41,
+        "itemsRemaining": 14,
         "state": "building"
       },
       {
@@ -46,8 +46,8 @@
       },
       {
         "date": "2026-11-25",
-        "done": 136,
-        "total": 198
+        "done": 142,
+        "total": 199
       }
     ],
     "waitingOnPeople": [
@@ -95,7 +95,7 @@
       },
       {
         "who": "designer",
-        "what": "Open design rows: Profile P8 P9, DesignSystem T6 T7, Notifications N7, Dashboard DB7 DB8, ChangePassword W5 W6, ShellFrame F10-F12, SignIn I9, BlockPage B6",
+        "what": "Open design rows: Profile P8 P9, DesignSystem T6 T7, Notifications N7, Dashboard DB7, ChangePassword W5 W6, ShellFrame F10-F12, SignIn I9, BlockPage B6",
         "ref": "next-round",
         "since": "2026-11-25T12:00:00+11:00"
       }
@@ -118,7 +118,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 45,
+        "percentUsed": 46,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -130,8 +130,8 @@
     "today": {
       "packetsMerged": 11,
       "points": 65,
-      "tokens": 478159469,
-      "costUsd": 445.77,
+      "tokens": 486076428,
+      "costUsd": 451.94,
       "minutesWaiting": {
         "hub": 203,
         "you": 10,
@@ -141,8 +141,8 @@
     "week": {
       "packetsMerged": 26,
       "points": 161,
-      "tokens": 1010970252,
-      "costUsd": 939.08,
+      "tokens": 1018887211,
+      "costUsd": 945.25,
       "minutesWaiting": {
         "hub": 253,
         "you": 130,
@@ -150,9 +150,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6279318,
+      "tokens": 6328492,
       "minutes": 39,
-      "costUsd": 5.83
+      "costUsd": 5.87
     },
     "daily": [
       {
@@ -236,13 +236,13 @@
       {
         "date": "2026-11-25",
         "points": 65,
-        "tokens": 478159469,
-        "costUsd": 445.77
+        "tokens": 486076428,
+        "costUsd": 451.94
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-25T17:24+11:00",
+        "at": "2026-11-25T18:33+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -253,18 +253,6 @@
     {
       "component": "shell",
       "packets": [
-        {
-          "id": "shell-g14",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-032",
-              "title": "T4 sizes and looks",
-              "size": 3
-            }
-          ]
-        },
         {
           "id": "shell-next",
           "kind": "orchestrated",
@@ -285,7 +273,7 @@
         {
           "id": "idp-g8",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "IDP-B-004",
@@ -361,7 +349,7 @@
       "packetId": "component-library-g5",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-25T17:02+11:00",
       "phase": "Developer (adopt SHELL-F-032 primary-icon)",
       "items": [
@@ -370,7 +358,7 @@
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
           "phase": "Developer (adopt SHELL-F-032 primary-icon)",
-          "status": "running"
+          "status": "done, 104 tests green; diff checked by worker"
         }
       ],
       "steps": [
@@ -407,13 +395,13 @@
         {
           "name": "Developer (adopt SHELL-F-032 primary-icon) LIBRARY-F-006",
           "start": "2026-11-25T18:30+11:00",
-          "end": null
+          "end": "2026-11-25T18:32+11:00"
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 24780780,
-      "costUsd": 25.72,
+      "tokens": 26523685,
+      "costUsd": 27.07,
       "commits": 0
     },
     {
@@ -474,27 +462,38 @@
       "commits": 0
     },
     {
-      "id": "idp-g8",
+      "id": "w-37",
       "packetId": "idp-g8",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "queued",
+      "state": "running",
       "startedAt": "2026-11-25T18:32+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-B-004",
           "title": "Bad text in other preference fields gives a 500",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-25T18:32+11:00",
+          "end": "2026-11-25T18:33+11:00"
+        },
+        {
+          "name": "Developer B-004",
+          "start": "2026-11-25T18:33+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1321793,
+      "costUsd": 1.23,
       "commits": 0
     }
   ],
