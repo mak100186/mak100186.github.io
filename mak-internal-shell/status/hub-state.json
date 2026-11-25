@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:42+11:00",
+  "generatedAt": "2026-11-25T12:44+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 46,
+        "percentUsed": 49,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 160785281,
-      "costUsd": 146.16,
+      "tokens": 163926694,
+      "costUsd": 150.26,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 693596064,
-      "costUsd": 639.48,
+      "tokens": 696737477,
+      "costUsd": 643.57,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6031270,
+      "tokens": 6058587,
       "minutes": 47,
-      "costUsd": 5.56
+      "costUsd": 5.6
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 160785281,
-        "costUsd": 146.16
+        "tokens": 163926694,
+        "costUsd": 150.26
       }
     ],
     "tests": {
@@ -364,8 +364,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 31448883,
-      "costUsd": 26.37,
+      "tokens": 33185434,
+      "costUsd": 28.58,
       "commits": 0
     },
     {
@@ -375,13 +375,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-022",
           "title": "Dashboard block and saved layouts",
           "size": 5,
-          "phase": "Ack r111: queued third for the browser window (after component-library-g3, idp-g5); waiting for release",
+          "phase": "Ack r115/r116: DB3 and Done deferred (DB7, DB8, SHELL-F-031); Reviewer running; Parity next in the browser queue",
           "status": "done"
         }
       ],
@@ -394,13 +394,18 @@
         {
           "name": "Developer F-022",
           "start": "2026-11-25T12:21+11:00",
+          "end": "2026-11-25T12:43+11:00"
+        },
+        {
+          "name": "Reviewer F-022",
+          "start": "2026-11-25T12:43+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 20643619,
-      "costUsd": 15.84,
+      "escalations": 2,
+      "tokens": 21657302,
+      "costUsd": 17.43,
       "commits": 0
     },
     {
