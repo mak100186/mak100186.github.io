@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:39+11:00",
+  "generatedAt": "2026-11-25T13:41+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -102,11 +102,11 @@
     ]
   },
   "hub": {
-    "state": "running",
-    "resumesAt": null,
+    "state": "parked",
+    "resumesAt": "2026-11-25T16:25+11:00",
     "limits": {
       "fiveHour": {
-        "percentUsed": 89,
+        "percentUsed": 90,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 313353602,
-      "costUsd": 289.08,
+      "tokens": 315535324,
+      "costUsd": 290.53,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 846164385,
-      "costUsd": 782.39,
+      "tokens": 848346107,
+      "costUsd": 783.85,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6176382,
+      "tokens": 6192307,
       "minutes": 41,
-      "costUsd": 5.71
+      "costUsd": 5.72
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 313353602,
-        "costUsd": 289.08
+        "tokens": 315535324,
+        "costUsd": 290.53
       }
     ],
     "tests": {
@@ -384,7 +384,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "Parity (B-002, B-004)",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-001",
@@ -405,7 +405,7 @@
           "title": "Profile page loads data several times",
           "size": 1,
           "phase": "Reviewer (B-003 after r140; B-006 re-check)",
-          "status": "running"
+          "status": "pass (b-003, b-006)"
         },
         {
           "id": "SHELL-B-004",
@@ -467,7 +467,7 @@
         {
           "name": "Reviewer (B-003 after r140; B-006 re-check) B-003",
           "start": "2026-11-25T13:37+11:00",
-          "end": null
+          "end": "2026-11-25T13:39+11:00"
         },
         {
           "name": "Parity (B-002, B-004) B-002",
@@ -477,8 +477,8 @@
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 17450310,
-      "costUsd": 16.9,
+      "tokens": 17950618,
+      "costUsd": 17.2,
       "commits": 0
     },
     {
@@ -488,13 +488,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
           "title": "Pages: form controls",
           "size": 5,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -516,7 +516,7 @@
         {
           "name": "Developer LIBRARY-F-005",
           "start": "2026-11-25T13:27+11:00",
-          "end": null
+          "end": "2026-11-25T13:39+11:00"
         },
         {
           "name": "Developer LIBRARY-F-009",
@@ -527,12 +527,17 @@
           "name": "Reviewer LIBRARY-F-009",
           "start": "2026-11-25T13:31+11:00",
           "end": "2026-11-25T13:32+11:00"
+        },
+        {
+          "name": "Reviewer LIBRARY-F-005",
+          "start": "2026-11-25T13:40+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 12144746,
-      "costUsd": 11.21,
+      "escalations": 1,
+      "tokens": 13034987,
+      "costUsd": 11.87,
       "commits": 0
     },
     {
@@ -578,8 +583,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3833131,
-      "costUsd": 3.66,
+      "tokens": 4055581,
+      "costUsd": 3.79,
       "commits": 0
     }
   ],
