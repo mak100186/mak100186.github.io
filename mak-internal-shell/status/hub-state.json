@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:00+11:00",
+  "generatedAt": "2026-11-25T13:02+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 58,
+        "percentUsed": 59,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 193203764,
-      "costUsd": 180.92,
+      "tokens": 200139727,
+      "costUsd": 188.29,
       "minutesWaiting": {
         "hub": 26,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 726014547,
-      "costUsd": 674.23,
+      "tokens": 732950510,
+      "costUsd": 681.6,
       "minutesWaiting": {
         "hub": 76,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6313170,
+      "tokens": 6373483,
       "minutes": 47,
-      "costUsd": 5.86
+      "costUsd": 5.93
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 193203764,
-        "costUsd": 180.92
+        "tokens": 200139727,
+        "costUsd": 188.29
       }
     ],
     "tests": {
@@ -311,9 +311,9 @@
       "packetId": "idp-g5",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "ready to merge",
       "startedAt": "2026-11-25T11:53+11:00",
-      "phase": "Finalizers",
+      "phase": "Stack",
       "items": [
         {
           "id": "IDP-F-009",
@@ -374,14 +374,14 @@
         {
           "name": "Finalizers",
           "start": "2026-11-25T12:55+11:00",
-          "end": null
+          "end": "2026-11-25T13:02+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 46463497,
-      "costUsd": 42.23,
-      "commits": 0
+      "tokens": 49979805,
+      "costUsd": 46.49,
+      "commits": 26
     },
     {
       "id": "w-25",
@@ -390,14 +390,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Developer",
+      "phase": "Wait: browser window for Parity re-check + make e2e (r119)",
       "items": [
         {
           "id": "SHELL-F-022",
           "title": "Dashboard block and saved layouts",
           "size": 5,
-          "phase": "Ack r119: re-check (Parity, then make e2e, slot 2) queued after component-library-g3; Developer retry 1 running, no browser",
-          "status": "done"
+          "phase": "Wait: browser window for Parity re-check + make e2e (r119)",
+          "status": "running"
         }
       ],
       "steps": [
@@ -429,13 +429,23 @@
         {
           "name": "Developer (retry 1, Parity issues) F-022",
           "start": "2026-11-25T12:56+11:00",
+          "end": "2026-11-25T13:01+11:00"
+        },
+        {
+          "name": "Reviewer (loop 1) F-022",
+          "start": "2026-11-25T13:01+11:00",
+          "end": "2026-11-25T13:02+11:00"
+        },
+        {
+          "name": "Wait: browser window for Parity re-check + make e2e (r119) F-022",
+          "start": "2026-11-25T13:02+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 27117967,
-      "costUsd": 23.33,
+      "tokens": 30537622,
+      "costUsd": 26.45,
       "commits": 0
     },
     {
