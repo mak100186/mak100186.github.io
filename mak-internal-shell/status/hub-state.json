@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:52+11:00",
+  "generatedAt": "2026-11-25T11:53+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,7 +83,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 17,
+        "percentUsed": 18,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -95,10 +95,10 @@
     "today": {
       "packetsMerged": 2,
       "points": 9,
-      "tokens": 56366097,
-      "costUsd": 56.77,
+      "tokens": 56932588,
+      "costUsd": 57.26,
       "minutesWaiting": {
-        "hub": 0,
+        "hub": 11,
         "you": 0,
         "limit": 0
       }
@@ -106,16 +106,16 @@
     "week": {
       "packetsMerged": 17,
       "points": 105,
-      "tokens": 589176880,
-      "costUsd": 550.09,
+      "tokens": 589743371,
+      "costUsd": 550.57,
       "minutesWaiting": {
-        "hub": 50,
+        "hub": 61,
         "you": 120,
         "limit": 0
       }
     },
     "perPoint": {
-      "tokens": 5611208,
+      "tokens": 5616604,
       "minutes": 51,
       "costUsd": 5.24
     },
@@ -201,8 +201,8 @@
       {
         "date": "2026-11-25",
         "points": 9,
-        "tokens": 56366097,
-        "costUsd": 56.77
+        "tokens": 56932588,
+        "costUsd": 57.26
       }
     ],
     "tests": {
@@ -304,7 +304,7 @@
       "packetId": "shell-g11",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
       "phase": "Reviewer",
       "items": [
@@ -349,6 +349,37 @@
       "escalations": 0,
       "tokens": 19323982,
       "costUsd": 17.34,
+      "commits": 0
+    },
+    {
+      "id": "w-24",
+      "packetId": "idp-g5",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T11:53+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-F-009",
+          "title": "Change own password",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-010",
+          "title": "Profile and preferences",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
