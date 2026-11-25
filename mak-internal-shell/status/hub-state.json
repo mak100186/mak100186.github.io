@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T17:34+11:00",
+  "generatedAt": "2026-11-25T17:36+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -118,7 +118,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 29,
+        "percentUsed": 31,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -128,31 +128,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 9,
-      "points": 59,
-      "tokens": 427173829,
-      "costUsd": 394.91,
+      "packetsMerged": 10,
+      "points": 62,
+      "tokens": 437113542,
+      "costUsd": 403.56,
       "minutesWaiting": {
-        "hub": 100,
+        "hub": 111,
         "you": 10,
         "limit": 490
       }
     },
     "week": {
-      "packetsMerged": 24,
-      "points": 155,
-      "tokens": 959984612,
-      "costUsd": 888.22,
+      "packetsMerged": 25,
+      "points": 158,
+      "tokens": 969924325,
+      "costUsd": 896.88,
       "minutesWaiting": {
-        "hub": 150,
+        "hub": 161,
         "you": 130,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6193449,
+      "tokens": 6138762,
       "minutes": 39,
-      "costUsd": 5.73
+      "costUsd": 5.68
     },
     "daily": [
       {
@@ -235,9 +235,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 59,
-        "tokens": 427173829,
-        "costUsd": 394.91
+        "points": 62,
+        "tokens": 437113542,
+        "costUsd": 403.56
       }
     ],
     "tests": {
@@ -350,112 +350,20 @@
   ],
   "workers": [
     {
-      "id": "w-33",
-      "packetId": "idp-g7",
-      "component": "idp",
-      "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-25T13:28+11:00",
-      "phase": "Integration",
-      "items": [
-        {
-          "id": "IDP-F-020",
-          "title": "Dashboard layouts in preferences",
-          "size": 2,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "IDP-B-003",
-          "title": "Idle and expired sign-out tell the shell late",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer B-003",
-          "start": "2026-11-25T13:30+11:00",
-          "end": "2026-11-25T13:33+11:00"
-        },
-        {
-          "name": "Reviewer B-003",
-          "start": "2026-11-25T13:33+11:00",
-          "end": "2026-11-25T13:33+11:00"
-        },
-        {
-          "name": "Developer F-020",
-          "start": "2026-11-25T13:34+11:00",
-          "end": "2026-11-25T13:42+11:00"
-        },
-        {
-          "name": "Developer F-020",
-          "start": "2026-11-25T16:25+11:00",
-          "end": "2026-11-25T16:31+11:00"
-        },
-        {
-          "name": "Reviewer F-020",
-          "start": "2026-11-25T16:31+11:00",
-          "end": "2026-11-25T16:32+11:00"
-        },
-        {
-          "name": "Developer F-020",
-          "start": "2026-11-25T16:33+11:00",
-          "end": "2026-11-25T16:36+11:00"
-        },
-        {
-          "name": "Reviewer F-020",
-          "start": "2026-11-25T16:36+11:00",
-          "end": "2026-11-25T16:37+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T16:38+11:00",
-          "end": null
-        },
-        {
-          "name": "Wait for stack window (part B)",
-          "start": "2026-11-25T16:42+11:00",
-          "end": "2026-11-25T17:24+11:00"
-        },
-        {
-          "name": "Integration part B",
-          "start": "2026-11-25T17:24+11:00",
-          "end": "2026-11-25T17:27+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T17:28+11:00",
-          "end": "2026-11-25T17:29+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-25T17:29+11:00",
-          "end": "2026-11-25T17:34+11:00"
-        }
-      ],
-      "loops": 3,
-      "escalations": 1,
-      "tokens": 23773982,
-      "costUsd": 24.15,
-      "commits": 43
-    },
-    {
       "id": "w-34",
       "packetId": "component-library-g5",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-006",
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         }
       ],
       "steps": [
@@ -468,12 +376,22 @@
           "name": "Reviewer LIBRARY-F-006",
           "start": "2026-11-25T17:21+11:00",
           "end": "2026-11-25T17:24+11:00"
+        },
+        {
+          "name": "Merge main (134c551) before Parity",
+          "start": "2026-11-25T17:35+11:00",
+          "end": "2026-11-25T17:35+11:00"
+        },
+        {
+          "name": "Parity LIBRARY-F-006",
+          "start": "2026-11-25T17:35+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 14407934,
-      "costUsd": 13.44,
+      "tokens": 15190391,
+      "costUsd": 14.69,
       "commits": 0
     },
     {
@@ -483,13 +401,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:23+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-032",
           "title": "T4 sizes and looks: slider, progress bar, spinner, stretch in example area, toolbar, icon colour",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -497,17 +415,63 @@
         {
           "name": "Developer F-032",
           "start": "2026-11-25T17:25+11:00",
+          "end": "2026-11-25T17:35+11:00"
+        },
+        {
+          "name": "Reviewer F-032",
+          "start": "2026-11-25T17:35+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 2025221,
-      "costUsd": 1.68,
+      "tokens": 8572562,
+      "costUsd": 7.54,
+      "commits": 0
+    },
+    {
+      "id": "w-36",
+      "packetId": "component-library-g6",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T17:36+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-F-010",
+          "title": "Dashboard page",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "COMPONENT-LIBRARY-F-013",
+          "title": "Block page third crumb",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g7",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T17:34+11:00",
+      "items": 2,
+      "points": 3,
+      "minutes": 247,
+      "tokens": 23773982
+    },
     {
       "packetId": "shell-g13",
       "component": "shell",
@@ -697,16 +661,6 @@
       "points": 3,
       "minutes": 18,
       "tokens": 8590680
-    },
-    {
-      "packetId": "shell-g3",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-22T20:24+11:00",
-      "items": 3,
-      "points": 8,
-      "minutes": 69,
-      "tokens": 37316794
     }
   ]
 }
