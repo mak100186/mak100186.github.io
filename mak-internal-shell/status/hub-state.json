@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T13:21+11:00",
+  "generatedAt": "2026-11-25T13:24+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -13,9 +13,9 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 77,
-        "pointsRemaining": 14,
-        "itemsRemaining": 7,
+        "pointsDone": 82,
+        "pointsRemaining": 12,
+        "itemsRemaining": 9,
         "state": "building"
       },
       {
@@ -46,8 +46,8 @@
       },
       {
         "date": "2026-11-25",
-        "done": 102,
-        "total": 190
+        "done": 107,
+        "total": 193
       }
     ],
     "waitingOnPeople": [
@@ -68,6 +68,12 @@
         "what": "Strict look check on shell",
         "ref": "parity-shell",
         "since": "2026-11-25T12:00:00+11:00"
+      },
+      {
+        "who": "user",
+        "what": "Saved dashboard layout when cards change",
+        "ref": "PM-014",
+        "since": "2026-11-25T14:00:00+11:00"
       },
       {
         "who": "designer",
@@ -94,7 +100,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 73,
+        "percentUsed": 74,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -104,10 +110,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 5,
-      "points": 30,
-      "tokens": 258094785,
-      "costUsd": 239.23,
+      "packetsMerged": 6,
+      "points": 38,
+      "tokens": 266606334,
+      "costUsd": 245.97,
       "minutesWaiting": {
         "hub": 27,
         "you": 0,
@@ -115,10 +121,10 @@
       }
     },
     "week": {
-      "packetsMerged": 20,
-      "points": 126,
-      "tokens": 790905568,
-      "costUsd": 732.55,
+      "packetsMerged": 21,
+      "points": 134,
+      "tokens": 799417117,
+      "costUsd": 739.28,
       "minutesWaiting": {
         "hub": 77,
         "you": 120,
@@ -126,9 +132,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6277028,
-      "minutes": 44,
-      "costUsd": 5.81
+      "tokens": 5965799,
+      "minutes": 42,
+      "costUsd": 5.52
     },
     "daily": [
       {
@@ -211,14 +217,14 @@
       },
       {
         "date": "2026-11-25",
-        "points": 30,
-        "tokens": 258094785,
-        "costUsd": 239.23
+        "points": 38,
+        "tokens": 266606334,
+        "costUsd": 245.97
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-25T12:19+11:00",
+        "at": "2026-11-25T13:21+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -230,21 +236,9 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g12",
+          "id": "shell-g13",
           "kind": "orchestrated",
           "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-022",
-              "title": "Dashboard block and saved layouts",
-              "size": 5
-            }
-          ]
-        },
-        {
-          "id": "shell-next",
-          "kind": "orchestrated",
-          "state": "queued",
           "items": [
             {
               "id": "SHELL-B-001",
@@ -262,6 +256,21 @@
               "size": 1
             },
             {
+              "id": "SHELL-B-004",
+              "title": "Table page empty message off-screen",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-005",
+              "title": "Table column resize ignores arrow keys",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-006",
+              "title": "Notification polling after sign-out",
+              "size": 1
+            },
+            {
               "id": "SHELL-F-030",
               "title": "Page crumb below the menu item",
               "size": 2
@@ -270,6 +279,18 @@
               "id": "SHELL-F-031",
               "title": "Filled page action",
               "size": 1
+            }
+          ]
+        },
+        {
+          "id": "shell-next",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "SHELL-F-016",
+              "title": "Docker Compose deployment",
+              "size": 3
             }
           ]
         }
@@ -334,139 +355,20 @@
   ],
   "workers": [
     {
-      "id": "w-26",
-      "packetId": "component-library-g3",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Integration pass 2 (post-merge gate)",
-      "items": [
-        {
-          "id": "COMPONENT-LIBRARY-F-003",
-          "title": "Catalog screen",
-          "size": 2,
-          "phase": "Parity",
-          "status": "pass"
-        },
-        {
-          "id": "COMPONENT-LIBRARY-F-004",
-          "title": "Block page",
-          "size": 3,
-          "phase": "Parity",
-          "status": "pass"
-        },
-        {
-          "id": "COMPONENT-LIBRARY-F-008",
-          "title": "Pages: the shell's own blocks",
-          "size": 3,
-          "phase": "Parity (re-check, retry 1)",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start: plan waves [F-003, F-004] then [F-008]; F-004 owns entries.spec.ts, both add one route each to routes.ts; neither changes blocks.ts; F-008 owns blocks.ts",
-          "start": "2026-11-25T12:21+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer LIBRARY-F-003",
-          "start": "2026-11-25T12:23+11:00",
-          "end": "2026-11-25T12:26+11:00"
-        },
-        {
-          "name": "Developer LIBRARY-F-004",
-          "start": "2026-11-25T12:23+11:00",
-          "end": "2026-11-25T12:27+11:00"
-        },
-        {
-          "name": "Reviewer (F-003, F-004 in parallel)",
-          "start": "2026-11-25T12:27+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity (F-003, F-004 in parallel)",
-          "start": "2026-11-25T12:28+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer LIBRARY-F-008",
-          "start": "2026-11-25T12:34+11:00",
-          "end": "2026-11-25T12:47+11:00"
-        },
-        {
-          "name": "Reviewer LIBRARY-F-008",
-          "start": "2026-11-25T12:47+11:00",
-          "end": "2026-11-25T12:48+11:00"
-        },
-        {
-          "name": "Wait: stack window for F-008 Parity (r114) LIBRARY-F-008",
-          "start": "2026-11-25T12:48+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity LIBRARY-F-008",
-          "start": "2026-11-25T12:57+11:00",
-          "end": "2026-11-25T13:06+11:00"
-        },
-        {
-          "name": "Developer (retry 1) LIBRARY-F-008",
-          "start": "2026-11-25T13:06+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer (retry 1) LIBRARY-F-008",
-          "start": "2026-11-25T13:08+11:00",
-          "end": "2026-11-25T13:08+11:00"
-        },
-        {
-          "name": "Integration (pass 1, while waiting for the parity re-check window)",
-          "start": "2026-11-25T13:09+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity (re-check, retry 1) LIBRARY-F-008",
-          "start": "2026-11-25T13:11+11:00",
-          "end": "2026-11-25T13:13+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T13:13+11:00",
-          "end": "2026-11-25T13:15+11:00"
-        },
-        {
-          "name": "Finalizers (PMBook+architecture sweep, Handoff, Revision+Changelog, Test Runbook+test-cases); Graphify done by script",
-          "start": "2026-11-25T13:16+11:00",
-          "end": null
-        },
-        {
-          "name": "Integration pass 2 (post-merge gate)",
-          "start": "2026-11-25T13:20+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 4,
-      "tokens": 39875229,
-      "costUsd": 40.15,
-      "commits": 0
-    },
-    {
       "id": "w-27",
       "packetId": "idp-g6",
       "component": "idp",
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:04+11:00",
-      "phase": "Reviewer",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-F-012",
           "title": "idp end-to-end tests",
           "size": 3,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -488,13 +390,18 @@
         {
           "name": "Reviewer F-012",
           "start": "2026-11-25T13:20+11:00",
+          "end": "2026-11-25T13:22+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-25T13:23+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 10855313,
-      "costUsd": 9.23,
+      "escalations": 2,
+      "tokens": 12552404,
+      "costUsd": 10.87,
       "commits": 0
     },
     {
@@ -504,7 +411,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:21+11:00",
-      "phase": "",
+      "phase": "Developer (wave 1: profile chain, table chain, B-006)",
       "items": [
         {
           "id": "SHELL-B-001",
@@ -563,7 +470,13 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer (wave 1: profile chain, table chain, B-006)",
+          "start": "2026-11-25T13:23+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
@@ -572,6 +485,16 @@
     }
   ],
   "recent": [
+    {
+      "packetId": "component-library-g3",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T13:23+11:00",
+      "items": 3,
+      "points": 8,
+      "minutes": 65,
+      "tokens": 43520285
+    },
     {
       "packetId": "shell-g12",
       "component": "shell",
@@ -761,16 +684,6 @@
       "points": 5,
       "minutes": 34,
       "tokens": 14825327
-    },
-    {
-      "packetId": "shell-g1",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-22T18:29+11:00",
-      "items": 1,
-      "points": 3,
-      "minutes": 14,
-      "tokens": 7748161
     }
   ]
 }
