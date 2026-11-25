@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:29+11:00",
+  "generatedAt": "2026-11-25T12:31+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 40,
+        "percentUsed": 41,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 128900648,
-      "costUsd": 120.19,
+      "tokens": 135047014,
+      "costUsd": 125.7,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 661711431,
-      "costUsd": 613.5,
+      "tokens": 667857797,
+      "costUsd": 619.01,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5754012,
+      "tokens": 5807459,
       "minutes": 47,
-      "costUsd": 5.33
+      "costUsd": 5.38
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 128900648,
-        "costUsd": 120.19
+        "tokens": 135047014,
+        "costUsd": 125.7
       }
     ],
     "tests": {
@@ -313,7 +313,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T11:53+11:00",
-      "phase": "Stack window (quiet ack: no browser runs; unit gates only)",
+      "phase": "Stack",
       "items": [
         {
           "id": "IDP-F-009",
@@ -327,7 +327,7 @@
           "title": "Profile and preferences",
           "size": 3,
           "phase": "Developer",
-          "status": "running"
+          "status": "built; make test c=idp green (angular 129, idp.api 154+3 skipped)"
         }
       ],
       "steps": [
@@ -344,7 +344,7 @@
         {
           "name": "Developer F-010",
           "start": "2026-11-25T12:18+11:00",
-          "end": null
+          "end": "2026-11-25T12:30+11:00"
         },
         {
           "name": "Stack window (quiet ack: no browser runs; unit gates only)",
@@ -353,9 +353,9 @@
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 22640422,
-      "costUsd": 19.03,
+      "escalations": 1,
+      "tokens": 28537791,
+      "costUsd": 23.91,
       "commits": 0
     },
     {
