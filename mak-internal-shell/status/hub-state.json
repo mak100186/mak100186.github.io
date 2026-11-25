@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T12:23+11:00",
+  "generatedAt": "2026-11-25T12:25+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 35,
+        "percentUsed": 37,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -106,8 +106,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 19,
-      "tokens": 116856088,
-      "costUsd": 108.8,
+      "tokens": 120786123,
+      "costUsd": 112.22,
       "minutesWaiting": {
         "hub": 11,
         "you": 0,
@@ -117,8 +117,8 @@
     "week": {
       "packetsMerged": 18,
       "points": 115,
-      "tokens": 649666871,
-      "costUsd": 602.11,
+      "tokens": 653596906,
+      "costUsd": 605.53,
       "minutesWaiting": {
         "hub": 61,
         "you": 120,
@@ -126,9 +126,9 @@
       }
     },
     "perPoint": {
-      "tokens": 5649277,
+      "tokens": 5683451,
       "minutes": 47,
-      "costUsd": 5.24
+      "costUsd": 5.27
     },
     "daily": [
       {
@@ -212,8 +212,8 @@
       {
         "date": "2026-11-25",
         "points": 19,
-        "tokens": 116856088,
-        "costUsd": 108.8
+        "tokens": 120786123,
+        "costUsd": 112.22
       }
     ],
     "tests": {
@@ -395,21 +395,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T12:19+11:00",
-      "phase": "Start: plan waves [F-003, F-004] then [F-008]; F-004 owns entries.spec.ts, both add one route each to routes.ts; neither changes blocks.ts; F-008 owns blocks.ts",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-003",
           "title": "Catalog screen",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-004",
           "title": "Block page",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-008",
@@ -424,12 +424,22 @@
           "name": "Start: plan waves [F-003, F-004] then [F-008]; F-004 owns entries.spec.ts, both add one route each to routes.ts; neither changes blocks.ts; F-008 owns blocks.ts",
           "start": "2026-11-25T12:21+11:00",
           "end": null
+        },
+        {
+          "name": "Developer LIBRARY-F-003",
+          "start": "2026-11-25T12:23+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer LIBRARY-F-004",
+          "start": "2026-11-25T12:23+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 3930035,
+      "costUsd": 3.42,
       "commits": 0
     }
   ],
