@@ -100,7 +100,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 74,
+        "percentUsed": 75,
         "resetsAt": "2026-11-25T05:20:00.000Z"
       },
       "sevenDay": {
@@ -112,8 +112,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 38,
-      "tokens": 266606334,
-      "costUsd": 245.97,
+      "tokens": 266798023,
+      "costUsd": 246.1,
       "minutesWaiting": {
         "hub": 27,
         "you": 0,
@@ -123,8 +123,8 @@
     "week": {
       "packetsMerged": 21,
       "points": 134,
-      "tokens": 799417117,
-      "costUsd": 739.28,
+      "tokens": 799608806,
+      "costUsd": 739.41,
       "minutesWaiting": {
         "hub": 77,
         "you": 120,
@@ -132,7 +132,7 @@
       }
     },
     "perPoint": {
-      "tokens": 5965799,
+      "tokens": 5967230,
       "minutes": 42,
       "costUsd": 5.52
     },
@@ -218,8 +218,8 @@
       {
         "date": "2026-11-25",
         "points": 38,
-        "tokens": 266606334,
-        "costUsd": 245.97
+        "tokens": 266798023,
+        "costUsd": 246.1
       }
     ],
     "tests": {
@@ -477,6 +477,44 @@
           "end": null
         }
       ],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "w-29",
+      "packetId": "component-library-g4",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-25T13:24+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-F-005",
+          "title": "Pages: form controls",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "COMPONENT-LIBRARY-F-007",
+          "title": "Pages: data and feedback",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "COMPONENT-LIBRARY-F-009",
+          "title": "Search provider",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
