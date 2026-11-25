@@ -382,11 +382,11 @@
       "commits": 0
     },
     {
-      "id": "component-library-g2",
+      "id": "w-23",
       "packetId": "component-library-g2",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "queued",
+      "state": "running",
       "startedAt": "2026-11-25T11:25+11:00",
       "phase": "",
       "items": [
