@@ -102,7 +102,7 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -482,11 +482,11 @@
       "commits": 0
     },
     {
-      "id": "w-29",
+      "id": "w-31",
       "packetId": "component-library-g4",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
       "phase": "Reviewer",
       "items": [
