@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T16:58+11:00",
+  "generatedAt": "2026-11-25T17:00+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -106,7 +106,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 13,
+        "percentUsed": 14,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -118,8 +118,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 41,
-      "tokens": 369619276,
-      "costUsd": 340.56,
+      "tokens": 372644321,
+      "costUsd": 343.58,
       "minutesWaiting": {
         "hub": 27,
         "you": 4,
@@ -129,8 +129,8 @@
     "week": {
       "packetsMerged": 22,
       "points": 137,
-      "tokens": 902430059,
-      "costUsd": 833.87,
+      "tokens": 905455104,
+      "costUsd": 836.89,
       "minutesWaiting": {
         "hub": 77,
         "you": 124,
@@ -138,9 +138,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6587081,
+      "tokens": 6609161,
       "minutes": 41,
-      "costUsd": 6.09
+      "costUsd": 6.11
     },
     "daily": [
       {
@@ -224,8 +224,8 @@
       {
         "date": "2026-11-25",
         "points": 41,
-        "tokens": 369619276,
-        "costUsd": 340.56
+        "tokens": 372644321,
+        "costUsd": 343.58
       }
     ],
     "tests": {
@@ -498,7 +498,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T13:24+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-005",
@@ -592,12 +592,17 @@
           "name": "Reviewer-Integration",
           "start": "2026-11-25T16:56+11:00",
           "end": "2026-11-25T16:57+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-25T16:59+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 41383119,
-      "costUsd": 38.55,
+      "tokens": 44408164,
+      "costUsd": 41.57,
       "commits": 0
     },
     {
