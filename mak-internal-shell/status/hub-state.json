@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T11:44+11:00",
+  "generatedAt": "2026-11-25T11:46+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -306,7 +306,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-23T09:00+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "SHELL-F-015",
@@ -414,6 +414,11 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-25T11:43+11:00",
+          "end": "2026-11-25T11:44+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-25T11:45+11:00",
           "end": null
         }
       ],
