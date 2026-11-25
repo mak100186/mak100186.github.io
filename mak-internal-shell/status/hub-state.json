@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T19:03+11:00",
+  "generatedAt": "2026-11-25T19:05+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -124,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 54,
+        "percentUsed": 55,
         "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
@@ -134,10 +134,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 12,
-      "points": 66,
-      "tokens": 508635550,
-      "costUsd": 474.68,
+      "packetsMerged": 13,
+      "points": 67,
+      "tokens": 510792040,
+      "costUsd": 477.15,
       "minutesWaiting": {
         "hub": 209,
         "you": 11,
@@ -145,10 +145,10 @@
       }
     },
     "week": {
-      "packetsMerged": 27,
-      "points": 162,
-      "tokens": 1041446333,
-      "costUsd": 968,
+      "packetsMerged": 28,
+      "points": 163,
+      "tokens": 1043602823,
+      "costUsd": 970.46,
       "minutesWaiting": {
         "hub": 259,
         "you": 131,
@@ -156,9 +156,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6428681,
-      "minutes": 38,
-      "costUsd": 5.98
+      "tokens": 6402471,
+      "minutes": 34,
+      "costUsd": 5.95
     },
     "daily": [
       {
@@ -241,9 +241,9 @@
       },
       {
         "date": "2026-11-25",
-        "points": 66,
-        "tokens": 508635550,
-        "costUsd": 474.68
+        "points": 67,
+        "tokens": 510792040,
+        "costUsd": 477.15
       }
     ],
     "tests": {
@@ -276,18 +276,6 @@
     {
       "component": "idp",
       "packets": [
-        {
-          "id": "idp-g9",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "IDP-B-005",
-              "title": "Bad text at sign-in and change password may give a 500",
-              "size": 1
-            }
-          ]
-        },
         {
           "id": "idp-next",
           "kind": "orchestrated",
@@ -481,64 +469,19 @@
       "tokens": 13484684,
       "costUsd": 12.35,
       "commits": 0
-    },
-    {
-      "id": "w-38",
-      "packetId": "idp-g9",
-      "component": "idp",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T18:46+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "IDP-B-005",
-          "title": "Bad text at sign-in and change password may give a 500",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass (65/65 incl. live postgres)"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-25T18:46+11:00",
-          "end": "2026-11-25T18:48+11:00"
-        },
-        {
-          "name": "Developer B-005",
-          "start": "2026-11-25T18:48+11:00",
-          "end": "2026-11-25T18:55+11:00"
-        },
-        {
-          "name": "Reviewer B-005",
-          "start": "2026-11-25T18:55+11:00",
-          "end": "2026-11-25T18:57+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-25T18:57+11:00",
-          "end": "2026-11-25T19:00+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-25T19:00+11:00",
-          "end": "2026-11-25T19:00+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-25T19:01+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 0,
-      "tokens": 7751848,
-      "costUsd": 8.94,
-      "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g9",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-25T19:04+11:00",
+      "items": 1,
+      "points": 1,
+      "minutes": 19,
+      "tokens": 8741312
+    },
     {
       "packetId": "idp-g8",
       "component": "idp",
@@ -728,16 +671,6 @@
       "points": 2,
       "minutes": 577,
       "tokens": 11119054
-    },
-    {
-      "packetId": "shell-g7",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-23T06:55+11:00",
-      "items": 3,
-      "points": 12,
-      "minutes": 606,
-      "tokens": 27780539
     }
   ]
 }
