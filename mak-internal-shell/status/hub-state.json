@@ -106,8 +106,8 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 91,
-        "resetsAt": "2026-11-25T05:20:00.000Z"
+        "percentUsed": 1,
+        "resetsAt": "2026-11-25T10:20:00.000Z"
       },
       "sevenDay": {
         "percentUsed": 12,
@@ -378,11 +378,11 @@
   ],
   "workers": [
     {
-      "id": "w-28",
+      "id": "w-32",
       "packetId": "shell-g13",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-25T13:21+11:00",
       "phase": "Developer",
       "items": [
