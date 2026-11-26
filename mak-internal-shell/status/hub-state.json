@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:54+11:00",
+  "generatedAt": "2026-11-26T18:56+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -153,8 +153,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 4,
-      "tokens": 35427372,
-      "costUsd": 34.27,
+      "tokens": 38436915,
+      "costUsd": 37.13,
       "minutesWaiting": {
         "hub": 2855,
         "you": 6,
@@ -164,8 +164,8 @@
     "week": {
       "packetsMerged": 29,
       "points": 167,
-      "tokens": 1089101383,
-      "costUsd": 1015.42,
+      "tokens": 1092110926,
+      "costUsd": 1018.27,
       "minutesWaiting": {
         "hub": 3114,
         "you": 137,
@@ -173,9 +173,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6521565,
+      "tokens": 6539586,
       "minutes": 39,
-      "costUsd": 6.08
+      "costUsd": 6.1
     },
     "daily": [
       {
@@ -259,8 +259,8 @@
       {
         "date": "2026-11-26",
         "points": 4,
-        "tokens": 35427372,
-        "costUsd": 34.27
+        "tokens": 38436915,
+        "costUsd": 37.13
       }
     ],
     "tests": {
@@ -357,7 +357,7 @@
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
           "phase": "Parity (re-check, loop 1)",
-          "status": "running"
+          "status": "pass; shell-f-032 closed 6 gaps + r179 fold-in matches; 2 deferred"
         }
       ],
       "steps": [
@@ -399,13 +399,13 @@
         {
           "name": "Parity (re-check, loop 1) LIBRARY-F-006",
           "start": "2026-11-26T18:47+11:00",
-          "end": null
+          "end": "2026-11-26T18:56+11:00"
         }
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 31384231,
-      "costUsd": 32.19,
+      "tokens": 34393774,
+      "costUsd": 35.04,
       "commits": 0
     },
     {
