@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:34+11:00",
+  "generatedAt": "2026-11-26T18:35+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -124,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 1,
+        "percentUsed": 2,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -136,10 +136,10 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 528168,
+      "costUsd": 1.3,
       "minutesWaiting": {
-        "hub": 0,
+        "hub": 1401,
         "you": 0,
         "limit": 0
       }
@@ -147,18 +147,18 @@
     "week": {
       "packetsMerged": 28,
       "points": 163,
-      "tokens": 1053674011,
-      "costUsd": 981.15,
+      "tokens": 1054202179,
+      "costUsd": 982.45,
       "minutesWaiting": {
-        "hub": 259,
+        "hub": 1660,
         "you": 131,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6464258,
+      "tokens": 6467498,
       "minutes": 34,
-      "costUsd": 6.02
+      "costUsd": 6.03
     },
     "daily": [
       {
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-26",
         "points": 0,
-        "tokens": 0,
-        "costUsd": 0
+        "tokens": 528168,
+        "costUsd": 1.3
       }
     ],
     "tests": {
@@ -465,9 +465,40 @@
         }
       ],
       "loops": 0,
-      "escalations": 5,
-      "tokens": 23555872,
-      "costUsd": 23.03,
+      "escalations": 6,
+      "tokens": 24084040,
+      "costUsd": 24.33,
+      "commits": 0
+    },
+    {
+      "id": "w-39",
+      "packetId": "shell-g15",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-26T18:35+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-016",
+          "title": "Docker Compose deployment",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-007",
+          "title": "A permission change can undo an unsaved Dark theme toggle",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
