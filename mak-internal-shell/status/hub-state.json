@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:30+11:00",
+  "generatedAt": "2026-11-26T20:33+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -166,7 +166,7 @@
       "tokens": 146232360,
       "costUsd": 134.42,
       "minutesWaiting": {
-        "hub": 2879,
+        "hub": 2884,
         "you": 22,
         "limit": 0
       }
@@ -177,7 +177,7 @@
       "tokens": 1199906371,
       "costUsd": 1115.56,
       "minutesWaiting": {
-        "hub": 3138,
+        "hub": 3143,
         "you": 153,
         "limit": 490
       }
@@ -332,9 +332,9 @@
       "packetId": "idp-g10",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Integration window: build PASS, e2e idp 7/7, e2e component-library 4/5 (r217, shell-g16 breadcrumb); now make publish + make up STACK=image",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-F-019",
@@ -395,7 +395,7 @@
         {
           "name": "Stack window",
           "start": "2026-11-26T20:23+11:00",
-          "end": null
+          "end": "2026-11-26T20:33+11:00"
         },
         {
           "name": "Integration window: make build, e2e idp, e2e component-library",
