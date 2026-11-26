@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:00+11:00",
+  "generatedAt": "2026-11-26T19:02+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -141,7 +141,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 17,
+        "percentUsed": 18,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -151,31 +151,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 1,
-      "points": 4,
-      "tokens": 52394159,
-      "costUsd": 50.62,
+      "packetsMerged": 2,
+      "points": 9,
+      "tokens": 58140079,
+      "costUsd": 55.36,
       "minutesWaiting": {
-        "hub": 2864,
+        "hub": 2866,
         "you": 6,
         "limit": 0
       }
     },
     "week": {
-      "packetsMerged": 29,
-      "points": 167,
-      "tokens": 1106068170,
-      "costUsd": 1031.77,
+      "packetsMerged": 30,
+      "points": 172,
+      "tokens": 1111814090,
+      "costUsd": 1036.51,
       "minutesWaiting": {
-        "hub": 3123,
+        "hub": 3125,
         "you": 137,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6623163,
-      "minutes": 39,
-      "costUsd": 6.18
+      "tokens": 6464035,
+      "minutes": 43,
+      "costUsd": 6.03
     },
     "daily": [
       {
@@ -258,9 +258,9 @@
       },
       {
         "date": "2026-11-26",
-        "points": 4,
-        "tokens": 52394159,
-        "costUsd": 50.62
+        "points": 9,
+        "tokens": 58140079,
+        "costUsd": 55.36
       }
     ],
     "tests": {
@@ -316,18 +316,6 @@
       "component": "component-library",
       "packets": [
         {
-          "id": "component-library-g5",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "COMPONENT-LIBRARY-F-006",
-              "title": "Pages: buttons, navigation and layout",
-              "size": 5
-            }
-          ]
-        },
-        {
           "id": "component-library-g7",
           "kind": "orchestrated",
           "state": "running",
@@ -343,81 +331,6 @@
     }
   ],
   "workers": [
-    {
-      "id": "w-34",
-      "packetId": "component-library-g5",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "COMPONENT-LIBRARY-F-006",
-          "title": "Pages: buttons, navigation and layout",
-          "size": 5,
-          "phase": "Parity (re-check, loop 1)",
-          "status": "pass; shell-f-032 closed 6 gaps + r179 fold-in matches; 2 deferred"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer LIBRARY-F-006",
-          "start": "2026-11-25T17:05+11:00",
-          "end": "2026-11-25T17:21+11:00"
-        },
-        {
-          "name": "Reviewer LIBRARY-F-006",
-          "start": "2026-11-25T17:21+11:00",
-          "end": "2026-11-25T17:24+11:00"
-        },
-        {
-          "name": "Merge main (134c551) before Parity",
-          "start": "2026-11-25T17:35+11:00",
-          "end": "2026-11-25T17:35+11:00"
-        },
-        {
-          "name": "Parity LIBRARY-F-006",
-          "start": "2026-11-25T17:35+11:00",
-          "end": "2026-11-25T18:07+11:00"
-        },
-        {
-          "name": "Developer (retry 1) LIBRARY-F-006",
-          "start": "2026-11-25T18:07+11:00",
-          "end": "2026-11-25T18:10+11:00"
-        },
-        {
-          "name": "Reviewer (retry 1) LIBRARY-F-006",
-          "start": "2026-11-25T18:10+11:00",
-          "end": "2026-11-25T18:11+11:00"
-        },
-        {
-          "name": "Developer (adopt SHELL-F-032 primary-icon) LIBRARY-F-006",
-          "start": "2026-11-25T18:30+11:00",
-          "end": "2026-11-25T18:32+11:00"
-        },
-        {
-          "name": "Parity (re-check, loop 1) LIBRARY-F-006",
-          "start": "2026-11-26T18:47+11:00",
-          "end": "2026-11-26T18:56+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-26T18:56+11:00",
-          "end": "2026-11-26T18:58+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-26T18:58+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 5,
-      "tokens": 38675228,
-      "costUsd": 40.26,
-      "commits": 0
-    },
     {
       "id": "w-39",
       "packetId": "shell-g15",
@@ -476,13 +389,13 @@
         {
           "name": "Integration",
           "start": "2026-11-26T18:58+11:00",
-          "end": null
+          "end": "2026-11-26T19:02+11:00"
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 9631215,
-      "costUsd": 10.05,
+      "tokens": 10151974,
+      "costUsd": 10.74,
       "commits": 0
     },
     {
@@ -492,14 +405,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:47+11:00",
-      "phase": "Developer",
+      "phase": "Wait: stack window (r202) for the e2e live run",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-011",
           "title": "End-to-end tests",
           "size": 3,
-          "phase": "Developer",
-          "status": "built (tsc, list, format, lint clean; live run pending window)"
+          "phase": "Wait: stack window (r202) for the e2e live run",
+          "status": "running"
         }
       ],
       "steps": [
@@ -507,16 +420,31 @@
           "name": "Developer LIBRARY-F-011",
           "start": "2026-11-26T18:49+11:00",
           "end": "2026-11-26T19:00+11:00"
+        },
+        {
+          "name": "Wait: stack window (r202) for the e2e live run LIBRARY-F-011",
+          "start": "2026-11-26T19:00+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 10007860,
-      "costUsd": 8.38,
+      "tokens": 10900190,
+      "costUsd": 8.99,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "component-library-g5",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-26T19:02+11:00",
+      "items": 1,
+      "points": 5,
+      "minutes": 1560,
+      "tokens": 40190914
+    },
     {
       "packetId": "component-library-g6",
       "component": "component-library",
@@ -706,16 +634,6 @@
       "points": 12,
       "minutes": 76,
       "tokens": 54257548
-    },
-    {
-      "packetId": "idp-g2",
-      "component": "idp",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-23T07:33+11:00",
-      "items": 4,
-      "points": 12,
-      "minutes": 645,
-      "tokens": 25213489
     }
   ]
 }
