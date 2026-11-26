@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:45+11:00",
+  "generatedAt": "2026-11-26T18:47+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -14,22 +14,22 @@
       {
         "name": "shell",
         "pointsDone": 94,
-        "pointsRemaining": 3,
-        "itemsRemaining": 1,
+        "pointsRemaining": 4,
+        "itemsRemaining": 2,
         "state": "building"
       },
       {
         "name": "idp",
-        "pointsDone": 28,
-        "pointsRemaining": 41,
-        "itemsRemaining": 14,
+        "pointsDone": 29,
+        "pointsRemaining": 40,
+        "itemsRemaining": 13,
         "state": "building"
       },
       {
         "name": "component-library",
-        "pointsDone": 21,
-        "pointsRemaining": 13,
-        "itemsRemaining": 5,
+        "pointsDone": 25,
+        "pointsRemaining": 9,
+        "itemsRemaining": 3,
         "state": "building"
       }
     ],
@@ -51,8 +51,8 @@
       },
       {
         "date": "2026-11-26",
-        "done": 143,
-        "total": 200
+        "done": 148,
+        "total": 201
       }
     ],
     "waitingOnPeople": [
@@ -61,6 +61,12 @@
         "what": "Verify SHELL-B-001 to B-006",
         "ref": "SHELL-B-001..006",
         "since": "2026-11-25T17:30:00+11:00"
+      },
+      {
+        "who": "user",
+        "what": "Verify SHELL-B-007 theme toggle",
+        "ref": "SHELL-B-007",
+        "since": "2026-11-26T19:00:00+11:00"
       },
       {
         "who": "user",
@@ -91,6 +97,12 @@
         "what": "Strict look check on shell",
         "ref": "parity-shell",
         "since": "2026-11-25T12:00:00+11:00"
+      },
+      {
+        "who": "user",
+        "what": "Strict look check on component-library",
+        "ref": "parity-component-library",
+        "since": "2026-11-26T19:10:00+11:00"
       },
       {
         "who": "user",
@@ -129,7 +141,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 8,
+        "percentUsed": 9,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -141,8 +153,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 4,
-      "tokens": 24054909,
-      "costUsd": 24.23,
+      "tokens": 25564970,
+      "costUsd": 25.34,
       "minutesWaiting": {
         "hub": 2855,
         "you": 0,
@@ -152,8 +164,8 @@
     "week": {
       "packetsMerged": 29,
       "points": 167,
-      "tokens": 1077728920,
-      "costUsd": 1005.38,
+      "tokens": 1079238981,
+      "costUsd": 1006.49,
       "minutesWaiting": {
         "hub": 3114,
         "you": 131,
@@ -161,9 +173,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6453467,
+      "tokens": 6462509,
       "minutes": 39,
-      "costUsd": 6.02
+      "costUsd": 6.03
     },
     "daily": [
       {
@@ -247,8 +259,8 @@
       {
         "date": "2026-11-26",
         "points": 4,
-        "tokens": 24054909,
-        "costUsd": 24.23
+        "tokens": 25564970,
+        "costUsd": 25.34
       }
     ],
     "tests": {
@@ -312,23 +324,6 @@
               "id": "COMPONENT-LIBRARY-F-006",
               "title": "Pages: buttons, navigation and layout",
               "size": 5
-            }
-          ]
-        },
-        {
-          "id": "component-library-g6",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "COMPONENT-LIBRARY-F-010",
-              "title": "Dashboard page",
-              "size": 3
-            },
-            {
-              "id": "COMPONENT-LIBRARY-F-013",
-              "title": "Block page third crumb",
-              "size": 1
             }
           ]
         },
@@ -415,13 +410,13 @@
       "kind": "orchestrated",
       "state": "waiting on you",
       "startedAt": "2026-11-26T18:35+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-016",
           "title": "Docker Compose deployment",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -446,18 +441,47 @@
         {
           "name": "Developer F-016",
           "start": "2026-11-26T18:38+11:00",
-          "end": null
+          "end": "2026-11-26T18:46+11:00"
         },
         {
           "name": "Reviewer B-007",
           "start": "2026-11-26T18:41+11:00",
           "end": "2026-11-26T18:41+11:00"
+        },
+        {
+          "name": "Reviewer F-016",
+          "start": "2026-11-26T18:46+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 6035128,
-      "costUsd": 6.33,
+      "escalations": 2,
+      "tokens": 6865825,
+      "costUsd": 7.04,
+      "commits": 0
+    },
+    {
+      "id": "w-40",
+      "packetId": "component-library-g7",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-26T18:47+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-F-011",
+          "title": "End-to-end tests",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
