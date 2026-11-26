@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:32+11:00",
+  "generatedAt": "2026-11-26T19:45+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -270,7 +270,7 @@
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-26T19:11+11:00",
+        "at": "2026-11-26T19:45+11:00",
         "result": "green"
       },
       "knownReds": 0
