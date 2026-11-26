@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:00+11:00",
+  "generatedAt": "2026-11-26T20:02+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 30,
+        "percentUsed": 31,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 103207709,
-      "costUsd": 95.12,
+      "tokens": 104551973,
+      "costUsd": 96.34,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1156881720,
-      "costUsd": 1076.27,
+      "tokens": 1158225984,
+      "costUsd": 1077.49,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6463026,
+      "tokens": 6470536,
       "minutes": 42,
-      "costUsd": 6.01
+      "costUsd": 6.02
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 103207709,
-        "costUsd": 95.12
+        "tokens": 104551973,
+        "costUsd": 96.34
       }
     ],
     "tests": {
@@ -399,7 +399,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:47+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-F-033",
@@ -420,7 +420,7 @@
           "title": "Top-bar brand box and sidebar footer sizes differ from the board",
           "size": 1,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -452,13 +452,23 @@
         {
           "name": "Reviewer B-009",
           "start": "2026-11-26T19:59+11:00",
+          "end": "2026-11-26T20:00+11:00"
+        },
+        {
+          "name": "Stack up (slot 3)",
+          "start": "2026-11-26T20:00+11:00",
+          "end": "2026-11-26T20:00+11:00"
+        },
+        {
+          "name": "Parity B-008, SHELL-B-009, SHELL-F-033",
+          "start": "2026-11-26T20:00+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 10970224,
-      "costUsd": 9.87,
+      "tokens": 12314488,
+      "costUsd": 11.08,
       "commits": 0
     }
   ],
