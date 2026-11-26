@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:02+11:00",
+  "generatedAt": "2026-11-26T19:04+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -8,7 +8,7 @@
     "forecast": {
       "likely": "2026-11-28",
       "optimistic": "2026-11-28",
-      "pessimistic": "2026-11-29"
+      "pessimistic": "2026-11-28"
     },
     "components": [
       {
@@ -27,9 +27,9 @@
       },
       {
         "name": "component-library",
-        "pointsDone": 25,
-        "pointsRemaining": 9,
-        "itemsRemaining": 3,
+        "pointsDone": 30,
+        "pointsRemaining": 4,
+        "itemsRemaining": 2,
         "state": "building"
       }
     ],
@@ -51,7 +51,7 @@
       },
       {
         "date": "2026-11-26",
-        "done": 148,
+        "done": 153,
         "total": 201
       }
     ],
@@ -141,7 +141,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 18,
+        "percentUsed": 19,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -153,8 +153,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 9,
-      "tokens": 58140079,
-      "costUsd": 55.36,
+      "tokens": 62722872,
+      "costUsd": 58.67,
       "minutesWaiting": {
         "hub": 2866,
         "you": 6,
@@ -164,8 +164,8 @@
     "week": {
       "packetsMerged": 30,
       "points": 172,
-      "tokens": 1111814090,
-      "costUsd": 1036.51,
+      "tokens": 1116396883,
+      "costUsd": 1039.81,
       "minutesWaiting": {
         "hub": 3125,
         "you": 137,
@@ -173,9 +173,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6464035,
+      "tokens": 6490680,
       "minutes": 43,
-      "costUsd": 6.03
+      "costUsd": 6.05
     },
     "daily": [
       {
@@ -259,8 +259,8 @@
       {
         "date": "2026-11-26",
         "points": 9,
-        "tokens": 58140079,
-        "costUsd": 55.36
+        "tokens": 62722872,
+        "costUsd": 58.67
       }
     ],
     "tests": {
@@ -338,7 +338,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:35+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "SHELL-F-016",
@@ -390,12 +390,22 @@
           "name": "Integration",
           "start": "2026-11-26T18:58+11:00",
           "end": "2026-11-26T19:02+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-26T19:02+11:00",
+          "end": "2026-11-26T19:03+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-26T19:03+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 10151974,
-      "costUsd": 10.74,
+      "tokens": 11117813,
+      "costUsd": 11.81,
       "commits": 0
     },
     {
@@ -403,7 +413,7 @@
       "packetId": "component-library-g7",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-26T18:47+11:00",
       "phase": "Wait: stack window (r202) for the e2e live run",
       "items": [
@@ -429,8 +439,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 10900190,
-      "costUsd": 8.99,
+      "tokens": 12399600,
+      "costUsd": 9.88,
       "commits": 0
     }
   ],
