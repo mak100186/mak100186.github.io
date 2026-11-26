@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:02+11:00",
+  "generatedAt": "2026-11-26T20:04+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 31,
+        "percentUsed": 32,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 104551973,
-      "costUsd": 96.34,
+      "tokens": 115636353,
+      "costUsd": 105.7,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1158225984,
-      "costUsd": 1077.49,
+      "tokens": 1169310364,
+      "costUsd": 1086.85,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6470536,
+      "tokens": 6532460,
       "minutes": 42,
-      "costUsd": 6.02
+      "costUsd": 6.07
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 104551973,
-        "costUsd": 96.34
+        "tokens": 115636353,
+        "costUsd": 105.7
       }
     ],
     "tests": {
@@ -388,8 +388,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3275811,
-      "costUsd": 3.36,
+      "tokens": 12045421,
+      "costUsd": 10.47,
       "commits": 0
     },
     {
@@ -397,7 +397,7 @@
       "packetId": "shell-g16",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on you",
       "startedAt": "2026-11-26T19:47+11:00",
       "phase": "Parity",
       "items": [
@@ -412,14 +412,14 @@
           "id": "SHELL-B-008",
           "title": "The fallback route has an empty breadcrumb bar",
           "size": 1,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "pass"
         },
         {
           "id": "SHELL-B-009",
           "title": "Top-bar brand box and sidebar footer sizes differ from the board",
           "size": 1,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "pass"
         }
       ],
@@ -467,8 +467,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 12314488,
-      "costUsd": 11.08,
+      "tokens": 14170062,
+      "costUsd": 13.09,
       "commits": 0
     }
   ],
