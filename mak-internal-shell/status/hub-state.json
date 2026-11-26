@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:43+11:00",
+  "generatedAt": "2026-11-26T18:45+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -46,6 +46,11 @@
       },
       {
         "date": "2026-11-25",
+        "done": 143,
+        "total": 200
+      },
+      {
+        "date": "2026-11-26",
         "done": 143,
         "total": 200
       }
@@ -124,41 +129,41 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 7,
+        "percentUsed": 8,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 20,
+        "percentUsed": 21,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 0,
-      "points": 0,
-      "tokens": 18448325,
-      "costUsd": 18.27,
+      "packetsMerged": 1,
+      "points": 4,
+      "tokens": 24054909,
+      "costUsd": 24.23,
       "minutesWaiting": {
-        "hub": 2845,
+        "hub": 2855,
         "you": 0,
         "limit": 0
       }
     },
     "week": {
-      "packetsMerged": 28,
-      "points": 163,
-      "tokens": 1072122336,
-      "costUsd": 999.42,
+      "packetsMerged": 29,
+      "points": 167,
+      "tokens": 1077728920,
+      "costUsd": 1005.38,
       "minutesWaiting": {
-        "hub": 3104,
+        "hub": 3114,
         "you": 131,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6577438,
-      "minutes": 34,
-      "costUsd": 6.13
+      "tokens": 6453467,
+      "minutes": 39,
+      "costUsd": 6.02
     },
     "daily": [
       {
@@ -241,9 +246,9 @@
       },
       {
         "date": "2026-11-26",
-        "points": 0,
-        "tokens": 18448325,
-        "costUsd": 18.27
+        "points": 4,
+        "tokens": 24054909,
+        "costUsd": 24.23
       }
     ],
     "tests": {
@@ -348,7 +353,7 @@
       "packetId": "component-library-g5",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
       "phase": "Developer (adopt SHELL-F-032 primary-icon)",
       "items": [
@@ -404,98 +409,6 @@
       "commits": 0
     },
     {
-      "id": "w-36",
-      "packetId": "component-library-g6",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-25T17:36+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "COMPONENT-LIBRARY-F-010",
-          "title": "Dashboard page",
-          "size": 3,
-          "phase": "Parity",
-          "status": "pass (reload check pass with the real idp)"
-        },
-        {
-          "id": "COMPONENT-LIBRARY-F-013",
-          "title": "Block page third crumb",
-          "size": 1,
-          "phase": "Parity",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer LIBRARY-F-010",
-          "start": "2026-11-25T17:38+11:00",
-          "end": "2026-11-25T17:45+11:00"
-        },
-        {
-          "name": "Developer LIBRARY-F-013",
-          "start": "2026-11-25T17:38+11:00",
-          "end": "2026-11-25T17:40+11:00"
-        },
-        {
-          "name": "Reviewer LIBRARY-F-013",
-          "start": "2026-11-25T17:40+11:00",
-          "end": "2026-11-25T17:41+11:00"
-        },
-        {
-          "name": "Reviewer LIBRARY-F-010",
-          "start": "2026-11-25T17:45+11:00",
-          "end": "2026-11-25T17:46+11:00"
-        },
-        {
-          "name": "Wait: stack window (r174) for Parity F-010/F-013 and the build gate",
-          "start": "2026-11-25T17:47+11:00",
-          "end": "2026-11-25T18:35+11:00"
-        },
-        {
-          "name": "Stack: make up (slot 3, real idp)",
-          "start": "2026-11-25T18:35+11:00",
-          "end": "2026-11-25T18:46+11:00"
-        },
-        {
-          "name": "Parity LIBRARY-F-010",
-          "start": "2026-11-25T18:46+11:00",
-          "end": "2026-11-25T19:13+11:00"
-        },
-        {
-          "name": "Parity LIBRARY-F-013",
-          "start": "2026-11-25T18:46+11:00",
-          "end": "2026-11-25T19:10+11:00"
-        },
-        {
-          "name": "Live search re-check (r190) + Integration gate (window r193)",
-          "start": "2026-11-26T18:35+11:00",
-          "end": null
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-26T18:37+11:00",
-          "end": "2026-11-26T18:38+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-26T18:39+11:00",
-          "end": "2026-11-26T18:40+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-26T18:40+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 6,
-      "tokens": 31402105,
-      "costUsd": 31.26,
-      "commits": 0
-    },
-    {
       "id": "w-39",
       "packetId": "shell-g15",
       "component": "shell",
@@ -543,12 +456,22 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4095930,
-      "costUsd": 3.96,
+      "tokens": 6035128,
+      "costUsd": 6.33,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "component-library-g6",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-26T18:45+11:00",
+      "items": 2,
+      "points": 4,
+      "minutes": 1510,
+      "tokens": 35069491
+    },
     {
       "packetId": "idp-g9",
       "component": "idp",
@@ -738,16 +661,6 @@
       "points": 12,
       "minutes": 645,
       "tokens": 25213489
-    },
-    {
-      "packetId": "component-library-g1",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-23T07:03+11:00",
-      "items": 1,
-      "points": 2,
-      "minutes": 577,
-      "tokens": 11119054
     }
   ]
 }
