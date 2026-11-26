@@ -142,7 +142,7 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -342,7 +342,39 @@
       ]
     }
   ],
-  "workers": [],
+  "workers": [
+    {
+      "id": "w-41",
+      "packetId": "idp-g10",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-26T19:45+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-F-019",
+          "title": "idp in the Compose stack",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "COMPONENT-LIBRARY-F-012",
+          "title": "The library in the Compose stack",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    }
+  ],
   "recent": [
     {
       "packetId": "component-library-g7",
