@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:58+11:00",
+  "generatedAt": "2026-11-26T20:00+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -150,7 +150,7 @@
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 23,
+        "percentUsed": 24,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 99979235,
-      "costUsd": 92.46,
+      "tokens": 103207709,
+      "costUsd": 95.12,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1153653246,
-      "costUsd": 1073.61,
+      "tokens": 1156881720,
+      "costUsd": 1076.27,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6444990,
+      "tokens": 6463026,
       "minutes": 42,
-      "costUsd": 6
+      "costUsd": 6.01
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 99979235,
-        "costUsd": 92.46
+        "tokens": 103207709,
+        "costUsd": 95.12
       }
     ],
     "tests": {
@@ -399,7 +399,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:47+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-033",
@@ -419,7 +419,7 @@
           "id": "SHELL-B-009",
           "title": "Top-bar brand box and sidebar footer sizes differ from the board",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -447,13 +447,18 @@
         {
           "name": "Developer B-009",
           "start": "2026-11-26T19:54+11:00",
+          "end": "2026-11-26T19:59+11:00"
+        },
+        {
+          "name": "Reviewer B-009",
+          "start": "2026-11-26T19:59+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 7741750,
-      "costUsd": 7.21,
+      "tokens": 10970224,
+      "costUsd": 9.87,
       "commits": 0
     }
   ],
