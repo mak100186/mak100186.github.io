@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:06+11:00",
+  "generatedAt": "2026-11-26T20:08+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 33,
+        "percentUsed": 34,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 117107268,
-      "costUsd": 107.9,
+      "tokens": 119627492,
+      "costUsd": 110.1,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1170781279,
-      "costUsd": 1089.05,
+      "tokens": 1173301503,
+      "costUsd": 1091.24,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6540678,
+      "tokens": 6554757,
       "minutes": 42,
-      "costUsd": 6.08
+      "costUsd": 6.1
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 117107268,
-        "costUsd": 107.9
+        "tokens": 119627492,
+        "costUsd": 110.1
       }
     ],
     "tests": {
@@ -398,8 +398,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 13516336,
-      "costUsd": 12.66,
+      "tokens": 13969715,
+      "costUsd": 12.95,
       "commits": 0
     },
     {
@@ -409,14 +409,14 @@
       "kind": "orchestrated",
       "state": "waiting on you",
       "startedAt": "2026-11-26T19:47+11:00",
-      "phase": "Parity",
+      "phase": "Developer (retry 1)",
       "items": [
         {
           "id": "SHELL-F-033",
           "title": "Shared all-round spacing and caption classes",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Developer (retry 1)",
+          "status": "running"
         },
         {
           "id": "SHELL-B-008",
@@ -473,12 +473,17 @@
           "name": "Parity B-008, SHELL-B-009, SHELL-F-033",
           "start": "2026-11-26T20:00+11:00",
           "end": null
+        },
+        {
+          "name": "Developer (retry 1) F-033",
+          "start": "2026-11-26T20:07+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 14170062,
-      "costUsd": 13.09,
+      "tokens": 16236907,
+      "costUsd": 14.99,
       "commits": 0
     }
   ],
