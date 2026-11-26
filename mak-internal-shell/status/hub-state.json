@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-25T19:14+11:00",
+  "generatedAt": "2026-11-26T18:34+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-11-27",
-      "optimistic": "2026-11-27",
-      "pessimistic": "2026-11-27"
+      "likely": "2026-11-28",
+      "optimistic": "2026-11-28",
+      "pessimistic": "2026-11-29"
     },
     "components": [
       {
@@ -124,8 +124,8 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 56,
-        "resetsAt": "2026-11-25T10:20:00.000Z"
+        "percentUsed": 1,
+        "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
         "percentUsed": 20,
@@ -134,14 +134,14 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 13,
-      "points": 67,
-      "tokens": 520863228,
-      "costUsd": 487.84,
+      "packetsMerged": 0,
+      "points": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "minutesWaiting": {
-        "hub": 209,
-        "you": 11,
-        "limit": 490
+        "hub": 0,
+        "you": 0,
+        "limit": 0
       }
     },
     "week": {
@@ -161,12 +161,6 @@
       "costUsd": 6.02
     },
     "daily": [
-      {
-        "date": "2026-11-12",
-        "points": 0,
-        "tokens": 0,
-        "costUsd": 0
-      },
       {
         "date": "2026-11-13",
         "points": 0,
@@ -244,6 +238,12 @@
         "points": 67,
         "tokens": 520863228,
         "costUsd": 487.84
+      },
+      {
+        "date": "2026-11-26",
+        "points": 0,
+        "tokens": 0,
+        "costUsd": 0
       }
     ],
     "tests": {
