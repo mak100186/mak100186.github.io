@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:18+11:00",
+  "generatedAt": "2026-11-26T20:20+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 36,
+        "percentUsed": 37,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -156,31 +156,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 4,
-      "points": 16,
-      "tokens": 129454964,
-      "costUsd": 120.8,
+      "packetsMerged": 5,
+      "points": 19,
+      "tokens": 133361246,
+      "costUsd": 125.48,
       "minutesWaiting": {
         "hub": 2875,
-        "you": 6,
+        "you": 22,
         "limit": 0
       }
     },
     "week": {
-      "packetsMerged": 32,
-      "points": 179,
-      "tokens": 1183128975,
-      "costUsd": 1101.95,
+      "packetsMerged": 33,
+      "points": 182,
+      "tokens": 1187035257,
+      "costUsd": 1106.63,
       "minutesWaiting": {
         "hub": 3134,
-        "you": 137,
+        "you": 153,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6609659,
-      "minutes": 42,
-      "costUsd": 6.16
+      "tokens": 6522172,
+      "minutes": 41,
+      "costUsd": 6.08
     },
     "daily": [
       {
@@ -263,9 +263,9 @@
       },
       {
         "date": "2026-11-26",
-        "points": 16,
-        "tokens": 129454964,
-        "costUsd": 120.8
+        "points": 19,
+        "tokens": 133361246,
+        "costUsd": 125.48
       }
     ],
     "tests": {
@@ -352,7 +352,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Developer",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-F-019",
@@ -365,8 +365,8 @@
           "id": "COMPONENT-LIBRARY-F-012",
           "title": "The library in the Compose stack",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -394,120 +394,36 @@
           "name": "Developer LIBRARY-F-012",
           "start": "2026-11-26T20:06+11:00",
           "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 0,
-      "tokens": 15493690,
-      "costUsd": 14.83,
-      "commits": 0
-    },
-    {
-      "id": "w-42",
-      "packetId": "shell-g16",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "waiting on you",
-      "startedAt": "2026-11-26T19:47+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-F-033",
-          "title": "Shared all-round spacing and caption classes",
-          "size": 1,
-          "phase": "Parity (retry 1)",
-          "status": "pass (caption 12px/400/16px, rgb(70,71,71) light; tabs 16px all round; stepper 8px top/bottom padding deferred)"
         },
         {
-          "id": "SHELL-B-008",
-          "title": "The fallback route has an empty breadcrumb bar",
-          "size": 1,
-          "phase": "Parity",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-B-009",
-          "title": "Top-bar brand box and sidebar footer sizes differ from the board",
-          "size": 1,
-          "phase": "Parity",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer F-033",
-          "start": "2026-11-26T19:49+11:00",
-          "end": "2026-11-26T19:54+11:00"
-        },
-        {
-          "name": "Developer B-008",
-          "start": "2026-11-26T19:49+11:00",
-          "end": "2026-11-26T19:53+11:00"
-        },
-        {
-          "name": "Reviewer B-008",
-          "start": "2026-11-26T19:53+11:00",
-          "end": "2026-11-26T19:54+11:00"
-        },
-        {
-          "name": "Reviewer F-033",
-          "start": "2026-11-26T19:54+11:00",
-          "end": "2026-11-26T19:55+11:00"
-        },
-        {
-          "name": "Developer B-009",
-          "start": "2026-11-26T19:54+11:00",
-          "end": "2026-11-26T19:59+11:00"
-        },
-        {
-          "name": "Reviewer B-009",
-          "start": "2026-11-26T19:59+11:00",
-          "end": "2026-11-26T20:00+11:00"
-        },
-        {
-          "name": "Stack up (slot 3)",
-          "start": "2026-11-26T20:00+11:00",
-          "end": "2026-11-26T20:00+11:00"
-        },
-        {
-          "name": "Parity B-008, SHELL-B-009, SHELL-F-033",
-          "start": "2026-11-26T20:00+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer (retry 1) F-033",
-          "start": "2026-11-26T20:07+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer (retry 1) F-033",
-          "start": "2026-11-26T20:08+11:00",
-          "end": null
+          "name": "Reviewer LIBRARY-F-012",
+          "start": "2026-11-26T20:18+11:00",
+          "end": "2026-11-26T20:19+11:00"
         },
         {
           "name": "Integration",
-          "start": "2026-11-26T20:10+11:00",
-          "end": "2026-11-26T20:14+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-26T20:14+11:00",
-          "end": "2026-11-26T20:15+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-26T20:15+11:00",
+          "start": "2026-11-26T20:19+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 24540404,
-      "costUsd": 23.82,
+      "tokens": 16333780,
+      "costUsd": 16.5,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g16",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-26T20:19+11:00",
+      "items": 3,
+      "points": 3,
+      "minutes": 33,
+      "tokens": 27606596
+    },
     {
       "packetId": "component-library-g7",
       "component": "component-library",
@@ -697,16 +613,6 @@
       "points": 2,
       "minutes": 12,
       "tokens": 8559140
-    },
-    {
-      "packetId": "idp-g3",
-      "component": "idp",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-23T08:57+11:00",
-      "items": 5,
-      "points": 15,
-      "minutes": 83,
-      "tokens": 59861382
     }
   ]
 }
