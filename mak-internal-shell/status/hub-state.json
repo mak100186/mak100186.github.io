@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:35+11:00",
+  "generatedAt": "2026-11-26T20:37+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -151,7 +151,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 40,
+        "percentUsed": 41,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -163,8 +163,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 19,
-      "tokens": 150748556,
-      "costUsd": 137.94,
+      "tokens": 152823019,
+      "costUsd": 139.95,
       "minutesWaiting": {
         "hub": 2884,
         "you": 22,
@@ -174,8 +174,8 @@
     "week": {
       "packetsMerged": 33,
       "points": 182,
-      "tokens": 1204422567,
-      "costUsd": 1119.09,
+      "tokens": 1206497030,
+      "costUsd": 1121.09,
       "minutesWaiting": {
         "hub": 3143,
         "you": 153,
@@ -183,9 +183,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6617706,
+      "tokens": 6629105,
       "minutes": 41,
-      "costUsd": 6.15
+      "costUsd": 6.16
     },
     "daily": [
       {
@@ -269,8 +269,8 @@
       {
         "date": "2026-11-26",
         "points": 19,
-        "tokens": 150748556,
-        "costUsd": 137.94
+        "tokens": 152823019,
+        "costUsd": 139.95
       }
     ],
     "tests": {
@@ -334,7 +334,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Reviewer",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-019",
@@ -411,12 +411,17 @@
           "name": "Reviewer + Reviewer-Integration LIBRARY-B-001",
           "start": "2026-11-26T20:33+11:00",
           "end": null
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-26T20:35+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 26884920,
-      "costUsd": 24.52,
+      "tokens": 28959383,
+      "costUsd": 26.52,
       "commits": 0
     }
   ],
