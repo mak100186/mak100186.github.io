@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:49+11:00",
+  "generatedAt": "2026-11-26T20:54+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 44,
+        "percentUsed": 45,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 23,
-      "tokens": 162148956,
-      "costUsd": 149.16,
+      "tokens": 167323765,
+      "costUsd": 153.24,
       "minutesWaiting": {
         "hub": 2884,
         "you": 22,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 34,
       "points": 186,
-      "tokens": 1215822967,
-      "costUsd": 1130.31,
+      "tokens": 1220997776,
+      "costUsd": 1134.38,
       "minutesWaiting": {
         "hub": 3143,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6536683,
+      "tokens": 6564504,
       "minutes": 40,
-      "costUsd": 6.08
+      "costUsd": 6.1
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-26",
         "points": 23,
-        "tokens": 162148956,
-        "costUsd": 149.16
+        "tokens": 167323765,
+        "costUsd": 153.24
       }
     ],
     "tests": {
@@ -348,9 +348,9 @@
       "packetId": "direct-2",
       "component": "shell, idp",
       "kind": "direct",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-26T20:47+11:00",
-      "phase": "",
+      "phase": "Gate",
       "items": [
         {
           "id": "HUB-types-node",
@@ -374,11 +374,17 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Gate",
+          "start": "2026-11-26T20:54+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 5174809,
+      "costUsd": 4.07,
       "commits": 0
     }
   ],
