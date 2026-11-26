@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:56+11:00",
+  "generatedAt": "2026-11-26T20:58+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -157,7 +157,7 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -171,31 +171,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 6,
-      "points": 23,
-      "tokens": 167478143,
-      "costUsd": 153.32,
+      "packetsMerged": 7,
+      "points": 26,
+      "tokens": 169709782,
+      "costUsd": 154.73,
       "minutesWaiting": {
-        "hub": 2884,
+        "hub": 2886,
         "you": 22,
         "limit": 0
       }
     },
     "week": {
-      "packetsMerged": 34,
-      "points": 186,
-      "tokens": 1221152154,
-      "costUsd": 1134.47,
+      "packetsMerged": 35,
+      "points": 189,
+      "tokens": 1223383793,
+      "costUsd": 1135.87,
       "minutesWaiting": {
-        "hub": 3143,
+        "hub": 3145,
         "you": 153,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6565334,
-      "minutes": 40,
-      "costUsd": 6.1
+      "tokens": 6472930,
+      "minutes": 39,
+      "costUsd": 6.01
     },
     "daily": [
       {
@@ -278,14 +278,14 @@
       },
       {
         "date": "2026-11-26",
-        "points": 23,
-        "tokens": 167478143,
-        "costUsd": 153.32
+        "points": 26,
+        "tokens": 169709782,
+        "costUsd": 154.73
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-26T20:45+11:00",
+        "at": "2026-11-26T20:57+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -295,30 +295,7 @@
   "queue": [
     {
       "component": "shell",
-      "packets": [
-        {
-          "id": "direct-2",
-          "kind": "direct",
-          "state": "running",
-          "items": [
-            {
-              "id": "HUB-types-node",
-              "title": "Root @types/node; drop idp node-shims",
-              "size": 1
-            },
-            {
-              "id": "HUB-frame-budget",
-              "title": "frame.scss under its 4 kB budget",
-              "size": 1
-            },
-            {
-              "id": "HUB-image-mode-docs",
-              "title": "Shell docs and nginx template for plugin image mode",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "idp",
@@ -342,53 +319,18 @@
       "packets": []
     }
   ],
-  "workers": [
+  "workers": [],
+  "recent": [
     {
-      "id": "w-43",
       "packetId": "direct-2",
       "component": "shell, idp",
       "kind": "direct",
-      "state": "waiting on hub",
-      "startedAt": "2026-11-26T20:47+11:00",
-      "phase": "Gate",
-      "items": [
-        {
-          "id": "HUB-types-node",
-          "title": "Root @types/node devDependency; drop apps/idp/e2e/node-shims.d.ts",
-          "size": 1,
-          "phase": "",
-          "status": "queued"
-        },
-        {
-          "id": "HUB-frame-budget",
-          "title": "Trim apps/shell/src/app/frame/frame.scss under its 4 kB component budget, no visual change",
-          "size": 1,
-          "phase": "",
-          "status": "queued"
-        },
-        {
-          "id": "HUB-image-mode-docs",
-          "title": "Shell docs and nginx template catch up with plugin image mode (idp-g10)",
-          "size": 1,
-          "phase": "",
-          "status": "queued"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Gate",
-          "start": "2026-11-26T20:54+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 5174809,
-      "costUsd": 4.07,
-      "commits": 0
-    }
-  ],
-  "recent": [
+      "mergedAt": "2026-11-26T20:57+11:00",
+      "items": 3,
+      "points": 3,
+      "minutes": 10,
+      "tokens": 6119410
+    },
     {
       "packetId": "idp-g10",
       "component": "idp",
@@ -578,16 +520,6 @@
       "points": 2,
       "minutes": 10,
       "tokens": 5908713
-    },
-    {
-      "packetId": "shell-g9",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-23T09:38+11:00",
-      "items": 4,
-      "points": 9,
-      "minutes": 83,
-      "tokens": 55613777
     }
   ]
 }
