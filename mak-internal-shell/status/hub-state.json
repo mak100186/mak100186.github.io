@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:45+11:00",
+  "generatedAt": "2026-11-26T19:47+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 23,
+        "percentUsed": 24,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -299,14 +299,19 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-next",
+          "id": "idp-g10",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-019",
               "title": "idp in the Compose stack",
               "size": 2
+            },
+            {
+              "id": "COMPONENT-LIBRARY-F-012",
+              "title": "The library in the Compose stack",
+              "size": 1
             }
           ]
         },
@@ -326,20 +331,7 @@
     },
     {
       "component": "component-library",
-      "packets": [
-        {
-          "id": "component-library-next",
-          "kind": "orchestrated",
-          "state": "queued",
-          "items": [
-            {
-              "id": "COMPONENT-LIBRARY-F-012",
-              "title": "The library in the Compose stack",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     }
   ],
   "workers": [
@@ -350,7 +342,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "",
+      "phase": "Start",
       "items": [
         {
           "id": "IDP-F-019",
@@ -362,6 +354,50 @@
         {
           "id": "COMPONENT-LIBRARY-F-012",
           "title": "The library in the Compose stack",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-26T19:46+11:00",
+          "end": "2026-11-26T19:47+11:00"
+        }
+      ],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "w-42",
+      "packetId": "shell-g16",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-26T19:47+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-F-033",
+          "title": "Shared all-round spacing and caption classes",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-008",
+          "title": "The fallback route has an empty breadcrumb bar",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-009",
+          "title": "Top-bar brand box and sidebar footer sizes differ from the board",
           "size": 1,
           "phase": "",
           "status": "queued"
