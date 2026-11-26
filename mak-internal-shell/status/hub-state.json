@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:47+11:00",
+  "generatedAt": "2026-11-26T18:49+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -141,7 +141,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 9,
+        "percentUsed": 11,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -153,29 +153,29 @@
     "today": {
       "packetsMerged": 1,
       "points": 4,
-      "tokens": 25564970,
-      "costUsd": 25.34,
+      "tokens": 31707444,
+      "costUsd": 31.21,
       "minutesWaiting": {
         "hub": 2855,
-        "you": 0,
+        "you": 6,
         "limit": 0
       }
     },
     "week": {
       "packetsMerged": 29,
       "points": 167,
-      "tokens": 1079238981,
-      "costUsd": 1006.49,
+      "tokens": 1085381455,
+      "costUsd": 1012.36,
       "minutesWaiting": {
         "hub": 3114,
-        "you": 131,
+        "you": 137,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6462509,
+      "tokens": 6499290,
       "minutes": 39,
-      "costUsd": 6.03
+      "costUsd": 6.06
     },
     "daily": [
       {
@@ -259,8 +259,8 @@
       {
         "date": "2026-11-26",
         "points": 4,
-        "tokens": 25564970,
-        "costUsd": 25.34
+        "tokens": 31707444,
+        "costUsd": 31.21
       }
     ],
     "tests": {
@@ -328,9 +328,9 @@
           ]
         },
         {
-          "id": "component-library-next",
+          "id": "component-library-g7",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "COMPONENT-LIBRARY-F-011",
@@ -350,14 +350,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Developer (adopt SHELL-F-032 primary-icon)",
+      "phase": "Parity (re-check, loop 1)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-006",
           "title": "Pages: buttons, navigation and layout",
           "size": 5,
-          "phase": "Developer (adopt SHELL-F-032 primary-icon)",
-          "status": "done, 104 tests green; diff checked by worker"
+          "phase": "Parity (re-check, loop 1)",
+          "status": "running"
         }
       ],
       "steps": [
@@ -395,12 +395,17 @@
           "name": "Developer (adopt SHELL-F-032 primary-icon) LIBRARY-F-006",
           "start": "2026-11-25T18:30+11:00",
           "end": "2026-11-25T18:32+11:00"
+        },
+        {
+          "name": "Parity (re-check, loop 1) LIBRARY-F-006",
+          "start": "2026-11-26T18:47+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 4,
-      "tokens": 26716169,
-      "costUsd": 28.12,
+      "escalations": 5,
+      "tokens": 30438979,
+      "costUsd": 31.42,
       "commits": 0
     },
     {
@@ -408,7 +413,7 @@
       "packetId": "shell-g15",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "waiting on you",
+      "state": "waiting on hub",
       "startedAt": "2026-11-26T18:35+11:00",
       "phase": "Reviewer",
       "items": [
@@ -417,7 +422,7 @@
           "title": "Docker Compose deployment",
           "size": 3,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass (runtime smoke test pending stack window)"
         },
         {
           "id": "SHELL-B-007",
@@ -451,13 +456,13 @@
         {
           "name": "Reviewer F-016",
           "start": "2026-11-26T18:46+11:00",
-          "end": null
+          "end": "2026-11-26T18:48+11:00"
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 6865825,
-      "costUsd": 7.04,
+      "tokens": 8256939,
+      "costUsd": 8.47,
       "commits": 0
     },
     {
