@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:21+11:00",
+  "generatedAt": "2026-11-26T19:23+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 13,
-      "tokens": 76508535,
-      "costUsd": 70.85,
+      "tokens": 77036503,
+      "costUsd": 71.41,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 31,
       "points": 176,
-      "tokens": 1130182546,
-      "costUsd": 1052,
+      "tokens": 1130710514,
+      "costUsd": 1052.56,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,7 +178,7 @@
       }
     },
     "perPoint": {
-      "tokens": 6421492,
+      "tokens": 6424492,
       "minutes": 42,
       "costUsd": 5.98
     },
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 13,
-        "tokens": 76508535,
-        "costUsd": 70.85
+        "tokens": 77036503,
+        "costUsd": 71.41
       }
     ],
     "tests": {
@@ -362,14 +362,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:47+11:00",
-      "phase": "Wait:",
+      "phase": "Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-011",
           "title": "End-to-end tests",
           "size": 3,
           "phase": "Reviewer",
-          "status": "fail (3 doc issues from the merge resolution; code and e2e 5/5 pass)"
+          "status": "pass (loop 1)"
         }
       ],
       "steps": [
@@ -392,12 +392,17 @@
           "name": "Reviewer LIBRARY-F-011",
           "start": "2026-11-26T19:18+11:00",
           "end": "2026-11-26T19:21+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-26T19:21+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 17164420,
-      "costUsd": 13.31,
+      "tokens": 17692388,
+      "costUsd": 13.86,
       "commits": 0
     }
   ],
