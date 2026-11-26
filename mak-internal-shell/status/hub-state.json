@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:33+11:00",
+  "generatedAt": "2026-11-26T20:35+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -151,7 +151,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 39,
+        "percentUsed": 40,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -163,8 +163,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 19,
-      "tokens": 146232360,
-      "costUsd": 134.42,
+      "tokens": 150748556,
+      "costUsd": 137.94,
       "minutesWaiting": {
         "hub": 2884,
         "you": 22,
@@ -174,8 +174,8 @@
     "week": {
       "packetsMerged": 33,
       "points": 182,
-      "tokens": 1199906371,
-      "costUsd": 1115.56,
+      "tokens": 1204422567,
+      "costUsd": 1119.09,
       "minutesWaiting": {
         "hub": 3143,
         "you": 153,
@@ -183,9 +183,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6592892,
+      "tokens": 6617706,
       "minutes": 41,
-      "costUsd": 6.13
+      "costUsd": 6.15
     },
     "daily": [
       {
@@ -269,8 +269,8 @@
       {
         "date": "2026-11-26",
         "points": 19,
-        "tokens": 146232360,
-        "costUsd": 134.42
+        "tokens": 150748556,
+        "costUsd": 137.94
       }
     ],
     "tests": {
@@ -334,7 +334,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-F-019",
@@ -385,7 +385,7 @@
         {
           "name": "Integration",
           "start": "2026-11-26T20:19+11:00",
-          "end": null
+          "end": "2026-11-26T20:35+11:00"
         },
         {
           "name": "Merge main (0086031)",
@@ -406,12 +406,17 @@
           "name": "Integration window: build PASS, e2e idp 7/7, e2e component-library 4/5 (r217, shell-g16 breadcrumb); now make publish + make up STACK=image",
           "start": "2026-11-26T20:28+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer + Reviewer-Integration LIBRARY-B-001",
+          "start": "2026-11-26T20:33+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 22368724,
-      "costUsd": 20.99,
+      "tokens": 26884920,
+      "costUsd": 24.52,
       "commits": 0
     }
   ],
