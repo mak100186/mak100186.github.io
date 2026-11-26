@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:52+11:00",
+  "generatedAt": "2026-11-26T19:54+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 27,
+        "percentUsed": 28,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 92497236,
-      "costUsd": 85.45,
+      "tokens": 97242808,
+      "costUsd": 89.88,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1146171247,
-      "costUsd": 1066.6,
+      "tokens": 1150916819,
+      "costUsd": 1071.03,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6403191,
+      "tokens": 6429703,
       "minutes": 42,
-      "costUsd": 5.96
+      "costUsd": 5.98
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 92497236,
-        "costUsd": 85.45
+        "tokens": 97242808,
+        "costUsd": 89.88
       }
     ],
     "tests": {
@@ -405,40 +405,55 @@
           "id": "SHELL-F-033",
           "title": "Shared all-round spacing and caption classes",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
           "id": "SHELL-B-008",
           "title": "The fallback route has an empty breadcrumb bar",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         },
         {
           "id": "SHELL-B-009",
           "title": "Top-bar brand box and sidebar footer sizes differ from the board",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
         {
           "name": "Developer F-033",
           "start": "2026-11-26T19:49+11:00",
-          "end": null
+          "end": "2026-11-26T19:54+11:00"
         },
         {
           "name": "Developer B-008",
           "start": "2026-11-26T19:49+11:00",
+          "end": "2026-11-26T19:53+11:00"
+        },
+        {
+          "name": "Reviewer B-008",
+          "start": "2026-11-26T19:53+11:00",
+          "end": "2026-11-26T19:54+11:00"
+        },
+        {
+          "name": "Reviewer F-033",
+          "start": "2026-11-26T19:54+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer B-009",
+          "start": "2026-11-26T19:54+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1552606,
-      "costUsd": 1.46,
+      "tokens": 6298178,
+      "costUsd": 5.89,
       "commits": 0
     }
   ],
