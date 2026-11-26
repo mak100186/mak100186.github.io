@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:04+11:00",
+  "generatedAt": "2026-11-26T20:06+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 32,
+        "percentUsed": 33,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 115636353,
-      "costUsd": 105.7,
+      "tokens": 117107268,
+      "costUsd": 107.9,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1169310364,
-      "costUsd": 1086.85,
+      "tokens": 1170781279,
+      "costUsd": 1089.05,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6532460,
+      "tokens": 6540678,
       "minutes": 42,
-      "costUsd": 6.07
+      "costUsd": 6.08
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 115636353,
-        "costUsd": 105.7
+        "tokens": 117107268,
+        "costUsd": 107.9
       }
     ],
     "tests": {
@@ -352,21 +352,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Wait: Developer IDP-F-019",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-019",
           "title": "idp in the Compose stack",
           "size": 2,
-          "phase": "Wait: Developer IDP-F-019",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         },
         {
           "id": "COMPONENT-LIBRARY-F-012",
           "title": "The library in the Compose stack",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -378,18 +378,28 @@
         {
           "name": "Developer F-019",
           "start": "2026-11-26T19:48+11:00",
-          "end": null
+          "end": "2026-11-26T20:04+11:00"
         },
         {
           "name": "Wait: Developer IDP-F-019 F-019",
           "start": "2026-11-26T19:49+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer F-019",
+          "start": "2026-11-26T20:04+11:00",
+          "end": "2026-11-26T20:06+11:00"
+        },
+        {
+          "name": "Developer LIBRARY-F-012",
+          "start": "2026-11-26T20:06+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 12045421,
-      "costUsd": 10.47,
+      "tokens": 13516336,
+      "costUsd": 12.66,
       "commits": 0
     },
     {
