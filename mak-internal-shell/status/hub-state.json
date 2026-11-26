@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:58+11:00",
+  "generatedAt": "2026-11-27T07:05+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
-      "likely": "2026-11-28",
-      "optimistic": "2026-11-27",
-      "pessimistic": "2026-11-28"
+      "likely": "2026-11-29",
+      "optimistic": "2026-11-28",
+      "pessimistic": "2026-11-29"
     },
     "components": [
       {
@@ -161,31 +161,31 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 45,
-        "resetsAt": "2026-11-26T12:30:00.000Z"
+        "percentUsed": 1,
+        "resetsAt": "2026-11-27T01:00:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 25,
+        "percentUsed": 26,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 7,
-      "points": 26,
-      "tokens": 169709782,
-      "costUsd": 154.73,
+      "packetsMerged": 0,
+      "points": 0,
+      "tokens": 330205,
+      "costUsd": 1.13,
       "minutesWaiting": {
-        "hub": 2886,
-        "you": 22,
+        "hub": 0,
+        "you": 0,
         "limit": 0
       }
     },
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1223383793,
-      "costUsd": 1135.87,
+      "tokens": 1223713998,
+      "costUsd": 1137.01,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,17 +193,11 @@
       }
     },
     "perPoint": {
-      "tokens": 6472930,
+      "tokens": 6474677,
       "minutes": 39,
-      "costUsd": 6.01
+      "costUsd": 6.02
     },
     "daily": [
-      {
-        "date": "2026-11-13",
-        "points": 0,
-        "tokens": 0,
-        "costUsd": 0
-      },
       {
         "date": "2026-11-14",
         "points": 0,
@@ -281,6 +275,12 @@
         "points": 26,
         "tokens": 169709782,
         "costUsd": 154.73
+      },
+      {
+        "date": "2026-11-27",
+        "points": 0,
+        "tokens": 330205,
+        "costUsd": 1.13
       }
     ],
     "tests": {
