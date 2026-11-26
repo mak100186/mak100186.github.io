@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:49+11:00",
+  "generatedAt": "2026-11-26T18:51+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -141,7 +141,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 11,
+        "percentUsed": 12,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -153,8 +153,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 4,
-      "tokens": 31707444,
-      "costUsd": 31.21,
+      "tokens": 35427372,
+      "costUsd": 34.27,
       "minutesWaiting": {
         "hub": 2855,
         "you": 6,
@@ -164,8 +164,8 @@
     "week": {
       "packetsMerged": 29,
       "points": 167,
-      "tokens": 1085381455,
-      "costUsd": 1012.36,
+      "tokens": 1089101383,
+      "costUsd": 1015.42,
       "minutesWaiting": {
         "hub": 3114,
         "you": 137,
@@ -173,9 +173,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6499290,
+      "tokens": 6521565,
       "minutes": 39,
-      "costUsd": 6.06
+      "costUsd": 6.08
     },
     "daily": [
       {
@@ -259,8 +259,8 @@
       {
         "date": "2026-11-26",
         "points": 4,
-        "tokens": 31707444,
-        "costUsd": 31.21
+        "tokens": 35427372,
+        "costUsd": 34.27
       }
     ],
     "tests": {
@@ -404,8 +404,8 @@
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 30438979,
-      "costUsd": 31.42,
+      "tokens": 31384231,
+      "costUsd": 32.19,
       "commits": 0
     },
     {
@@ -472,21 +472,27 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:47+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-011",
           "title": "End-to-end tests",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer LIBRARY-F-011",
+          "start": "2026-11-26T18:49+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 2511505,
+      "costUsd": 2.15,
       "commits": 0
     }
   ],
