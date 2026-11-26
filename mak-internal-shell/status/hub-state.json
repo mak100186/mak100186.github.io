@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:19+11:00",
+  "generatedAt": "2026-11-26T19:21+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 13,
-      "tokens": 74544192,
-      "costUsd": 69.09,
+      "tokens": 76508535,
+      "costUsd": 70.85,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 31,
       "points": 176,
-      "tokens": 1128218203,
-      "costUsd": 1050.24,
+      "tokens": 1130182546,
+      "costUsd": 1052,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6410331,
+      "tokens": 6421492,
       "minutes": 42,
-      "costUsd": 5.97
+      "costUsd": 5.98
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 13,
-        "tokens": 74544192,
-        "costUsd": 69.09
+        "tokens": 76508535,
+        "costUsd": 70.85
       }
     ],
     "tests": {
@@ -362,14 +362,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:47+11:00",
-      "phase": "Reviewer",
+      "phase": "Wait:",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-011",
           "title": "End-to-end tests",
           "size": 3,
-          "phase": "Live e2e run (window r202)",
-          "status": "pass: build green; e2e 5/5 twice after a 3-line locator fix; window kept for reviewer and integration gate"
+          "phase": "Reviewer",
+          "status": "fail (3 doc issues from the merge resolution; code and e2e 5/5 pass)"
         }
       ],
       "steps": [
@@ -391,13 +391,13 @@
         {
           "name": "Reviewer LIBRARY-F-011",
           "start": "2026-11-26T19:18+11:00",
-          "end": null
+          "end": "2026-11-26T19:21+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 15200077,
-      "costUsd": 11.54,
+      "tokens": 17164420,
+      "costUsd": 13.31,
       "commits": 0
     }
   ],
