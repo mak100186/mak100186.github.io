@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:35+11:00",
+  "generatedAt": "2026-11-26T18:37+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -124,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 2,
+        "percentUsed": 4,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -136,10 +136,10 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 528168,
-      "costUsd": 1.3,
+      "tokens": 6044363,
+      "costUsd": 6.86,
       "minutesWaiting": {
-        "hub": 1401,
+        "hub": 2845,
         "you": 0,
         "limit": 0
       }
@@ -147,18 +147,18 @@
     "week": {
       "packetsMerged": 28,
       "points": 163,
-      "tokens": 1054202179,
-      "costUsd": 982.45,
+      "tokens": 1059718374,
+      "costUsd": 988.01,
       "minutesWaiting": {
-        "hub": 1660,
+        "hub": 3104,
         "you": 131,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6467498,
+      "tokens": 6501340,
       "minutes": 34,
-      "costUsd": 6.03
+      "costUsd": 6.06
     },
     "daily": [
       {
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-26",
         "points": 0,
-        "tokens": 528168,
-        "costUsd": 1.3
+        "tokens": 6044363,
+        "costUsd": 6.86
       }
     ],
     "tests": {
@@ -260,14 +260,19 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-next",
+          "id": "shell-g15",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-F-016",
               "title": "Docker Compose deployment",
               "size": 3
+            },
+            {
+              "id": "SHELL-B-007",
+              "title": "A permission change can undo an unsaved Dark theme toggle",
+              "size": 1
             }
           ]
         }
@@ -394,8 +399,8 @@
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 26523685,
-      "costUsd": 27.07,
+      "tokens": 26716169,
+      "costUsd": 28.12,
       "commits": 0
     },
     {
@@ -403,9 +408,9 @@
       "packetId": "component-library-g6",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-25T17:36+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-010",
@@ -462,6 +467,16 @@
           "name": "Parity LIBRARY-F-013",
           "start": "2026-11-25T18:46+11:00",
           "end": "2026-11-25T19:10+11:00"
+        },
+        {
+          "name": "Live search re-check (r190) + Integration gate (window r193)",
+          "start": "2026-11-26T18:35+11:00",
+          "end": null
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-26T18:37+11:00",
+          "end": null
         }
       ],
       "loops": 0,
@@ -477,7 +492,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:35+11:00",
-      "phase": "",
+      "phase": "Start",
       "items": [
         {
           "id": "SHELL-F-016",
@@ -494,9 +509,15 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-26T18:36+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 1,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
