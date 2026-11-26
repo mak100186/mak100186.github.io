@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:56+11:00",
+  "generatedAt": "2026-11-26T18:58+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -141,11 +141,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 13,
+        "percentUsed": 16,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 21,
+        "percentUsed": 22,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -153,10 +153,10 @@
     "today": {
       "packetsMerged": 1,
       "points": 4,
-      "tokens": 38436915,
-      "costUsd": 37.13,
+      "tokens": 41188013,
+      "costUsd": 40.54,
       "minutesWaiting": {
-        "hub": 2855,
+        "hub": 2864,
         "you": 6,
         "limit": 0
       }
@@ -164,18 +164,18 @@
     "week": {
       "packetsMerged": 29,
       "points": 167,
-      "tokens": 1092110926,
-      "costUsd": 1018.27,
+      "tokens": 1094862024,
+      "costUsd": 1021.69,
       "minutesWaiting": {
-        "hub": 3114,
+        "hub": 3123,
         "you": 137,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6539586,
+      "tokens": 6556060,
       "minutes": 39,
-      "costUsd": 6.1
+      "costUsd": 6.12
     },
     "daily": [
       {
@@ -259,8 +259,8 @@
       {
         "date": "2026-11-26",
         "points": 4,
-        "tokens": 38436915,
-        "costUsd": 37.13
+        "tokens": 41188013,
+        "costUsd": 40.54
       }
     ],
     "tests": {
@@ -350,7 +350,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Parity (re-check, loop 1)",
+      "phase": "Integration",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-006",
@@ -400,12 +400,17 @@
           "name": "Parity (re-check, loop 1) LIBRARY-F-006",
           "start": "2026-11-26T18:47+11:00",
           "end": "2026-11-26T18:56+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-26T18:56+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 34393774,
-      "costUsd": 35.04,
+      "tokens": 36220455,
+      "costUsd": 37.4,
       "commits": 0
     },
     {
@@ -413,16 +418,16 @@
       "packetId": "shell-g15",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-26T18:35+11:00",
-      "phase": "Reviewer",
+      "phase": "Smoke test",
       "items": [
         {
           "id": "SHELL-F-016",
           "title": "Docker Compose deployment",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass (runtime smoke test pending stack window)"
+          "phase": "Smoke test",
+          "status": "running"
         },
         {
           "id": "SHELL-B-007",
@@ -457,6 +462,11 @@
           "name": "Reviewer F-016",
           "start": "2026-11-26T18:46+11:00",
           "end": "2026-11-26T18:48+11:00"
+        },
+        {
+          "name": "Smoke test F-016",
+          "start": "2026-11-26T18:56+11:00",
+          "end": null
         }
       ],
       "loops": 0,
@@ -491,8 +501,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 2511505,
-      "costUsd": 2.15,
+      "tokens": 2630763,
+      "costUsd": 2.74,
       "commits": 0
     }
   ],
