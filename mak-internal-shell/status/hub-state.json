@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:39+11:00",
+  "generatedAt": "2026-11-26T18:41+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -124,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 5,
+        "percentUsed": 6,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -136,8 +136,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 12862639,
-      "costUsd": 12.02,
+      "tokens": 15784478,
+      "costUsd": 15.37,
       "minutesWaiting": {
         "hub": 2845,
         "you": 0,
@@ -147,8 +147,8 @@
     "week": {
       "packetsMerged": 28,
       "points": 163,
-      "tokens": 1066536650,
-      "costUsd": 993.17,
+      "tokens": 1069458489,
+      "costUsd": 996.52,
       "minutesWaiting": {
         "hub": 3104,
         "you": 131,
@@ -156,9 +156,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6543170,
+      "tokens": 6561095,
       "minutes": 34,
-      "costUsd": 6.09
+      "costUsd": 6.11
     },
     "daily": [
       {
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-26",
         "points": 0,
-        "tokens": 12862639,
-        "costUsd": 12.02
+        "tokens": 15784478,
+        "costUsd": 15.37
       }
     ],
     "tests": {
@@ -410,7 +410,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:36+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-010",
@@ -481,13 +481,18 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-26T18:39+11:00",
+          "end": "2026-11-26T18:40+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-26T18:40+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 6,
-      "tokens": 28141332,
-      "costUsd": 27.2,
+      "tokens": 30040796,
+      "costUsd": 29.34,
       "commits": 0
     },
     {
@@ -497,7 +502,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:35+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-F-016",
@@ -510,7 +515,7 @@
           "id": "SHELL-B-007",
           "title": "A permission change can undo an unsaved Dark theme toggle",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -523,18 +528,23 @@
         {
           "name": "Developer B-007",
           "start": "2026-11-26T18:38+11:00",
-          "end": null
+          "end": "2026-11-26T18:41+11:00"
         },
         {
           "name": "Developer F-016",
           "start": "2026-11-26T18:38+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer B-007",
+          "start": "2026-11-26T18:41+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 2266820,
-      "costUsd": 2.04,
+      "tokens": 3289195,
+      "costUsd": 3.25,
       "commits": 0
     }
   ],
