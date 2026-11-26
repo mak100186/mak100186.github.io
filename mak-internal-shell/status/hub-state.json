@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:45+11:00",
+  "generatedAt": "2026-11-26T20:47+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -157,7 +157,7 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -319,7 +319,46 @@
       "packets": []
     }
   ],
-  "workers": [],
+  "workers": [
+    {
+      "id": "w-43",
+      "packetId": "direct-2",
+      "component": "shell, idp",
+      "kind": "direct",
+      "state": "running",
+      "startedAt": "2026-11-26T20:47+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "HUB-types-node",
+          "title": "Root @types/node devDependency; drop apps/idp/e2e/node-shims.d.ts",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "HUB-frame-budget",
+          "title": "Trim apps/shell/src/app/frame/frame.scss under its 4 kB component budget, no visual change",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "HUB-image-mode-docs",
+          "title": "Shell docs and nginx template catch up with plugin image mode (idp-g10)",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    }
+  ],
   "recent": [
     {
       "packetId": "idp-g10",
