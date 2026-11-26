@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:27+11:00",
+  "generatedAt": "2026-11-26T19:29+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -142,24 +142,24 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 22,
+        "percentUsed": 23,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 22,
+        "percentUsed": 23,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 3,
-      "points": 13,
-      "tokens": 80536240,
-      "costUsd": 75.12,
+      "packetsMerged": 4,
+      "points": 16,
+      "tokens": 82680698,
+      "costUsd": 77.33,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -167,10 +167,10 @@
       }
     },
     "week": {
-      "packetsMerged": 31,
-      "points": 176,
-      "tokens": 1134210251,
-      "costUsd": 1056.26,
+      "packetsMerged": 32,
+      "points": 179,
+      "tokens": 1136354709,
+      "costUsd": 1058.47,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6444376,
+      "tokens": 6348350,
       "minutes": 42,
-      "costUsd": 6
+      "costUsd": 5.91
     },
     "daily": [
       {
@@ -263,9 +263,9 @@
       },
       {
         "date": "2026-11-26",
-        "points": 13,
-        "tokens": 80536240,
-        "costUsd": 75.12
+        "points": 16,
+        "tokens": 82680698,
+        "costUsd": 77.33
       }
     ],
     "tests": {
@@ -328,18 +328,6 @@
       "component": "component-library",
       "packets": [
         {
-          "id": "component-library-g7",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "COMPONENT-LIBRARY-F-011",
-              "title": "End-to-end tests",
-              "size": 3
-            }
-          ]
-        },
-        {
           "id": "component-library-next",
           "kind": "orchestrated",
           "state": "queued",
@@ -354,64 +342,18 @@
       ]
     }
   ],
-  "workers": [
+  "workers": [],
+  "recent": [
     {
-      "id": "w-40",
       "packetId": "component-library-g7",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-26T18:47+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "COMPONENT-LIBRARY-F-011",
-          "title": "End-to-end tests",
-          "size": 3,
-          "phase": "Reviewer",
-          "status": "pass (loop 1)"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer LIBRARY-F-011",
-          "start": "2026-11-26T18:49+11:00",
-          "end": "2026-11-26T19:00+11:00"
-        },
-        {
-          "name": "Wait: stack window (r202) for the e2e live run LIBRARY-F-011",
-          "start": "2026-11-26T19:00+11:00",
-          "end": null
-        },
-        {
-          "name": "Live e2e run (window r202) LIBRARY-F-011",
-          "start": "2026-11-26T19:11+11:00",
-          "end": "2026-11-26T19:18+11:00"
-        },
-        {
-          "name": "Reviewer LIBRARY-F-011",
-          "start": "2026-11-26T19:18+11:00",
-          "end": "2026-11-26T19:21+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-26T19:21+11:00",
-          "end": "2026-11-26T19:24+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-26T19:25+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 0,
-      "tokens": 21192125,
-      "costUsd": 17.57,
-      "commits": 0
-    }
-  ],
-  "recent": [
+      "mergedAt": "2026-11-26T19:29+11:00",
+      "items": 1,
+      "points": 3,
+      "minutes": 42,
+      "tokens": 22947821
+    },
     {
       "packetId": "shell-g15",
       "component": "shell",
@@ -601,16 +543,6 @@
       "points": 15,
       "minutes": 83,
       "tokens": 59861382
-    },
-    {
-      "packetId": "direct-1",
-      "component": "shell, idp",
-      "kind": "direct",
-      "mergedAt": "2026-11-23T08:22+11:00",
-      "items": 2,
-      "points": 2,
-      "minutes": 8,
-      "tokens": 2052480
     }
   ]
 }
