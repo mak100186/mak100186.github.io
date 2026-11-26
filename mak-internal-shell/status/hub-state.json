@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:08+11:00",
+  "generatedAt": "2026-11-26T20:10+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 119627492,
-      "costUsd": 110.1,
+      "tokens": 120342230,
+      "costUsd": 111,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1173301503,
-      "costUsd": 1091.24,
+      "tokens": 1174016241,
+      "costUsd": 1092.14,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,7 +178,7 @@
       }
     },
     "perPoint": {
-      "tokens": 6554757,
+      "tokens": 6558750,
       "minutes": 42,
       "costUsd": 6.1
     },
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 119627492,
-        "costUsd": 110.1
+        "tokens": 120342230,
+        "costUsd": 111
       }
     ],
     "tests": {
@@ -409,14 +409,14 @@
       "kind": "orchestrated",
       "state": "waiting on you",
       "startedAt": "2026-11-26T19:47+11:00",
-      "phase": "Developer (retry 1)",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-033",
           "title": "Shared all-round spacing and caption classes",
           "size": 1,
-          "phase": "Developer (retry 1)",
-          "status": "running"
+          "phase": "Parity (retry 1)",
+          "status": "pass (caption 12px/400/16px, rgb(70,71,71) light; tabs 16px all round; stepper 8px top/bottom padding deferred)"
         },
         {
           "id": "SHELL-B-008",
@@ -478,12 +478,22 @@
           "name": "Developer (retry 1) F-033",
           "start": "2026-11-26T20:07+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer (retry 1) F-033",
+          "start": "2026-11-26T20:08+11:00",
+          "end": null
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-26T20:10+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 16236907,
-      "costUsd": 14.99,
+      "tokens": 16951645,
+      "costUsd": 15.89,
       "commits": 0
     }
   ],
