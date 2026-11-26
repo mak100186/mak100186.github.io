@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:20+11:00",
+  "generatedAt": "2026-11-26T20:22+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -13,10 +13,10 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 98,
-        "pointsRemaining": 3,
-        "itemsRemaining": 3,
-        "state": "building"
+        "pointsDone": 101,
+        "pointsRemaining": 0,
+        "itemsRemaining": 0,
+        "state": "waiting"
       },
       {
         "name": "idp",
@@ -51,7 +51,7 @@
       },
       {
         "date": "2026-11-26",
-        "done": 160,
+        "done": 163,
         "total": 204
       }
     ],
@@ -64,8 +64,8 @@
       },
       {
         "who": "user",
-        "what": "Verify SHELL-B-007 theme toggle",
-        "ref": "SHELL-B-007",
+        "what": "Verify SHELL-B-007 to B-009",
+        "ref": "SHELL-B-007..009",
         "since": "2026-11-26T19:00:00+11:00"
       },
       {
@@ -138,6 +138,11 @@
         "name": "component-library Phase 1 done",
         "date": "2026-11-26",
         "kind": "actual"
+      },
+      {
+        "name": "shell backlog items all built",
+        "date": "2026-11-26",
+        "kind": "actual"
       }
     ]
   },
@@ -146,11 +151,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 37,
+        "percentUsed": 38,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 24,
+        "percentUsed": 25,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -158,8 +163,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 19,
-      "tokens": 133361246,
-      "costUsd": 125.48,
+      "tokens": 138062765,
+      "costUsd": 128.39,
       "minutesWaiting": {
         "hub": 2875,
         "you": 22,
@@ -169,8 +174,8 @@
     "week": {
       "packetsMerged": 33,
       "points": 182,
-      "tokens": 1187035257,
-      "costUsd": 1106.63,
+      "tokens": 1191736776,
+      "costUsd": 1109.54,
       "minutesWaiting": {
         "hub": 3134,
         "you": 153,
@@ -178,9 +183,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6522172,
+      "tokens": 6548004,
       "minutes": 41,
-      "costUsd": 6.08
+      "costUsd": 6.1
     },
     "daily": [
       {
@@ -264,8 +269,8 @@
       {
         "date": "2026-11-26",
         "points": 19,
-        "tokens": 133361246,
-        "costUsd": 125.48
+        "tokens": 138062765,
+        "costUsd": 128.39
       }
     ],
     "tests": {
@@ -280,30 +285,7 @@
   "queue": [
     {
       "component": "shell",
-      "packets": [
-        {
-          "id": "shell-g16",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-F-033",
-              "title": "Shared all-round spacing and caption classes",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-008",
-              "title": "The fallback route has an empty breadcrumb bar",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-009",
-              "title": "Top-bar brand box and sidebar footer sizes differ from the board",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "idp",
@@ -352,7 +334,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Integration",
+      "phase": "Merge main (0086031)",
       "items": [
         {
           "id": "IDP-F-019",
@@ -404,12 +386,17 @@
           "name": "Integration",
           "start": "2026-11-26T20:19+11:00",
           "end": null
+        },
+        {
+          "name": "Merge main (0086031)",
+          "start": "2026-11-26T20:20+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 16333780,
-      "costUsd": 16.5,
+      "tokens": 17497737,
+      "costUsd": 17.27,
       "commits": 0
     }
   ],
