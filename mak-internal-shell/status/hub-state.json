@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:41+11:00",
+  "generatedAt": "2026-11-26T18:43+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -124,7 +124,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 6,
+        "percentUsed": 7,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -136,8 +136,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 15784478,
-      "costUsd": 15.37,
+      "tokens": 18448325,
+      "costUsd": 18.27,
       "minutesWaiting": {
         "hub": 2845,
         "you": 0,
@@ -147,8 +147,8 @@
     "week": {
       "packetsMerged": 28,
       "points": 163,
-      "tokens": 1069458489,
-      "costUsd": 996.52,
+      "tokens": 1072122336,
+      "costUsd": 999.42,
       "minutesWaiting": {
         "hub": 3104,
         "you": 131,
@@ -156,9 +156,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6561095,
+      "tokens": 6577438,
       "minutes": 34,
-      "costUsd": 6.11
+      "costUsd": 6.13
     },
     "daily": [
       {
@@ -242,8 +242,8 @@
       {
         "date": "2026-11-26",
         "points": 0,
-        "tokens": 15784478,
-        "costUsd": 15.37
+        "tokens": 18448325,
+        "costUsd": 18.27
       }
     ],
     "tests": {
@@ -491,8 +491,8 @@
       ],
       "loops": 0,
       "escalations": 6,
-      "tokens": 30040796,
-      "costUsd": 29.34,
+      "tokens": 31402105,
+      "costUsd": 31.26,
       "commits": 0
     },
     {
@@ -500,9 +500,9 @@
       "packetId": "shell-g15",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on you",
       "startedAt": "2026-11-26T18:35+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-016",
@@ -516,7 +516,7 @@
           "title": "A permission change can undo an unsaved Dark theme toggle",
           "size": 1,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -538,13 +538,13 @@
         {
           "name": "Reviewer B-007",
           "start": "2026-11-26T18:41+11:00",
-          "end": null
+          "end": "2026-11-26T18:41+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3289195,
-      "costUsd": 3.25,
+      "tokens": 4095930,
+      "costUsd": 3.96,
       "commits": 0
     }
   ],
