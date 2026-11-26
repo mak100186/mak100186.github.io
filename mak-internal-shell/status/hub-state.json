@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:12+11:00",
+  "generatedAt": "2026-11-26T20:14+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 121472661,
-      "costUsd": 111.75,
+      "tokens": 122179460,
+      "costUsd": 112.63,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1175146672,
-      "costUsd": 1092.89,
+      "tokens": 1175853471,
+      "costUsd": 1093.78,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,7 +178,7 @@
       }
     },
     "perPoint": {
-      "tokens": 6565065,
+      "tokens": 6569014,
       "minutes": 42,
       "costUsd": 6.11
     },
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 121472661,
-        "costUsd": 111.75
+        "tokens": 122179460,
+        "costUsd": 112.63
       }
     ],
     "tests": {
@@ -409,7 +409,7 @@
       "kind": "orchestrated",
       "state": "waiting on you",
       "startedAt": "2026-11-26T19:47+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "SHELL-F-033",
@@ -487,13 +487,18 @@
         {
           "name": "Integration",
           "start": "2026-11-26T20:10+11:00",
+          "end": "2026-11-26T20:14+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-26T20:14+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 18082076,
-      "costUsd": 16.64,
+      "tokens": 18788875,
+      "costUsd": 17.53,
       "commits": 0
     }
   ],
