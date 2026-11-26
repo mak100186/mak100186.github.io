@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T18:58+11:00",
+  "generatedAt": "2026-11-26T19:00+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -141,7 +141,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 16,
+        "percentUsed": 17,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -153,8 +153,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 4,
-      "tokens": 41188013,
-      "costUsd": 40.54,
+      "tokens": 52394159,
+      "costUsd": 50.62,
       "minutesWaiting": {
         "hub": 2864,
         "you": 6,
@@ -164,8 +164,8 @@
     "week": {
       "packetsMerged": 29,
       "points": 167,
-      "tokens": 1094862024,
-      "costUsd": 1021.69,
+      "tokens": 1106068170,
+      "costUsd": 1031.77,
       "minutesWaiting": {
         "hub": 3123,
         "you": 137,
@@ -173,9 +173,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6556060,
+      "tokens": 6623163,
       "minutes": 39,
-      "costUsd": 6.12
+      "costUsd": 6.18
     },
     "daily": [
       {
@@ -259,8 +259,8 @@
       {
         "date": "2026-11-26",
         "points": 4,
-        "tokens": 41188013,
-        "costUsd": 40.54
+        "tokens": 52394159,
+        "costUsd": 50.62
       }
     ],
     "tests": {
@@ -350,7 +350,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-25T17:02+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-006",
@@ -404,13 +404,18 @@
         {
           "name": "Integration",
           "start": "2026-11-26T18:56+11:00",
+          "end": "2026-11-26T18:58+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-26T18:58+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 36220455,
-      "costUsd": 37.4,
+      "tokens": 38675228,
+      "costUsd": 40.26,
       "commits": 0
     },
     {
@@ -420,14 +425,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:35+11:00",
-      "phase": "Smoke test",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-016",
           "title": "Docker Compose deployment",
           "size": 3,
           "phase": "Smoke test",
-          "status": "running"
+          "status": "pass (publish, image healthy, spa fallback, no-cache, ro mount, 404 plugins, both clash guards, down keeps volume)"
         },
         {
           "id": "SHELL-B-007",
@@ -466,13 +471,18 @@
         {
           "name": "Smoke test F-016",
           "start": "2026-11-26T18:56+11:00",
+          "end": "2026-11-26T18:58+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-26T18:58+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 8256939,
-      "costUsd": 8.47,
+      "tokens": 9631215,
+      "costUsd": 10.05,
       "commits": 0
     },
     {
@@ -489,20 +499,20 @@
           "title": "End-to-end tests",
           "size": 3,
           "phase": "Developer",
-          "status": "running"
+          "status": "built (tsc, list, format, lint clean; live run pending window)"
         }
       ],
       "steps": [
         {
           "name": "Developer LIBRARY-F-011",
           "start": "2026-11-26T18:49+11:00",
-          "end": null
+          "end": "2026-11-26T19:00+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 2630763,
-      "costUsd": 2.74,
+      "tokens": 10007860,
+      "costUsd": 8.38,
       "commits": 0
     }
   ],
