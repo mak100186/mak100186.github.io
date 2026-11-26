@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:08+11:00",
+  "generatedAt": "2026-11-26T19:10+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
       "likely": "2026-11-28",
-      "optimistic": "2026-11-28",
+      "optimistic": "2026-11-27",
       "pessimistic": "2026-11-28"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 94,
-        "pointsRemaining": 4,
-        "itemsRemaining": 2,
-        "state": "building"
+        "pointsDone": 98,
+        "pointsRemaining": 0,
+        "itemsRemaining": 0,
+        "state": "waiting"
       },
       {
         "name": "idp",
@@ -51,7 +51,7 @@
       },
       {
         "date": "2026-11-26",
-        "done": 153,
+        "done": 157,
         "total": 201
       }
     ],
@@ -133,6 +133,11 @@
         "name": "component-library Phase 0 done",
         "date": "2026-11-25",
         "kind": "actual"
+      },
+      {
+        "name": "shell backlog items all built",
+        "date": "2026-11-26",
+        "kind": "actual"
       }
     ]
   },
@@ -141,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 19,
+        "percentUsed": 20,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -153,10 +158,10 @@
     "today": {
       "packetsMerged": 3,
       "points": 13,
-      "tokens": 67486312,
-      "costUsd": 64.27,
+      "tokens": 71225148,
+      "costUsd": 66.68,
       "minutesWaiting": {
-        "hub": 2866,
+        "hub": 2872,
         "you": 6,
         "limit": 0
       }
@@ -164,18 +169,18 @@
     "week": {
       "packetsMerged": 31,
       "points": 176,
-      "tokens": 1121160323,
-      "costUsd": 1045.42,
+      "tokens": 1124899159,
+      "costUsd": 1047.83,
       "minutesWaiting": {
-        "hub": 3125,
+        "hub": 3131,
         "you": 137,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6370229,
+      "tokens": 6391472,
       "minutes": 42,
-      "costUsd": 5.94
+      "costUsd": 5.95
     },
     "daily": [
       {
@@ -259,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 13,
-        "tokens": 67486312,
-        "costUsd": 64.27
+        "tokens": 71225148,
+        "costUsd": 66.68
       }
     ],
     "tests": {
@@ -277,19 +282,14 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g15",
+          "id": "shell-next",
           "kind": "orchestrated",
-          "state": "running",
+          "state": "queued",
           "items": [
             {
-              "id": "SHELL-F-016",
-              "title": "Docker Compose deployment",
+              "id": "SHELL-PM-009",
+              "title": "PM-009 and PM-010 plus the parity backlog (UI fixes)",
               "size": 3
-            },
-            {
-              "id": "SHELL-B-007",
-              "title": "A permission change can undo an unsaved Dark theme toggle",
-              "size": 1
             }
           ]
         }
@@ -300,6 +300,18 @@
       "packets": [
         {
           "id": "idp-next",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "IDP-F-019",
+              "title": "idp in the Compose stack",
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "idp-held",
           "kind": "orchestrated",
           "state": "held",
           "items": [
@@ -324,6 +336,18 @@
               "id": "COMPONENT-LIBRARY-F-011",
               "title": "End-to-end tests",
               "size": 3
+            }
+          ]
+        },
+        {
+          "id": "component-library-next",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "COMPONENT-LIBRARY-F-012",
+              "title": "The library in the Compose stack",
+              "size": 1
             }
           ]
         }
@@ -362,8 +386,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 12399600,
-      "costUsd": 9.88,
+      "tokens": 13106976,
+      "costUsd": 10.28,
       "commits": 0
     }
   ],
