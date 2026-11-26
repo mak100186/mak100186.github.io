@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:10+11:00",
+  "generatedAt": "2026-11-26T19:12+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -158,10 +158,10 @@
     "today": {
       "packetsMerged": 3,
       "points": 13,
-      "tokens": 71225148,
-      "costUsd": 66.68,
+      "tokens": 72451091,
+      "costUsd": 67.83,
       "minutesWaiting": {
-        "hub": 2872,
+        "hub": 2875,
         "you": 6,
         "limit": 0
       }
@@ -169,18 +169,18 @@
     "week": {
       "packetsMerged": 31,
       "points": 176,
-      "tokens": 1124899159,
-      "costUsd": 1047.83,
+      "tokens": 1126125102,
+      "costUsd": 1048.98,
       "minutesWaiting": {
-        "hub": 3131,
+        "hub": 3134,
         "you": 137,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6391472,
+      "tokens": 6398438,
       "minutes": 42,
-      "costUsd": 5.95
+      "costUsd": 5.96
     },
     "daily": [
       {
@@ -264,13 +264,13 @@
       {
         "date": "2026-11-26",
         "points": 13,
-        "tokens": 71225148,
-        "costUsd": 66.68
+        "tokens": 72451091,
+        "costUsd": 67.83
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-25T18:33+11:00",
+        "at": "2026-11-26T19:11+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -360,15 +360,15 @@
       "packetId": "component-library-g7",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-26T18:47+11:00",
-      "phase": "Wait: stack window (r202) for the e2e live run",
+      "phase": "Live e2e run (window r202)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-011",
           "title": "End-to-end tests",
           "size": 3,
-          "phase": "Wait: stack window (r202) for the e2e live run",
+          "phase": "Live e2e run (window r202)",
           "status": "running"
         }
       ],
@@ -381,6 +381,11 @@
         {
           "name": "Wait: stack window (r202) for the e2e live run LIBRARY-F-011",
           "start": "2026-11-26T19:00+11:00",
+          "end": null
+        },
+        {
+          "name": "Live e2e run (window r202) LIBRARY-F-011",
+          "start": "2026-11-26T19:11+11:00",
           "end": null
         }
       ],
