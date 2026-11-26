@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:22+11:00",
+  "generatedAt": "2026-11-26T20:24+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -163,8 +163,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 19,
-      "tokens": 138062765,
-      "costUsd": 128.39,
+      "tokens": 141190562,
+      "costUsd": 131.44,
       "minutesWaiting": {
         "hub": 2875,
         "you": 22,
@@ -174,8 +174,8 @@
     "week": {
       "packetsMerged": 33,
       "points": 182,
-      "tokens": 1191736776,
-      "costUsd": 1109.54,
+      "tokens": 1194864573,
+      "costUsd": 1112.59,
       "minutesWaiting": {
         "hub": 3134,
         "you": 153,
@@ -183,9 +183,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6548004,
+      "tokens": 6565190,
       "minutes": 41,
-      "costUsd": 6.1
+      "costUsd": 6.11
     },
     "daily": [
       {
@@ -269,13 +269,13 @@
       {
         "date": "2026-11-26",
         "points": 19,
-        "tokens": 138062765,
-        "costUsd": 128.39
+        "tokens": 141190562,
+        "costUsd": 131.44
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-26T19:45+11:00",
+        "at": "2026-11-26T20:23+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -334,7 +334,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Merge main (0086031)",
+      "phase": "Stack window",
       "items": [
         {
           "id": "IDP-F-019",
@@ -391,12 +391,17 @@
           "name": "Merge main (0086031)",
           "start": "2026-11-26T20:20+11:00",
           "end": null
+        },
+        {
+          "name": "Stack window",
+          "start": "2026-11-26T20:23+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 17497737,
-      "costUsd": 17.27,
+      "tokens": 19619008,
+      "costUsd": 19.28,
       "commits": 0
     }
   ],
