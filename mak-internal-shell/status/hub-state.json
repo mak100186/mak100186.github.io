@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:26+11:00",
+  "generatedAt": "2026-11-26T20:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -163,10 +163,10 @@
     "today": {
       "packetsMerged": 5,
       "points": 19,
-      "tokens": 142589506,
-      "costUsd": 132.36,
+      "tokens": 143693075,
+      "costUsd": 132.99,
       "minutesWaiting": {
-        "hub": 2875,
+        "hub": 2878,
         "you": 22,
         "limit": 0
       }
@@ -174,16 +174,16 @@
     "week": {
       "packetsMerged": 33,
       "points": 182,
-      "tokens": 1196263517,
-      "costUsd": 1113.51,
+      "tokens": 1197367086,
+      "costUsd": 1114.14,
       "minutesWaiting": {
-        "hub": 3134,
+        "hub": 3137,
         "you": 153,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 6572876,
+      "tokens": 6578940,
       "minutes": 41,
       "costUsd": 6.12
     },
@@ -269,8 +269,8 @@
       {
         "date": "2026-11-26",
         "points": 19,
-        "tokens": 142589506,
-        "costUsd": 132.36
+        "tokens": 143693075,
+        "costUsd": 132.99
       }
     ],
     "tests": {
@@ -334,7 +334,7 @@
       "kind": "orchestrated",
       "state": "waiting on hub",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Integration window: make build, e2e idp, e2e component-library",
+      "phase": "Integration window: build PASS, e2e idp 7/7, e2e component-library 4/5 (r217, shell-g16 breadcrumb); now make publish + make up STACK=image",
       "items": [
         {
           "id": "IDP-F-019",
@@ -401,12 +401,17 @@
           "name": "Integration window: make build, e2e idp, e2e component-library",
           "start": "2026-11-26T20:25+11:00",
           "end": null
+        },
+        {
+          "name": "Integration window: build PASS, e2e idp 7/7, e2e component-library 4/5 (r217, shell-g16 breadcrumb); now make publish + make up STACK=image",
+          "start": "2026-11-26T20:28+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 20514592,
-      "costUsd": 19.93,
+      "escalations": 1,
+      "tokens": 21618161,
+      "costUsd": 20.56,
       "commits": 0
     }
   ],
