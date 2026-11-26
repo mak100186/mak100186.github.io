@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:54+11:00",
+  "generatedAt": "2026-11-26T19:56+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 28,
+        "percentUsed": 29,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 97242808,
-      "costUsd": 89.88,
+      "tokens": 99979235,
+      "costUsd": 92.46,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1150916819,
-      "costUsd": 1071.03,
+      "tokens": 1153653246,
+      "costUsd": 1073.61,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6429703,
+      "tokens": 6444990,
       "minutes": 42,
-      "costUsd": 5.98
+      "costUsd": 6
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 97242808,
-        "costUsd": 89.88
+        "tokens": 99979235,
+        "costUsd": 92.46
       }
     ],
     "tests": {
@@ -388,8 +388,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 2895128,
-      "costUsd": 2.58,
+      "tokens": 3275811,
+      "costUsd": 3.36,
       "commits": 0
     },
     {
@@ -406,7 +406,7 @@
           "title": "Shared all-round spacing and caption classes",
           "size": 1,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-B-008",
@@ -442,7 +442,7 @@
         {
           "name": "Reviewer F-033",
           "start": "2026-11-26T19:54+11:00",
-          "end": null
+          "end": "2026-11-26T19:55+11:00"
         },
         {
           "name": "Developer B-009",
@@ -452,8 +452,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 6298178,
-      "costUsd": 5.89,
+      "tokens": 7741750,
+      "costUsd": 7.21,
       "commits": 0
     }
   ],
