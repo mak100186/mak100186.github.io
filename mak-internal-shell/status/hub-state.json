@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T20:47+11:00",
+  "generatedAt": "2026-11-26T20:49+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 43,
+        "percentUsed": 44,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 23,
-      "tokens": 160230193,
-      "costUsd": 147.78,
+      "tokens": 162148956,
+      "costUsd": 149.16,
       "minutesWaiting": {
         "hub": 2884,
         "you": 22,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 34,
       "points": 186,
-      "tokens": 1213904204,
-      "costUsd": 1128.93,
+      "tokens": 1215822967,
+      "costUsd": 1130.31,
       "minutesWaiting": {
         "hub": 3143,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6526367,
+      "tokens": 6536683,
       "minutes": 40,
-      "costUsd": 6.07
+      "costUsd": 6.08
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-26",
         "points": 23,
-        "tokens": 160230193,
-        "costUsd": 147.78
+        "tokens": 162148956,
+        "costUsd": 149.16
       }
     ],
     "tests": {
@@ -295,7 +295,30 @@
   "queue": [
     {
       "component": "shell",
-      "packets": []
+      "packets": [
+        {
+          "id": "direct-2",
+          "kind": "direct",
+          "state": "running",
+          "items": [
+            {
+              "id": "HUB-types-node",
+              "title": "Root @types/node; drop idp node-shims",
+              "size": 1
+            },
+            {
+              "id": "HUB-frame-budget",
+              "title": "frame.scss under its 4 kB budget",
+              "size": 1
+            },
+            {
+              "id": "HUB-image-mode-docs",
+              "title": "Shell docs and nginx template for plugin image mode",
+              "size": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "component": "idp",
@@ -353,7 +376,7 @@
       ],
       "steps": [],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 1,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
