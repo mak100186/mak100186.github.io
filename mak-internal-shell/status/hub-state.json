@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:17+11:00",
+  "generatedAt": "2026-11-26T19:19+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 13,
-      "tokens": 72451091,
-      "costUsd": 67.83,
+      "tokens": 74544192,
+      "costUsd": 69.09,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 31,
       "points": 176,
-      "tokens": 1126125102,
-      "costUsd": 1048.98,
+      "tokens": 1128218203,
+      "costUsd": 1050.24,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6398438,
+      "tokens": 6410331,
       "minutes": 42,
-      "costUsd": 5.96
+      "costUsd": 5.97
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 13,
-        "tokens": 72451091,
-        "costUsd": 67.83
+        "tokens": 74544192,
+        "costUsd": 69.09
       }
     ],
     "tests": {
@@ -362,14 +362,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T18:47+11:00",
-      "phase": "Live e2e run (window r202)",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-F-011",
           "title": "End-to-end tests",
           "size": 3,
           "phase": "Live e2e run (window r202)",
-          "status": "running"
+          "status": "pass: build green; e2e 5/5 twice after a 3-line locator fix; window kept for reviewer and integration gate"
         }
       ],
       "steps": [
@@ -386,13 +386,18 @@
         {
           "name": "Live e2e run (window r202) LIBRARY-F-011",
           "start": "2026-11-26T19:11+11:00",
+          "end": "2026-11-26T19:18+11:00"
+        },
+        {
+          "name": "Reviewer LIBRARY-F-011",
+          "start": "2026-11-26T19:18+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 13106976,
-      "costUsd": 10.28,
+      "tokens": 15200077,
+      "costUsd": 11.54,
       "commits": 0
     }
   ],
