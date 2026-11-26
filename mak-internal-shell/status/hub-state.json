@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-26T19:47+11:00",
+  "generatedAt": "2026-11-26T19:50+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -14,9 +14,9 @@
       {
         "name": "shell",
         "pointsDone": 98,
-        "pointsRemaining": 0,
-        "itemsRemaining": 0,
-        "state": "waiting"
+        "pointsRemaining": 3,
+        "itemsRemaining": 3,
+        "state": "building"
       },
       {
         "name": "idp",
@@ -27,9 +27,9 @@
       },
       {
         "name": "component-library",
-        "pointsDone": 30,
-        "pointsRemaining": 4,
-        "itemsRemaining": 2,
+        "pointsDone": 33,
+        "pointsRemaining": 1,
+        "itemsRemaining": 1,
         "state": "building"
       }
     ],
@@ -51,8 +51,8 @@
       },
       {
         "date": "2026-11-26",
-        "done": 157,
-        "total": 201
+        "done": 160,
+        "total": 204
       }
     ],
     "waitingOnPeople": [
@@ -135,7 +135,7 @@
         "kind": "actual"
       },
       {
-        "name": "shell backlog items all built",
+        "name": "component-library Phase 1 done",
         "date": "2026-11-26",
         "kind": "actual"
       }
@@ -146,7 +146,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 24,
+        "percentUsed": 26,
         "resetsAt": "2026-11-26T12:30:00.000Z"
       },
       "sevenDay": {
@@ -158,8 +158,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 16,
-      "tokens": 83122770,
-      "costUsd": 78.04,
+      "tokens": 92497236,
+      "costUsd": 85.45,
       "minutesWaiting": {
         "hub": 2875,
         "you": 6,
@@ -169,8 +169,8 @@
     "week": {
       "packetsMerged": 32,
       "points": 179,
-      "tokens": 1136796781,
-      "costUsd": 1059.19,
+      "tokens": 1146171247,
+      "costUsd": 1066.6,
       "minutesWaiting": {
         "hub": 3134,
         "you": 137,
@@ -178,9 +178,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6350820,
+      "tokens": 6403191,
       "minutes": 42,
-      "costUsd": 5.92
+      "costUsd": 5.96
     },
     "daily": [
       {
@@ -264,8 +264,8 @@
       {
         "date": "2026-11-26",
         "points": 16,
-        "tokens": 83122770,
-        "costUsd": 78.04
+        "tokens": 92497236,
+        "costUsd": 85.45
       }
     ],
     "tests": {
@@ -282,14 +282,24 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-next",
+          "id": "shell-g16",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
-              "id": "SHELL-PM-009",
-              "title": "PM-009 and PM-010 plus the parity backlog (UI fixes)",
-              "size": 3
+              "id": "SHELL-F-033",
+              "title": "Shared all-round spacing and caption classes",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-008",
+              "title": "The fallback route has an empty breadcrumb bar",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-009",
+              "title": "Top-bar brand box and sidebar footer sizes differ from the board",
+              "size": 1
             }
           ]
         }
@@ -342,14 +352,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:45+11:00",
-      "phase": "Start",
+      "phase": "Wait: Developer IDP-F-019",
       "items": [
         {
           "id": "IDP-F-019",
           "title": "idp in the Compose stack",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Wait: Developer IDP-F-019",
+          "status": "running"
         },
         {
           "id": "COMPONENT-LIBRARY-F-012",
@@ -364,12 +374,22 @@
           "name": "Start",
           "start": "2026-11-26T19:46+11:00",
           "end": "2026-11-26T19:47+11:00"
+        },
+        {
+          "name": "Developer F-019",
+          "start": "2026-11-26T19:48+11:00",
+          "end": null
+        },
+        {
+          "name": "Wait: Developer IDP-F-019 F-019",
+          "start": "2026-11-26T19:49+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 2895128,
+      "costUsd": 2.58,
       "commits": 0
     },
     {
@@ -379,21 +399,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-26T19:47+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-033",
           "title": "Shared all-round spacing and caption classes",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-B-008",
           "title": "The fallback route has an empty breadcrumb bar",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-B-009",
@@ -403,11 +423,22 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer F-033",
+          "start": "2026-11-26T19:49+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer B-008",
+          "start": "2026-11-26T19:49+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1552606,
+      "costUsd": 1.46,
       "commits": 0
     }
   ],
