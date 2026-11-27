@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:44+11:00",
+  "generatedAt": "2026-11-28T10:46+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -51,6 +51,11 @@
       },
       {
         "date": "2026-11-26",
+        "done": 167,
+        "total": 205
+      },
+      {
+        "date": "2026-11-28",
         "done": 167,
         "total": 205
       }
@@ -171,31 +176,31 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 0,
-      "points": 0,
-      "tokens": 252764108,
-      "costUsd": 205.93,
+      "packetsMerged": 1,
+      "points": 12,
+      "tokens": 260936902,
+      "costUsd": 214.16,
       "minutesWaiting": {
-        "hub": 3,
+        "hub": 47,
         "you": 0,
         "limit": 0
       }
     },
     "week": {
-      "packetsMerged": 35,
-      "points": 189,
-      "tokens": 1476478106,
-      "costUsd": 1342.94,
+      "packetsMerged": 36,
+      "points": 201,
+      "tokens": 1484650900,
+      "costUsd": 1351.17,
       "minutesWaiting": {
-        "hub": 3149,
+        "hub": 3192,
         "you": 153,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 7812053,
-      "minutes": 39,
-      "costUsd": 7.11
+      "tokens": 7386323,
+      "minutes": 37,
+      "costUsd": 6.72
     },
     "daily": [
       {
@@ -278,9 +283,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 0,
-        "tokens": 252764108,
-        "costUsd": 205.93
+        "points": 12,
+        "tokens": 260936902,
+        "costUsd": 214.16
       }
     ],
     "tests": {
@@ -399,150 +404,6 @@
   ],
   "workers": [
     {
-      "id": "w-44",
-      "packetId": "idp-g11",
-      "component": "idp",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "IDP-F-013",
-          "title": "Admin: users",
-          "size": 5,
-          "phase": "Reviewer + Parity (loop 1)",
-          "status": "pass"
-        },
-        {
-          "id": "IDP-F-015",
-          "title": "Admin: groups, roles and grants",
-          "size": 5,
-          "phase": "Reviewer + Parity (loop 1)",
-          "status": "pass"
-        },
-        {
-          "id": "IDP-F-014",
-          "title": "Admin: a user's effective access",
-          "size": 2,
-          "phase": "Parity",
-          "status": "fail (cause in shell contentcard)"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start: plan waves F-013 -> F-015 -> F-014 (serial, dependsOn)",
-          "start": "2026-11-28T08:33+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-013",
-          "start": "2026-11-28T08:34+11:00",
-          "end": "2026-11-28T09:00+11:00"
-        },
-        {
-          "name": "Reviewer F-013",
-          "start": "2026-11-28T09:01+11:00",
-          "end": "2026-11-28T09:03+11:00"
-        },
-        {
-          "name": "Developer (resume with rulings r225, r227) F-013",
-          "start": "2026-11-28T09:03+11:00",
-          "end": "2026-11-28T09:07+11:00"
-        },
-        {
-          "name": "Reviewer (resume delta) F-013",
-          "start": "2026-11-28T09:07+11:00",
-          "end": "2026-11-28T09:09+11:00"
-        },
-        {
-          "name": "Developer F-015",
-          "start": "2026-11-28T09:09+11:00",
-          "end": "2026-11-28T09:31+11:00"
-        },
-        {
-          "name": "Reviewer F-015",
-          "start": "2026-11-28T09:31+11:00",
-          "end": "2026-11-28T09:33+11:00"
-        },
-        {
-          "name": "Developer F-014",
-          "start": "2026-11-28T09:33+11:00",
-          "end": "2026-11-28T09:42+11:00"
-        },
-        {
-          "name": "Reviewer F-014",
-          "start": "2026-11-28T09:42+11:00",
-          "end": "2026-11-28T09:44+11:00"
-        },
-        {
-          "name": "Integration (pass 1, no stack)",
-          "start": "2026-11-28T09:44+11:00",
-          "end": "2026-11-28T09:48+11:00"
-        },
-        {
-          "name": "Integration pass 2 (stack window: e2e, Postgres tests)",
-          "start": "2026-11-28T09:51+11:00",
-          "end": "2026-11-28T10:01+11:00"
-        },
-        {
-          "name": "Parity F-013",
-          "start": "2026-11-28T10:02+11:00",
-          "end": "2026-11-28T10:24+11:00"
-        },
-        {
-          "name": "Parity F-015",
-          "start": "2026-11-28T10:02+11:00",
-          "end": "2026-11-28T10:31+11:00"
-        },
-        {
-          "name": "Developer (loop 1) F-013",
-          "start": "2026-11-28T10:24+11:00",
-          "end": "2026-11-28T10:26+11:00"
-        },
-        {
-          "name": "Reviewer + Parity (loop 1) F-013",
-          "start": "2026-11-28T10:26+11:00",
-          "end": "2026-11-28T10:27+11:00"
-        },
-        {
-          "name": "Parity F-014",
-          "start": "2026-11-28T10:26+11:00",
-          "end": "2026-11-28T10:35+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-28T10:27+11:00",
-          "end": "2026-11-28T10:28+11:00"
-        },
-        {
-          "name": "Developer (loop 1) F-015",
-          "start": "2026-11-28T10:31+11:00",
-          "end": "2026-11-28T10:33+11:00"
-        },
-        {
-          "name": "Reviewer + Parity (loop 1) F-015",
-          "start": "2026-11-28T10:33+11:00",
-          "end": "2026-11-28T10:34+11:00"
-        },
-        {
-          "name": "Merge main",
-          "start": "2026-11-28T10:36+11:00",
-          "end": "2026-11-28T10:36+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-28T10:37+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 12,
-      "tokens": 106691675,
-      "costUsd": 91.76,
-      "commits": 0
-    },
-    {
       "id": "w-45",
       "packetId": "shell-g17",
       "component": "shell",
@@ -609,7 +470,7 @@
         {
           "name": "Stack",
           "start": "2026-11-28T10:18+11:00",
-          "end": null
+          "end": "2026-11-28T10:46+11:00"
         },
         {
           "name": "Parity",
@@ -634,8 +495,8 @@
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 49109243,
-      "costUsd": 44.14,
+      "tokens": 49588780,
+      "costUsd": 44.82,
       "commits": 0
     },
     {
@@ -643,7 +504,7 @@
       "packetId": "component-library-g8",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
       "phase": "Developer",
       "items": [
@@ -682,6 +543,16 @@
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g11",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-28T10:46+11:00",
+      "items": 3,
+      "points": 12,
+      "minutes": 135,
+      "tokens": 114384932
+    },
     {
       "packetId": "direct-2",
       "component": "shell, idp",
@@ -871,16 +742,6 @@
       "points": 7,
       "minutes": 3052,
       "tokens": 49937844
-    },
-    {
-      "packetId": "component-library-g2",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-25T11:34+11:00",
-      "items": 1,
-      "points": 2,
-      "minutes": 10,
-      "tokens": 5908713
     }
   ]
 }
