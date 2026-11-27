@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:46+11:00",
+  "generatedAt": "2026-11-28T10:47+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -166,7 +166,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 77,
+        "percentUsed": 78,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -506,7 +506,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Developer",
+      "phase": "Parity",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-FINDINGS-2026-11-28",
@@ -533,12 +533,69 @@
           "name": "Developer wave 1 (A: B-002+B-003+FOLDINS, B-004, B-005)",
           "start": "2026-11-28T09:55+11:00",
           "end": null
+        },
+        {
+          "name": "Parity",
+          "start": "2026-11-28T10:46+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
       "tokens": 11199811,
       "costUsd": 10.72,
+      "commits": 0
+    },
+    {
+      "id": "w-47",
+      "packetId": "idp-g12",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T10:47+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-F-016",
+          "title": "Admin: settings",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-017",
+          "title": "Admin: access history",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-018",
+          "title": "Access requests (AuthProvider.requestAccess, admin notification, approve/deny; approved access reaches the shell at the next refresh)",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-B-006",
+          "title": "idp.config.json apiBaseUrl is :5100 at a slot offset",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-ADOPT-SHELL-G17",
+          "title": "Adopt SHELL-F-034 (per-action divider: Users M10 before Reactivate), SHELL-B-010 (TablePage loading), SHELL-F-035 (dialog-sm) in the admin screens, once shell-g17 is on main; re-check IDP-F-014 AC2 after SHELL-B-015",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
