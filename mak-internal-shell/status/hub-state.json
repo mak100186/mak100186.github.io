@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T09:02+11:00",
+  "generatedAt": "2026-11-28T09:04+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,11 +161,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 20,
+        "percentUsed": 21,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 28,
+        "percentUsed": 29,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 49860049,
-      "costUsd": 37.86,
+      "tokens": 52328549,
+      "costUsd": 40.1,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1273574047,
-      "costUsd": 1174.87,
+      "tokens": 1276042547,
+      "costUsd": 1177.1,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6738487,
+      "tokens": 6751548,
       "minutes": 39,
-      "costUsd": 6.22
+      "costUsd": 6.23
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 49860049,
-        "costUsd": 37.86
+        "tokens": 52328549,
+        "costUsd": 40.1
       }
     ],
     "tests": {
@@ -359,13 +359,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer (resume with rulings r225, r227)",
       "items": [
         {
           "id": "IDP-F-013",
           "title": "Admin: users",
           "size": 5,
-          "phase": "Reviewer",
+          "phase": "Developer (resume with rulings r225, r227)",
           "status": "running"
         },
         {
@@ -397,13 +397,18 @@
         {
           "name": "Reviewer F-013",
           "start": "2026-11-28T09:01+11:00",
+          "end": "2026-11-28T09:03+11:00"
+        },
+        {
+          "name": "Developer (resume with rulings r225, r227) F-013",
+          "start": "2026-11-28T09:03+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 29481985,
-      "costUsd": 23.05,
+      "tokens": 31950485,
+      "costUsd": 25.28,
       "commits": 0
     }
   ],
