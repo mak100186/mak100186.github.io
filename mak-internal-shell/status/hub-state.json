@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T08:30+11:00",
+  "generatedAt": "2026-11-28T08:31+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -157,7 +157,7 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -319,7 +319,46 @@
       "packets": []
     }
   ],
-  "workers": [],
+  "workers": [
+    {
+      "id": "w-44",
+      "packetId": "idp-g11",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T08:31+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-F-013",
+          "title": "Admin: users",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-015",
+          "title": "Admin: groups, roles and grants",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-014",
+          "title": "Admin: a user's effective access",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    }
+  ],
   "recent": [
     {
       "packetId": "direct-2",
