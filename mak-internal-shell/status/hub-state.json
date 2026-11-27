@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:24+11:00",
+  "generatedAt": "2026-11-28T10:26+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 67,
+        "percentUsed": 69,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 218727466,
-      "costUsd": 173.03,
+      "tokens": 221377018,
+      "costUsd": 176.24,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1442441464,
-      "costUsd": 1310.03,
+      "tokens": 1445091016,
+      "costUsd": 1313.25,
       "minutesWaiting": {
         "hub": 3149,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7631965,
+      "tokens": 7645984,
       "minutes": 39,
-      "costUsd": 6.93
+      "costUsd": 6.95
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 218727466,
-        "costUsd": 173.03
+        "tokens": 221377018,
+        "costUsd": 176.24
       }
     ],
     "tests": {
@@ -405,13 +405,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Developer (loop 1)",
+      "phase": "Parity",
       "items": [
         {
           "id": "IDP-F-013",
           "title": "Admin: users",
           "size": 5,
-          "phase": "Developer (loop 1)",
+          "phase": "Reviewer + Parity (loop 1)",
           "status": "running"
         },
         {
@@ -425,8 +425,8 @@
           "id": "IDP-F-014",
           "title": "Admin: a user's effective access",
           "size": 2,
-          "phase": "Reviewer",
-          "status": "pass (code, loop 0; committed e9d0ea4; parity waits for the window)"
+          "phase": "Parity",
+          "status": "running"
         }
       ],
       "steps": [
@@ -498,13 +498,23 @@
         {
           "name": "Developer (loop 1) F-013",
           "start": "2026-11-28T10:24+11:00",
+          "end": "2026-11-28T10:26+11:00"
+        },
+        {
+          "name": "Reviewer + Parity (loop 1) F-013",
+          "start": "2026-11-28T10:26+11:00",
+          "end": null
+        },
+        {
+          "name": "Parity F-014",
+          "start": "2026-11-28T10:26+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 8,
-      "tokens": 89053745,
-      "costUsd": 72.22,
+      "escalations": 10,
+      "tokens": 91181687,
+      "costUsd": 75.11,
       "commits": 0
     },
     {
