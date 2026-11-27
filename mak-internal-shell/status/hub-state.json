@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:28+11:00",
+  "generatedAt": "2026-11-28T10:30+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 70,
+        "percentUsed": 71,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 223211124,
-      "costUsd": 178.56,
+      "tokens": 223380689,
+      "costUsd": 178.67,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1446925122,
-      "costUsd": 1315.57,
+      "tokens": 1447094687,
+      "costUsd": 1315.67,
       "minutesWaiting": {
         "hub": 3149,
         "you": 153,
@@ -193,7 +193,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7655688,
+      "tokens": 7656586,
       "minutes": 39,
       "costUsd": 6.96
     },
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 223211124,
-        "costUsd": 178.56
+        "tokens": 223380689,
+        "costUsd": 178.67
       }
     ],
     "tests": {
@@ -405,7 +405,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Parity",
       "items": [
         {
           "id": "IDP-F-013",
@@ -513,13 +513,13 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-28T10:27+11:00",
-          "end": null
+          "end": "2026-11-28T10:28+11:00"
         }
       ],
       "loops": 0,
       "escalations": 10,
-      "tokens": 93015793,
-      "costUsd": 77.43,
+      "tokens": 93185358,
+      "costUsd": 77.54,
       "commits": 0
     },
     {
