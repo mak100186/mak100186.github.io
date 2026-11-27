@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:36+11:00",
+  "generatedAt": "2026-11-28T10:38+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 73,
+        "percentUsed": 75,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 236509350,
-      "costUsd": 191.13,
+      "tokens": 240228984,
+      "costUsd": 194.65,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1460223348,
-      "costUsd": 1328.14,
+      "tokens": 1463942982,
+      "costUsd": 1331.66,
       "minutesWaiting": {
         "hub": 3149,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7726049,
+      "tokens": 7745730,
       "minutes": 39,
-      "costUsd": 7.03
+      "costUsd": 7.05
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 236509350,
-        "costUsd": 191.13
+        "tokens": 240228984,
+        "costUsd": 194.65
       }
     ],
     "tests": {
@@ -405,7 +405,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Start:",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-013",
@@ -529,12 +529,17 @@
           "name": "Merge main",
           "start": "2026-11-28T10:36+11:00",
           "end": "2026-11-28T10:36+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-28T10:37+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 12,
-      "tokens": 101517987,
-      "costUsd": 85.99,
+      "tokens": 103885020,
+      "costUsd": 88.42,
       "commits": 0
     },
     {
@@ -544,7 +549,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-FINDINGS-2026-11-28",
@@ -620,12 +625,17 @@
           "name": "Developer B-015",
           "start": "2026-11-28T10:36+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer B-015",
+          "start": "2026-11-28T10:38+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 38417705,
-      "costUsd": 35.86,
+      "tokens": 39770306,
+      "costUsd": 36.95,
       "commits": 0
     },
     {
