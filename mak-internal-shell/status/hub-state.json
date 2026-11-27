@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T09:46+11:00",
+  "generatedAt": "2026-11-28T09:48+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 112333084,
-      "costUsd": 86.49,
+      "tokens": 113887781,
+      "costUsd": 88.1,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1336047082,
-      "costUsd": 1223.5,
+      "tokens": 1337601779,
+      "costUsd": 1225.1,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7069032,
+      "tokens": 7077258,
       "minutes": 39,
-      "costUsd": 6.47
+      "costUsd": 6.48
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 112333084,
-        "costUsd": 86.49
+        "tokens": 113887781,
+        "costUsd": 88.1
       }
     ],
     "tests": {
@@ -359,7 +359,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Integration (pass 1, no stack)",
+      "phase": "Start:",
       "items": [
         {
           "id": "IDP-F-013",
@@ -432,13 +432,13 @@
         {
           "name": "Integration (pass 1, no stack)",
           "start": "2026-11-28T09:44+11:00",
-          "end": null
+          "end": "2026-11-28T09:48+11:00"
         }
       ],
       "loops": 0,
       "escalations": 8,
-      "tokens": 68916248,
-      "costUsd": 55.7,
+      "tokens": 70470945,
+      "costUsd": 57.3,
       "commits": 0
     }
   ],
