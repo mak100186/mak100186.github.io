@@ -1,36 +1,36 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:47+11:00",
+  "generatedAt": "2026-11-28T10:49+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
     "phase": "building",
     "forecast": {
       "likely": "2026-11-30",
-      "optimistic": "2026-11-30",
+      "optimistic": "2026-11-29",
       "pessimistic": "2026-11-30"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 101,
-        "pointsRemaining": 0,
-        "itemsRemaining": 0,
-        "state": "waiting"
+        "pointsDone": 0,
+        "pointsRemaining": 12,
+        "itemsRemaining": 7,
+        "state": "building"
       },
       {
         "name": "idp",
-        "pointsDone": 31,
-        "pointsRemaining": 38,
-        "itemsRemaining": 12,
+        "pointsDone": 12,
+        "pointsRemaining": 12,
+        "itemsRemaining": 5,
         "state": "building"
       },
       {
         "name": "component-library",
-        "pointsDone": 35,
-        "pointsRemaining": 0,
-        "itemsRemaining": 0,
-        "state": "waiting"
+        "pointsDone": 0,
+        "pointsRemaining": 5,
+        "itemsRemaining": 3,
+        "state": "building"
       }
     ],
     "burnup": [
@@ -56,107 +56,28 @@
       },
       {
         "date": "2026-11-28",
-        "done": 167,
-        "total": 205
+        "done": 12,
+        "total": 41
       }
     ],
     "waitingOnPeople": [
       {
-        "who": "user",
-        "what": "Verify SHELL-B-001 to B-006",
-        "ref": "SHELL-B-001..006",
-        "since": "2026-11-25T17:30:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Verify SHELL-B-007 to B-009",
-        "ref": "SHELL-B-007..009",
-        "since": "2026-11-26T19:00:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Verify IDP-B-001 concurrency fix",
-        "ref": "IDP-B-001",
-        "since": "2026-11-23T00:00:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Verify IDP-B-002 two-tab refresh",
-        "ref": "IDP-B-002",
-        "since": "2026-11-23T09:40:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Verify IDP-B-003 sign-out signal",
-        "ref": "IDP-B-003",
-        "since": "2026-11-25T13:36:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Verify IDP-B-004 bad text refused",
-        "ref": "IDP-B-004",
-        "since": "2026-11-25T18:45:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Strict look check on shell",
-        "ref": "parity-shell",
-        "since": "2026-11-25T12:00:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Strict look check on component-library",
-        "ref": "parity-component-library",
-        "since": "2026-11-26T19:10:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Saved dashboard layout when cards change",
-        "ref": "PM-014",
-        "since": "2026-11-25T14:00:00+11:00"
-      },
-      {
-        "who": "user",
-        "what": "Link node_modules in worktree setup (hub.json)",
-        "ref": "worktree-provision",
-        "since": "2026-11-25T15:00:00+11:00"
-      },
-      {
         "who": "designer",
-        "what": "Open design rows: Profile P8 P9, DesignSystem T6 T7, Notifications N7, Dashboard DB7, ChangePassword W5 W6, ShellFrame F10-F12, SignIn I9, BlockPage B6",
-        "ref": "next-round",
-        "since": "2026-11-25T12:00:00+11:00"
+        "what": "Design rows from the strict checks and idp-g11 (F13, F14, U4, C4 to C6, B7, M17, I11)",
+        "ref": "design rows",
+        "since": "2026-11-28T10:30+11:00"
+      },
+      {
+        "who": "owner",
+        "what": "Copy confirmations (W5, W6, I9, I10, M14 to M16, G9, G10)",
+        "ref": "copy rows",
+        "since": "2026-11-28T09:00+11:00"
       }
     ],
     "milestones": [
       {
-        "name": "shell Phase 0 done",
-        "date": "2026-11-23",
-        "kind": "actual"
-      },
-      {
-        "name": "component-library Phase 0 done",
-        "date": "2026-11-25",
-        "kind": "actual"
-      },
-      {
-        "name": "component-library Phase 1 done",
-        "date": "2026-11-26",
-        "kind": "actual"
-      },
-      {
-        "name": "shell backlog items all built",
-        "date": "2026-11-26",
-        "kind": "actual"
-      },
-      {
-        "name": "component-library backlog items all built",
-        "date": "2026-11-26",
-        "kind": "actual"
-      },
-      {
-        "name": "idp and library run in the Docker stack",
-        "date": "2026-11-26",
+        "name": "idp admin part 1 merged (users, groups, effective access)",
+        "date": "2026-11-28",
         "kind": "actual"
       }
     ]
@@ -166,11 +87,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 78,
+        "percentUsed": 80,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 36,
+        "percentUsed": 37,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -178,8 +99,8 @@
     "today": {
       "packetsMerged": 1,
       "points": 12,
-      "tokens": 260936902,
-      "costUsd": 214.16,
+      "tokens": 267742813,
+      "costUsd": 219.2,
       "minutesWaiting": {
         "hub": 47,
         "you": 0,
@@ -189,8 +110,8 @@
     "week": {
       "packetsMerged": 36,
       "points": 201,
-      "tokens": 1484650900,
-      "costUsd": 1351.17,
+      "tokens": 1491456811,
+      "costUsd": 1356.21,
       "minutesWaiting": {
         "hub": 3192,
         "you": 153,
@@ -198,9 +119,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7386323,
+      "tokens": 7420183,
       "minutes": 37,
-      "costUsd": 6.72
+      "costUsd": 6.75
     },
     "daily": [
       {
@@ -284,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 12,
-        "tokens": 260936902,
-        "costUsd": 214.16
+        "tokens": 267742813,
+        "costUsd": 219.2
       }
     ],
     "tests": {
@@ -308,7 +229,7 @@
           "items": [
             {
               "id": "SHELL-FINDINGS-2026-11-28",
-              "title": "Strict parity findings",
+              "title": "Strict parity findings (B-011 to B-014)",
               "size": 5
             },
             {
@@ -325,6 +246,28 @@
               "id": "SHELL-F-035",
               "title": "dialog-sm 400px",
               "size": 1
+            },
+            {
+              "id": "SHELL-F-036",
+              "title": "ConfirmService run option",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-015",
+              "title": "ContentCard column overflow",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "shell-g18",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "SHELL-B-016",
+              "title": "Dashboard edit mode at 390",
+              "size": 2
             }
           ]
         }
@@ -334,31 +277,9 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-g11",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "IDP-F-013",
-              "title": "Admin: users",
-              "size": 5
-            },
-            {
-              "id": "IDP-F-015",
-              "title": "Admin: groups, roles and grants",
-              "size": 5
-            },
-            {
-              "id": "IDP-F-014",
-              "title": "Admin: a user's effective access",
-              "size": 2
-            }
-          ]
-        },
-        {
           "id": "idp-g12",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-016",
@@ -374,6 +295,16 @@
               "id": "IDP-F-018",
               "title": "Access requests",
               "size": 5
+            },
+            {
+              "id": "IDP-B-006",
+              "title": "apiBaseUrl at a slot offset",
+              "size": 1
+            },
+            {
+              "id": "IDP-ADOPT-SHELL-G17",
+              "title": "Adopt shell-g17's TablePage and dialog-sm",
+              "size": 1
             }
           ]
         }
@@ -408,7 +339,7 @@
       "packetId": "shell-g17",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "ready to merge",
       "startedAt": "2026-11-28T09:51+11:00",
       "phase": "Developer",
       "items": [
@@ -495,9 +426,9 @@
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 49588780,
-      "costUsd": 44.82,
-      "commits": 0
+      "tokens": 52214121,
+      "costUsd": 46.35,
+      "commits": 41
     },
     {
       "id": "w-46",
@@ -541,9 +472,9 @@
         }
       ],
       "loops": 0,
-      "escalations": 2,
-      "tokens": 11199811,
-      "costUsd": 10.72,
+      "escalations": 3,
+      "tokens": 13110347,
+      "costUsd": 12.66,
       "commits": 0
     },
     {
@@ -593,7 +524,7 @@
       ],
       "steps": [],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 1,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
