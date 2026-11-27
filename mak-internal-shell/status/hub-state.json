@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:34+11:00",
+  "generatedAt": "2026-11-28T10:36+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 72,
+        "percentUsed": 73,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 230902328,
-      "costUsd": 185.97,
+      "tokens": 236509350,
+      "costUsd": 191.13,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1454616326,
-      "costUsd": 1322.97,
+      "tokens": 1460223348,
+      "costUsd": 1328.14,
       "minutesWaiting": {
         "hub": 3149,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7696383,
+      "tokens": 7726049,
       "minutes": 39,
-      "costUsd": 7
+      "costUsd": 7.03
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 230902328,
-        "costUsd": 185.97
+        "tokens": 236509350,
+        "costUsd": 191.13
       }
     ],
     "tests": {
@@ -405,7 +405,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Reviewer + Parity (loop 1)",
+      "phase": "Start:",
       "items": [
         {
           "id": "IDP-F-013",
@@ -419,14 +419,14 @@
           "title": "Admin: groups, roles and grants",
           "size": 5,
           "phase": "Reviewer + Parity (loop 1)",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "IDP-F-014",
           "title": "Admin: a user's effective access",
           "size": 2,
           "phase": "Parity",
-          "status": "running"
+          "status": "fail (cause in shell contentcard)"
         }
       ],
       "steps": [
@@ -508,7 +508,7 @@
         {
           "name": "Parity F-014",
           "start": "2026-11-28T10:26+11:00",
-          "end": null
+          "end": "2026-11-28T10:35+11:00"
         },
         {
           "name": "Reviewer-Integration",
@@ -523,13 +523,18 @@
         {
           "name": "Reviewer + Parity (loop 1) F-015",
           "start": "2026-11-28T10:33+11:00",
-          "end": null
+          "end": "2026-11-28T10:34+11:00"
+        },
+        {
+          "name": "Merge main",
+          "start": "2026-11-28T10:36+11:00",
+          "end": "2026-11-28T10:36+11:00"
         }
       ],
       "loops": 0,
-      "escalations": 11,
-      "tokens": 98323064,
-      "costUsd": 82.66,
+      "escalations": 12,
+      "tokens": 101517987,
+      "costUsd": 85.99,
       "commits": 0
     },
     {
@@ -539,7 +544,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Developer (fold-in r244: master-detail stacks below 1024)",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-FINDINGS-2026-11-28",
@@ -610,12 +615,17 @@
           "name": "Developer (fold-in r244: master-detail stacks below 1024) B-011",
           "start": "2026-11-28T10:32+11:00",
           "end": null
+        },
+        {
+          "name": "Developer B-015",
+          "start": "2026-11-28T10:36+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 36534705,
-      "costUsd": 34.33,
+      "tokens": 38417705,
+      "costUsd": 35.86,
       "commits": 0
     },
     {
