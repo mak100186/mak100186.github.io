@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T09:40+11:00",
+  "generatedAt": "2026-11-28T09:42+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 43,
+        "percentUsed": 44,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 103226145,
-      "costUsd": 78.17,
+      "tokens": 108808490,
+      "costUsd": 82.62,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1326940143,
-      "costUsd": 1215.18,
+      "tokens": 1332522488,
+      "costUsd": 1219.63,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7020847,
+      "tokens": 7050384,
       "minutes": 39,
-      "costUsd": 6.43
+      "costUsd": 6.45
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 103226145,
-        "costUsd": 78.17
+        "tokens": 108808490,
+        "costUsd": 82.62
       }
     ],
     "tests": {
@@ -359,7 +359,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-F-013",
@@ -379,7 +379,7 @@
           "id": "IDP-F-014",
           "title": "Admin: a user's effective access",
           "size": 2,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -422,13 +422,18 @@
         {
           "name": "Developer F-014",
           "start": "2026-11-28T09:33+11:00",
+          "end": "2026-11-28T09:42+11:00"
+        },
+        {
+          "name": "Reviewer F-014",
+          "start": "2026-11-28T09:42+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 7,
-      "tokens": 60249958,
-      "costUsd": 47.63,
+      "escalations": 8,
+      "tokens": 65832303,
+      "costUsd": 52.08,
       "commits": 0
     }
   ],
