@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T09:42+11:00",
+  "generatedAt": "2026-11-28T09:44+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 44,
+        "percentUsed": 45,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 108808490,
-      "costUsd": 82.62,
+      "tokens": 110831780,
+      "costUsd": 85.57,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1332522488,
-      "costUsd": 1219.63,
+      "tokens": 1334545778,
+      "costUsd": 1222.57,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7050384,
+      "tokens": 7061089,
       "minutes": 39,
-      "costUsd": 6.45
+      "costUsd": 6.47
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 108808490,
-        "costUsd": 82.62
+        "tokens": 110831780,
+        "costUsd": 85.57
       }
     ],
     "tests": {
@@ -359,7 +359,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Reviewer",
+      "phase": "Integration (pass 1, no stack)",
       "items": [
         {
           "id": "IDP-F-013",
@@ -380,7 +380,7 @@
           "title": "Admin: a user's effective access",
           "size": 2,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass (code, loop 0; committed e9d0ea4; parity waits for the window)"
         }
       ],
       "steps": [
@@ -427,13 +427,18 @@
         {
           "name": "Reviewer F-014",
           "start": "2026-11-28T09:42+11:00",
+          "end": "2026-11-28T09:44+11:00"
+        },
+        {
+          "name": "Integration (pass 1, no stack)",
+          "start": "2026-11-28T09:44+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 8,
-      "tokens": 65832303,
-      "costUsd": 52.08,
+      "tokens": 67414944,
+      "costUsd": 54.78,
       "commits": 0
     }
   ],
