@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T08:35+11:00",
+  "generatedAt": "2026-11-28T08:38+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 4,
+        "percentUsed": 5,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
