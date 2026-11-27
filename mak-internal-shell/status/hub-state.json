@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:02+11:00",
+  "generatedAt": "2026-11-28T10:04+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 57,
+        "percentUsed": 59,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 177516375,
-      "costUsd": 136.91,
+      "tokens": 190174328,
+      "costUsd": 149.26,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1401230373,
-      "costUsd": 1273.92,
+      "tokens": 1413888326,
+      "costUsd": 1286.26,
       "minutesWaiting": {
         "hub": 3148,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7413917,
+      "tokens": 7480891,
       "minutes": 39,
-      "costUsd": 6.74
+      "costUsd": 6.81
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 177516375,
-        "costUsd": 136.91
+        "tokens": 190174328,
+        "costUsd": 149.26
       }
     ],
     "tests": {
@@ -498,8 +498,8 @@
       ],
       "loops": 0,
       "escalations": 8,
-      "tokens": 74258560,
-      "costUsd": 60.26,
+      "tokens": 76193214,
+      "costUsd": 62.69,
       "commits": 0
     },
     {
@@ -559,8 +559,8 @@
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 12115212,
-      "costUsd": 10.8,
+      "tokens": 21027285,
+      "costUsd": 19.34,
       "commits": 0
     },
     {
@@ -568,9 +568,9 @@
       "packetId": "component-library-g8",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Developer wave 1 (A: B-002+B-003+FOLDINS, B-004, B-005)",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-FINDINGS-2026-11-28",
@@ -601,8 +601,8 @@
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 9891523,
-      "costUsd": 9.6,
+      "tokens": 11199811,
+      "costUsd": 10.72,
       "commits": 0
     }
   ],
