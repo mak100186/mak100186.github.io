@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:32+11:00",
+  "generatedAt": "2026-11-28T10:34+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -165,7 +165,7 @@
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 35,
+        "percentUsed": 36,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 228528597,
-      "costUsd": 183.34,
+      "tokens": 230902328,
+      "costUsd": 185.97,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1452242595,
-      "costUsd": 1320.35,
+      "tokens": 1454616326,
+      "costUsd": 1322.97,
       "minutesWaiting": {
         "hub": 3149,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7683823,
+      "tokens": 7696383,
       "minutes": 39,
-      "costUsd": 6.99
+      "costUsd": 7
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 228528597,
-        "costUsd": 183.34
+        "tokens": 230902328,
+        "costUsd": 185.97
       }
     ],
     "tests": {
@@ -405,7 +405,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Developer (loop 1)",
+      "phase": "Reviewer + Parity (loop 1)",
       "items": [
         {
           "id": "IDP-F-013",
@@ -418,7 +418,7 @@
           "id": "IDP-F-015",
           "title": "Admin: groups, roles and grants",
           "size": 5,
-          "phase": "Developer (loop 1)",
+          "phase": "Reviewer + Parity (loop 1)",
           "status": "running"
         },
         {
@@ -518,13 +518,18 @@
         {
           "name": "Developer (loop 1) F-015",
           "start": "2026-11-28T10:31+11:00",
+          "end": "2026-11-28T10:33+11:00"
+        },
+        {
+          "name": "Reviewer + Parity (loop 1) F-015",
+          "start": "2026-11-28T10:33+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 11,
-      "tokens": 97808255,
-      "costUsd": 81.91,
+      "tokens": 98323064,
+      "costUsd": 82.66,
       "commits": 0
     },
     {
@@ -609,8 +614,8 @@
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 34675783,
-      "costUsd": 32.45,
+      "tokens": 36534705,
+      "costUsd": 34.33,
       "commits": 0
     },
     {
