@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T09:50+11:00",
+  "generatedAt": "2026-11-28T09:51+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -173,10 +173,10 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 146038323,
-      "costUsd": 110.24,
+      "tokens": 147990565,
+      "costUsd": 111.41,
       "minutesWaiting": {
-        "hub": 0,
+        "hub": 3,
         "you": 0,
         "limit": 0
       }
@@ -184,18 +184,18 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1369752321,
-      "costUsd": 1247.25,
+      "tokens": 1371704563,
+      "costUsd": 1248.42,
       "minutesWaiting": {
-        "hub": 3145,
+        "hub": 3148,
         "you": 153,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 7247367,
+      "tokens": 7257696,
       "minutes": 39,
-      "costUsd": 6.6
+      "costUsd": 6.61
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 146038323,
-        "costUsd": 110.24
+        "tokens": 147990565,
+        "costUsd": 111.41
       }
     ],
     "tests": {
@@ -357,9 +357,9 @@
       "packetId": "idp-g11",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Start:",
+      "phase": "Integration pass 2 (stack window: e2e, Postgres tests)",
       "items": [
         {
           "id": "IDP-F-013",
@@ -433,12 +433,93 @@
           "name": "Integration (pass 1, no stack)",
           "start": "2026-11-28T09:44+11:00",
           "end": "2026-11-28T09:48+11:00"
+        },
+        {
+          "name": "Integration pass 2 (stack window: e2e, Postgres tests)",
+          "start": "2026-11-28T09:51+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 8,
-      "tokens": 71602005,
-      "costUsd": 58.08,
+      "tokens": 72527484,
+      "costUsd": 58.65,
+      "commits": 0
+    },
+    {
+      "id": "w-45",
+      "packetId": "shell-g17",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T09:51+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-FINDINGS-2026-11-28",
+          "title": "Strict parity findings intake: docs/shell/findings/2026-11-28-all.md, plus the two shell-owned findings in docs/component-library/findings/2026-11-28-all.md (examples overflow at 1024; the frame at 390)",
+          "size": 5,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-010",
+          "title": "TablePage shows its empty state while loading",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-034",
+          "title": "TablePage divider before any row action",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-035",
+          "title": "A 400px small dialog class",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "component-library-g8",
+      "packetId": "component-library-g8",
+      "component": "component-library",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-28T09:51+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "COMPONENT-LIBRARY-FINDINGS-2026-11-28",
+          "title": "Strict parity findings intake: docs/component-library/findings/2026-11-28-all.md (the component-library findings; the two shell-owned ones go to shell-g17)",
+          "size": 3,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "COMPONENT-LIBRARY-FOLDINS",
+          "title": "Fold-ins: the F-007 dialog example opens with the shell's dialog-md; blocks.ts lists space-all-s, space-all-m and caption-text; the handoff F-010 entry ends mid-sentence (~line 30)",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
