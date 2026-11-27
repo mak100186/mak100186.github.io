@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:57+11:00",
+  "generatedAt": "2026-11-28T10:59+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -87,7 +87,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 84,
+        "percentUsed": 85,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -99,10 +99,10 @@
     "today": {
       "packetsMerged": 2,
       "points": 25,
-      "tokens": 288038266,
-      "costUsd": 235.29,
+      "tokens": 291843578,
+      "costUsd": 238.07,
       "minutesWaiting": {
-        "hub": 47,
+        "hub": 48,
         "you": 0,
         "limit": 0
       }
@@ -110,18 +110,18 @@
     "week": {
       "packetsMerged": 37,
       "points": 214,
-      "tokens": 1511752264,
-      "costUsd": 1372.3,
+      "tokens": 1515557576,
+      "costUsd": 1375.08,
       "minutesWaiting": {
-        "hub": 3192,
+        "hub": 3193,
         "you": 153,
         "limit": 490
       }
     },
     "perPoint": {
-      "tokens": 7064263,
+      "tokens": 7082045,
       "minutes": 21,
-      "costUsd": 6.41
+      "costUsd": 6.43
     },
     "daily": [
       {
@@ -205,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 25,
-        "tokens": 288038266,
-        "costUsd": 235.29
+        "tokens": 291843578,
+        "costUsd": 238.07
       }
     ],
     "tests": {
@@ -304,7 +304,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Developer",
+      "phase": "Parity (re-run from start)",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-FINDINGS-2026-11-28",
@@ -336,12 +336,17 @@
           "name": "Parity",
           "start": "2026-11-28T10:46+11:00",
           "end": "2026-11-28T10:52+11:00"
+        },
+        {
+          "name": "Parity (re-run from start)",
+          "start": "2026-11-28T10:59+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 19405617,
-      "costUsd": 17.24,
+      "tokens": 21609924,
+      "costUsd": 19.08,
       "commits": 0
     },
     {
@@ -349,7 +354,7 @@
       "packetId": "idp-g12",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
       "phase": "Quiet",
       "items": [
@@ -398,13 +403,13 @@
         {
           "name": "Quiet (node_modules)",
           "start": "2026-11-28T10:52+11:00",
-          "end": null
+          "end": "2026-11-28T10:58+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 10115480,
-      "costUsd": 8.5,
+      "tokens": 10445567,
+      "costUsd": 8.68,
       "commits": 0
     }
   ],
