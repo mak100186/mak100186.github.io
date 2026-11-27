@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T08:31+11:00",
+  "generatedAt": "2026-11-28T08:33+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 1,
+        "percentUsed": 2,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 333388,
-      "costUsd": 1.16,
+      "tokens": 2703090,
+      "costUsd": 2.81,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1224047386,
-      "costUsd": 1138.17,
+      "tokens": 1226417088,
+      "costUsd": 1139.82,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6476441,
+      "tokens": 6488979,
       "minutes": 39,
-      "costUsd": 6.02
+      "costUsd": 6.03
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 333388,
-        "costUsd": 1.16
+        "tokens": 2703090,
+        "costUsd": 2.81
       }
     ],
     "tests": {
@@ -301,13 +301,45 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-held",
+          "id": "idp-g11",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-013",
               "title": "Admin: users",
+              "size": 5
+            },
+            {
+              "id": "IDP-F-015",
+              "title": "Admin: groups, roles and grants",
+              "size": 5
+            },
+            {
+              "id": "IDP-F-014",
+              "title": "Admin: a user's effective access",
+              "size": 2
+            }
+          ]
+        },
+        {
+          "id": "idp-g12",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "IDP-F-016",
+              "title": "Admin: settings",
+              "size": 2
+            },
+            {
+              "id": "IDP-F-017",
+              "title": "Admin: access history",
+              "size": 3
+            },
+            {
+              "id": "IDP-F-018",
+              "title": "Access requests",
               "size": 5
             }
           ]
@@ -327,7 +359,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "",
+      "phase": "Start: plan waves F-013 -> F-015 -> F-014 (serial, dependsOn)",
       "items": [
         {
           "id": "IDP-F-013",
@@ -351,9 +383,15 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start: plan waves F-013 -> F-015 -> F-014 (serial, dependsOn)",
+          "start": "2026-11-28T08:33+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 1,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
