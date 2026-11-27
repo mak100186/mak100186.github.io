@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:40+11:00",
+  "generatedAt": "2026-11-28T10:42+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 75,
+        "percentUsed": 76,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 248938534,
-      "costUsd": 202.83,
+      "tokens": 251424474,
+      "costUsd": 205.14,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1472652532,
-      "costUsd": 1339.84,
+      "tokens": 1475138472,
+      "costUsd": 1342.15,
       "minutesWaiting": {
         "hub": 3149,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7791812,
+      "tokens": 7804965,
       "minutes": 39,
-      "costUsd": 7.09
+      "costUsd": 7.1
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 248938534,
-        "costUsd": 202.83
+        "tokens": 251424474,
+        "costUsd": 205.14
       }
     ],
     "tests": {
@@ -538,8 +538,8 @@
       ],
       "loops": 0,
       "escalations": 12,
-      "tokens": 106418053,
-      "costUsd": 91.62,
+      "tokens": 106691675,
+      "costUsd": 91.76,
       "commits": 0
     },
     {
@@ -549,7 +549,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-FINDINGS-2026-11-28",
@@ -614,7 +614,7 @@
         {
           "name": "Parity",
           "start": "2026-11-28T10:19+11:00",
-          "end": null
+          "end": "2026-11-28T10:40+11:00"
         },
         {
           "name": "Developer (fold-in r244: master-detail stacks below 1024) B-011",
@@ -629,13 +629,13 @@
         {
           "name": "Reviewer B-015",
           "start": "2026-11-28T10:38+11:00",
-          "end": null
+          "end": "2026-11-28T10:42+11:00"
         }
       ],
       "loops": 0,
-      "escalations": 4,
-      "tokens": 45946823,
-      "costUsd": 41.93,
+      "escalations": 5,
+      "tokens": 47769609,
+      "costUsd": 43.36,
       "commits": 0
     },
     {
