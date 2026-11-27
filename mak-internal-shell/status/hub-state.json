@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:14+11:00",
+  "generatedAt": "2026-11-28T10:17+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 63,
+        "percentUsed": 64,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 200472024,
-      "costUsd": 157.69,
+      "tokens": 203524928,
+      "costUsd": 162,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1424186022,
-      "costUsd": 1294.7,
+      "tokens": 1427238926,
+      "costUsd": 1299,
       "minutesWaiting": {
         "hub": 3148,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7535376,
+      "tokens": 7551529,
       "minutes": 39,
-      "costUsd": 6.85
+      "costUsd": 6.87
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 200472024,
-        "costUsd": 157.69
+        "tokens": 203524928,
+        "costUsd": 162
       }
     ],
     "tests": {
@@ -507,9 +507,9 @@
       "packetId": "shell-g17",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Finalizers",
+      "phase": "Wait",
       "items": [
         {
           "id": "SHELL-FINDINGS-2026-11-28",
@@ -564,13 +564,13 @@
         {
           "name": "Finalizers",
           "start": "2026-11-28T10:14+11:00",
-          "end": null
+          "end": "2026-11-28T10:17+11:00"
         }
       ],
       "loops": 0,
       "escalations": 4,
-      "tokens": 30309194,
-      "costUsd": 27.21,
+      "tokens": 33362098,
+      "costUsd": 31.52,
       "commits": 0
     },
     {
