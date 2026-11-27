@@ -492,11 +492,11 @@
       "commits": 0
     },
     {
-      "id": "component-library-g8",
+      "id": "w-46",
       "packetId": "component-library-g8",
       "component": "component-library",
       "kind": "orchestrated",
-      "state": "queued",
+      "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
       "phase": "",
       "items": [
