@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T09:33+11:00",
+  "generatedAt": "2026-11-28T09:36+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 41,
+        "percentUsed": 42,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 101796175,
-      "costUsd": 77.27,
+      "tokens": 103226145,
+      "costUsd": 78.17,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1325510173,
-      "costUsd": 1214.28,
+      "tokens": 1326940143,
+      "costUsd": 1215.18,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7013281,
+      "tokens": 7020847,
       "minutes": 39,
-      "costUsd": 6.42
+      "costUsd": 6.43
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 101796175,
-        "costUsd": 77.27
+        "tokens": 103226145,
+        "costUsd": 78.17
       }
     ],
     "tests": {
@@ -427,8 +427,8 @@
       ],
       "loops": 0,
       "escalations": 7,
-      "tokens": 59258265,
-      "costUsd": 46.99,
+      "tokens": 60249958,
+      "costUsd": 47.63,
       "commits": 0
     }
   ],
