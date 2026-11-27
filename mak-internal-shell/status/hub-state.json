@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T09:08+11:00",
+  "generatedAt": "2026-11-28T09:10+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,7 +161,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 23,
+        "percentUsed": 24,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 58026702,
-      "costUsd": 43.77,
+      "tokens": 58916535,
+      "costUsd": 44.38,
       "minutesWaiting": {
         "hub": 0,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1281740700,
-      "costUsd": 1180.78,
+      "tokens": 1282630533,
+      "costUsd": 1181.39,
       "minutesWaiting": {
         "hub": 3145,
         "you": 153,
@@ -193,7 +193,7 @@
       }
     },
     "perPoint": {
-      "tokens": 6781697,
+      "tokens": 6786405,
       "minutes": 39,
       "costUsd": 6.25
     },
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 58026702,
-        "costUsd": 43.77
+        "tokens": 58916535,
+        "costUsd": 44.38
       }
     ],
     "tests": {
@@ -359,21 +359,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Reviewer (resume delta)",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-013",
           "title": "Admin: users",
           "size": 5,
           "phase": "Reviewer (resume delta)",
-          "status": "running"
+          "status": "pass (code; parity waits for the stack window; committed 2548aaf)"
         },
         {
           "id": "IDP-F-015",
           "title": "Admin: groups, roles and grants",
           "size": 5,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-F-014",
@@ -407,13 +407,18 @@
         {
           "name": "Reviewer (resume delta) F-013",
           "start": "2026-11-28T09:07+11:00",
+          "end": "2026-11-28T09:09+11:00"
+        },
+        {
+          "name": "Developer F-015",
+          "start": "2026-11-28T09:09+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 5,
-      "tokens": 37648638,
-      "costUsd": 28.96,
+      "tokens": 38538471,
+      "costUsd": 29.57,
       "commits": 0
     }
   ],
