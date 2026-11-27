@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:51+11:00",
+  "generatedAt": "2026-11-28T10:53+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -87,7 +87,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 82,
+        "percentUsed": 83,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -99,8 +99,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 25,
-      "tokens": 271625761,
-      "costUsd": 221.61,
+      "tokens": 278017998,
+      "costUsd": 226.92,
       "minutesWaiting": {
         "hub": 47,
         "you": 0,
@@ -110,8 +110,8 @@
     "week": {
       "packetsMerged": 37,
       "points": 214,
-      "tokens": 1495339759,
-      "costUsd": 1358.62,
+      "tokens": 1501731996,
+      "costUsd": 1363.92,
       "minutesWaiting": {
         "hub": 3192,
         "you": 153,
@@ -119,9 +119,9 @@
       }
     },
     "perPoint": {
-      "tokens": 6987569,
+      "tokens": 7017439,
       "minutes": 21,
-      "costUsd": 6.35
+      "costUsd": 6.37
     },
     "daily": [
       {
@@ -205,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 25,
-        "tokens": 271625761,
-        "costUsd": 221.61
+        "tokens": 278017998,
+        "costUsd": 226.92
       }
     ],
     "tests": {
@@ -304,7 +304,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Parity",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-FINDINGS-2026-11-28",
@@ -335,13 +335,13 @@
         {
           "name": "Parity",
           "start": "2026-11-28T10:46+11:00",
-          "end": null
+          "end": "2026-11-28T10:52+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 14362281,
-      "costUsd": 13.33,
+      "tokens": 15454844,
+      "costUsd": 13.93,
       "commits": 0
     },
     {
@@ -351,7 +351,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Developer",
+      "phase": "Quiet (node_modules)",
       "items": [
         {
           "id": "IDP-F-016",
@@ -394,12 +394,17 @@
           "name": "Developer F-016",
           "start": "2026-11-28T10:49+11:00",
           "end": null
+        },
+        {
+          "name": "Quiet (node_modules)",
+          "start": "2026-11-28T10:52+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 4045985,
+      "costUsd": 3.43,
       "commits": 0
     }
   ],
