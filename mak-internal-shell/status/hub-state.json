@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:55+11:00",
+  "generatedAt": "2026-11-28T10:57+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -87,7 +87,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 83,
+        "percentUsed": 84,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -99,8 +99,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 25,
-      "tokens": 281006459,
-      "costUsd": 229.54,
+      "tokens": 288038266,
+      "costUsd": 235.29,
       "minutesWaiting": {
         "hub": 47,
         "you": 0,
@@ -110,8 +110,8 @@
     "week": {
       "packetsMerged": 37,
       "points": 214,
-      "tokens": 1504720457,
-      "costUsd": 1366.55,
+      "tokens": 1511752264,
+      "costUsd": 1372.3,
       "minutesWaiting": {
         "hub": 3192,
         "you": 153,
@@ -119,9 +119,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7031404,
+      "tokens": 7064263,
       "minutes": 21,
-      "costUsd": 6.39
+      "costUsd": 6.41
     },
     "daily": [
       {
@@ -205,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 25,
-        "tokens": 281006459,
-        "costUsd": 229.54
+        "tokens": 288038266,
+        "costUsd": 235.29
       }
     ],
     "tests": {
@@ -340,8 +340,8 @@
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 18443305,
-      "costUsd": 16.56,
+      "tokens": 19405617,
+      "costUsd": 17.24,
       "commits": 0
     },
     {
@@ -349,16 +349,16 @@
       "packetId": "idp-g12",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Quiet (node_modules)",
+      "phase": "Quiet",
       "items": [
         {
           "id": "IDP-F-016",
           "title": "Admin: settings",
           "size": 2,
           "phase": "Developer",
-          "status": "running"
+          "status": "code written, gate not run (quiet); merged main (ff to 74722d5, shell-g17 in). waiting for \"node_modules restored\"."
         },
         {
           "id": "IDP-F-017",
@@ -393,7 +393,7 @@
         {
           "name": "Developer F-016",
           "start": "2026-11-28T10:49+11:00",
-          "end": null
+          "end": "2026-11-28T10:57+11:00"
         },
         {
           "name": "Quiet (node_modules)",
@@ -403,8 +403,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4045985,
-      "costUsd": 3.43,
+      "tokens": 10115480,
+      "costUsd": 8.5,
       "commits": 0
     }
   ],
