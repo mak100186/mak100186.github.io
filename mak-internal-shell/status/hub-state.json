@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:00+11:00",
+  "generatedAt": "2026-11-28T10:02+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -161,11 +161,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 55,
+        "percentUsed": 57,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 33,
+        "percentUsed": 34,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -173,8 +173,8 @@
     "today": {
       "packetsMerged": 0,
       "points": 0,
-      "tokens": 171656312,
-      "costUsd": 131.04,
+      "tokens": 177516375,
+      "costUsd": 136.91,
       "minutesWaiting": {
         "hub": 3,
         "you": 0,
@@ -184,8 +184,8 @@
     "week": {
       "packetsMerged": 35,
       "points": 189,
-      "tokens": 1395370310,
-      "costUsd": 1268.05,
+      "tokens": 1401230373,
+      "costUsd": 1273.92,
       "minutesWaiting": {
         "hub": 3148,
         "you": 153,
@@ -193,9 +193,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7382912,
+      "tokens": 7413917,
       "minutes": 39,
-      "costUsd": 6.71
+      "costUsd": 6.74
     },
     "daily": [
       {
@@ -279,8 +279,8 @@
       {
         "date": "2026-11-28",
         "points": 0,
-        "tokens": 171656312,
-        "costUsd": 131.04
+        "tokens": 177516375,
+        "costUsd": 136.91
       }
     ],
     "tests": {
@@ -405,21 +405,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T08:31+11:00",
-      "phase": "Integration pass 2 (stack window: e2e, Postgres tests)",
+      "phase": "Parity",
       "items": [
         {
           "id": "IDP-F-013",
           "title": "Admin: users",
           "size": 5,
-          "phase": "Reviewer (resume delta)",
-          "status": "pass (code; parity waits for the stack window; committed 2548aaf)"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "IDP-F-015",
           "title": "Admin: groups, roles and grants",
           "size": 5,
-          "phase": "Reviewer",
-          "status": "pass (code, loop 0; parity waits for the stack window)"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "IDP-F-014",
@@ -483,13 +483,23 @@
         {
           "name": "Integration pass 2 (stack window: e2e, Postgres tests)",
           "start": "2026-11-28T09:51+11:00",
+          "end": "2026-11-28T10:01+11:00"
+        },
+        {
+          "name": "Parity F-013",
+          "start": "2026-11-28T10:02+11:00",
+          "end": null
+        },
+        {
+          "name": "Parity F-015",
+          "start": "2026-11-28T10:02+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 8,
-      "tokens": 72527484,
-      "costUsd": 58.65,
+      "tokens": 74258560,
+      "costUsd": 60.26,
       "commits": 0
     },
     {
@@ -549,8 +559,8 @@
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 10405926,
-      "costUsd": 9.09,
+      "tokens": 12115212,
+      "costUsd": 10.8,
       "commits": 0
     },
     {
@@ -591,8 +601,8 @@
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 7471822,
-      "costUsd": 7.05,
+      "tokens": 9891523,
+      "costUsd": 9.6,
       "commits": 0
     }
   ],
