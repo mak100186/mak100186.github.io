@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:30+11:00",
+  "generatedAt": "2026-11-28T18:32+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 5,
+        "percentUsed": 7,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 49,
-      "tokens": 524836246,
-      "costUsd": 448.09,
+      "tokens": 529245977,
+      "costUsd": 452.07,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 41,
       "points": 238,
-      "tokens": 1748550244,
-      "costUsd": 1585.1,
+      "tokens": 1752959975,
+      "costUsd": 1589.08,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7346850,
+      "tokens": 7365378,
       "minutes": 20,
-      "costUsd": 6.66
+      "costUsd": 6.68
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 49,
-        "tokens": 524836246,
-        "costUsd": 448.09
+        "tokens": 529245977,
+        "costUsd": 452.07
       }
     ],
     "tests": {
@@ -287,7 +287,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:24+11:00",
-      "phase": "Start",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-F-039",
@@ -319,12 +319,17 @@
           "name": "Reviewer B-020",
           "start": "2026-11-28T18:30+11:00",
           "end": "2026-11-28T18:30+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-28T18:31+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 3570027,
-      "costUsd": 3.39,
+      "tokens": 4322043,
+      "costUsd": 3.92,
       "commits": 0
     },
     {
@@ -334,7 +339,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:26+11:00",
-      "phase": "Developer (wave 1)",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-B-007",
@@ -347,8 +352,8 @@
           "id": "IDP-B-008",
           "title": "Access history empty message is off-screen at 390",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Reviewer",
+          "status": "pass"
         },
         {
           "id": "IDP-F-021",
@@ -363,12 +368,17 @@
           "name": "Developer (wave 1)",
           "start": "2026-11-28T18:29+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer B-008",
+          "start": "2026-11-28T18:31+11:00",
+          "end": "2026-11-28T18:32+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1912016,
-      "costUsd": 1.97,
+      "tokens": 4791636,
+      "costUsd": 4.98,
       "commits": 0
     }
   ],
