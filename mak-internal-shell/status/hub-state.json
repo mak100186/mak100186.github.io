@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:09+11:00",
+  "generatedAt": "2026-11-28T17:16+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 33,
-      "tokens": 457134108,
-      "costUsd": 382.5,
+      "tokens": 459212924,
+      "costUsd": 384.52,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 39,
       "points": 222,
-      "tokens": 1680848106,
-      "costUsd": 1519.51,
+      "tokens": 1682926922,
+      "costUsd": 1521.53,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7571388,
+      "tokens": 7580752,
       "minutes": 20,
-      "costUsd": 6.84
+      "costUsd": 6.85
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 33,
-        "tokens": 457134108,
-        "costUsd": 382.5
+        "tokens": 459212924,
+        "costUsd": 384.52
       }
     ],
     "tests": {
@@ -302,7 +302,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Parity re-check",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-F-016",
@@ -444,13 +444,18 @@
         {
           "name": "Parity re-check F-016, IDP-F-017",
           "start": "2026-11-28T17:09+11:00",
+          "end": "2026-11-28T17:16+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-28T17:16+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 5,
-      "tokens": 97074026,
-      "costUsd": 82.38,
+      "tokens": 99152842,
+      "costUsd": 84.4,
       "commits": 0
     }
   ],
