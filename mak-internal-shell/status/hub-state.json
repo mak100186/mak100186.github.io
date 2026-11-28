@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T14:00+11:00",
+  "generatedAt": "2026-11-28T14:02+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 18,
+        "percentUsed": 19,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 383082498,
-      "costUsd": 315.69,
+      "tokens": 383579503,
+      "costUsd": 316.05,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1606796496,
-      "costUsd": 1452.7,
+      "tokens": 1607293501,
+      "costUsd": 1453.06,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7370626,
+      "tokens": 7372906,
       "minutes": 21,
-      "costUsd": 6.66
+      "costUsd": 6.67
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 383082498,
-        "costUsd": 315.69
+        "tokens": 383579503,
+        "costUsd": 316.05
       }
     ],
     "tests": {
@@ -297,7 +297,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Reviewer",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-016",
@@ -318,14 +318,14 @@
           "title": "Access requests (AuthProvider.requestAccess, admin notification, approve/deny; approved access reaches the shell at the next refresh)",
           "size": 5,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "IDP-B-006",
           "title": "idp.config.json apiBaseUrl is :5100 at a slot offset",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-ADOPT-SHELL-G17",
@@ -374,13 +374,18 @@
         {
           "name": "Reviewer F-018",
           "start": "2026-11-28T13:58+11:00",
+          "end": "2026-11-28T14:00+11:00"
+        },
+        {
+          "name": "Developer B-006",
+          "start": "2026-11-28T14:00+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 1,
-      "tokens": 54349791,
-      "costUsd": 43.76,
+      "tokens": 54846796,
+      "costUsd": 44.12,
       "commits": 0
     },
     {
