@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T19:43+11:00",
+  "generatedAt": "2026-11-28T19:45+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 24,
+        "percentUsed": 25,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 9,
       "points": 53,
-      "tokens": 613211254,
-      "costUsd": 520.75,
+      "tokens": 616152932,
+      "costUsd": 523.22,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 44,
       "points": 242,
-      "tokens": 1836925252,
-      "costUsd": 1657.76,
+      "tokens": 1839866930,
+      "costUsd": 1660.23,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7590600,
+      "tokens": 7602756,
       "minutes": 18,
-      "costUsd": 6.85
+      "costUsd": 6.86
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 53,
-        "tokens": 613211254,
-        "costUsd": 520.75
+        "tokens": 616152932,
+        "costUsd": 523.22
       }
     ],
     "tests": {
@@ -232,7 +232,20 @@
   "queue": [
     {
       "component": "shell",
-      "packets": []
+      "packets": [
+        {
+          "id": "shell-g22",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "SHELL-B-022",
+              "title": "Profile Dark theme row truncates at 1024 and 390",
+              "size": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "component": "idp",
@@ -251,21 +264,32 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T19:43+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-B-022",
           "title": "Profile Dark theme row truncates at 1024 and 390",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-28T19:44+11:00",
+          "end": "2026-11-28T19:45+11:00"
+        },
+        {
+          "name": "Developer B-022",
+          "start": "2026-11-28T19:45+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1391969,
+      "costUsd": 1.44,
       "commits": 0
     }
   ],
