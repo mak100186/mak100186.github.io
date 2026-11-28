@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:44+11:00",
+  "generatedAt": "2026-11-28T17:46+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 484189924,
-      "costUsd": 409.3,
+      "tokens": 486461499,
+      "costUsd": 411,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1707903922,
-      "costUsd": 1546.31,
+      "tokens": 1710175497,
+      "costUsd": 1548,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7267676,
+      "tokens": 7277343,
       "minutes": 21,
-      "costUsd": 6.58
+      "costUsd": 6.59
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 484189924,
-        "costUsd": 409.3
+        "tokens": 486461499,
+        "costUsd": 411
       }
     ],
     "tests": {
@@ -309,21 +309,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T17:36+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-018",
           "title": "fixed-table squeezes its flexible column to 0 when fixed columns exceed the card",
           "size": 1,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "running"
         },
         {
           "id": "SHELL-B-019",
           "title": "Busy button gets no gap from the button before it in dialog actions",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-F-038",
@@ -342,13 +342,23 @@
         {
           "name": "Reviewer B-018",
           "start": "2026-11-28T17:43+11:00",
+          "end": "2026-11-28T17:44+11:00"
+        },
+        {
+          "name": "Developer B-019",
+          "start": "2026-11-28T17:44+11:00",
+          "end": null
+        },
+        {
+          "name": "Parity B-018",
+          "start": "2026-11-28T17:45+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3068189,
-      "costUsd": 3.46,
+      "tokens": 5013771,
+      "costUsd": 4.96,
       "commits": 0
     }
   ],
