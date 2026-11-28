@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:02+11:00",
+  "generatedAt": "2026-11-28T20:04+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 9,
       "points": 53,
-      "tokens": 621951557,
-      "costUsd": 528.71,
+      "tokens": 623967317,
+      "costUsd": 530.89,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 44,
       "points": 242,
-      "tokens": 1845665555,
-      "costUsd": 1665.72,
+      "tokens": 1847681315,
+      "costUsd": 1667.9,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7626717,
+      "tokens": 7635047,
       "minutes": 18,
-      "costUsd": 6.88
+      "costUsd": 6.89
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 53,
-        "tokens": 621951557,
-        "costUsd": 528.71
+        "tokens": 623967317,
+        "costUsd": 530.89
       }
     ],
     "tests": {
@@ -271,7 +271,7 @@
           "title": "Profile Dark theme row truncates at 1024 and 390",
           "size": 1,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -293,13 +293,13 @@
         {
           "name": "Parity B-022",
           "start": "2026-11-28T19:56+11:00",
-          "end": null
+          "end": "2026-11-28T20:04+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 6664527,
-      "costUsd": 6.64,
+      "tokens": 8680287,
+      "costUsd": 8.82,
       "commits": 0
     }
   ],
