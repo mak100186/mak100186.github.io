@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:21+11:00",
+  "generatedAt": "2026-11-28T18:23+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 510002033,
-      "costUsd": 434.73,
+      "tokens": 512966038,
+      "costUsd": 438.21,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1733716031,
-      "costUsd": 1571.74,
+      "tokens": 1736680036,
+      "costUsd": 1575.21,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7377515,
+      "tokens": 7390128,
       "minutes": 21,
-      "costUsd": 6.69
+      "costUsd": 6.7
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 510002033,
-        "costUsd": 434.73
+        "tokens": 512966038,
+        "costUsd": 438.21
       }
     ],
     "tests": {
@@ -307,7 +307,7 @@
       "packetId": "shell-g19",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "ready to merge",
       "startedAt": "2026-11-28T17:36+11:00",
       "phase": "Finalizers",
       "items": [
@@ -392,14 +392,14 @@
         {
           "name": "Finalizers",
           "start": "2026-11-28T18:20+11:00",
-          "end": null
+          "end": "2026-11-28T18:23+11:00"
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 27725289,
-      "costUsd": 28.2,
-      "commits": 0
+      "tokens": 30689294,
+      "costUsd": 31.67,
+      "commits": 13
     }
   ],
   "recent": [
