@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T14:04+11:00",
+  "generatedAt": "2026-11-28T14:06+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 383579503,
-      "costUsd": 316.05,
+      "tokens": 386153614,
+      "costUsd": 318.65,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1607293501,
-      "costUsd": 1453.06,
+      "tokens": 1609867612,
+      "costUsd": 1455.65,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7372906,
+      "tokens": 7384714,
       "minutes": 21,
-      "costUsd": 6.67
+      "costUsd": 6.68
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 383579503,
-        "costUsd": 316.05
+        "tokens": 386153614,
+        "costUsd": 318.65
       }
     ],
     "tests": {
@@ -324,8 +324,8 @@
           "id": "IDP-B-006",
           "title": "idp.config.json apiBaseUrl is :5100 at a slot offset",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         },
         {
           "id": "IDP-ADOPT-SHELL-G17",
@@ -379,13 +379,23 @@
         {
           "name": "Developer B-006",
           "start": "2026-11-28T14:00+11:00",
+          "end": "2026-11-28T14:05+11:00"
+        },
+        {
+          "name": "Reviewer B-006",
+          "start": "2026-11-28T14:05+11:00",
+          "end": "2026-11-28T14:06+11:00"
+        },
+        {
+          "name": "Developer FOLDIN-G11",
+          "start": "2026-11-28T14:06+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 1,
-      "tokens": 54846796,
-      "costUsd": 44.12,
+      "tokens": 57420907,
+      "costUsd": 46.71,
       "commits": 0
     },
     {
