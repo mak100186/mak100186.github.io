@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T13:27+11:00",
+  "generatedAt": "2026-11-28T13:29+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -87,11 +87,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 3,
+        "percentUsed": 5,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 38,
+        "percentUsed": 39,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -99,8 +99,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 324424197,
-      "costUsd": 266.69,
+      "tokens": 332287988,
+      "costUsd": 272.76,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -110,8 +110,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1548138195,
-      "costUsd": 1403.7,
+      "tokens": 1556001986,
+      "costUsd": 1409.77,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -119,9 +119,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7101551,
+      "tokens": 7137624,
       "minutes": 21,
-      "costUsd": 6.44
+      "costUsd": 6.47
     },
     "daily": [
       {
@@ -205,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 324424197,
-        "costUsd": 266.69
+        "tokens": 332287988,
+        "costUsd": 272.76
       }
     ],
     "tests": {
@@ -377,14 +377,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T13:25+11:00",
-      "phase": "Start",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-B-016",
           "title": "Dashboard edit mode is unusable at 390: below NARROW_FRAME the dashboard block stacks its cards full width in view and edit; Move/Size reachable; Cancel clear of the top bar",
           "size": 2,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-FOLDINS-G18",
@@ -399,12 +399,17 @@
           "name": "Start",
           "start": "2026-11-28T13:25+11:00",
           "end": null
+        },
+        {
+          "name": "Developer B-016",
+          "start": "2026-11-28T13:28+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 1,
-      "tokens": 0,
-      "costUsd": 0,
+      "escalations": 2,
+      "tokens": 4194726,
+      "costUsd": 3.2,
       "commits": 0
     }
   ],
