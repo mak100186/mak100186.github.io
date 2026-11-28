@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T13:35+11:00",
+  "generatedAt": "2026-11-28T13:37+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 8,
+        "percentUsed": 9,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 339612813,
-      "costUsd": 279.29,
+      "tokens": 349066625,
+      "costUsd": 286.94,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1563326811,
-      "costUsd": 1416.3,
+      "tokens": 1572780623,
+      "costUsd": 1423.95,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7171224,
+      "tokens": 7214590,
       "minutes": 21,
-      "costUsd": 6.5
+      "costUsd": 6.53
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 339612813,
-        "costUsd": 279.29
+        "tokens": 349066625,
+        "costUsd": 286.94
       }
     ],
     "tests": {
@@ -297,7 +297,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-F-016",
@@ -310,7 +310,7 @@
           "id": "IDP-F-017",
           "title": "Admin: access history",
           "size": 3,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -359,13 +359,18 @@
         {
           "name": "Developer F-017",
           "start": "2026-11-28T13:25+11:00",
+          "end": "2026-11-28T13:37+11:00"
+        },
+        {
+          "name": "Reviewer F-017",
+          "start": "2026-11-28T13:37+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 1,
-      "tokens": 19842466,
-      "costUsd": 16.59,
+      "tokens": 29296278,
+      "costUsd": 24.24,
       "commits": 0
     },
     {
