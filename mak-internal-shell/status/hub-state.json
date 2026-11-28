@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:34+11:00",
+  "generatedAt": "2026-11-28T17:36+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,20 +98,20 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 41,
+        "percentUsed": 42,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 43,
+        "percentUsed": 44,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 4,
-      "points": 33,
-      "tokens": 471273499,
-      "costUsd": 398.75,
+      "packetsMerged": 5,
+      "points": 46,
+      "tokens": 472077758,
+      "costUsd": 399.3,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -119,10 +119,10 @@
       }
     },
     "week": {
-      "packetsMerged": 39,
-      "points": 222,
-      "tokens": 1694987497,
-      "costUsd": 1535.76,
+      "packetsMerged": 40,
+      "points": 235,
+      "tokens": 1695791756,
+      "costUsd": 1536.31,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7635079,
-      "minutes": 20,
-      "costUsd": 6.92
+      "tokens": 7216135,
+      "minutes": 21,
+      "costUsd": 6.54
     },
     "daily": [
       {
@@ -215,9 +215,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 33,
-        "tokens": 471273499,
-        "costUsd": 398.75
+        "points": 46,
+        "tokens": 472077758,
+        "costUsd": 399.3
       }
     ],
     "tests": {
@@ -296,180 +296,55 @@
   ],
   "workers": [
     {
-      "id": "w-48",
-      "packetId": "idp-g12",
-      "component": "idp",
+      "id": "w-50",
+      "packetId": "shell-g19",
+      "component": "shell",
       "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Developer",
+      "state": "running",
+      "startedAt": "2026-11-28T17:36+11:00",
+      "phase": "",
       "items": [
         {
-          "id": "IDP-F-016",
-          "title": "Admin: settings",
-          "size": 2,
-          "phase": "Developer (r268 fix)",
-          "status": "running"
-        },
-        {
-          "id": "IDP-F-017",
-          "title": "Admin: access history",
-          "size": 3,
-          "phase": "Developer (Parity retry 1)",
-          "status": "running"
-        },
-        {
-          "id": "IDP-F-018",
-          "title": "Access requests (AuthProvider.requestAccess, admin notification, approve/deny; approved access reaches the shell at the next refresh)",
-          "size": 5,
-          "phase": "Developer (r263 fix)",
-          "status": "running"
-        },
-        {
-          "id": "IDP-B-006",
-          "title": "idp.config.json apiBaseUrl is :5100 at a slot offset",
+          "id": "SHELL-B-018",
+          "title": "fixed-table squeezes its flexible column to 0 when fixed columns exceed the card",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "",
+          "status": "queued"
         },
         {
-          "id": "IDP-ADOPT-SHELL-G17",
-          "title": "Adopt SHELL-F-034 (per-action divider: Users M10 before Reactivate), SHELL-B-010 (TablePage loading), SHELL-F-035 (dialog-sm) in the admin screens, once shell-g17 is on main; re-check IDP-F-014 AC2 after SHELL-B-015",
+          "id": "SHELL-B-019",
+          "title": "Busy button gets no gap from the button before it in dialog actions",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-F-038",
+          "title": "Frame style budget headroom",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
         }
       ],
-      "steps": [
-        {
-          "name": "Developer F-016",
-          "start": "2026-11-28T10:49+11:00",
-          "end": "2026-11-28T10:57+11:00"
-        },
-        {
-          "name": "Quiet (node_modules)",
-          "start": "2026-11-28T10:52+11:00",
-          "end": "2026-11-28T10:58+11:00"
-        },
-        {
-          "name": "Reviewer F-016",
-          "start": "2026-11-28T11:00+11:00",
-          "end": "2026-11-28T11:01+11:00"
-        },
-        {
-          "name": "Developer F-017",
-          "start": "2026-11-28T11:01+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer F-017",
-          "start": "2026-11-28T13:25+11:00",
-          "end": "2026-11-28T13:37+11:00"
-        },
-        {
-          "name": "Reviewer F-017",
-          "start": "2026-11-28T13:37+11:00",
-          "end": "2026-11-28T13:38+11:00"
-        },
-        {
-          "name": "Developer F-018",
-          "start": "2026-11-28T13:38+11:00",
-          "end": "2026-11-28T13:58+11:00"
-        },
-        {
-          "name": "Reviewer F-018",
-          "start": "2026-11-28T13:58+11:00",
-          "end": "2026-11-28T14:00+11:00"
-        },
-        {
-          "name": "Developer B-006",
-          "start": "2026-11-28T14:00+11:00",
-          "end": "2026-11-28T14:05+11:00"
-        },
-        {
-          "name": "Reviewer B-006",
-          "start": "2026-11-28T14:05+11:00",
-          "end": "2026-11-28T14:06+11:00"
-        },
-        {
-          "name": "Developer FOLDIN-G11",
-          "start": "2026-11-28T14:06+11:00",
-          "end": "2026-11-28T14:11+11:00"
-        },
-        {
-          "name": "Reviewer FOLDIN-G11",
-          "start": "2026-11-28T14:11+11:00",
-          "end": "2026-11-28T14:12+11:00"
-        },
-        {
-          "name": "Developer ADOPT-SHELL-G17",
-          "start": "2026-11-28T14:12+11:00",
-          "end": "2026-11-28T14:15+11:00"
-        },
-        {
-          "name": "Stack window (slot 2)",
-          "start": "2026-11-28T14:12+11:00",
-          "end": "2026-11-28T17:26+11:00"
-        },
-        {
-          "name": "Parity F-016, IDP-F-017",
-          "start": "2026-11-28T14:14+11:00",
-          "end": "2026-11-28T16:41+11:00"
-        },
-        {
-          "name": "Reviewer ADOPT-SHELL-G17",
-          "start": "2026-11-28T14:15+11:00",
-          "end": "2026-11-28T14:16+11:00"
-        },
-        {
-          "name": "Developer (r263 fix) F-018",
-          "start": "2026-11-28T14:15+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer (Parity retry 1) F-017",
-          "start": "2026-11-28T16:41+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity F-018, IDP-FOLDIN-G11, IDP-ADOPT-SHELL-G17",
-          "start": "2026-11-28T16:41+11:00",
-          "end": "2026-11-28T17:09+11:00"
-        },
-        {
-          "name": "Developer (r268 fix) F-016",
-          "start": "2026-11-28T16:42+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity re-check F-016, IDP-F-017",
-          "start": "2026-11-28T17:09+11:00",
-          "end": "2026-11-28T17:16+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-28T17:16+11:00",
-          "end": "2026-11-28T17:26+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-28T17:26+11:00",
-          "end": "2026-11-28T17:27+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-28T17:27+11:00",
-          "end": "2026-11-28T17:34+11:00"
-        }
-      ],
-      "loops": 1,
-      "escalations": 5,
-      "tokens": 111213417,
-      "costUsd": 98.63,
-      "commits": 70
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "idp-g12",
+      "component": "idp",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-28T17:34+11:00",
+      "items": 6,
+      "points": 13,
+      "minutes": 408,
+      "tokens": 112017676
+    },
     {
       "packetId": "shell-g18",
       "component": "shell",
@@ -659,16 +534,6 @@
       "points": 8,
       "minutes": 65,
       "tokens": 43520285
-    },
-    {
-      "packetId": "shell-g12",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-25T13:18+11:00",
-      "items": 1,
-      "points": 5,
-      "minutes": 59,
-      "tokens": 45372070
     }
   ]
 }
