@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T19:05+11:00",
+  "generatedAt": "2026-11-28T19:08+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 18,
+        "percentUsed": 19,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 8,
       "points": 51,
-      "tokens": 582870959,
-      "costUsd": 497.08,
+      "tokens": 584334326,
+      "costUsd": 499.32,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 43,
       "points": 240,
-      "tokens": 1806584957,
-      "costUsd": 1634.09,
+      "tokens": 1808048324,
+      "costUsd": 1636.33,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7527437,
+      "tokens": 7533535,
       "minutes": 19,
-      "costUsd": 6.81
+      "costUsd": 6.82
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 51,
-        "tokens": 582870959,
-        "costUsd": 497.08
+        "tokens": 584334326,
+        "costUsd": 499.32
       }
     ],
     "tests": {
@@ -269,7 +269,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:26+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "IDP-B-007",
@@ -313,12 +313,17 @@
           "name": "Integration",
           "start": "2026-11-28T18:49+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-28T19:07+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 19931314,
-      "costUsd": 18.95,
+      "tokens": 21394681,
+      "costUsd": 21.19,
       "commits": 0
     }
   ],
