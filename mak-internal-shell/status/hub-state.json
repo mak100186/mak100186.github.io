@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T16:40+11:00",
+  "generatedAt": "2026-11-28T16:42+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 31,
+        "percentUsed": 33,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 33,
-      "tokens": 438377627,
-      "costUsd": 363.97,
+      "tokens": 440804475,
+      "costUsd": 367.56,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 39,
       "points": 222,
-      "tokens": 1662091625,
-      "costUsd": 1500.97,
+      "tokens": 1664518473,
+      "costUsd": 1504.56,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7486899,
+      "tokens": 7497831,
       "minutes": 20,
-      "costUsd": 6.76
+      "costUsd": 6.78
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 33,
-        "tokens": 438377627,
-        "costUsd": 363.97
+        "tokens": 440804475,
+        "costUsd": 367.56
       }
     ],
     "tests": {
@@ -232,7 +232,25 @@
   "queue": [
     {
       "component": "shell",
-      "packets": []
+      "packets": [
+        {
+          "id": "shell-g19",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "SHELL-B-018",
+              "title": "fixed-table at narrow widths",
+              "size": 1
+            },
+            {
+              "id": "SHELL-PM-020",
+              "title": "frame.scss budget headroom",
+              "size": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "component": "idp",
@@ -279,21 +297,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Developer",
+      "phase": "Developer (r268 fix)",
       "items": [
         {
           "id": "IDP-F-016",
           "title": "Admin: settings",
           "size": 2,
-          "phase": "Reviewer",
-          "status": "pass (loop 0); committed 49d72b7; parity batched for one stack window after the ui items pass review"
+          "phase": "Developer (r268 fix)",
+          "status": "running"
         },
         {
           "id": "IDP-F-017",
           "title": "Admin: access history",
           "size": 3,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Developer (Parity retry 1)",
+          "status": "running"
         },
         {
           "id": "IDP-F-018",
@@ -391,7 +409,7 @@
         {
           "name": "Parity F-016, IDP-F-017",
           "start": "2026-11-28T14:14+11:00",
-          "end": null
+          "end": "2026-11-28T16:41+11:00"
         },
         {
           "name": "Reviewer ADOPT-SHELL-G17",
@@ -402,12 +420,27 @@
           "name": "Developer (r263 fix) F-018",
           "start": "2026-11-28T14:15+11:00",
           "end": null
+        },
+        {
+          "name": "Developer (Parity retry 1) F-017",
+          "start": "2026-11-28T16:41+11:00",
+          "end": null
+        },
+        {
+          "name": "Parity F-018, IDP-FOLDIN-G11, IDP-ADOPT-SHELL-G17",
+          "start": "2026-11-28T16:41+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer (r268 fix) F-016",
+          "start": "2026-11-28T16:42+11:00",
+          "end": null
         }
       ],
       "loops": 1,
-      "escalations": 2,
-      "tokens": 79257007,
-      "costUsd": 65.16,
+      "escalations": 4,
+      "tokens": 81104830,
+      "costUsd": 67.69,
       "commits": 0
     }
   ],
