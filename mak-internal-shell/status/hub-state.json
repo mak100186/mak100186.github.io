@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T19:10+11:00",
+  "generatedAt": "2026-11-28T19:12+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 20,
+        "percentUsed": 21,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 8,
       "points": 51,
-      "tokens": 586284723,
-      "costUsd": 501.38,
+      "tokens": 588350550,
+      "costUsd": 504.5,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 43,
       "points": 240,
-      "tokens": 1809998721,
-      "costUsd": 1638.39,
+      "tokens": 1812064548,
+      "costUsd": 1641.51,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7541661,
+      "tokens": 7550269,
       "minutes": 19,
-      "costUsd": 6.83
+      "costUsd": 6.84
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 51,
-        "tokens": 586284723,
-        "costUsd": 501.38
+        "tokens": 588350550,
+        "costUsd": 504.5
       }
     ],
     "tests": {
@@ -267,9 +267,9 @@
       "packetId": "idp-g13",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "ready to merge",
       "startedAt": "2026-11-28T18:26+11:00",
-      "phase": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-B-007",
@@ -322,14 +322,14 @@
         {
           "name": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
           "start": "2026-11-28T19:08+11:00",
-          "end": null
+          "end": "2026-11-28T19:12+11:00"
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 23345078,
-      "costUsd": 23.25,
-      "commits": 0
+      "tokens": 25410905,
+      "costUsd": 26.37,
+      "commits": 35
     }
   ],
   "recent": [
