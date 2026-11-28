@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:42+11:00",
+  "generatedAt": "2026-11-28T18:44+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -102,7 +102,7 @@
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 46,
+        "percentUsed": 47,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 50,
-      "tokens": 552598735,
-      "costUsd": 471.23,
+      "tokens": 555554372,
+      "costUsd": 473.75,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 42,
       "points": 239,
-      "tokens": 1776312733,
-      "costUsd": 1608.23,
+      "tokens": 1779268370,
+      "costUsd": 1610.76,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7432271,
+      "tokens": 7444638,
       "minutes": 20,
-      "costUsd": 6.73
+      "costUsd": 6.74
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 50,
-        "tokens": 552598735,
-        "costUsd": 471.23
+        "tokens": 555554372,
+        "costUsd": 473.75
       }
     ],
     "tests": {
@@ -336,14 +336,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:34+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "SHELL-B-021",
           "title": "content-grid cards stay half width below 1024",
           "size": 1,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -365,13 +365,18 @@
         {
           "name": "Parity B-021",
           "start": "2026-11-28T18:38+11:00",
+          "end": "2026-11-28T18:42+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-28T18:43+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3515398,
-      "costUsd": 3.36,
+      "tokens": 6033038,
+      "costUsd": 5.64,
       "commits": 0
     }
   ],
