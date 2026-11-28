@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:20+11:00",
+  "generatedAt": "2026-11-28T20:22+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 37,
+        "percentUsed": 38,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 54,
-      "tokens": 661482210,
-      "costUsd": 563.36,
+      "tokens": 665377196,
+      "costUsd": 566.76,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 45,
       "points": 243,
-      "tokens": 1885196208,
-      "costUsd": 1700.36,
+      "tokens": 1889091194,
+      "costUsd": 1703.76,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7758009,
+      "tokens": 7774038,
       "minutes": 17,
-      "costUsd": 7
+      "costUsd": 7.01
     },
     "daily": [
       {
@@ -216,13 +216,13 @@
       {
         "date": "2026-11-28",
         "points": 54,
-        "tokens": 661482210,
-        "costUsd": 563.36
+        "tokens": 665377196,
+        "costUsd": 566.76
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-28T19:03+11:00",
+        "at": "2026-11-28T20:22+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -340,8 +340,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3408256,
-      "costUsd": 3.71,
+      "tokens": 4410798,
+      "costUsd": 4.56,
       "commits": 0
     },
     {
@@ -351,20 +351,20 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "IDP-B-008",
           "title": "Access history: with no rows the card still scrolls sideways",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
           "id": "IDP-B-009",
           "title": "Administration sidebar icon is person, board draws a shield",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -372,18 +372,28 @@
         {
           "name": "Developer B-008",
           "start": "2026-11-28T20:20+11:00",
-          "end": null
+          "end": "2026-11-28T20:22+11:00"
         },
         {
           "name": "Developer B-009",
           "start": "2026-11-28T20:20+11:00",
+          "end": "2026-11-28T20:21+11:00"
+        },
+        {
+          "name": "Reviewer B-009",
+          "start": "2026-11-28T20:21+11:00",
+          "end": null
+        },
+        {
+          "name": "Reviewer B-008",
+          "start": "2026-11-28T20:22+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1569577,
-      "costUsd": 1.42,
+      "tokens": 2890141,
+      "costUsd": 2.85,
       "commits": 0
     }
   ],
