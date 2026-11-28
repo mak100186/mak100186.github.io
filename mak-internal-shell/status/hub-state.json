@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T14:10+11:00",
+  "generatedAt": "2026-11-28T14:12+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 22,
+        "percentUsed": 23,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 396812227,
-      "costUsd": 328.16,
+      "tokens": 402041405,
+      "costUsd": 332.48,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1620526225,
-      "costUsd": 1465.17,
+      "tokens": 1625755403,
+      "costUsd": 1469.48,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7433607,
+      "tokens": 7457594,
       "minutes": 21,
-      "costUsd": 6.72
+      "costUsd": 6.74
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 396812227,
-        "costUsd": 328.16
+        "tokens": 402041405,
+        "costUsd": 332.48
       }
     ],
     "tests": {
@@ -331,8 +331,8 @@
           "id": "IDP-ADOPT-SHELL-G17",
           "title": "Adopt SHELL-F-034 (per-action divider: Users M10 before Reactivate), SHELL-B-010 (TablePage loading), SHELL-F-035 (dialog-sm) in the admin screens, once shell-g17 is on main; re-check IDP-F-014 AC2 after SHELL-B-015",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
@@ -389,13 +389,23 @@
         {
           "name": "Developer FOLDIN-G11",
           "start": "2026-11-28T14:06+11:00",
+          "end": "2026-11-28T14:11+11:00"
+        },
+        {
+          "name": "Reviewer FOLDIN-G11",
+          "start": "2026-11-28T14:11+11:00",
+          "end": "2026-11-28T14:12+11:00"
+        },
+        {
+          "name": "Developer ADOPT-SHELL-G17",
+          "start": "2026-11-28T14:12+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 1,
-      "tokens": 58406345,
-      "costUsd": 47.32,
+      "tokens": 62352522,
+      "costUsd": 50.71,
       "commits": 0
     },
     {
@@ -405,7 +415,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T13:25+11:00",
-      "phase": "Reviewer retry 1",
+      "phase": "Parity retry 1",
       "items": [
         {
           "id": "SHELL-B-016",
@@ -418,7 +428,7 @@
           "id": "SHELL-FOLDINS-G18",
           "title": "Fold-ins: TablePage renders span.card-head-actions only when content is projected (table-page.ts:140); the frame.scss production budget warning (4.21 kB against 4.00 kB: trim it, or raise the budget with a reason); the X1 card gutter at 390 (no board; match page-card's narrow behaviour); design row Blocks K12 through hub_issue (the board stylesheets centre .example-area with no overflow handling, against SHELL-B-014); remaining parity backlog lines that fit",
           "size": 1,
-          "phase": "Reviewer retry 1",
+          "phase": "Parity retry 1",
           "status": "running"
         }
       ],
@@ -467,12 +477,17 @@
           "name": "Reviewer retry 1 FOLDINS-G18",
           "start": "2026-11-28T14:10+11:00",
           "end": null
+        },
+        {
+          "name": "Parity retry 1 FOLDINS-G18",
+          "start": "2026-11-28T14:10+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 26707674,
-      "costUsd": 25.28,
+      "tokens": 27990675,
+      "costUsd": 26.2,
       "commits": 0
     }
   ],
