@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:26+11:00",
+  "generatedAt": "2026-11-28T17:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 39,
+        "percentUsed": 40,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 33,
-      "tokens": 464642684,
-      "costUsd": 389.94,
+      "tokens": 466149877,
+      "costUsd": 391.32,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 39,
       "points": 222,
-      "tokens": 1688356682,
-      "costUsd": 1526.95,
+      "tokens": 1689863875,
+      "costUsd": 1528.32,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,7 +130,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7605210,
+      "tokens": 7611999,
       "minutes": 20,
       "costUsd": 6.88
     },
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 33,
-        "tokens": 464642684,
-        "costUsd": 389.94
+        "tokens": 466149877,
+        "costUsd": 391.32
       }
     ],
     "tests": {
@@ -302,7 +302,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-F-016",
@@ -409,7 +409,7 @@
         {
           "name": "Stack window (slot 2)",
           "start": "2026-11-28T14:12+11:00",
-          "end": null
+          "end": "2026-11-28T17:26+11:00"
         },
         {
           "name": "Parity F-016, IDP-F-017",
@@ -449,13 +449,23 @@
         {
           "name": "Integration",
           "start": "2026-11-28T17:16+11:00",
+          "end": "2026-11-28T17:26+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-28T17:26+11:00",
+          "end": "2026-11-28T17:27+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-28T17:27+11:00",
           "end": null
         }
       ],
       "loops": 1,
       "escalations": 5,
-      "tokens": 104582602,
-      "costUsd": 89.82,
+      "tokens": 106089795,
+      "costUsd": 91.19,
       "commits": 0
     }
   ],
