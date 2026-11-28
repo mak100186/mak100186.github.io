@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T22:25+11:00",
+  "generatedAt": "2026-11-28T22:27+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
-    "phase": "building",
+    "phase": "design round",
     "forecast": {
       "likely": "2026-11-29",
       "optimistic": "2026-11-29",
@@ -13,24 +13,24 @@
     "components": [
       {
         "name": "shell",
-        "pointsDone": 13,
-        "pointsRemaining": 3,
-        "itemsRemaining": 2,
-        "state": "building"
+        "pointsDone": 0,
+        "pointsRemaining": 1,
+        "itemsRemaining": 1,
+        "state": "waiting"
       },
       {
         "name": "idp",
-        "pointsDone": 14,
-        "pointsRemaining": 10,
-        "itemsRemaining": 4,
-        "state": "building"
+        "pointsDone": 0,
+        "pointsRemaining": 0,
+        "itemsRemaining": 0,
+        "state": "waiting"
       },
       {
         "name": "component-library",
-        "pointsDone": 4,
+        "pointsDone": 0,
         "pointsRemaining": 0,
         "itemsRemaining": 0,
-        "state": "final parity"
+        "state": "waiting"
       }
     ],
     "burnup": [
@@ -56,38 +56,39 @@
       },
       {
         "date": "2026-11-28",
-        "done": 31,
-        "total": 44
+        "done": 0,
+        "total": 1
       }
     ],
     "waitingOnPeople": [
       {
-        "who": "designer",
-        "what": "Design rows from the strict checks (shell F13, F14, U4, K12; component-library C4 to C7, B7; idp M17, I11)",
-        "ref": "design rows",
-        "since": "2026-11-28T10:30+11:00"
+        "who": "owner",
+        "what": "Touch dragging of dashboard cards (PM-019)",
+        "ref": "SHELL-PM-019",
+        "since": "2026-11-28T00:00:00Z"
       },
       {
         "who": "owner",
-        "what": "Copy confirmations (W5, W6, I9, I10, M14 to M16, G9, G10)",
-        "ref": "copy rows",
-        "since": "2026-11-28T09:00+11:00"
+        "what": "Saved dashboard layouts (PM-014)",
+        "ref": "SHELL-PM-014",
+        "since": "2026-11-28T00:00:00Z"
       },
       {
         "who": "owner",
-        "what": "PM-014: saved dashboard layouts reset when cards change",
-        "ref": "SHELL PM-014",
-        "since": "2026-11-27T12:00+11:00"
+        "what": "Idp.Api health check (PM-011)",
+        "ref": "IDP-PM-011",
+        "since": "2026-11-28T00:00:00Z"
+      },
+      {
+        "who": "owner",
+        "what": "Send the design round (open rows in shell, idp, component-library)",
+        "ref": "Blocks K13",
+        "since": "2026-11-28T00:00:00Z"
       }
     ],
     "milestones": [
       {
-        "name": "idp admin part 1 merged",
-        "date": "2026-11-28",
-        "kind": "actual"
-      },
-      {
-        "name": "component-library tranche v1 closed",
+        "name": "All built items Done or held",
         "date": "2026-11-28",
         "kind": "actual"
       }
@@ -110,8 +111,8 @@
     "today": {
       "packetsMerged": 14,
       "points": 60,
-      "tokens": 750004163,
-      "costUsd": 647.74,
+      "tokens": 751120344,
+      "costUsd": 648.48,
       "minutesWaiting": {
         "hub": 52,
         "you": 0,
@@ -121,8 +122,8 @@
     "week": {
       "packetsMerged": 49,
       "points": 249,
-      "tokens": 1973718161,
-      "costUsd": 1784.75,
+      "tokens": 1974834342,
+      "costUsd": 1785.49,
       "minutesWaiting": {
         "hub": 3197,
         "you": 153,
@@ -130,7 +131,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7926579,
+      "tokens": 7931062,
       "minutes": 11,
       "costUsd": 7.17
     },
@@ -216,8 +217,8 @@
       {
         "date": "2026-11-28",
         "points": 60,
-        "tokens": 750004163,
-        "costUsd": 647.74
+        "tokens": 751120344,
+        "costUsd": 648.48
       }
     ],
     "tests": {
