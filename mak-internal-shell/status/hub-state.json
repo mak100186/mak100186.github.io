@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:46+11:00",
+  "generatedAt": "2026-11-28T17:48+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 45,
+        "percentUsed": 46,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 486461499,
-      "costUsd": 411,
+      "tokens": 488116904,
+      "costUsd": 412.87,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1710175497,
-      "costUsd": 1548,
+      "tokens": 1711830902,
+      "costUsd": 1549.88,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7277343,
+      "tokens": 7284387,
       "minutes": 21,
-      "costUsd": 6.59
+      "costUsd": 6.6
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 486461499,
-        "costUsd": 411
+        "tokens": 488116904,
+        "costUsd": 412.87
       }
     ],
     "tests": {
@@ -322,7 +322,7 @@
           "id": "SHELL-B-019",
           "title": "Busy button gets no gap from the button before it in dialog actions",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Parity",
           "status": "running"
         },
         {
@@ -347,18 +347,28 @@
         {
           "name": "Developer B-019",
           "start": "2026-11-28T17:44+11:00",
-          "end": null
+          "end": "2026-11-28T17:48+11:00"
         },
         {
           "name": "Parity B-018",
           "start": "2026-11-28T17:45+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer B-019",
+          "start": "2026-11-28T17:48+11:00",
+          "end": "2026-11-28T17:48+11:00"
+        },
+        {
+          "name": "Parity B-019",
+          "start": "2026-11-28T17:48+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 5013771,
-      "costUsd": 4.96,
+      "tokens": 6669176,
+      "costUsd": 6.83,
       "commits": 0
     }
   ],
