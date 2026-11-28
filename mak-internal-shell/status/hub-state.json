@@ -94,7 +94,7 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -256,7 +256,32 @@
       "packets": []
     }
   ],
-  "workers": [],
+  "workers": [
+    {
+      "id": "w-58",
+      "packetId": "shell-g25",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T21:59+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-B-026",
+          "title": "TablePage with no rows: Tab lands on header controls that can't be seen",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    }
+  ],
   "recent": [
     {
       "packetId": "shell-g24",
