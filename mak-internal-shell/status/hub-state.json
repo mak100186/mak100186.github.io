@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:50+11:00",
+  "generatedAt": "2026-11-28T17:52+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 488486471,
-      "costUsd": 413.13,
+      "tokens": 491180790,
+      "costUsd": 415.83,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1712200469,
-      "costUsd": 1550.14,
+      "tokens": 1714894788,
+      "costUsd": 1552.83,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7285959,
+      "tokens": 7297425,
       "minutes": 21,
-      "costUsd": 6.6
+      "costUsd": 6.61
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 488486471,
-        "costUsd": 413.13
+        "tokens": 491180790,
+        "costUsd": 415.83
       }
     ],
     "tests": {
@@ -316,7 +316,7 @@
           "title": "fixed-table squeezes its flexible column to 0 when fixed columns exceed the card",
           "size": 1,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "SHELL-B-019",
@@ -352,7 +352,7 @@
         {
           "name": "Parity B-018",
           "start": "2026-11-28T17:45+11:00",
-          "end": null
+          "end": "2026-11-28T17:52+11:00"
         },
         {
           "name": "Reviewer B-019",
@@ -367,8 +367,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 7038743,
-      "costUsd": 7.1,
+      "tokens": 9733062,
+      "costUsd": 9.79,
       "commits": 0
     }
   ],
