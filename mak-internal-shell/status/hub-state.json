@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:14+11:00",
+  "generatedAt": "2026-11-28T20:16+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -243,7 +243,77 @@
       "packets": []
     }
   ],
-  "workers": [],
+  "workers": [
+    {
+      "id": "w-55",
+      "packetId": "shell-g23",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T20:16+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-B-023",
+          "title": ".add-field overflows its pane at 390",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-024",
+          "title": "TablePage empty state: card scrolls sideways over a blank header",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-B-025",
+          "title": ".table-range cuts the years off at 390",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    },
+    {
+      "id": "idp-g14",
+      "packetId": "idp-g14",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "queued",
+      "startedAt": "2026-11-28T20:16+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-B-008",
+          "title": "Access history: with no rows the card still scrolls sideways",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-B-009",
+          "title": "Administration sidebar icon is person, board draws a shield",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    }
+  ],
   "recent": [
     {
       "packetId": "shell-g22",
