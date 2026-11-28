@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:26+11:00",
+  "generatedAt": "2026-11-28T20:29+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 54,
-      "tokens": 672012599,
-      "costUsd": 572.7,
+      "tokens": 674087711,
+      "costUsd": 574.71,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 45,
       "points": 243,
-      "tokens": 1895726597,
-      "costUsd": 1709.7,
+      "tokens": 1897801709,
+      "costUsd": 1711.71,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,7 +130,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7801344,
+      "tokens": 7809884,
       "minutes": 17,
       "costUsd": 7.04
     },
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 54,
-        "tokens": 672012599,
-        "costUsd": 572.7
+        "tokens": 674087711,
+        "costUsd": 574.71
       }
     ],
     "tests": {
@@ -375,7 +375,7 @@
           "title": "Administration sidebar icon is person, board draws a shield",
           "size": 1,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -407,13 +407,13 @@
         {
           "name": "Parity B-009",
           "start": "2026-11-28T20:24+11:00",
-          "end": null
+          "end": "2026-11-28T20:29+11:00"
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 4951735,
-      "costUsd": 4.77,
+      "tokens": 7026847,
+      "costUsd": 6.78,
       "commits": 0
     }
   ],
