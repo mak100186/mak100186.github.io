@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:38+11:00",
+  "generatedAt": "2026-11-28T18:40+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 7,
       "points": 50,
-      "tokens": 551762047,
-      "costUsd": 470.43,
+      "tokens": 552598735,
+      "costUsd": 471.23,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 42,
       "points": 239,
-      "tokens": 1775476045,
-      "costUsd": 1607.43,
+      "tokens": 1776312733,
+      "costUsd": 1608.23,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,7 +130,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7428770,
+      "tokens": 7432271,
       "minutes": 20,
       "costUsd": 6.73
     },
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 50,
-        "tokens": 551762047,
-        "costUsd": 470.43
+        "tokens": 552598735,
+        "costUsd": 471.23
       }
     ],
     "tests": {
@@ -336,13 +336,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:34+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-021",
           "title": "content-grid cards stay half width below 1024",
           "size": 1,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "running"
         }
       ],
@@ -360,13 +360,18 @@
         {
           "name": "Reviewer B-021",
           "start": "2026-11-28T18:38+11:00",
+          "end": "2026-11-28T18:38+11:00"
+        },
+        {
+          "name": "Parity B-021",
+          "start": "2026-11-28T18:38+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 2678710,
-      "costUsd": 2.56,
+      "tokens": 3515398,
+      "costUsd": 3.36,
       "commits": 0
     }
   ],
