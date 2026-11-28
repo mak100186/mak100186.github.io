@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T14:18+11:00",
+  "generatedAt": "2026-11-28T14:20+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 413994647,
-      "costUsd": 342.3,
+      "tokens": 415436363,
+      "costUsd": 343.86,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1637708645,
-      "costUsd": 1479.31,
+      "tokens": 1639150361,
+      "costUsd": 1480.87,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,7 +130,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7512425,
+      "tokens": 7519038,
       "minutes": 21,
       "costUsd": 6.79
     },
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 413994647,
-        "costUsd": 342.3
+        "tokens": 415436363,
+        "costUsd": 343.86
       }
     ],
     "tests": {
@@ -435,7 +435,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T13:25+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers PMBook, Handoff, Revision+Changelog+Runbook",
       "items": [
         {
           "id": "SHELL-B-016",
@@ -512,12 +512,22 @@
           "name": "Reviewer-Integration",
           "start": "2026-11-28T14:17+11:00",
           "end": null
+        },
+        {
+          "name": "Finalizer Graphify",
+          "start": "2026-11-28T14:19+11:00",
+          "end": "2026-11-28T14:20+11:00"
+        },
+        {
+          "name": "Finalizers PMBook, Handoff, Revision+Changelog+Runbook",
+          "start": "2026-11-28T14:20+11:00",
+          "end": null
         }
       ],
       "loops": 0,
-      "escalations": 3,
-      "tokens": 31466262,
-      "costUsd": 29.64,
+      "escalations": 4,
+      "tokens": 32435757,
+      "costUsd": 30.94,
       "commits": 0
     }
   ],
