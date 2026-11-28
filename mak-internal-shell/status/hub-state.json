@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:32+11:00",
+  "generatedAt": "2026-11-28T18:34+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 7,
+        "percentUsed": 8,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,10 +110,10 @@
     "today": {
       "packetsMerged": 6,
       "points": 49,
-      "tokens": 529245977,
-      "costUsd": 452.07,
+      "tokens": 533760138,
+      "costUsd": 456.52,
       "minutesWaiting": {
-        "hub": 48,
+        "hub": 49,
         "you": 0,
         "limit": 138
       }
@@ -121,18 +121,18 @@
     "week": {
       "packetsMerged": 41,
       "points": 238,
-      "tokens": 1752959975,
-      "costUsd": 1589.08,
+      "tokens": 1757474136,
+      "costUsd": 1593.53,
       "minutesWaiting": {
-        "hub": 3193,
+        "hub": 3194,
         "you": 153,
         "limit": 628
       }
     },
     "perPoint": {
-      "tokens": 7365378,
+      "tokens": 7384345,
       "minutes": 20,
-      "costUsd": 6.68
+      "costUsd": 6.7
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 49,
-        "tokens": 529245977,
-        "costUsd": 452.07
+        "tokens": 533760138,
+        "costUsd": 456.52
       }
     ],
     "tests": {
@@ -287,7 +287,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:24+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "SHELL-F-039",
@@ -323,13 +323,23 @@
         {
           "name": "Integration",
           "start": "2026-11-28T18:31+11:00",
+          "end": "2026-11-28T18:33+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-28T18:33+11:00",
+          "end": "2026-11-28T18:33+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-28T18:34+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 4322043,
-      "costUsd": 3.92,
+      "tokens": 5549602,
+      "costUsd": 5.35,
       "commits": 0
     },
     {
@@ -337,7 +347,7 @@
       "packetId": "idp-g13",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "running",
+      "state": "waiting on hub",
       "startedAt": "2026-11-28T18:26+11:00",
       "phase": "Developer",
       "items": [
@@ -345,8 +355,8 @@
           "id": "IDP-B-007",
           "title": "User detail form card wraps at 1024 and overflows at 390",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "blocked: needs shell rule (r280 held)"
         },
         {
           "id": "IDP-B-008",
@@ -359,8 +369,8 @@
           "id": "IDP-F-021",
           "title": "Access requests count badge in the sidebar",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Reviewer",
+          "status": "pass"
         }
       ],
       "steps": [
@@ -376,9 +386,33 @@
         }
       ],
       "loops": 0,
+      "escalations": 1,
+      "tokens": 8078238,
+      "costUsd": 8,
+      "commits": 0
+    },
+    {
+      "id": "w-53",
+      "packetId": "shell-g21",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T18:34+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-B-021",
+          "title": "content-grid cards stay half width below 1024",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
       "escalations": 0,
-      "tokens": 4791636,
-      "costUsd": 4.98,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
