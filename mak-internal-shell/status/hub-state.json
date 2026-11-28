@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T22:03+11:00",
+  "generatedAt": "2026-11-28T22:05+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 56,
+        "percentUsed": 57,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 13,
       "points": 59,
-      "tokens": 737241771,
-      "costUsd": 634.51,
+      "tokens": 738961484,
+      "costUsd": 635.95,
       "minutesWaiting": {
         "hub": 52,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 48,
       "points": 248,
-      "tokens": 1960955769,
-      "costUsd": 1771.51,
+      "tokens": 1962675482,
+      "costUsd": 1772.96,
       "minutesWaiting": {
         "hub": 3197,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7907080,
+      "tokens": 7914014,
       "minutes": 17,
-      "costUsd": 7.14
+      "costUsd": 7.15
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 59,
-        "tokens": 737241771,
-        "costUsd": 634.51
+        "tokens": 738961484,
+        "costUsd": 635.95
       }
     ],
     "tests": {
@@ -264,13 +264,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T21:59+11:00",
-      "phase": "Developer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-026",
           "title": "TablePage with no rows: Tab lands on header controls that can't be seen",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Parity",
           "status": "running"
         }
       ],
@@ -283,13 +283,23 @@
         {
           "name": "Developer B-026",
           "start": "2026-11-28T22:01+11:00",
+          "end": "2026-11-28T22:04+11:00"
+        },
+        {
+          "name": "Reviewer B-026",
+          "start": "2026-11-28T22:04+11:00",
+          "end": "2026-11-28T22:04+11:00"
+        },
+        {
+          "name": "Parity B-026",
+          "start": "2026-11-28T22:05+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 2198927,
-      "costUsd": 2.56,
+      "tokens": 3501357,
+      "costUsd": 3.79,
       "commits": 0
     }
   ],
