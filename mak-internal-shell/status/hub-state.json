@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:26+11:00",
+  "generatedAt": "2026-11-28T18:28+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 2,
+        "percentUsed": 4,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 49,
-      "tokens": 519453252,
-      "costUsd": 443.13,
+      "tokens": 520970260,
+      "costUsd": 444.11,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 41,
       "points": 238,
-      "tokens": 1743167250,
-      "costUsd": 1580.14,
+      "tokens": 1744684258,
+      "costUsd": 1581.11,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,7 +130,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7324232,
+      "tokens": 7330606,
       "minutes": 20,
       "costUsd": 6.64
     },
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 49,
-        "tokens": 519453252,
-        "costUsd": 443.13
+        "tokens": 520970260,
+        "costUsd": 444.11
       }
     ],
     "tests": {
@@ -239,11 +239,6 @@
           "state": "running",
           "items": [
             {
-              "id": "SHELL-F-039",
-              "title": "Sidebar count badge from a plugin",
-              "size": 2
-            },
-            {
               "id": "SHELL-B-020",
               "title": "Sidebar tooltip lingers after navigation",
               "size": 1
@@ -258,7 +253,7 @@
         {
           "id": "idp-g13",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "IDP-B-007",
