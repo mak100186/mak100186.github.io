@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T21:44+11:00",
+  "generatedAt": "2026-11-28T21:46+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 12,
       "points": 58,
-      "tokens": 724770508,
-      "costUsd": 622.35,
+      "tokens": 726439228,
+      "costUsd": 624.33,
       "minutesWaiting": {
         "hub": 52,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 47,
       "points": 247,
-      "tokens": 1948484506,
-      "costUsd": 1759.36,
+      "tokens": 1950153226,
+      "costUsd": 1761.33,
       "minutesWaiting": {
         "hub": 3197,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7888601,
+      "tokens": 7895357,
       "minutes": 17,
-      "costUsd": 7.12
+      "costUsd": 7.13
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 58,
-        "tokens": 724770508,
-        "costUsd": 622.35
+        "tokens": 726439228,
+        "costUsd": 624.33
       }
     ],
     "tests": {
@@ -264,7 +264,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T21:20+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "SHELL-B-024",
@@ -303,13 +303,18 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-28T21:44+11:00",
+          "end": "2026-11-28T21:45+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-28T21:45+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 8821971,
-      "costUsd": 9.74,
+      "tokens": 10490691,
+      "costUsd": 11.71,
       "commits": 0
     }
   ],
