@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:36+11:00",
+  "generatedAt": "2026-11-28T17:38+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 42,
+        "percentUsed": 43,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 472077758,
-      "costUsd": 399.3,
+      "tokens": 475097113,
+      "costUsd": 401.44,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1695791756,
-      "costUsd": 1536.31,
+      "tokens": 1698811111,
+      "costUsd": 1538.44,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7216135,
+      "tokens": 7228983,
       "minutes": 21,
-      "costUsd": 6.54
+      "costUsd": 6.55
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 472077758,
-        "costUsd": 399.3
+        "tokens": 475097113,
+        "costUsd": 401.44
       }
     ],
     "tests": {
@@ -236,7 +236,7 @@
         {
           "id": "shell-g19",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-B-018",
@@ -249,8 +249,25 @@
               "size": 1
             },
             {
-              "id": "SHELL-PM-020",
-              "title": "frame.scss budget headroom",
+              "id": "SHELL-F-038",
+              "title": "Frame style budget headroom",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "shell-g20",
+          "kind": "orchestrated",
+          "state": "queued",
+          "items": [
+            {
+              "id": "SHELL-F-039",
+              "title": "Sidebar count badge from a plugin",
+              "size": 2
+            },
+            {
+              "id": "SHELL-B-020",
+              "title": "Sidebar tooltip lingers after navigation",
               "size": 1
             }
           ]
@@ -261,28 +278,30 @@
       "component": "idp",
       "packets": [
         {
-          "id": "idp-g12",
+          "id": "idp-g13",
           "kind": "orchestrated",
-          "state": "running",
+          "state": "held",
           "items": [
             {
-              "id": "IDP-F-017",
-              "title": "Admin: access history",
-              "size": 3
-            },
-            {
-              "id": "IDP-F-018",
-              "title": "Access requests",
-              "size": 5
-            },
-            {
-              "id": "IDP-B-006",
-              "title": "apiBaseUrl at a slot offset",
+              "id": "IDP-B-007",
+              "title": "User detail card at 1024 and 390",
               "size": 1
             },
             {
-              "id": "IDP-ADOPT-SHELL-G17",
-              "title": "Adopt shell-g17's TablePage and dialog-sm",
+              "id": "IDP-F-021",
+              "title": "Access requests count badge",
+              "size": 1
+            }
+          ]
+        },
+        {
+          "id": "direct-pm011",
+          "kind": "direct",
+          "state": "queued",
+          "items": [
+            {
+              "id": "IDP-PM-011",
+              "title": "Idp.Api Compose healthcheck",
               "size": 1
             }
           ]
@@ -302,14 +321,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T17:36+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-B-018",
           "title": "fixed-table squeezes its flexible column to 0 when fixed columns exceed the card",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-B-019",
@@ -326,7 +345,13 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer B-018",
+          "start": "2026-11-28T17:38+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
