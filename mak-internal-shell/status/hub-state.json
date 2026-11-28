@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:05+11:00",
+  "generatedAt": "2026-11-28T18:07+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 49,
+        "percentUsed": 50,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 495543384,
-      "costUsd": 420.29,
+      "tokens": 500865309,
+      "costUsd": 424.56,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1719257382,
-      "costUsd": 1557.3,
+      "tokens": 1724579307,
+      "costUsd": 1561.57,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7315989,
+      "tokens": 7338635,
       "minutes": 21,
-      "costUsd": 6.63
+      "costUsd": 6.64
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 495543384,
-        "costUsd": 420.29
+        "tokens": 500865309,
+        "costUsd": 424.56
       }
     ],
     "tests": {
@@ -309,7 +309,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T17:36+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-B-018",
@@ -329,7 +329,7 @@
           "id": "SHELL-F-038",
           "title": "Frame style budget headroom",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -367,13 +367,18 @@
         {
           "name": "Developer F-038",
           "start": "2026-11-28T17:57+11:00",
+          "end": "2026-11-28T18:07+11:00"
+        },
+        {
+          "name": "Reviewer F-038",
+          "start": "2026-11-28T18:07+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 13766136,
-      "costUsd": 14.06,
+      "tokens": 19088061,
+      "costUsd": 18.33,
       "commits": 0
     }
   ],
