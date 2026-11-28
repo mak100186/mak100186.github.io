@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T13:33+11:00",
+  "generatedAt": "2026-11-28T13:35+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 7,
+        "percentUsed": 8,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 336638719,
-      "costUsd": 276.96,
+      "tokens": 339612813,
+      "costUsd": 279.29,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1560352717,
-      "costUsd": 1413.96,
+      "tokens": 1563326811,
+      "costUsd": 1416.3,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7157581,
+      "tokens": 7171224,
       "minutes": 21,
-      "costUsd": 6.49
+      "costUsd": 6.5
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 336638719,
-        "costUsd": 276.96
+        "tokens": 339612813,
+        "costUsd": 279.29
       }
     ],
     "tests": {
@@ -375,13 +375,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T13:25+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-016",
           "title": "Dashboard edit mode is unusable at 390: below NARROW_FRAME the dashboard block stacks its cards full width in view and edit; Move/Size reachable; Cancel clear of the top bar",
           "size": 2,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "running"
         },
         {
@@ -406,13 +406,18 @@
         {
           "name": "Reviewer B-016",
           "start": "2026-11-28T13:33+11:00",
+          "end": "2026-11-28T13:35+11:00"
+        },
+        {
+          "name": "Parity B-016",
+          "start": "2026-11-28T13:35+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 6943678,
-      "costUsd": 5.81,
+      "tokens": 9459963,
+      "costUsd": 7.89,
       "commits": 0
     }
   ],
