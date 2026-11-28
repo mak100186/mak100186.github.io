@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:07+11:00",
+  "generatedAt": "2026-11-28T18:09+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 500865309,
-      "costUsd": 424.56,
+      "tokens": 502701149,
+      "costUsd": 426.99,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1724579307,
-      "costUsd": 1561.57,
+      "tokens": 1726415147,
+      "costUsd": 1564,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7338635,
+      "tokens": 7346447,
       "minutes": 21,
-      "costUsd": 6.64
+      "costUsd": 6.66
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 500865309,
-        "costUsd": 424.56
+        "tokens": 502701149,
+        "costUsd": 426.99
       }
     ],
     "tests": {
@@ -309,7 +309,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T17:36+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-018",
@@ -329,7 +329,7 @@
           "id": "SHELL-F-038",
           "title": "Frame style budget headroom",
           "size": 1,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "running"
         }
       ],
@@ -372,13 +372,18 @@
         {
           "name": "Reviewer F-038",
           "start": "2026-11-28T18:07+11:00",
+          "end": "2026-11-28T18:08+11:00"
+        },
+        {
+          "name": "Parity F-038",
+          "start": "2026-11-28T18:08+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 19088061,
-      "costUsd": 18.33,
+      "tokens": 20923901,
+      "costUsd": 20.76,
       "commits": 0
     }
   ],
