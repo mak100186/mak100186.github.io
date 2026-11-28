@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:36+11:00",
+  "generatedAt": "2026-11-28T18:38+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 10,
+        "percentUsed": 11,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -108,10 +108,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 6,
-      "points": 49,
-      "tokens": 546624470,
-      "costUsd": 466.84,
+      "packetsMerged": 7,
+      "points": 50,
+      "tokens": 551762047,
+      "costUsd": 470.43,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -119,10 +119,10 @@
       }
     },
     "week": {
-      "packetsMerged": 41,
-      "points": 238,
-      "tokens": 1770338468,
-      "costUsd": 1603.85,
+      "packetsMerged": 42,
+      "points": 239,
+      "tokens": 1775476045,
+      "costUsd": 1607.43,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7438397,
+      "tokens": 7428770,
       "minutes": 20,
-      "costUsd": 6.74
+      "costUsd": 6.73
     },
     "daily": [
       {
@@ -215,9 +215,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 49,
-        "tokens": 546624470,
-        "costUsd": 466.84
+        "points": 50,
+        "tokens": 551762047,
+        "costUsd": 470.43
       }
     ],
     "tests": {
@@ -233,18 +233,6 @@
     {
       "component": "shell",
       "packets": [
-        {
-          "id": "shell-g20",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-B-020",
-              "title": "Sidebar tooltip lingers after navigation",
-              "size": 1
-            }
-          ]
-        },
         {
           "id": "shell-g21",
           "kind": "orchestrated",
@@ -287,68 +275,6 @@
     }
   ],
   "workers": [
-    {
-      "id": "w-51",
-      "packetId": "shell-g20",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-28T18:24+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-F-039",
-          "title": "Sidebar count badge from a plugin",
-          "size": 2,
-          "phase": "",
-          "status": "queued"
-        },
-        {
-          "id": "SHELL-B-020",
-          "title": "Sidebar tooltip lingers after navigation",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-28T18:24+11:00",
-          "end": null
-        },
-        {
-          "name": "Developer B-020",
-          "start": "2026-11-28T18:26+11:00",
-          "end": "2026-11-28T18:30+11:00"
-        },
-        {
-          "name": "Reviewer B-020",
-          "start": "2026-11-28T18:30+11:00",
-          "end": "2026-11-28T18:30+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-28T18:31+11:00",
-          "end": "2026-11-28T18:33+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-28T18:33+11:00",
-          "end": "2026-11-28T18:33+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-28T18:34+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 7830510,
-      "costUsd": 8.35,
-      "commits": 0
-    },
     {
       "id": "w-52",
       "packetId": "idp-g13",
@@ -410,13 +336,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:34+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-B-021",
           "title": "content-grid cards stay half width below 1024",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -429,17 +355,32 @@
         {
           "name": "Developer B-021",
           "start": "2026-11-28T18:35+11:00",
+          "end": "2026-11-28T18:38+11:00"
+        },
+        {
+          "name": "Reviewer B-021",
+          "start": "2026-11-28T18:38+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1406302,
-      "costUsd": 1.27,
+      "tokens": 2678710,
+      "costUsd": 2.56,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g20",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-28T18:37+11:00",
+      "items": 1,
+      "points": 1,
+      "minutes": 13,
+      "tokens": 10187049
+    },
     {
       "packetId": "shell-g19",
       "component": "shell",
@@ -629,16 +570,6 @@
       "points": 9,
       "minutes": 217,
       "tokens": 45064448
-    },
-    {
-      "packetId": "idp-g6",
-      "component": "idp",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-25T13:27+11:00",
-      "items": 1,
-      "points": 3,
-      "minutes": 24,
-      "tokens": 15835476
     }
   ]
 }
