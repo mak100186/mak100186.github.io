@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:07+11:00",
+  "generatedAt": "2026-11-28T17:09+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 36,
+        "percentUsed": 37,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 4,
       "points": 33,
-      "tokens": 442883782,
-      "costUsd": 369.44,
+      "tokens": 457134108,
+      "costUsd": 382.5,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 39,
       "points": 222,
-      "tokens": 1666597780,
-      "costUsd": 1506.45,
+      "tokens": 1680848106,
+      "costUsd": 1519.51,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7507197,
+      "tokens": 7571388,
       "minutes": 20,
-      "costUsd": 6.79
+      "costUsd": 6.84
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 33,
-        "tokens": 442883782,
-        "costUsd": 369.44
+        "tokens": 457134108,
+        "costUsd": 382.5
       }
     ],
     "tests": {
@@ -241,6 +241,11 @@
             {
               "id": "SHELL-B-018",
               "title": "fixed-table at narrow widths",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-019",
+              "title": "Busy button gap in dialog actions",
               "size": 1
             },
             {
@@ -297,7 +302,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Developer (r268 fix)",
+      "phase": "Parity re-check",
       "items": [
         {
           "id": "IDP-F-016",
@@ -429,18 +434,23 @@
         {
           "name": "Parity F-018, IDP-FOLDIN-G11, IDP-ADOPT-SHELL-G17",
           "start": "2026-11-28T16:41+11:00",
-          "end": null
+          "end": "2026-11-28T17:09+11:00"
         },
         {
           "name": "Developer (r268 fix) F-016",
           "start": "2026-11-28T16:42+11:00",
           "end": null
+        },
+        {
+          "name": "Parity re-check F-016, IDP-F-017",
+          "start": "2026-11-28T17:09+11:00",
+          "end": null
         }
       ],
       "loops": 1,
-      "escalations": 4,
-      "tokens": 83184137,
-      "costUsd": 69.57,
+      "escalations": 5,
+      "tokens": 97074026,
+      "costUsd": 82.38,
       "commits": 0
     }
   ],
