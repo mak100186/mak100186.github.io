@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T21:19+11:00",
+  "generatedAt": "2026-11-28T21:20+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     ]
   },
   "hub": {
-    "state": "idle",
+    "state": "running",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -222,7 +222,7 @@
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-28T20:22+11:00",
+        "at": "2026-11-28T21:19+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -243,7 +243,32 @@
       "packets": []
     }
   ],
-  "workers": [],
+  "workers": [
+    {
+      "id": "w-57",
+      "packetId": "shell-g24",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T21:20+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-B-024",
+          "title": "TablePage with no rows: focus or a script still scrolls the card sideways",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
+      "commits": 0
+    }
+  ],
   "recent": [
     {
       "packetId": "idp-g14",
