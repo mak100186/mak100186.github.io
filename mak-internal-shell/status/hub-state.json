@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T19:12+11:00",
+  "generatedAt": "2026-11-28T19:14+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -108,10 +108,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 8,
-      "points": 51,
-      "tokens": 588350550,
-      "costUsd": 504.5,
+      "packetsMerged": 9,
+      "points": 53,
+      "tokens": 591870943,
+      "costUsd": 506.61,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -119,10 +119,10 @@
       }
     },
     "week": {
-      "packetsMerged": 43,
-      "points": 240,
-      "tokens": 1812064548,
-      "costUsd": 1641.51,
+      "packetsMerged": 44,
+      "points": 242,
+      "tokens": 1815584941,
+      "costUsd": 1643.61,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7550269,
-      "minutes": 19,
-      "costUsd": 6.84
+      "tokens": 7502417,
+      "minutes": 18,
+      "costUsd": 6.79
     },
     "daily": [
       {
@@ -215,9 +215,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 51,
-        "tokens": 588350550,
-        "costUsd": 504.5
+        "points": 53,
+        "tokens": 591870943,
+        "costUsd": 506.61
       }
     ],
     "tests": {
@@ -236,103 +236,25 @@
     },
     {
       "component": "idp",
-      "packets": [
-        {
-          "id": "idp-g13",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "IDP-B-008",
-              "title": "Access history empty message at 390",
-              "size": 1
-            },
-            {
-              "id": "IDP-F-021",
-              "title": "Access requests count badge",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "component-library",
       "packets": []
     }
   ],
-  "workers": [
+  "workers": [],
+  "recent": [
     {
-      "id": "w-52",
       "packetId": "idp-g13",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-28T18:26+11:00",
-      "phase": "Integration",
-      "items": [
-        {
-          "id": "IDP-B-007",
-          "title": "User detail form card wraps at 1024 and overflows at 390",
-          "size": 1,
-          "phase": "Developer",
-          "status": "blocked: needs shell rule (r280 held)"
-        },
-        {
-          "id": "IDP-B-008",
-          "title": "Access history empty message is off-screen at 390",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "IDP-F-021",
-          "title": "Access requests count badge in the sidebar",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer (wave 1)",
-          "start": "2026-11-28T18:29+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer B-008",
-          "start": "2026-11-28T18:31+11:00",
-          "end": "2026-11-28T18:32+11:00"
-        },
-        {
-          "name": "Parity (IDP-B-008, IDP-F-021 + F-017/F-018 R2 re-checks)",
-          "start": "2026-11-28T18:34+11:00",
-          "end": "2026-11-28T18:49+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-28T18:49+11:00",
-          "end": null
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-28T19:07+11:00",
-          "end": "2026-11-28T19:08+11:00"
-        },
-        {
-          "name": "Finalizers (PMBook, Handoff, Revision+Changelog+Runbook, Graphify)",
-          "start": "2026-11-28T19:08+11:00",
-          "end": "2026-11-28T19:12+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 2,
-      "tokens": 25410905,
-      "costUsd": 26.37,
-      "commits": 35
-    }
-  ],
-  "recent": [
+      "mergedAt": "2026-11-28T19:13+11:00",
+      "items": 2,
+      "points": 2,
+      "minutes": 47,
+      "tokens": 26962734
+    },
     {
       "packetId": "shell-g21",
       "component": "shell",
@@ -522,16 +444,6 @@
       "points": 3,
       "minutes": 247,
       "tokens": 23773982
-    },
-    {
-      "packetId": "shell-g13",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-25T17:21+11:00",
-      "items": 8,
-      "points": 9,
-      "minutes": 240,
-      "tokens": 39302834
     }
   ]
 }
