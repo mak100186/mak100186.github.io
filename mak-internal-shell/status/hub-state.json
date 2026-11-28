@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T14:16+11:00",
+  "generatedAt": "2026-11-28T14:18+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 25,
+        "percentUsed": 26,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 409504754,
-      "costUsd": 338.1,
+      "tokens": 413994647,
+      "costUsd": 342.3,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1633218752,
-      "costUsd": 1475.11,
+      "tokens": 1637708645,
+      "costUsd": 1479.31,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7491829,
+      "tokens": 7512425,
       "minutes": 21,
-      "costUsd": 6.77
+      "costUsd": 6.79
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 409504754,
-        "costUsd": 338.1
+        "tokens": 413994647,
+        "costUsd": 342.3
       }
     ],
     "tests": {
@@ -297,7 +297,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Developer (r263 fix)",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-016",
@@ -332,7 +332,7 @@
           "title": "Adopt SHELL-F-034 (per-action divider: Users M10 before Reactivate), SHELL-B-010 (TablePage loading), SHELL-F-035 (dialog-sm) in the admin screens, once shell-g17 is on main; re-check IDP-F-014 AC2 after SHELL-B-015",
           "size": 1,
           "phase": "Reviewer",
-          "status": "running"
+          "status": "pass"
         }
       ],
       "steps": [
@@ -414,7 +414,7 @@
         {
           "name": "Reviewer ADOPT-SHELL-G17",
           "start": "2026-11-28T14:15+11:00",
-          "end": null
+          "end": "2026-11-28T14:16+11:00"
         },
         {
           "name": "Developer (r263 fix) F-018",
@@ -424,8 +424,8 @@
       ],
       "loops": 1,
       "escalations": 2,
-      "tokens": 67525829,
-      "costUsd": 54.51,
+      "tokens": 69893298,
+      "costUsd": 56.58,
       "commits": 0
     },
     {
@@ -435,7 +435,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T13:25+11:00",
-      "phase": "Integration",
+      "phase": "Reviewer-Integration",
       "items": [
         {
           "id": "SHELL-B-016",
@@ -506,13 +506,18 @@
         {
           "name": "Integration",
           "start": "2026-11-28T14:13+11:00",
+          "end": "2026-11-28T14:17+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-28T14:17+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 29343838,
-      "costUsd": 27.51,
+      "tokens": 31466262,
+      "costUsd": 29.64,
       "commits": 0
     }
   ],
