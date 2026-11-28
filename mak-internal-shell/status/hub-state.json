@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T22:18+11:00",
+  "generatedAt": "2026-11-28T22:20+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,7 +94,7 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
@@ -108,10 +108,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 13,
-      "points": 59,
-      "tokens": 745862016,
-      "costUsd": 644.57,
+      "packetsMerged": 14,
+      "points": 60,
+      "tokens": 748777498,
+      "costUsd": 646.9,
       "minutesWaiting": {
         "hub": 52,
         "you": 0,
@@ -119,10 +119,10 @@
       }
     },
     "week": {
-      "packetsMerged": 48,
-      "points": 248,
-      "tokens": 1969576014,
-      "costUsd": 1781.58,
+      "packetsMerged": 49,
+      "points": 249,
+      "tokens": 1972491496,
+      "costUsd": 1783.9,
       "minutesWaiting": {
         "hub": 3197,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7941839,
-      "minutes": 17,
-      "costUsd": 7.18
+      "tokens": 7921653,
+      "minutes": 11,
+      "costUsd": 7.16
     },
     "daily": [
       {
@@ -215,9 +215,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 59,
-        "tokens": 745862016,
-        "costUsd": 644.57
+        "points": 60,
+        "tokens": 748777498,
+        "costUsd": 646.9
       }
     ],
     "tests": {
@@ -232,20 +232,7 @@
   "queue": [
     {
       "component": "shell",
-      "packets": [
-        {
-          "id": "shell-g25",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-B-026",
-              "title": "TablePage with no rows: Tab lands on unseen header controls",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "idp",
@@ -256,69 +243,18 @@
       "packets": []
     }
   ],
-  "workers": [
+  "workers": [],
+  "recent": [
     {
-      "id": "w-58",
       "packetId": "shell-g25",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-28T21:59+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-B-026",
-          "title": "TablePage with no rows: Tab lands on header controls that can't be seen",
-          "size": 1,
-          "phase": "Parity",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-28T21:59+11:00",
-          "end": "2026-11-28T22:01+11:00"
-        },
-        {
-          "name": "Developer B-026",
-          "start": "2026-11-28T22:01+11:00",
-          "end": "2026-11-28T22:04+11:00"
-        },
-        {
-          "name": "Reviewer B-026",
-          "start": "2026-11-28T22:04+11:00",
-          "end": "2026-11-28T22:04+11:00"
-        },
-        {
-          "name": "Parity B-026",
-          "start": "2026-11-28T22:05+11:00",
-          "end": "2026-11-28T22:11+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-28T22:12+11:00",
-          "end": "2026-11-28T22:14+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-28T22:14+11:00",
-          "end": "2026-11-28T22:14+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-28T22:15+11:00",
-          "end": "2026-11-28T22:18+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 0,
-      "tokens": 9983251,
-      "costUsd": 12.18,
-      "commits": 2
-    }
-  ],
-  "recent": [
+      "mergedAt": "2026-11-28T22:18+11:00",
+      "items": 1,
+      "points": 1,
+      "minutes": 20,
+      "tokens": 10780230
+    },
     {
       "packetId": "shell-g24",
       "component": "shell",
@@ -508,16 +444,6 @@
       "points": 5,
       "minutes": 1560,
       "tokens": 40190914
-    },
-    {
-      "packetId": "component-library-g6",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-26T18:45+11:00",
-      "items": 2,
-      "points": 4,
-      "minutes": 1510,
-      "tokens": 35069491
     }
   ]
 }
