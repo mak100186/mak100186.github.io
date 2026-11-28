@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:40+11:00",
+  "generatedAt": "2026-11-28T17:42+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 476566329,
-      "costUsd": 402.87,
+      "tokens": 482590951,
+      "costUsd": 407.28,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1700280327,
-      "costUsd": 1539.88,
+      "tokens": 1706304949,
+      "costUsd": 1544.28,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7235235,
+      "tokens": 7260872,
       "minutes": 21,
-      "costUsd": 6.55
+      "costUsd": 6.57
     },
     "daily": [
       {
@@ -216,13 +216,13 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 476566329,
-        "costUsd": 402.87
+        "tokens": 482590951,
+        "costUsd": 407.28
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-28T14:34+11:00",
+        "at": "2026-11-28T17:41+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -290,18 +290,6 @@
             {
               "id": "IDP-F-021",
               "title": "Access requests count badge",
-              "size": 1
-            }
-          ]
-        },
-        {
-          "id": "direct-pm011",
-          "kind": "direct",
-          "state": "queued",
-          "items": [
-            {
-              "id": "IDP-PM-011",
-              "title": "Idp.Api Compose healthcheck",
               "size": 1
             }
           ]
