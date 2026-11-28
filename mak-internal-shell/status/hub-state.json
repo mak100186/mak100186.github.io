@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:12+11:00",
+  "generatedAt": "2026-11-28T20:14+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -94,11 +94,11 @@
     ]
   },
   "hub": {
-    "state": "running",
+    "state": "idle",
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 33,
+        "percentUsed": 34,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -108,10 +108,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 9,
-      "points": 53,
-      "tokens": 633432176,
-      "costUsd": 540.42,
+      "packetsMerged": 10,
+      "points": 54,
+      "tokens": 654190350,
+      "costUsd": 556.05,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -119,10 +119,10 @@
       }
     },
     "week": {
-      "packetsMerged": 44,
-      "points": 242,
-      "tokens": 1857146174,
-      "costUsd": 1677.43,
+      "packetsMerged": 45,
+      "points": 243,
+      "tokens": 1877904348,
+      "costUsd": 1693.06,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7674158,
-      "minutes": 18,
-      "costUsd": 6.93
+      "tokens": 7728001,
+      "minutes": 17,
+      "costUsd": 6.97
     },
     "daily": [
       {
@@ -215,9 +215,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 53,
-        "tokens": 633432176,
-        "costUsd": 540.42
+        "points": 54,
+        "tokens": 654190350,
+        "costUsd": 556.05
       }
     ],
     "tests": {
@@ -232,20 +232,7 @@
   "queue": [
     {
       "component": "shell",
-      "packets": [
-        {
-          "id": "shell-g22",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-B-022",
-              "title": "Profile Dark theme row truncates at 1024 and 390",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "idp",
@@ -256,74 +243,18 @@
       "packets": []
     }
   ],
-  "workers": [
+  "workers": [],
+  "recent": [
     {
-      "id": "w-54",
       "packetId": "shell-g22",
       "component": "shell",
       "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-28T19:43+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-B-022",
-          "title": "Profile Dark theme row truncates at 1024 and 390",
-          "size": 1,
-          "phase": "Verification wait",
-          "status": "r295: hub playwright check after merge"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-28T19:44+11:00",
-          "end": "2026-11-28T19:45+11:00"
-        },
-        {
-          "name": "Developer B-022",
-          "start": "2026-11-28T19:45+11:00",
-          "end": "2026-11-28T19:54+11:00"
-        },
-        {
-          "name": "Reviewer B-022",
-          "start": "2026-11-28T19:54+11:00",
-          "end": "2026-11-28T19:55+11:00"
-        },
-        {
-          "name": "Parity B-022",
-          "start": "2026-11-28T19:56+11:00",
-          "end": "2026-11-28T20:04+11:00"
-        },
-        {
-          "name": "Verification wait B-022",
-          "start": "2026-11-28T20:05+11:00",
-          "end": "2026-11-28T20:05+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-28T20:05+11:00",
-          "end": "2026-11-28T20:07+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-28T20:07+11:00",
-          "end": "2026-11-28T20:09+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-28T20:09+11:00",
-          "end": "2026-11-28T20:12+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 16553148,
-      "costUsd": 17.5,
-      "commits": 3
-    }
-  ],
-  "recent": [
+      "mergedAt": "2026-11-28T20:13+11:00",
+      "items": 1,
+      "points": 1,
+      "minutes": 31,
+      "tokens": 17512541
+    },
     {
       "packetId": "idp-g13",
       "component": "idp",
@@ -513,16 +444,6 @@
       "points": 3,
       "minutes": 67,
       "tokens": 21969907
-    },
-    {
-      "packetId": "idp-g7",
-      "component": "idp",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-25T17:34+11:00",
-      "items": 2,
-      "points": 3,
-      "minutes": 247,
-      "tokens": 23773982
     }
   ]
 }
