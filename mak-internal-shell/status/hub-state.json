@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:48+11:00",
+  "generatedAt": "2026-11-28T18:50+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 13,
+        "percentUsed": 14,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -108,10 +108,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 7,
-      "points": 50,
-      "tokens": 559313771,
-      "costUsd": 478.22,
+      "packetsMerged": 8,
+      "points": 51,
+      "tokens": 569710171,
+      "costUsd": 486.6,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -119,10 +119,10 @@
       }
     },
     "week": {
-      "packetsMerged": 42,
-      "points": 239,
-      "tokens": 1783027769,
-      "costUsd": 1615.23,
+      "packetsMerged": 43,
+      "points": 240,
+      "tokens": 1793424169,
+      "costUsd": 1623.61,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7460367,
-      "minutes": 20,
-      "costUsd": 6.76
+      "tokens": 7472601,
+      "minutes": 19,
+      "costUsd": 6.77
     },
     "daily": [
       {
@@ -215,9 +215,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 50,
-        "tokens": 559313771,
-        "costUsd": 478.22
+        "points": 51,
+        "tokens": 569710171,
+        "costUsd": 486.6
       }
     ],
     "tests": {
@@ -232,20 +232,7 @@
   "queue": [
     {
       "component": "shell",
-      "packets": [
-        {
-          "id": "shell-g21",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-B-021",
-              "title": "content-grid cards full width below 1024",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "idp",
@@ -282,7 +269,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:26+11:00",
-      "phase": "Parity (IDP-B-008, IDP-F-021 + F-017/F-018 R2 re-checks)",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-B-007",
@@ -320,72 +307,32 @@
         {
           "name": "Parity (IDP-B-008, IDP-F-021 + F-017/F-018 R2 re-checks)",
           "start": "2026-11-28T18:34+11:00",
+          "end": "2026-11-28T18:49+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-28T18:49+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 8635302,
-      "costUsd": 8.39,
+      "tokens": 16532325,
+      "costUsd": 15.28,
       "commits": 0
-    },
-    {
-      "id": "w-53",
-      "packetId": "shell-g21",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "ready to merge",
-      "startedAt": "2026-11-28T18:34+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-B-021",
-          "title": "content-grid cards stay half width below 1024",
-          "size": 1,
-          "phase": "Parity",
-          "status": "pass"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Start",
-          "start": "2026-11-28T18:34+11:00",
-          "end": "2026-11-28T18:35+11:00"
-        },
-        {
-          "name": "Developer B-021",
-          "start": "2026-11-28T18:35+11:00",
-          "end": "2026-11-28T18:38+11:00"
-        },
-        {
-          "name": "Reviewer B-021",
-          "start": "2026-11-28T18:38+11:00",
-          "end": "2026-11-28T18:38+11:00"
-        },
-        {
-          "name": "Parity B-021",
-          "start": "2026-11-28T18:38+11:00",
-          "end": "2026-11-28T18:42+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-28T18:43+11:00",
-          "end": "2026-11-28T18:45+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-28T18:45+11:00",
-          "end": "2026-11-28T18:47+11:00"
-        }
-      ],
-      "loops": 0,
-      "escalations": 0,
-      "tokens": 9792437,
-      "costUsd": 10.12,
-      "commits": 17
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g21",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-28T18:48+11:00",
+      "items": 1,
+      "points": 1,
+      "minutes": 15,
+      "tokens": 9792437
+    },
     {
       "packetId": "shell-g20",
       "component": "shell",
@@ -575,16 +522,6 @@
       "points": 9,
       "minutes": 240,
       "tokens": 39302834
-    },
-    {
-      "packetId": "component-library-g4",
-      "component": "component-library",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-25T17:01+11:00",
-      "items": 3,
-      "points": 9,
-      "minutes": 217,
-      "tokens": 45064448
     }
   ]
 }
