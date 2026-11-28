@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T10:59+11:00",
+  "generatedAt": "2026-11-28T11:01+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -87,7 +87,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 85,
+        "percentUsed": 87,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -99,8 +99,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 25,
-      "tokens": 291843578,
-      "costUsd": 238.07,
+      "tokens": 297381158,
+      "costUsd": 242.67,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -110,8 +110,8 @@
     "week": {
       "packetsMerged": 37,
       "points": 214,
-      "tokens": 1515557576,
-      "costUsd": 1375.08,
+      "tokens": 1521095156,
+      "costUsd": 1379.68,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -119,9 +119,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7082045,
+      "tokens": 7107921,
       "minutes": 21,
-      "costUsd": 6.43
+      "costUsd": 6.45
     },
     "daily": [
       {
@@ -205,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 25,
-        "tokens": 291843578,
-        "costUsd": 238.07
+        "tokens": 297381158,
+        "costUsd": 242.67
       }
     ],
     "tests": {
@@ -304,7 +304,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Parity (re-run from start)",
+      "phase": "Developer",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-FINDINGS-2026-11-28",
@@ -340,13 +340,13 @@
         {
           "name": "Parity (re-run from start)",
           "start": "2026-11-28T10:59+11:00",
-          "end": null
+          "end": "2026-11-28T11:01+11:00"
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 21609924,
-      "costUsd": 19.08,
+      "tokens": 23963543,
+      "costUsd": 21.32,
       "commits": 0
     },
     {
@@ -356,21 +356,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Quiet",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-F-016",
           "title": "Admin: settings",
           "size": 2,
-          "phase": "Developer",
-          "status": "code written, gate not run (quiet); merged main (ff to 74722d5, shell-g17 in). waiting for \"node_modules restored\"."
+          "phase": "Reviewer",
+          "status": "pass (loop 0); committed 49d72b7; parity batched for one stack window after the ui items pass review"
         },
         {
           "id": "IDP-F-017",
           "title": "Admin: access history",
           "size": 3,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-F-018",
@@ -404,12 +404,22 @@
           "name": "Quiet (node_modules)",
           "start": "2026-11-28T10:52+11:00",
           "end": "2026-11-28T10:58+11:00"
+        },
+        {
+          "name": "Reviewer F-016",
+          "start": "2026-11-28T11:00+11:00",
+          "end": "2026-11-28T11:01+11:00"
+        },
+        {
+          "name": "Developer F-017",
+          "start": "2026-11-28T11:01+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 10445567,
-      "costUsd": 8.68,
+      "tokens": 13629528,
+      "costUsd": 11.04,
       "commits": 0
     }
   ],
