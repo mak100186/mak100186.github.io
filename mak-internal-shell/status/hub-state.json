@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:39+11:00",
+  "generatedAt": "2026-11-28T20:41+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 44,
+        "percentUsed": 45,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -108,10 +108,10 @@
       "parkAtPercent": 90
     },
     "today": {
-      "packetsMerged": 10,
-      "points": 54,
-      "tokens": 683935344,
-      "costUsd": 586.09,
+      "packetsMerged": 11,
+      "points": 56,
+      "tokens": 690481182,
+      "costUsd": 591.92,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -119,10 +119,10 @@
       }
     },
     "week": {
-      "packetsMerged": 45,
-      "points": 243,
-      "tokens": 1907649342,
-      "costUsd": 1723.1,
+      "packetsMerged": 46,
+      "points": 245,
+      "tokens": 1914195180,
+      "costUsd": 1728.92,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7850409,
+      "tokens": 7813042,
       "minutes": 17,
-      "costUsd": 7.09
+      "costUsd": 7.06
     },
     "daily": [
       {
@@ -215,9 +215,9 @@
       },
       {
         "date": "2026-11-28",
-        "points": 54,
-        "tokens": 683935344,
-        "costUsd": 586.09
+        "points": 56,
+        "tokens": 690481182,
+        "costUsd": 591.92
       }
     ],
     "tests": {
@@ -232,25 +232,7 @@
   "queue": [
     {
       "component": "shell",
-      "packets": [
-        {
-          "id": "shell-g23",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-B-023",
-              "title": ".add-field overflows its pane at 390",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-024",
-              "title": "TablePage empty card scrolls sideways",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     },
     {
       "component": "idp",
@@ -280,95 +262,6 @@
     }
   ],
   "workers": [
-    {
-      "id": "w-55",
-      "packetId": "shell-g23",
-      "component": "shell",
-      "kind": "orchestrated",
-      "state": "running",
-      "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "Finalizers",
-      "items": [
-        {
-          "id": "SHELL-B-023",
-          "title": ".add-field overflows its pane at 390",
-          "size": 1,
-          "phase": "Parity",
-          "status": "pass (b-023 pass, b-024 pass, 1 deferred gap on b-024)"
-        },
-        {
-          "id": "SHELL-B-024",
-          "title": "TablePage empty state: card scrolls sideways over a blank header",
-          "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
-        },
-        {
-          "id": "SHELL-B-025",
-          "title": ".table-range cuts the years off at 390",
-          "size": 1,
-          "phase": "Developer",
-          "status": "held (r301: deferred to blocks k13, change reverted)"
-        }
-      ],
-      "steps": [
-        {
-          "name": "Developer B-023",
-          "start": "2026-11-28T20:18+11:00",
-          "end": "2026-11-28T20:20+11:00"
-        },
-        {
-          "name": "Developer B-024",
-          "start": "2026-11-28T20:18+11:00",
-          "end": "2026-11-28T20:23+11:00"
-        },
-        {
-          "name": "Reviewer B-023",
-          "start": "2026-11-28T20:20+11:00",
-          "end": "2026-11-28T20:20+11:00"
-        },
-        {
-          "name": "Developer B-025",
-          "start": "2026-11-28T20:20+11:00",
-          "end": "2026-11-28T20:24+11:00"
-        },
-        {
-          "name": "Reviewer B-024",
-          "start": "2026-11-28T20:23+11:00",
-          "end": "2026-11-28T20:23+11:00"
-        },
-        {
-          "name": "Reviewer B-025",
-          "start": "2026-11-28T20:24+11:00",
-          "end": null
-        },
-        {
-          "name": "Parity B-023",
-          "start": "2026-11-28T20:25+11:00",
-          "end": "2026-11-28T20:34+11:00"
-        },
-        {
-          "name": "Integration",
-          "start": "2026-11-28T20:35+11:00",
-          "end": "2026-11-28T20:37+11:00"
-        },
-        {
-          "name": "Reviewer-Integration",
-          "start": "2026-11-28T20:37+11:00",
-          "end": "2026-11-28T20:38+11:00"
-        },
-        {
-          "name": "Finalizers",
-          "start": "2026-11-28T20:38+11:00",
-          "end": null
-        }
-      ],
-      "loops": 0,
-      "escalations": 1,
-      "tokens": 15617444,
-      "costUsd": 16.55,
-      "commits": 0
-    },
     {
       "id": "w-56",
       "packetId": "idp-g14",
@@ -432,12 +325,22 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 9302752,
-      "costUsd": 9.63,
+      "tokens": 9947800,
+      "costUsd": 10.64,
       "commits": 0
     }
   ],
   "recent": [
+    {
+      "packetId": "shell-g23",
+      "component": "shell",
+      "kind": "orchestrated",
+      "mergedAt": "2026-11-28T20:41+11:00",
+      "items": 2,
+      "points": 2,
+      "minutes": 26,
+      "tokens": 20213305
+    },
     {
       "packetId": "shell-g22",
       "component": "shell",
@@ -627,16 +530,6 @@
       "points": 1,
       "minutes": 14,
       "tokens": 8850786
-    },
-    {
-      "packetId": "shell-g14",
-      "component": "shell",
-      "kind": "orchestrated",
-      "mergedAt": "2026-11-25T18:29+11:00",
-      "items": 1,
-      "points": 3,
-      "minutes": 67,
-      "tokens": 21969907
     }
   ]
 }
