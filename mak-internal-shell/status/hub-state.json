@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T19:54+11:00",
+  "generatedAt": "2026-11-28T19:56+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 9,
       "points": 53,
-      "tokens": 619493209,
-      "costUsd": 526.09,
+      "tokens": 620977354,
+      "costUsd": 528.02,
       "minutesWaiting": {
         "hub": 50,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 44,
       "points": 242,
-      "tokens": 1843207207,
-      "costUsd": 1663.1,
+      "tokens": 1844691352,
+      "costUsd": 1665.02,
       "minutesWaiting": {
         "hub": 3195,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7616559,
+      "tokens": 7622692,
       "minutes": 18,
-      "costUsd": 6.87
+      "costUsd": 6.88
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 53,
-        "tokens": 619493209,
-        "costUsd": 526.09
+        "tokens": 620977354,
+        "costUsd": 528.02
       }
     ],
     "tests": {
@@ -264,13 +264,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T19:43+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-022",
           "title": "Profile Dark theme row truncates at 1024 and 390",
           "size": 1,
-          "phase": "Reviewer",
+          "phase": "Parity",
           "status": "running"
         }
       ],
@@ -288,13 +288,18 @@
         {
           "name": "Reviewer B-022",
           "start": "2026-11-28T19:54+11:00",
+          "end": "2026-11-28T19:55+11:00"
+        },
+        {
+          "name": "Parity B-022",
+          "start": "2026-11-28T19:56+11:00",
           "end": null
         }
       ],
       "loops": 0,
-      "escalations": 0,
-      "tokens": 4732246,
-      "costUsd": 4.31,
+      "escalations": 1,
+      "tokens": 5690324,
+      "costUsd": 5.95,
       "commits": 0
     }
   ],
