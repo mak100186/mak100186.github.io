@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T11:11+11:00",
+  "generatedAt": "2026-11-28T13:25+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -83,8 +83,8 @@
     ]
   },
   "hub": {
-    "state": "parked",
-    "resumesAt": "2026-11-28T13:25+11:00",
+    "state": "running",
+    "resumesAt": null,
     "limits": {
       "fiveHour": {
         "percentUsed": 91,
@@ -104,7 +104,7 @@
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
-        "limit": 1
+        "limit": 138
       }
     },
     "week": {
@@ -115,7 +115,7 @@
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
-        "limit": 491
+        "limit": 628
       }
     },
     "perPoint": {
@@ -288,11 +288,11 @@
   ],
   "workers": [
     {
-      "id": "w-47",
+      "id": "w-48",
       "packetId": "idp-g12",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "parked",
+      "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
       "phase": "Developer",
       "items": [
