@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T13:31+11:00",
+  "generatedAt": "2026-11-28T13:33+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 6,
+        "percentUsed": 7,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 333889767,
-      "costUsd": 274.35,
+      "tokens": 336638719,
+      "costUsd": 276.96,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1557603765,
-      "costUsd": 1411.36,
+      "tokens": 1560352717,
+      "costUsd": 1413.96,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7144971,
+      "tokens": 7157581,
       "minutes": 21,
-      "costUsd": 6.47
+      "costUsd": 6.49
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 333889767,
-        "costUsd": 274.35
+        "tokens": 336638719,
+        "costUsd": 276.96
       }
     ],
     "tests": {
@@ -375,13 +375,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T13:25+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-B-016",
           "title": "Dashboard edit mode is unusable at 390: below NARROW_FRAME the dashboard block stacks its cards full width in view and edit; Move/Size reachable; Cancel clear of the top bar",
           "size": 2,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -401,13 +401,18 @@
         {
           "name": "Developer B-016",
           "start": "2026-11-28T13:28+11:00",
+          "end": "2026-11-28T13:33+11:00"
+        },
+        {
+          "name": "Reviewer B-016",
+          "start": "2026-11-28T13:33+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 2,
-      "tokens": 4194726,
-      "costUsd": 3.2,
+      "tokens": 6943678,
+      "costUsd": 5.81,
       "commits": 0
     }
   ],
