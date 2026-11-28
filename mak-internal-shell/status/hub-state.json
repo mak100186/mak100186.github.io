@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T14:14+11:00",
+  "generatedAt": "2026-11-28T14:16+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 24,
+        "percentUsed": 25,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 404475516,
-      "costUsd": 334.44,
+      "tokens": 409504754,
+      "costUsd": 338.1,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1628189514,
-      "costUsd": 1471.45,
+      "tokens": 1633218752,
+      "costUsd": 1475.11,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7468759,
+      "tokens": 7491829,
       "minutes": 21,
-      "costUsd": 6.75
+      "costUsd": 6.77
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 404475516,
-        "costUsd": 334.44
+        "tokens": 409504754,
+        "costUsd": 338.1
       }
     ],
     "tests": {
@@ -297,7 +297,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T10:47+11:00",
-      "phase": "Stack window (slot 2)",
+      "phase": "Developer (r263 fix)",
       "items": [
         {
           "id": "IDP-F-016",
@@ -317,8 +317,8 @@
           "id": "IDP-F-018",
           "title": "Access requests (AuthProvider.requestAccess, admin notification, approve/deny; approved access reaches the shell at the next refresh)",
           "size": 5,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Developer (r263 fix)",
+          "status": "running"
         },
         {
           "id": "IDP-B-006",
@@ -331,7 +331,7 @@
           "id": "IDP-ADOPT-SHELL-G17",
           "title": "Adopt SHELL-F-034 (per-action divider: Users M10 before Reactivate), SHELL-B-010 (TablePage loading), SHELL-F-035 (dialog-sm) in the admin screens, once shell-g17 is on main; re-check IDP-F-014 AC2 after SHELL-B-015",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         }
       ],
@@ -399,18 +399,33 @@
         {
           "name": "Developer ADOPT-SHELL-G17",
           "start": "2026-11-28T14:12+11:00",
-          "end": null
+          "end": "2026-11-28T14:15+11:00"
         },
         {
           "name": "Stack window (slot 2)",
           "start": "2026-11-28T14:12+11:00",
           "end": null
+        },
+        {
+          "name": "Parity F-016, IDP-F-017",
+          "start": "2026-11-28T14:14+11:00",
+          "end": null
+        },
+        {
+          "name": "Reviewer ADOPT-SHELL-G17",
+          "start": "2026-11-28T14:15+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer (r263 fix) F-018",
+          "start": "2026-11-28T14:15+11:00",
+          "end": null
         }
       ],
       "loops": 1,
-      "escalations": 1,
-      "tokens": 62966096,
-      "costUsd": 51.1,
+      "escalations": 2,
+      "tokens": 67525829,
+      "costUsd": 54.51,
       "commits": 0
     },
     {
