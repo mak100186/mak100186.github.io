@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:16+11:00",
+  "generatedAt": "2026-11-28T20:18+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,11 +98,11 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 34,
+        "percentUsed": 36,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
-        "percentUsed": 49,
+        "percentUsed": 50,
         "resetsAt": "2026-11-30T05:00:00.000Z"
       },
       "parkAtPercent": 90
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 54,
-      "tokens": 654190350,
-      "costUsd": 556.05,
+      "tokens": 656504377,
+      "costUsd": 558.23,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 45,
       "points": 243,
-      "tokens": 1877904348,
-      "costUsd": 1693.06,
+      "tokens": 1880218375,
+      "costUsd": 1695.24,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7728001,
+      "tokens": 7737524,
       "minutes": 17,
-      "costUsd": 6.97
+      "costUsd": 6.98
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 54,
-        "tokens": 654190350,
-        "costUsd": 556.05
+        "tokens": 656504377,
+        "costUsd": 558.23
       }
     ],
     "tests": {
@@ -232,11 +232,52 @@
   "queue": [
     {
       "component": "shell",
-      "packets": []
+      "packets": [
+        {
+          "id": "shell-g23",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "SHELL-B-023",
+              "title": ".add-field overflows its pane at 390",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-024",
+              "title": "TablePage empty card scrolls sideways",
+              "size": 1
+            },
+            {
+              "id": "SHELL-B-025",
+              "title": ".table-range cuts the years at 390",
+              "size": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "component": "idp",
-      "packets": []
+      "packets": [
+        {
+          "id": "idp-g14",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "IDP-B-008",
+              "title": "Access history empty card scrolls sideways",
+              "size": 1
+            },
+            {
+              "id": "IDP-B-009",
+              "title": "Administration sidebar icon",
+              "size": 1
+            }
+          ]
+        }
+      ]
     },
     {
       "component": "component-library",
@@ -251,21 +292,21 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-B-023",
           "title": ".add-field overflows its pane at 390",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-B-024",
           "title": "TablePage empty state: card scrolls sideways over a blank header",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "SHELL-B-025",
@@ -275,7 +316,18 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer B-023",
+          "start": "2026-11-28T20:18+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer B-024",
+          "start": "2026-11-28T20:18+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
       "tokens": 0,
