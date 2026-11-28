@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T11:03+11:00",
+  "generatedAt": "2026-11-28T11:05+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -87,7 +87,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 88,
+        "percentUsed": 89,
         "resetsAt": "2026-11-28T02:20:00.000Z"
       },
       "sevenDay": {
@@ -99,8 +99,8 @@
     "today": {
       "packetsMerged": 2,
       "points": 25,
-      "tokens": 300500459,
-      "costUsd": 244.72,
+      "tokens": 301910638,
+      "costUsd": 246.35,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -110,8 +110,8 @@
     "week": {
       "packetsMerged": 37,
       "points": 214,
-      "tokens": 1524214457,
-      "costUsd": 1381.73,
+      "tokens": 1525624636,
+      "costUsd": 1383.35,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -119,7 +119,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7122497,
+      "tokens": 7129087,
       "minutes": 21,
       "costUsd": 6.46
     },
@@ -205,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 25,
-        "tokens": 300500459,
-        "costUsd": 244.72
+        "tokens": 301910638,
+        "costUsd": 246.35
       }
     ],
     "tests": {
@@ -304,7 +304,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T09:51+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "COMPONENT-LIBRARY-FINDINGS-2026-11-28",
@@ -346,12 +346,17 @@
           "name": "Integration",
           "start": "2026-11-28T11:02+11:00",
           "end": null
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-28T11:05+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 3,
-      "tokens": 26712021,
-      "costUsd": 23.16,
+      "tokens": 28122200,
+      "costUsd": 24.79,
       "commits": 0
     },
     {
