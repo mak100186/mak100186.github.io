@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:24+11:00",
+  "generatedAt": "2026-11-28T20:26+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 40,
+        "percentUsed": 41,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 54,
-      "tokens": 669473126,
-      "costUsd": 570.64,
+      "tokens": 672012599,
+      "costUsd": 572.7,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 45,
       "points": 243,
-      "tokens": 1893187124,
-      "costUsd": 1707.65,
+      "tokens": 1895726597,
+      "costUsd": 1709.7,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7790894,
+      "tokens": 7801344,
       "minutes": 17,
-      "costUsd": 7.03
+      "costUsd": 7.04
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 54,
-        "tokens": 669473126,
-        "costUsd": 570.64
+        "tokens": 672012599,
+        "costUsd": 572.7
       }
     ],
     "tests": {
@@ -246,11 +246,6 @@
             {
               "id": "SHELL-B-024",
               "title": "TablePage empty card scrolls sideways",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-025",
-              "title": ".table-range cuts the years at 390",
               "size": 1
             }
           ]
@@ -292,14 +287,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-023",
           "title": ".add-field overflows its pane at 390",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         },
         {
           "id": "SHELL-B-024",
@@ -312,8 +307,8 @@
           "id": "SHELL-B-025",
           "title": ".table-range cuts the years off at 390",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "running"
+          "phase": "Developer",
+          "status": "held (r301: deferred to blocks k13, change reverted)"
         }
       ],
       "steps": [
@@ -346,12 +341,17 @@
           "name": "Reviewer B-025",
           "start": "2026-11-28T20:24+11:00",
           "end": null
+        },
+        {
+          "name": "Parity B-023",
+          "start": "2026-11-28T20:25+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 6846350,
-      "costUsd": 6.9,
+      "tokens": 8045716,
+      "costUsd": 8.02,
       "commits": 0
     },
     {
@@ -412,8 +412,8 @@
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 3928075,
-      "costUsd": 4.04,
+      "tokens": 4951735,
+      "costUsd": 4.77,
       "commits": 0
     }
   ],
