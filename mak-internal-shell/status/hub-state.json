@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T13:25+11:00",
+  "generatedAt": "2026-11-28T13:27+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -87,7 +87,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 1,
+        "percentUsed": 3,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -99,8 +99,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 322336725,
-      "costUsd": 263.68,
+      "tokens": 324424197,
+      "costUsd": 266.69,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -110,8 +110,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1546050723,
-      "costUsd": 1400.69,
+      "tokens": 1548138195,
+      "costUsd": 1403.7,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -119,9 +119,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7091976,
+      "tokens": 7101551,
       "minutes": 21,
-      "costUsd": 6.43
+      "costUsd": 6.44
     },
     "daily": [
       {
@@ -205,8 +205,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 322336725,
-        "costUsd": 263.68
+        "tokens": 324424197,
+        "costUsd": 266.69
       }
     ],
     "tests": {
@@ -225,12 +225,17 @@
         {
           "id": "shell-g18",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-B-016",
               "title": "Dashboard edit mode at 390",
               "size": 2
+            },
+            {
+              "id": "SHELL-FOLDINS-G18",
+              "title": "TablePage span, frame budget, X1 gutter, K12",
+              "size": 1
             }
           ]
         }
@@ -242,7 +247,7 @@
         {
           "id": "idp-g12",
           "kind": "orchestrated",
-          "state": "held",
+          "state": "running",
           "items": [
             {
               "id": "IDP-F-017",
@@ -352,12 +357,17 @@
           "name": "Developer F-017",
           "start": "2026-11-28T11:01+11:00",
           "end": null
+        },
+        {
+          "name": "Developer F-017",
+          "start": "2026-11-28T13:25+11:00",
+          "end": null
         }
       ],
-      "loops": 0,
+      "loops": 1,
       "escalations": 1,
-      "tokens": 19003940,
-      "costUsd": 15.56,
+      "tokens": 19842466,
+      "costUsd": 16.59,
       "commits": 0
     },
     {
@@ -367,7 +377,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T13:25+11:00",
-      "phase": "",
+      "phase": "Start",
       "items": [
         {
           "id": "SHELL-B-016",
@@ -384,9 +394,15 @@
           "status": "queued"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-28T13:25+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
-      "escalations": 0,
+      "escalations": 1,
       "tokens": 0,
       "costUsd": 0,
       "commits": 0
