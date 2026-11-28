@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T13:29+11:00",
+  "generatedAt": "2026-11-28T13:31+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -8,29 +8,29 @@
     "forecast": {
       "likely": "2026-11-29",
       "optimistic": "2026-11-29",
-      "pessimistic": "2026-11-30"
+      "pessimistic": "2026-11-29"
     },
     "components": [
       {
         "name": "shell",
-        "pointsDone": 0,
-        "pointsRemaining": 12,
-        "itemsRemaining": 7,
+        "pointsDone": 13,
+        "pointsRemaining": 3,
+        "itemsRemaining": 2,
         "state": "building"
       },
       {
         "name": "idp",
-        "pointsDone": 12,
-        "pointsRemaining": 12,
-        "itemsRemaining": 5,
+        "pointsDone": 14,
+        "pointsRemaining": 10,
+        "itemsRemaining": 4,
         "state": "building"
       },
       {
         "name": "component-library",
-        "pointsDone": 0,
-        "pointsRemaining": 5,
-        "itemsRemaining": 3,
-        "state": "building"
+        "pointsDone": 4,
+        "pointsRemaining": 0,
+        "itemsRemaining": 0,
+        "state": "final parity"
       }
     ],
     "burnup": [
@@ -56,14 +56,14 @@
       },
       {
         "date": "2026-11-28",
-        "done": 12,
-        "total": 41
+        "done": 31,
+        "total": 44
       }
     ],
     "waitingOnPeople": [
       {
         "who": "designer",
-        "what": "Design rows from the strict checks and idp-g11 (F13, F14, U4, C4 to C6, B7, M17, I11)",
+        "what": "Design rows from the strict checks (shell F13, F14, U4, K12; component-library C4 to C7, B7; idp M17, I11)",
         "ref": "design rows",
         "since": "2026-11-28T10:30+11:00"
       },
@@ -72,11 +72,22 @@
         "what": "Copy confirmations (W5, W6, I9, I10, M14 to M16, G9, G10)",
         "ref": "copy rows",
         "since": "2026-11-28T09:00+11:00"
+      },
+      {
+        "who": "owner",
+        "what": "PM-014: saved dashboard layouts reset when cards change",
+        "ref": "SHELL PM-014",
+        "since": "2026-11-27T12:00+11:00"
       }
     ],
     "milestones": [
       {
-        "name": "idp admin part 1 merged (users, groups, effective access)",
+        "name": "idp admin part 1 merged",
+        "date": "2026-11-28",
+        "kind": "actual"
+      },
+      {
+        "name": "component-library tranche v1 closed",
         "date": "2026-11-28",
         "kind": "actual"
       }
@@ -87,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 5,
+        "percentUsed": 6,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -99,8 +110,8 @@
     "today": {
       "packetsMerged": 3,
       "points": 29,
-      "tokens": 332287988,
-      "costUsd": 272.76,
+      "tokens": 333889767,
+      "costUsd": 274.35,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -110,8 +121,8 @@
     "week": {
       "packetsMerged": 38,
       "points": 218,
-      "tokens": 1556001986,
-      "costUsd": 1409.77,
+      "tokens": 1557603765,
+      "costUsd": 1411.36,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -119,7 +130,7 @@
       }
     },
     "perPoint": {
-      "tokens": 7137624,
+      "tokens": 7144971,
       "minutes": 21,
       "costUsd": 6.47
     },
@@ -205,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 29,
-        "tokens": 332287988,
-        "costUsd": 272.76
+        "tokens": 333889767,
+        "costUsd": 274.35
       }
     ],
     "tests": {
@@ -234,7 +245,7 @@
             },
             {
               "id": "SHELL-FOLDINS-G18",
-              "title": "TablePage span, frame budget, X1 gutter, K12",
+              "title": "TablePage span, frame budget, page gutter, K12",
               "size": 1
             }
           ]
@@ -275,20 +286,7 @@
     },
     {
       "component": "component-library",
-      "packets": [
-        {
-          "id": "component-library-closeout",
-          "kind": "direct",
-          "state": "queued",
-          "items": [
-            {
-              "id": "COMPONENT-LIBRARY-CLOSEOUT-V1",
-              "title": "Tranche closeout (archive v1)",
-              "size": 1
-            }
-          ]
-        }
-      ]
+      "packets": []
     }
   ],
   "workers": [
