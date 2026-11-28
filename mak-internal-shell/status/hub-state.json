@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:37+11:00",
+  "generatedAt": "2026-11-28T20:39+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 43,
+        "percentUsed": 44,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 54,
-      "tokens": 679789745,
-      "costUsd": 580.68,
+      "tokens": 683935344,
+      "costUsd": 586.09,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 45,
       "points": 243,
-      "tokens": 1903503743,
-      "costUsd": 1717.68,
+      "tokens": 1907649342,
+      "costUsd": 1723.1,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7833349,
+      "tokens": 7850409,
       "minutes": 17,
-      "costUsd": 7.07
+      "costUsd": 7.09
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 54,
-        "tokens": 679789745,
-        "costUsd": 580.68
+        "tokens": 683935344,
+        "costUsd": 586.09
       }
     ],
     "tests": {
@@ -287,7 +287,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "Reviewer-Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "SHELL-B-023",
@@ -355,13 +355,18 @@
         {
           "name": "Reviewer-Integration",
           "start": "2026-11-28T20:37+11:00",
+          "end": "2026-11-28T20:38+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-28T20:38+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 13747750,
-      "costUsd": 13.99,
+      "tokens": 15617444,
+      "costUsd": 16.55,
       "commits": 0
     },
     {
@@ -371,14 +376,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "Parity",
+      "phase": "Integration",
       "items": [
         {
           "id": "IDP-B-008",
           "title": "Access history: with no rows the card still scrolls sideways",
           "size": 1,
           "phase": "Parity",
-          "status": "running"
+          "status": "pass"
         },
         {
           "id": "IDP-B-009",
@@ -412,18 +417,23 @@
         {
           "name": "Parity B-008",
           "start": "2026-11-28T20:24+11:00",
-          "end": null
+          "end": "2026-11-28T20:39+11:00"
         },
         {
           "name": "Parity B-009",
           "start": "2026-11-28T20:24+11:00",
           "end": "2026-11-28T20:29+11:00"
+        },
+        {
+          "name": "Integration",
+          "start": "2026-11-28T20:39+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 7026847,
-      "costUsd": 6.78,
+      "tokens": 9302752,
+      "costUsd": 9.63,
       "commits": 0
     }
   ],
