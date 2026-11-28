@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T21:29+11:00",
+  "generatedAt": "2026-11-28T21:31+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 12,
       "points": 58,
-      "tokens": 720716904,
-      "costUsd": 617.76,
+      "tokens": 721422214,
+      "costUsd": 618.24,
       "minutesWaiting": {
         "hub": 52,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 47,
       "points": 247,
-      "tokens": 1944430902,
-      "costUsd": 1754.76,
+      "tokens": 1945136212,
+      "costUsd": 1755.25,
       "minutesWaiting": {
         "hub": 3197,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7872190,
+      "tokens": 7875045,
       "minutes": 17,
-      "costUsd": 7.1
+      "costUsd": 7.11
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 58,
-        "tokens": 720716904,
-        "costUsd": 617.76
+        "tokens": 721422214,
+        "costUsd": 618.24
       }
     ],
     "tests": {
@@ -264,14 +264,14 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T21:20+11:00",
-      "phase": "Reviewer",
+      "phase": "Parity",
       "items": [
         {
           "id": "SHELL-B-024",
           "title": "TablePage with no rows: focus or a script still scrolls the card sideways",
           "size": 1,
-          "phase": "Reviewer",
-          "status": "pass"
+          "phase": "Parity",
+          "status": "running"
         }
       ],
       "steps": [
@@ -289,12 +289,17 @@
           "name": "Reviewer B-024",
           "start": "2026-11-28T21:26+11:00",
           "end": "2026-11-28T21:29+11:00"
+        },
+        {
+          "name": "Parity B-024",
+          "start": "2026-11-28T21:29+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 5150678,
-      "costUsd": 5.34,
+      "tokens": 5855988,
+      "costUsd": 5.83,
       "commits": 0
     }
   ],
