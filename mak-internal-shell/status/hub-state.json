@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:34+11:00",
+  "generatedAt": "2026-11-28T18:36+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 8,
+        "percentUsed": 10,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,10 +110,10 @@
     "today": {
       "packetsMerged": 6,
       "points": 49,
-      "tokens": 533760138,
-      "costUsd": 456.52,
+      "tokens": 546624470,
+      "costUsd": 466.84,
       "minutesWaiting": {
-        "hub": 49,
+        "hub": 50,
         "you": 0,
         "limit": 138
       }
@@ -121,18 +121,18 @@
     "week": {
       "packetsMerged": 41,
       "points": 238,
-      "tokens": 1757474136,
-      "costUsd": 1593.53,
+      "tokens": 1770338468,
+      "costUsd": 1603.85,
       "minutesWaiting": {
-        "hub": 3194,
+        "hub": 3195,
         "you": 153,
         "limit": 628
       }
     },
     "perPoint": {
-      "tokens": 7384345,
+      "tokens": 7438397,
       "minutes": 20,
-      "costUsd": 6.7
+      "costUsd": 6.74
     },
     "daily": [
       {
@@ -216,13 +216,13 @@
       {
         "date": "2026-11-28",
         "points": 49,
-        "tokens": 533760138,
-        "costUsd": 456.52
+        "tokens": 546624470,
+        "costUsd": 466.84
       }
     ],
     "tests": {
       "lastFull": {
-        "at": "2026-11-28T17:41+11:00",
+        "at": "2026-11-28T18:35+11:00",
         "result": "green"
       },
       "knownReds": 0
@@ -244,6 +244,18 @@
               "size": 1
             }
           ]
+        },
+        {
+          "id": "shell-g21",
+          "kind": "orchestrated",
+          "state": "running",
+          "items": [
+            {
+              "id": "SHELL-B-021",
+              "title": "content-grid cards full width below 1024",
+              "size": 1
+            }
+          ]
         }
       ]
     },
@@ -255,11 +267,6 @@
           "kind": "orchestrated",
           "state": "running",
           "items": [
-            {
-              "id": "IDP-B-007",
-              "title": "User detail card at 1024 and 390",
-              "size": 1
-            },
             {
               "id": "IDP-B-008",
               "title": "Access history empty message at 390",
@@ -338,8 +345,8 @@
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 5549602,
-      "costUsd": 5.35,
+      "tokens": 7830510,
+      "costUsd": 8.35,
       "commits": 0
     },
     {
@@ -347,9 +354,9 @@
       "packetId": "idp-g13",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-28T18:26+11:00",
-      "phase": "Developer",
+      "phase": "Parity (IDP-B-008, IDP-F-021 + F-017/F-018 R2 re-checks)",
       "items": [
         {
           "id": "IDP-B-007",
@@ -383,12 +390,17 @@
           "name": "Reviewer B-008",
           "start": "2026-11-28T18:31+11:00",
           "end": "2026-11-28T18:32+11:00"
+        },
+        {
+          "name": "Parity (IDP-B-008, IDP-F-021 + F-017/F-018 R2 re-checks)",
+          "start": "2026-11-28T18:34+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 1,
-      "tokens": 8078238,
-      "costUsd": 8,
+      "tokens": 8635302,
+      "costUsd": 8.39,
       "commits": 0
     },
     {
@@ -398,21 +410,32 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:34+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-B-021",
           "title": "content-grid cards stay half width below 1024",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-28T18:34+11:00",
+          "end": "2026-11-28T18:35+11:00"
+        },
+        {
+          "name": "Developer B-021",
+          "start": "2026-11-28T18:35+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1406302,
+      "costUsd": 1.27,
       "commits": 0
     }
   ],
