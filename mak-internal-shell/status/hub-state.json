@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T18:24+11:00",
+  "generatedAt": "2026-11-28T18:26+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 1,
+        "percentUsed": 2,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 6,
       "points": 49,
-      "tokens": 514658493,
-      "costUsd": 439.22,
+      "tokens": 519453252,
+      "costUsd": 443.13,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 41,
       "points": 238,
-      "tokens": 1738372491,
-      "costUsd": 1576.22,
+      "tokens": 1743167250,
+      "costUsd": 1580.14,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7304086,
+      "tokens": 7324232,
       "minutes": 20,
-      "costUsd": 6.62
+      "costUsd": 6.64
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 49,
-        "tokens": 514658493,
-        "costUsd": 439.22
+        "tokens": 519453252,
+        "costUsd": 443.13
       }
     ],
     "tests": {
@@ -234,31 +234,9 @@
       "component": "shell",
       "packets": [
         {
-          "id": "shell-g19",
-          "kind": "orchestrated",
-          "state": "running",
-          "items": [
-            {
-              "id": "SHELL-B-018",
-              "title": "fixed-table at narrow widths",
-              "size": 1
-            },
-            {
-              "id": "SHELL-B-019",
-              "title": "Busy button gap in dialog actions",
-              "size": 1
-            },
-            {
-              "id": "SHELL-F-038",
-              "title": "Frame style budget headroom",
-              "size": 1
-            }
-          ]
-        },
-        {
           "id": "shell-g20",
           "kind": "orchestrated",
-          "state": "queued",
+          "state": "running",
           "items": [
             {
               "id": "SHELL-F-039",
@@ -288,6 +266,11 @@
               "size": 1
             },
             {
+              "id": "IDP-B-008",
+              "title": "Access history empty message at 390",
+              "size": 1
+            },
+            {
               "id": "IDP-F-021",
               "title": "Access requests count badge",
               "size": 1
@@ -309,7 +292,7 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T18:24+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "SHELL-F-039",
@@ -321,6 +304,55 @@
         {
           "id": "SHELL-B-020",
           "title": "Sidebar tooltip lingers after navigation",
+          "size": 1,
+          "phase": "Developer",
+          "status": "running"
+        }
+      ],
+      "steps": [
+        {
+          "name": "Start",
+          "start": "2026-11-28T18:24+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer B-020",
+          "start": "2026-11-28T18:26+11:00",
+          "end": null
+        }
+      ],
+      "loops": 0,
+      "escalations": 1,
+      "tokens": 1616057,
+      "costUsd": 1.37,
+      "commits": 0
+    },
+    {
+      "id": "w-52",
+      "packetId": "idp-g13",
+      "component": "idp",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T18:26+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "IDP-B-007",
+          "title": "User detail form card wraps at 1024 and overflows at 390",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-B-008",
+          "title": "Access history empty message is off-screen at 390",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "IDP-F-021",
+          "title": "Access requests count badge in the sidebar",
           "size": 1,
           "phase": "",
           "status": "queued"
