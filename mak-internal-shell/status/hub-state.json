@@ -87,8 +87,8 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 91,
-        "resetsAt": "2026-11-28T02:20:00.000Z"
+        "percentUsed": 1,
+        "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
         "percentUsed": 38,
@@ -358,6 +358,37 @@
       "escalations": 1,
       "tokens": 19003940,
       "costUsd": 15.56,
+      "commits": 0
+    },
+    {
+      "id": "w-49",
+      "packetId": "shell-g18",
+      "component": "shell",
+      "kind": "orchestrated",
+      "state": "running",
+      "startedAt": "2026-11-28T13:25+11:00",
+      "phase": "",
+      "items": [
+        {
+          "id": "SHELL-B-016",
+          "title": "Dashboard edit mode is unusable at 390: below NARROW_FRAME the dashboard block stacks its cards full width in view and edit; Move/Size reachable; Cancel clear of the top bar",
+          "size": 2,
+          "phase": "",
+          "status": "queued"
+        },
+        {
+          "id": "SHELL-FOLDINS-G18",
+          "title": "Fold-ins: TablePage renders span.card-head-actions only when content is projected (table-page.ts:140); the frame.scss production budget warning (4.21 kB against 4.00 kB: trim it, or raise the budget with a reason); the X1 card gutter at 390 (no board; match page-card's narrow behaviour); design row Blocks K12 through hub_issue (the board stylesheets centre .example-area with no overflow handling, against SHELL-B-014); remaining parity backlog lines that fit",
+          "size": 1,
+          "phase": "",
+          "status": "queued"
+        }
+      ],
+      "steps": [],
+      "loops": 0,
+      "escalations": 0,
+      "tokens": 0,
+      "costUsd": 0,
       "commits": 0
     }
   ],
