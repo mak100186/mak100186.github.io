@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:18+11:00",
+  "generatedAt": "2026-11-28T20:20+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 36,
+        "percentUsed": 37,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 10,
       "points": 54,
-      "tokens": 656504377,
-      "costUsd": 558.23,
+      "tokens": 661482210,
+      "costUsd": 563.36,
       "minutesWaiting": {
         "hub": 51,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 45,
       "points": 243,
-      "tokens": 1880218375,
-      "costUsd": 1695.24,
+      "tokens": 1885196208,
+      "costUsd": 1700.36,
       "minutesWaiting": {
         "hub": 3196,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7737524,
+      "tokens": 7758009,
       "minutes": 17,
-      "costUsd": 6.98
+      "costUsd": 7
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 54,
-        "tokens": 656504377,
-        "costUsd": 558.23
+        "tokens": 661482210,
+        "costUsd": 563.36
       }
     ],
     "tests": {
@@ -298,8 +298,8 @@
           "id": "SHELL-B-023",
           "title": ".add-field overflows its pane at 390",
           "size": 1,
-          "phase": "Developer",
-          "status": "running"
+          "phase": "Reviewer",
+          "status": "pass"
         },
         {
           "id": "SHELL-B-024",
@@ -312,26 +312,36 @@
           "id": "SHELL-B-025",
           "title": ".table-range cuts the years off at 390",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
       "steps": [
         {
           "name": "Developer B-023",
           "start": "2026-11-28T20:18+11:00",
-          "end": null
+          "end": "2026-11-28T20:20+11:00"
         },
         {
           "name": "Developer B-024",
           "start": "2026-11-28T20:18+11:00",
           "end": null
+        },
+        {
+          "name": "Reviewer B-023",
+          "start": "2026-11-28T20:20+11:00",
+          "end": "2026-11-28T20:20+11:00"
+        },
+        {
+          "name": "Developer B-025",
+          "start": "2026-11-28T20:20+11:00",
+          "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 3408256,
+      "costUsd": 3.71,
       "commits": 0
     },
     {
@@ -341,28 +351,39 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "",
+      "phase": "Developer",
       "items": [
         {
           "id": "IDP-B-008",
           "title": "Access history: with no rows the card still scrolls sideways",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         },
         {
           "id": "IDP-B-009",
           "title": "Administration sidebar icon is person, board draws a shield",
           "size": 1,
-          "phase": "",
-          "status": "queued"
+          "phase": "Developer",
+          "status": "running"
         }
       ],
-      "steps": [],
+      "steps": [
+        {
+          "name": "Developer B-008",
+          "start": "2026-11-28T20:20+11:00",
+          "end": null
+        },
+        {
+          "name": "Developer B-009",
+          "start": "2026-11-28T20:20+11:00",
+          "end": null
+        }
+      ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 0,
-      "costUsd": 0,
+      "tokens": 1569577,
+      "costUsd": 1.42,
       "commits": 0
     }
   ],
