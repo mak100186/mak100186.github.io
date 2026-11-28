@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T17:42+11:00",
+  "generatedAt": "2026-11-28T17:44+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 44,
+        "percentUsed": 45,
         "resetsAt": "2026-11-28T07:20:00.000Z"
       },
       "sevenDay": {
@@ -110,8 +110,8 @@
     "today": {
       "packetsMerged": 5,
       "points": 46,
-      "tokens": 482590951,
-      "costUsd": 407.28,
+      "tokens": 484189924,
+      "costUsd": 409.3,
       "minutesWaiting": {
         "hub": 48,
         "you": 0,
@@ -121,8 +121,8 @@
     "week": {
       "packetsMerged": 40,
       "points": 235,
-      "tokens": 1706304949,
-      "costUsd": 1544.28,
+      "tokens": 1707903922,
+      "costUsd": 1546.31,
       "minutesWaiting": {
         "hub": 3193,
         "you": 153,
@@ -130,9 +130,9 @@
       }
     },
     "perPoint": {
-      "tokens": 7260872,
+      "tokens": 7267676,
       "minutes": 21,
-      "costUsd": 6.57
+      "costUsd": 6.58
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 46,
-        "tokens": 482590951,
-        "costUsd": 407.28
+        "tokens": 484189924,
+        "costUsd": 409.3
       }
     ],
     "tests": {
@@ -309,13 +309,13 @@
       "kind": "orchestrated",
       "state": "running",
       "startedAt": "2026-11-28T17:36+11:00",
-      "phase": "Developer",
+      "phase": "Reviewer",
       "items": [
         {
           "id": "SHELL-B-018",
           "title": "fixed-table squeezes its flexible column to 0 when fixed columns exceed the card",
           "size": 1,
-          "phase": "Developer",
+          "phase": "Reviewer",
           "status": "running"
         },
         {
@@ -337,13 +337,18 @@
         {
           "name": "Developer B-018",
           "start": "2026-11-28T17:38+11:00",
+          "end": "2026-11-28T17:43+11:00"
+        },
+        {
+          "name": "Reviewer B-018",
+          "start": "2026-11-28T17:43+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 1469216,
-      "costUsd": 1.44,
+      "tokens": 3068189,
+      "costUsd": 3.46,
       "commits": 0
     }
   ],
