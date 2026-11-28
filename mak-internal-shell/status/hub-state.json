@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-28T20:43+11:00",
+  "generatedAt": "2026-11-28T20:45+11:00",
   "sample": false,
   "project": {
     "name": "Internal Shell",
@@ -98,7 +98,7 @@
     "resumesAt": null,
     "limits": {
       "fiveHour": {
-        "percentUsed": 45,
+        "percentUsed": 46,
         "resetsAt": "2026-11-28T12:20:00.000Z"
       },
       "sevenDay": {
@@ -110,10 +110,10 @@
     "today": {
       "packetsMerged": 11,
       "points": 56,
-      "tokens": 692519472,
-      "costUsd": 593.58,
+      "tokens": 693540741,
+      "costUsd": 594.7,
       "minutesWaiting": {
-        "hub": 51,
+        "hub": 52,
         "you": 0,
         "limit": 138
       }
@@ -121,18 +121,18 @@
     "week": {
       "packetsMerged": 46,
       "points": 245,
-      "tokens": 1916233470,
-      "costUsd": 1730.58,
+      "tokens": 1917254739,
+      "costUsd": 1731.71,
       "minutesWaiting": {
-        "hub": 3196,
+        "hub": 3197,
         "you": 153,
         "limit": 628
       }
     },
     "perPoint": {
-      "tokens": 7821361,
+      "tokens": 7825530,
       "minutes": 17,
-      "costUsd": 7.06
+      "costUsd": 7.07
     },
     "daily": [
       {
@@ -216,8 +216,8 @@
       {
         "date": "2026-11-28",
         "points": 56,
-        "tokens": 692519472,
-        "costUsd": 593.58
+        "tokens": 693540741,
+        "costUsd": 594.7
       }
     ],
     "tests": {
@@ -267,9 +267,9 @@
       "packetId": "idp-g14",
       "component": "idp",
       "kind": "orchestrated",
-      "state": "waiting on hub",
+      "state": "running",
       "startedAt": "2026-11-28T20:16+11:00",
-      "phase": "Integration",
+      "phase": "Finalizers",
       "items": [
         {
           "id": "IDP-B-008",
@@ -320,13 +320,23 @@
         {
           "name": "Integration",
           "start": "2026-11-28T20:39+11:00",
+          "end": "2026-11-28T20:44+11:00"
+        },
+        {
+          "name": "Reviewer-Integration",
+          "start": "2026-11-28T20:44+11:00",
+          "end": "2026-11-28T20:45+11:00"
+        },
+        {
+          "name": "Finalizers",
+          "start": "2026-11-28T20:45+11:00",
           "end": null
         }
       ],
       "loops": 0,
       "escalations": 0,
-      "tokens": 11314653,
-      "costUsd": 11.94,
+      "tokens": 12335922,
+      "costUsd": 13.06,
       "commits": 0
     }
   ],
